@@ -1,0 +1,71 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../image_builders/linux.rst:18
+msgid "Linux Image"
+msgstr ""
+
+#: ../../image_builders/linux.rst:20
+msgid ""
+"At the moment the best way to build a Linux image with the murano agent is "
+"to use disk image builder."
+msgstr ""
+
+#: ../../image_builders/linux.rst:26
+msgid "Disk image builder requires sudo rights"
+msgstr ""
+
+#: ../../image_builders/linux.rst:29
+msgid ""
+"The process is quite simple. Let's assume that you use a directory ~/git for"
+" cloning git repositories:"
+msgstr ""
+
+#: ../../image_builders/linux.rst:38
+msgid "Clone the components required to build an image to that directory:"
+msgstr ""
+
+#: ../../image_builders/linux.rst:48
+msgid ""
+"Checkout a change request that allows to build an image using disk image "
+"builder completely installed to virtual environment:"
+msgstr ""
+
+#: ../../image_builders/linux.rst:57
+msgid "Install additional packages required by disk image builder:"
+msgstr ""
+
+#: ../../image_builders/linux.rst:64
+msgid "Export paths where additional dib elements are located:"
+msgstr ""
+
+#: ../../image_builders/linux.rst:71
+msgid "And build Ubuntu-based image with the murano agent:"
+msgstr ""
+
+#: ../../image_builders/linux.rst:79
+msgid ""
+"If you need a Fedora based image, replace 'ubuntu' to 'fedora' in the last "
+"command."
+msgstr ""
+
+#: ../../image_builders/linux.rst:81
+msgid ""
+"It'll take a while (up to 30 minutes if your hard drive and internet "
+"connection are slow)."
+msgstr ""
+
+#: ../../image_builders/linux.rst:83
+msgid ""
+"When you are done upload the murano-agent.qcow2 image to glance and play :)"
+msgstr ""

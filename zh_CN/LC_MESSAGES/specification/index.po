@@ -1,0 +1,2165 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../specification/index.rst:18
+msgid "Murano API v1 specification"
+msgstr ""
+
+#: ../../specification/index.rst:21
+msgid "General information"
+msgstr ""
+
+#: ../../specification/index.rst:23
+msgid "**Introduction**"
+msgstr ""
+
+#: ../../specification/index.rst:25
+msgid ""
+"The murano service API is a programmatic interface used for interaction with"
+" murano. Other interaction mechanisms like the murano dashboard or the "
+"murano CLI should use the API as an underlying protocol for interaction."
+msgstr ""
+
+#: ../../specification/index.rst:29
+msgid "**Allowed HTTPs requests**"
+msgstr ""
+
+#: ../../specification/index.rst:31
+msgid "*POST*   :   To create a resource"
+msgstr ""
+
+#: ../../specification/index.rst:32
+msgid "*GET*    :   Get a resource or list of resources"
+msgstr ""
+
+#: ../../specification/index.rst:33
+msgid "*DELETE* :   To delete resource"
+msgstr ""
+
+#: ../../specification/index.rst:34
+msgid "*PATCH*  :   To update a resource"
+msgstr ""
+
+#: ../../specification/index.rst:36
+msgid "**Description Of Usual Server Responses**"
+msgstr ""
+
+#: ../../specification/index.rst:38
+msgid "200 ``OK`` - the request was successful."
+msgstr ""
+
+#: ../../specification/index.rst:39
+msgid ""
+"201 ``Created`` - the request was successful and a resource was created."
+msgstr ""
+
+#: ../../specification/index.rst:40
+msgid ""
+"204 ``No Content`` - the request was successful but there is no "
+"representation to return (i.e. the response is empty)."
+msgstr ""
+
+#: ../../specification/index.rst:41
+msgid ""
+"400 ``Bad Request`` - the request could not be understood or required "
+"parameters were missing."
+msgstr ""
+
+#: ../../specification/index.rst:42
+msgid ""
+"401 ``Unauthorized`` - authentication failed or user didn't have permissions"
+" for requested operation."
+msgstr ""
+
+#: ../../specification/index.rst:43
+msgid "403 ``Forbidden`` - access denied."
+msgstr ""
+
+#: ../../specification/index.rst:44
+msgid "404 ``Not Found`` - resource was not found"
+msgstr ""
+
+#: ../../specification/index.rst:45
+msgid ""
+"405 ``Method Not Allowed`` - requested method is not supported for resource."
+msgstr ""
+
+#: ../../specification/index.rst:46
+msgid ""
+"409 ``Conflict`` - requested method resulted in a conflict with the current "
+"state of the resource."
+msgstr ""
+
+#: ../../specification/index.rst:48
+msgid "**Response of POSTs and PUTs**"
+msgstr ""
+
+#: ../../specification/index.rst:50
+msgid ""
+"All POST and PUT requests by convention should return the created object (in"
+" the case of POST, with a generated ID) as if it was requested by GET."
+msgstr ""
+
+#: ../../specification/index.rst:54
+msgid "**Authentication**"
+msgstr ""
+
+#: ../../specification/index.rst:56
+msgid ""
+"All requests include a keystone authentication token header (X-Auth-Token). "
+"Clients must authenticate with keystone before interacting with the murano "
+"service."
+msgstr ""
+
+#: ../../specification/murano-api.rst:17
+msgid "Glossary"
+msgstr ""
+
+#: ../../specification/murano-api.rst:19
+msgid "**Environment**"
+msgstr ""
+
+#: ../../specification/murano-api.rst:21
+msgid ""
+"The environment is a set of applications managed by a single tenant. They "
+"could be related logically with each other or not. Applications within a "
+"single environment may comprise of complex configuration while applications "
+"in different environments are always independent from one another. Each "
+"environment is associated with a single OpenStack project (tenant)."
+msgstr ""
+
+#: ../../specification/murano-api.rst:28
+msgid "**Session**"
+msgstr ""
+
+#: ../../specification/murano-api.rst:30
+msgid ""
+"Since murano environments are available for local modification for different"
+" users and from different locations, it's needed to store local "
+"modifications somewhere. Sessions were created to provide this opportunity. "
+"After a user adds an application to the environment - a new session is "
+"created. After a user sends an environment to deploy, a session with a set "
+"of applications changes status to *deploying* and all other open sessions "
+"for that environment become invalid. One session could be deployed only "
+"once."
+msgstr ""
+
+#: ../../specification/murano-api.rst:35
+msgid "**Object Model**"
+msgstr ""
+
+#: ../../specification/murano-api.rst:37
+msgid ""
+"Applications are defined in MuranoPL object model, which is defined as a "
+"JSON object. The murano API doesn't know anything about it."
+msgstr ""
+
+#: ../../specification/murano-api.rst:40
+msgid "**Package**"
+msgstr ""
+
+#: ../../specification/murano-api.rst:42
+msgid "A .zip archive, containing instructions for an application deployment."
+msgstr ""
+
+#: ../../specification/murano-api.rst:49
+msgid "**Environment-Template**"
+msgstr ""
+
+#: ../../specification/murano-api.rst:45
+msgid ""
+"The environment template is the specification of a set of applications "
+"managed by a single tenant, which are related to each other. The environment"
+" template is stored in an environment template catalog, and it can be "
+"managed by the user (creation, deletion, updating). Finally, it can be "
+"deployed on OpenStack by translating into an environment."
+msgstr ""
+
+#: ../../specification/murano-api.rst:52
+msgid "Environment API"
+msgstr ""
+
+#: ../../specification/murano-api.rst:55
+#: ../../specification/murano-api.rst:143
+#: ../../specification/murano-api.rst:180
+#: ../../specification/murano-api.rst:330
+#: ../../specification/murano-api.rst:740
+#: ../../specification/murano-api.rst:782
+#: ../../specification/murano-api.rst:818
+#: ../../specification/murano-repository.rst:55
+#: ../../specification/murano-repository.rst:522
+#: ../../specification/murano-env-temp.rst:25
+msgid "Attribute"
+msgstr ""
+
+#: ../../specification/murano-api.rst:55
+#: ../../specification/murano-api.rst:143
+#: ../../specification/murano-api.rst:180
+#: ../../specification/murano-api.rst:330
+#: ../../specification/murano-api.rst:740
+#: ../../specification/murano-api.rst:782
+#: ../../specification/murano-api.rst:818
+#: ../../specification/murano-repository.rst:55
+#: ../../specification/murano-repository.rst:522
+#: ../../specification/murano-env-temp.rst:25
+msgid "Type"
+msgstr ""
+
+#: ../../specification/murano-api.rst:55 ../../specification/murano-api.rst:78
+#: ../../specification/murano-api.rst:92
+#: ../../specification/murano-api.rst:143
+#: ../../specification/murano-api.rst:151
+#: ../../specification/murano-api.rst:180
+#: ../../specification/murano-api.rst:188
+#: ../../specification/murano-api.rst:216
+#: ../../specification/murano-api.rst:238
+#: ../../specification/murano-api.rst:295
+#: ../../specification/murano-api.rst:311
+#: ../../specification/murano-api.rst:330
+#: ../../specification/murano-api.rst:359
+#: ../../specification/murano-api.rst:381
+#: ../../specification/murano-api.rst:399
+#: ../../specification/murano-api.rst:409
+#: ../../specification/murano-api.rst:424
+#: ../../specification/murano-api.rst:446
+#: ../../specification/murano-api.rst:461
+#: ../../specification/murano-api.rst:470
+#: ../../specification/murano-api.rst:493
+#: ../../specification/murano-api.rst:559
+#: ../../specification/murano-api.rst:740
+#: ../../specification/murano-api.rst:782
+#: ../../specification/murano-api.rst:818
+#: ../../specification/murano-repository.rst:55
+#: ../../specification/murano-repository.rst:425
+#: ../../specification/murano-repository.rst:471
+#: ../../specification/murano-repository.rst:503
+#: ../../specification/murano-repository.rst:522
+#: ../../specification/murano-repository.rst:530
+#: ../../specification/murano-repository.rst:555
+#: ../../specification/murano-repository.rst:573
+#: ../../specification/murano-repository.rst:585
+#: ../../specification/murano-env-temp.rst:25
+#: ../../specification/murano-env-temp.rst:47
+#: ../../specification/murano-env-temp.rst:62
+#: ../../specification/murano-env-temp.rst:112
+#: ../../specification/murano-env-temp.rst:138
+#: ../../specification/murano-env-temp.rst:186
+#: ../../specification/murano-env-temp.rst:201
+#: ../../specification/murano-env-temp.rst:214
+#: ../../specification/murano-env-temp.rst:229
+#: ../../specification/murano-env-temp.rst:295
+#: ../../specification/murano-env-temp.rst:363
+#: ../../specification/murano-env-temp.rst:419
+msgid "Description"
+msgstr ""
+
+#: ../../specification/murano-api.rst:57
+#: ../../specification/murano-api.rst:332
+#: ../../specification/murano-env-temp.rst:27
+msgid "id"
+msgstr ""
+
+#: ../../specification/murano-api.rst:57 ../../specification/murano-api.rst:59
+#: ../../specification/murano-api.rst:65 ../../specification/murano-api.rst:69
+#: ../../specification/murano-api.rst:71
+#: ../../specification/murano-api.rst:145
+#: ../../specification/murano-api.rst:182
+#: ../../specification/murano-api.rst:332
+#: ../../specification/murano-api.rst:334
+#: ../../specification/murano-api.rst:341
+#: ../../specification/murano-api.rst:346
+#: ../../specification/murano-api.rst:744
+#: ../../specification/murano-api.rst:746
+#: ../../specification/murano-api.rst:750
+#: ../../specification/murano-api.rst:834
+#: ../../specification/murano-repository.rst:60
+#: ../../specification/murano-repository.rst:62
+#: ../../specification/murano-repository.rst:66
+#: ../../specification/murano-repository.rst:68
+#: ../../specification/murano-repository.rst:70
+#: ../../specification/murano-repository.rst:72
+#: ../../specification/murano-repository.rst:78
+#: ../../specification/murano-repository.rst:80
+#: ../../specification/murano-repository.rst:524
+#: ../../specification/murano-env-temp.rst:27
+#: ../../specification/murano-env-temp.rst:29
+#: ../../specification/murano-env-temp.rst:35
+#: ../../specification/murano-env-temp.rst:39
+#: ../../specification/murano-env-temp.rst:41
+msgid "string"
+msgstr ""
+
+#: ../../specification/murano-api.rst:57
+#: ../../specification/murano-env-temp.rst:27
+msgid "Unique ID"
+msgstr ""
+
+#: ../../specification/murano-api.rst:59
+#: ../../specification/murano-api.rst:145
+#: ../../specification/murano-api.rst:182
+#: ../../specification/murano-repository.rst:524
+#: ../../specification/murano-env-temp.rst:29
+msgid "name"
+msgstr ""
+
+#: ../../specification/murano-api.rst:59
+#: ../../specification/murano-env-temp.rst:29
+msgid "User-friendly name"
+msgstr ""
+
+#: ../../specification/murano-api.rst:61
+#: ../../specification/murano-api.rst:337
+#: ../../specification/murano-env-temp.rst:31
+msgid "created"
+msgstr ""
+
+#: ../../specification/murano-api.rst:61 ../../specification/murano-api.rst:63
+#: ../../specification/murano-api.rst:337
+#: ../../specification/murano-api.rst:339
+#: ../../specification/murano-env-temp.rst:31
+#: ../../specification/murano-env-temp.rst:33
+msgid "datetime"
+msgstr ""
+
+#: ../../specification/murano-api.rst:61
+#: ../../specification/murano-api.rst:337
+#: ../../specification/murano-env-temp.rst:31
+msgid "Creation date and time in ISO format"
+msgstr ""
+
+#: ../../specification/murano-api.rst:63
+#: ../../specification/murano-api.rst:339
+#: ../../specification/murano-env-temp.rst:33
+msgid "updated"
+msgstr ""
+
+#: ../../specification/murano-api.rst:63
+#: ../../specification/murano-api.rst:339
+#: ../../specification/murano-env-temp.rst:33
+msgid "Modification date and time in ISO format"
+msgstr ""
+
+#: ../../specification/murano-api.rst:65
+#: ../../specification/murano-env-temp.rst:35
+msgid "tenant_id"
+msgstr ""
+
+#: ../../specification/murano-api.rst:65
+#: ../../specification/murano-env-temp.rst:35
+msgid "OpenStack tenant ID"
+msgstr ""
+
+#: ../../specification/murano-api.rst:67
+#: ../../specification/murano-api.rst:343
+#: ../../specification/murano-env-temp.rst:37
+msgid "version"
+msgstr ""
+
+#: ../../specification/murano-api.rst:67
+#: ../../specification/murano-api.rst:343
+#: ../../specification/murano-api.rst:742
+#: ../../specification/murano-api.rst:752
+#: ../../specification/murano-api.rst:784
+#: ../../specification/murano-api.rst:786
+#: ../../specification/murano-api.rst:788
+#: ../../specification/murano-api.rst:820
+#: ../../specification/murano-api.rst:822
+#: ../../specification/murano-api.rst:824
+#: ../../specification/murano-api.rst:828
+#: ../../specification/murano-api.rst:832
+#: ../../specification/murano-env-temp.rst:37
+msgid "int"
+msgstr ""
+
+#: ../../specification/murano-api.rst:67
+#: ../../specification/murano-env-temp.rst:37
+msgid "Current version"
+msgstr ""
+
+#: ../../specification/murano-api.rst:69
+#: ../../specification/murano-env-temp.rst:39
+msgid "networking"
+msgstr ""
+
+#: ../../specification/murano-api.rst:69
+#: ../../specification/murano-env-temp.rst:39
+msgid "Network settings"
+msgstr ""
+
+#: ../../specification/murano-api.rst:71
+msgid "status"
+msgstr ""
+
+#: ../../specification/murano-api.rst:71
+msgid "Deployment status: ready, pending, deploying"
+msgstr ""
+
+#: ../../specification/murano-api.rst:75
+#: ../../specification/murano-env-temp.rst:44
+msgid "**Common response codes**"
+msgstr ""
+
+#: ../../specification/murano-api.rst:78
+#: ../../specification/murano-api.rst:216
+#: ../../specification/murano-api.rst:311
+#: ../../specification/murano-api.rst:381
+#: ../../specification/murano-api.rst:409
+#: ../../specification/murano-api.rst:446
+#: ../../specification/murano-api.rst:470
+#: ../../specification/murano-api.rst:559
+#: ../../specification/murano-repository.rst:503
+#: ../../specification/murano-repository.rst:555
+#: ../../specification/murano-repository.rst:585
+#: ../../specification/murano-env-temp.rst:47
+#: ../../specification/murano-env-temp.rst:138
+#: ../../specification/murano-env-temp.rst:186
+#: ../../specification/murano-env-temp.rst:214
+#: ../../specification/murano-env-temp.rst:295
+#: ../../specification/murano-env-temp.rst:363
+#: ../../specification/murano-env-temp.rst:419
+msgid "Code"
+msgstr ""
+
+#: ../../specification/murano-api.rst:80
+#: ../../specification/murano-api.rst:218
+#: ../../specification/murano-api.rst:313
+#: ../../specification/murano-api.rst:383
+#: ../../specification/murano-api.rst:411
+#: ../../specification/murano-api.rst:448
+#: ../../specification/murano-api.rst:472
+#: ../../specification/murano-api.rst:561
+#: ../../specification/murano-repository.rst:505
+#: ../../specification/murano-repository.rst:557
+#: ../../specification/murano-repository.rst:587
+#: ../../specification/murano-env-temp.rst:49
+#: ../../specification/murano-env-temp.rst:140
+#: ../../specification/murano-env-temp.rst:188
+#: ../../specification/murano-env-temp.rst:216
+#: ../../specification/murano-env-temp.rst:297
+#: ../../specification/murano-env-temp.rst:365
+#: ../../specification/murano-env-temp.rst:421
+msgid "200"
+msgstr ""
+
+#: ../../specification/murano-api.rst:80
+#: ../../specification/murano-env-temp.rst:49
+#: ../../specification/murano-env-temp.rst:140
+msgid "Operation completed successfully"
+msgstr ""
+
+#: ../../specification/murano-api.rst:82
+#: ../../specification/murano-api.rst:223
+#: ../../specification/murano-api.rst:385
+#: ../../specification/murano-api.rst:413
+#: ../../specification/murano-api.rst:450
+#: ../../specification/murano-api.rst:474
+#: ../../specification/murano-api.rst:563
+#: ../../specification/murano-repository.rst:507
+#: ../../specification/murano-repository.rst:559
+#: ../../specification/murano-repository.rst:589
+#: ../../specification/murano-env-temp.rst:51
+#: ../../specification/murano-env-temp.rst:142
+#: ../../specification/murano-env-temp.rst:190
+#: ../../specification/murano-env-temp.rst:218
+#: ../../specification/murano-env-temp.rst:299
+#: ../../specification/murano-env-temp.rst:367
+#: ../../specification/murano-env-temp.rst:423
+msgid "401"
+msgstr ""
+
+#: ../../specification/murano-api.rst:82
+#: ../../specification/murano-env-temp.rst:51
+#: ../../specification/murano-env-temp.rst:142
+msgid "User is not authorized to perform the operation"
+msgstr ""
+
+#: ../../specification/murano-api.rst:86
+msgid "List environments"
+msgstr ""
+
+#: ../../specification/murano-api.rst:88
+#: ../../specification/murano-api.rst:148
+#: ../../specification/murano-api.rst:185
+#: ../../specification/murano-api.rst:233
+#: ../../specification/murano-api.rst:291
+#: ../../specification/murano-api.rst:355
+#: ../../specification/murano-api.rst:396
+#: ../../specification/murano-api.rst:421
+#: ../../specification/murano-api.rst:458
+#: ../../specification/murano-api.rst:490
+#: ../../specification/murano-api.rst:584
+#: ../../specification/murano-api.rst:631
+#: ../../specification/murano-api.rst:700
+#: ../../specification/murano-api.rst:721
+#: ../../specification/murano-api.rst:771
+#: ../../specification/murano-api.rst:807
+#: ../../specification/murano-api.rst:873
+#: ../../specification/murano-api.rst:916
+#: ../../specification/murano-repository.rst:468
+#: ../../specification/murano-repository.rst:527
+#: ../../specification/murano-repository.rst:570
+#: ../../specification/murano-env-temp.rst:59
+#: ../../specification/murano-env-temp.rst:109
+#: ../../specification/murano-env-temp.rst:151
+#: ../../specification/murano-env-temp.rst:198
+#: ../../specification/murano-env-temp.rst:226
+#: ../../specification/murano-env-temp.rst:307
+#: ../../specification/murano-env-temp.rst:375
+msgid "*Request*"
+msgstr ""
+
+#: ../../specification/murano-api.rst:92
+#: ../../specification/murano-api.rst:151
+#: ../../specification/murano-api.rst:188
+#: ../../specification/murano-api.rst:238
+#: ../../specification/murano-api.rst:295
+#: ../../specification/murano-api.rst:359
+#: ../../specification/murano-api.rst:399
+#: ../../specification/murano-api.rst:424
+#: ../../specification/murano-api.rst:461
+#: ../../specification/murano-api.rst:493
+#: ../../specification/murano-api.rst:587
+#: ../../specification/murano-api.rst:637
+#: ../../specification/murano-api.rst:703
+#: ../../specification/murano-api.rst:726
+#: ../../specification/murano-api.rst:774
+#: ../../specification/murano-api.rst:810
+#: ../../specification/murano-api.rst:879
+#: ../../specification/murano-api.rst:919
+#: ../../specification/murano-repository.rst:425
+#: ../../specification/murano-repository.rst:471
+#: ../../specification/murano-repository.rst:530
+#: ../../specification/murano-repository.rst:573
+#: ../../specification/murano-env-temp.rst:62
+#: ../../specification/murano-env-temp.rst:112
+#: ../../specification/murano-env-temp.rst:201
+#: ../../specification/murano-env-temp.rst:229
+#: ../../specification/murano-env-temp.rst:310
+#: ../../specification/murano-env-temp.rst:378
+msgid "Method"
+msgstr ""
+
+#: ../../specification/murano-api.rst:92
+#: ../../specification/murano-api.rst:151
+#: ../../specification/murano-api.rst:188
+#: ../../specification/murano-api.rst:238
+#: ../../specification/murano-api.rst:295
+#: ../../specification/murano-api.rst:359
+#: ../../specification/murano-api.rst:399
+#: ../../specification/murano-api.rst:424
+#: ../../specification/murano-api.rst:461
+#: ../../specification/murano-api.rst:493
+#: ../../specification/murano-api.rst:587
+#: ../../specification/murano-api.rst:637
+#: ../../specification/murano-api.rst:703
+#: ../../specification/murano-api.rst:726
+#: ../../specification/murano-api.rst:774
+#: ../../specification/murano-api.rst:810
+#: ../../specification/murano-api.rst:879
+#: ../../specification/murano-api.rst:919
+#: ../../specification/murano-repository.rst:425
+#: ../../specification/murano-repository.rst:471
+#: ../../specification/murano-repository.rst:530
+#: ../../specification/murano-repository.rst:573
+#: ../../specification/murano-env-temp.rst:62
+#: ../../specification/murano-env-temp.rst:112
+#: ../../specification/murano-env-temp.rst:201
+#: ../../specification/murano-env-temp.rst:229
+msgid "URI"
+msgstr ""
+
+#: ../../specification/murano-api.rst:94
+#: ../../specification/murano-api.rst:240
+#: ../../specification/murano-api.rst:426
+#: ../../specification/murano-api.rst:495
+#: ../../specification/murano-api.rst:589
+#: ../../specification/murano-api.rst:728
+#: ../../specification/murano-api.rst:776
+#: ../../specification/murano-api.rst:812
+#: ../../specification/murano-api.rst:921
+#: ../../specification/murano-repository.rst:427
+#: ../../specification/murano-repository.rst:473
+#: ../../specification/murano-env-temp.rst:64
+#: ../../specification/murano-env-temp.rst:312
+msgid "GET"
+msgstr ""
+
+#: ../../specification/murano-api.rst:94
+#: ../../specification/murano-api.rst:153
+msgid "/environments"
+msgstr ""
+
+#: ../../specification/murano-api.rst:94
+msgid "Get a list of existing Environments"
+msgstr ""
+
+#: ../../specification/murano-api.rst:99
+#: ../../specification/murano-api.rst:301
+#: ../../specification/murano-repository.rst:578
+#: ../../specification/murano-env-temp.rst:207
+#: ../../specification/murano-env-temp.rst:234
+#: ../../specification/murano-env-temp.rst:315
+#: ../../specification/murano-env-temp.rst:384
+msgid "*Parameters:*"
+msgstr ""
+
+#: ../../specification/murano-api.rst:101
+msgid ""
+"`all_tenants` - boolean, indicates whether environments from all tenants are"
+" listed. *True* environments from all tenants are listed. Admin user "
+"required. *False* environments only from current tenant are listed (default "
+"like option unspecified)."
+msgstr ""
+
+#: ../../specification/murano-api.rst:106
+#: ../../specification/murano-api.rst:162
+#: ../../specification/murano-api.rst:199
+#: ../../specification/murano-api.rst:245
+#: ../../specification/murano-api.rst:308
+#: ../../specification/murano-api.rst:365
+#: ../../specification/murano-api.rst:405
+#: ../../specification/murano-api.rst:430
+#: ../../specification/murano-api.rst:467
+#: ../../specification/murano-api.rst:498
+#: ../../specification/murano-api.rst:597
+#: ../../specification/murano-api.rst:665
+#: ../../specification/murano-api.rst:736
+#: ../../specification/murano-api.rst:779
+#: ../../specification/murano-api.rst:815
+#: ../../specification/murano-api.rst:897
+#: ../../specification/murano-api.rst:929
+#: ../../specification/murano-repository.rst:480
+#: ../../specification/murano-repository.rst:541
+#: ../../specification/murano-repository.rst:582
+#: ../../specification/murano-env-temp.rst:68
+#: ../../specification/murano-env-temp.rst:123
+#: ../../specification/murano-env-temp.rst:164
+#: ../../specification/murano-env-temp.rst:265
+#: ../../specification/murano-env-temp.rst:322
+#: ../../specification/murano-env-temp.rst:403
+msgid "*Response*"
+msgstr ""
+
+#: ../../specification/murano-api.rst:109
+msgid ""
+"This call returns a list of environments. Only the basic properties are "
+"returned."
+msgstr ""
+
+#: ../../specification/murano-api.rst:140
+msgid "Create environment"
+msgstr ""
+
+#: ../../specification/murano-api.rst:145
+#: ../../specification/murano-api.rst:182
+#: ../../specification/murano-repository.rst:524
+msgid "Environment name; only alphanumeric characters and '-'"
+msgstr ""
+
+#: ../../specification/murano-api.rst:153
+#: ../../specification/murano-api.rst:361
+#: ../../specification/murano-api.rst:401
+#: ../../specification/murano-api.rst:639
+#: ../../specification/murano-api.rst:881
+#: ../../specification/murano-repository.rst:532
+#: ../../specification/murano-env-temp.rst:114
+#: ../../specification/murano-env-temp.rst:231
+#: ../../specification/murano-env-temp.rst:380
+msgid "POST"
+msgstr ""
+
+#: ../../specification/murano-api.rst:153
+msgid "Create new Environment"
+msgstr ""
+
+#: ../../specification/murano-api.rst:156
+#: ../../specification/murano-api.rst:193
+msgid "**Content-Type** application/json"
+msgstr ""
+
+#: ../../specification/murano-api.rst:160
+msgid "**Example**"
+msgstr ""
+
+#: ../../specification/murano-api.rst:160
+msgid "{\"name\": \"env_name\"}"
+msgstr ""
+
+#: ../../specification/murano-api.rst:177
+msgid "Update environment"
+msgstr ""
+
+#: ../../specification/murano-api.rst:190
+msgid "PUT"
+msgstr ""
+
+#: ../../specification/murano-api.rst:190
+msgid "/environments/<env_id>"
+msgstr ""
+
+#: ../../specification/murano-api.rst:190
+msgid "Update an existing Environment"
+msgstr ""
+
+#: ../../specification/murano-api.rst:196
+msgid "**Example** {\"name\": \"env_name_changed\"}"
+msgstr ""
+
+#: ../../specification/murano-api.rst:202
+#: ../../specification/murano-api.rst:248
+#: ../../specification/murano-api.rst:368
+#: ../../specification/murano-api.rst:501
+#: ../../specification/murano-api.rst:600
+#: ../../specification/murano-api.rst:634
+#: ../../specification/murano-api.rst:671
+#: ../../specification/murano-api.rst:756
+#: ../../specification/murano-api.rst:802
+#: ../../specification/murano-api.rst:840
+#: ../../specification/murano-api.rst:876
+#: ../../specification/murano-api.rst:902
+#: ../../specification/murano-api.rst:934
+msgid "**Content-Type**"
+msgstr ""
+
+#: ../../specification/murano-api.rst:202
+#: ../../specification/murano-api.rst:248
+#: ../../specification/murano-api.rst:368
+#: ../../specification/murano-api.rst:501
+#: ../../specification/murano-api.rst:600
+#: ../../specification/murano-api.rst:634
+#: ../../specification/murano-api.rst:671
+#: ../../specification/murano-api.rst:756
+#: ../../specification/murano-api.rst:792
+#: ../../specification/murano-api.rst:840
+#: ../../specification/murano-api.rst:876
+#: ../../specification/murano-api.rst:902
+#: ../../specification/murano-api.rst:934
+#: ../../specification/murano-repository.rst:413
+#: ../../specification/murano-repository.rst:438
+#: ../../specification/murano-repository.rst:483
+#: ../../specification/murano-repository.rst:536
+#: ../../specification/murano-env-temp.rst:118
+#: ../../specification/murano-env-temp.rst:167
+#: ../../specification/murano-env-temp.rst:240
+#: ../../specification/murano-env-temp.rst:320
+#: ../../specification/murano-env-temp.rst:393
+msgid "application/json"
+msgstr ""
+
+#: ../../specification/murano-api.rst:218
+msgid "Edited environment"
+msgstr ""
+
+#: ../../specification/murano-api.rst:220
+msgid "400"
+msgstr ""
+
+#: ../../specification/murano-api.rst:220
+msgid ""
+"Environment name must contain only alphanumeric or '_-.' characters, must "
+"start with alpha"
+msgstr ""
+
+#: ../../specification/murano-api.rst:223
+msgid "User is not authorized to access environment"
+msgstr ""
+
+#: ../../specification/murano-api.rst:225
+#: ../../specification/murano-api.rst:317
+#: ../../specification/murano-repository.rst:509
+#: ../../specification/murano-repository.rst:591
+#: ../../specification/murano-env-temp.rst:192
+#: ../../specification/murano-env-temp.rst:220
+#: ../../specification/murano-env-temp.rst:301
+#: ../../specification/murano-env-temp.rst:369
+#: ../../specification/murano-env-temp.rst:425
+msgid "404"
+msgstr ""
+
+#: ../../specification/murano-api.rst:225
+msgid "Environment not found"
+msgstr ""
+
+#: ../../specification/murano-api.rst:227
+#: ../../specification/murano-repository.rst:561
+#: ../../specification/murano-env-temp.rst:144
+#: ../../specification/murano-env-temp.rst:427
+msgid "409"
+msgstr ""
+
+#: ../../specification/murano-api.rst:227
+msgid "Environment with specified name already exists"
+msgstr ""
+
+#: ../../specification/murano-api.rst:231
+msgid "Get environment details"
+msgstr ""
+
+#: ../../specification/murano-api.rst:235
+msgid ""
+"Return information about the environment itself and about applications, "
+"including this environment."
+msgstr ""
+
+#: ../../specification/murano-api.rst:238
+#: ../../specification/murano-api.rst:587
+#: ../../specification/murano-api.rst:637
+#: ../../specification/murano-api.rst:703
+#: ../../specification/murano-api.rst:879
+#: ../../specification/murano-api.rst:919
+msgid "Header"
+msgstr ""
+
+#: ../../specification/murano-api.rst:240
+msgid "/environments/{id}"
+msgstr ""
+
+#: ../../specification/murano-api.rst:240
+#: ../../specification/murano-api.rst:589
+msgid "X-Configuration-Session (optional)"
+msgstr ""
+
+#: ../../specification/murano-api.rst:240
+msgid ""
+"Response detailed information about Environment including child entities"
+msgstr ""
+
+#: ../../specification/murano-api.rst:289
+msgid "Delete environment"
+msgstr ""
+
+#: ../../specification/murano-api.rst:297
+#: ../../specification/murano-api.rst:463
+#: ../../specification/murano-api.rst:705
+#: ../../specification/murano-repository.rst:575
+#: ../../specification/murano-env-temp.rst:203
+msgid "DELETE"
+msgstr ""
+
+#: ../../specification/murano-api.rst:297
+msgid "/environments/{id}?abandon"
+msgstr ""
+
+#: ../../specification/murano-api.rst:297
+msgid "Remove specified Environment."
+msgstr ""
+
+#: ../../specification/murano-api.rst:303
+msgid ""
+"`abandon` - boolean, indicates how to delete environment. *False* is used if"
+" all resources used by environment must be destroyed; *True* is used when "
+"just database must be cleaned"
+msgstr ""
+
+#: ../../specification/murano-api.rst:313
+msgid "OK. Environment deleted successfully"
+msgstr ""
+
+#: ../../specification/murano-api.rst:315
+#: ../../specification/murano-api.rst:387
+#: ../../specification/murano-api.rst:415
+#: ../../specification/murano-api.rst:452
+#: ../../specification/murano-api.rst:476
+#: ../../specification/murano-repository.rst:593
+msgid "403"
+msgstr ""
+
+#: ../../specification/murano-api.rst:315
+msgid "User is not allowed to delete this resource"
+msgstr ""
+
+#: ../../specification/murano-api.rst:317
+msgid "Not found. Specified environment doesn`t exist"
+msgstr ""
+
+#: ../../specification/murano-api.rst:322
+msgid "Environment configuration API"
+msgstr ""
+
+#: ../../specification/murano-api.rst:324
+msgid ""
+"Multiple `sessions`_ could be opened for one environment simultaneously, but"
+" only one session going to be deployed. First session that starts deploying "
+"is going to be deployed; other ones become invalid and could not be deployed"
+" at all. User could not open new session for environment that in *deploying*"
+" state (that’s why we call it \"almost lock free\" model)."
+msgstr ""
+
+#: ../../specification/murano-api.rst:332
+msgid "Session unique ID"
+msgstr ""
+
+#: ../../specification/murano-api.rst:334
+msgid "environment\\_id"
+msgstr ""
+
+#: ../../specification/murano-api.rst:334
+msgid "Environment that going to be modified during this session"
+msgstr ""
+
+#: ../../specification/murano-api.rst:341
+msgid "user\\_id"
+msgstr ""
+
+#: ../../specification/murano-api.rst:341
+msgid "Session owner ID"
+msgstr ""
+
+#: ../../specification/murano-api.rst:343
+msgid "Environment version for which configuration session is opened"
+msgstr ""
+
+#: ../../specification/murano-api.rst:346
+msgid "state"
+msgstr ""
+
+#: ../../specification/murano-api.rst:346
+msgid "Session state. Could be: open, deploying, deployed"
+msgstr ""
+
+#: ../../specification/murano-api.rst:351
+msgid "Configure environment / open session"
+msgstr ""
+
+#: ../../specification/murano-api.rst:353
+msgid ""
+"During this call new working session is created, and session ID should be "
+"sent in a request header with name ``X-Configuration-Session``."
+msgstr ""
+
+#: ../../specification/murano-api.rst:361
+msgid "/environments/<env_id>/configure"
+msgstr ""
+
+#: ../../specification/murano-api.rst:361
+msgid "Creating new configuration session"
+msgstr ""
+
+#: ../../specification/murano-api.rst:383
+msgid "Session created successfully"
+msgstr ""
+
+#: ../../specification/murano-api.rst:385
+#: ../../specification/murano-api.rst:413
+#: ../../specification/murano-api.rst:450
+#: ../../specification/murano-api.rst:474
+#: ../../specification/murano-repository.rst:507
+#: ../../specification/murano-repository.rst:559
+#: ../../specification/murano-repository.rst:589
+#: ../../specification/murano-env-temp.rst:190
+#: ../../specification/murano-env-temp.rst:218
+#: ../../specification/murano-env-temp.rst:299
+#: ../../specification/murano-env-temp.rst:367
+#: ../../specification/murano-env-temp.rst:423
+msgid "User is not authorized to access this session"
+msgstr ""
+
+#: ../../specification/murano-api.rst:387
+msgid ""
+"Could not open session for environment, environment has deploying status"
+msgstr ""
+
+#: ../../specification/murano-api.rst:392
+msgid "Deploy session"
+msgstr ""
+
+#: ../../specification/murano-api.rst:394
+msgid ""
+"With this request all local changes made within the environment start to "
+"deploy on OpenStack."
+msgstr ""
+
+#: ../../specification/murano-api.rst:401
+msgid "/environments/<env_id>/sessions/ <session_id>/deploy"
+msgstr ""
+
+#: ../../specification/murano-api.rst:401
+msgid "Deploy changes made in session"
+msgstr ""
+
+#: ../../specification/murano-api.rst:402
+msgid "with specified session_id"
+msgstr ""
+
+#: ../../specification/murano-api.rst:411
+msgid "Session status changes to *deploying*"
+msgstr ""
+
+#: ../../specification/murano-api.rst:415
+msgid "Session is already deployed or deployment is in progress"
+msgstr ""
+
+#: ../../specification/murano-api.rst:419
+msgid "Get session details"
+msgstr ""
+
+#: ../../specification/murano-api.rst:426
+#: ../../specification/murano-api.rst:463
+msgid "/environments/<env_id>/sessions/ <session_id>"
+msgstr ""
+
+#: ../../specification/murano-api.rst:426
+msgid "Get details about session with specified session_id"
+msgstr ""
+
+#: ../../specification/murano-api.rst:448
+msgid "Session details information received"
+msgstr ""
+
+#: ../../specification/murano-api.rst:452
+msgid "Session is invalid"
+msgstr ""
+
+#: ../../specification/murano-api.rst:456
+msgid "Delete session"
+msgstr ""
+
+#: ../../specification/murano-api.rst:463
+msgid "Delete session with specified session_id"
+msgstr ""
+
+#: ../../specification/murano-api.rst:472
+msgid "Session is deleted successfully"
+msgstr ""
+
+#: ../../specification/murano-api.rst:476
+msgid "Session is in deploying state and could not be deleted"
+msgstr ""
+
+#: ../../specification/murano-api.rst:480
+msgid "Environment deployments API"
+msgstr ""
+
+#: ../../specification/murano-api.rst:482
+msgid ""
+"Environment deployment API allows to track changes of environment status, "
+"deployment events and errors. It also allows to browse deployment history."
+msgstr ""
+
+#: ../../specification/murano-api.rst:486
+msgid "List Deployments"
+msgstr ""
+
+#: ../../specification/murano-api.rst:488
+msgid ""
+"Returns information about all deployments of the specified environment."
+msgstr ""
+
+#: ../../specification/murano-api.rst:495
+msgid "/environments/<env_id>/deployments"
+msgstr ""
+
+#: ../../specification/murano-api.rst:495
+msgid "Get list of environment deployments"
+msgstr ""
+
+#: ../../specification/murano-api.rst:561
+msgid "Deployments information received successfully"
+msgstr ""
+
+#: ../../specification/murano-api.rst:563
+msgid "User is not authorized to access this environment"
+msgstr ""
+
+#: ../../specification/murano-api.rst:567
+msgid "Application management API"
+msgstr ""
+
+#: ../../specification/murano-api.rst:569
+msgid ""
+"All applications should be created within an environment and all environment"
+" modifications are held within the session. Local changes apply only after "
+"successful deployment of an environment session."
+msgstr ""
+
+#: ../../specification/murano-api.rst:573
+msgid "Get application details"
+msgstr ""
+
+#: ../../specification/murano-api.rst:575
+msgid ""
+"Using GET requests to applications endpoint user works with list containing "
+"all applications for specified environment. A user can request a whole list,"
+" specific application, or specific attribute of a specific application using"
+" tree traversing. To request a specific application, the user should add to "
+"endpoint part an application id, e.g.: "
+"*/environments/<env_id>/services/<application_id>*. For selection of "
+"specific attribute on application, simply appending part with attribute name"
+" will work. For example to request application name, user should use next "
+"endpoint: */environments/<env_id>/services/<application_id>/name*"
+msgstr ""
+
+#: ../../specification/murano-api.rst:589
+msgid "/environments/<env_id>/services<app_id>"
+msgstr ""
+
+#: ../../specification/murano-api.rst:592
+#: ../../specification/murano-api.rst:708
+#: ../../specification/murano-api.rst:731
+#: ../../specification/murano-api.rst:884
+#: ../../specification/murano-api.rst:924
+msgid "**Parameters:**"
+msgstr ""
+
+#: ../../specification/murano-api.rst:594
+#: ../../specification/murano-api.rst:710
+#: ../../specification/murano-api.rst:733
+#: ../../specification/murano-api.rst:886
+#: ../../specification/murano-api.rst:926
+msgid "`env_id` - environment ID, required"
+msgstr ""
+
+#: ../../specification/murano-api.rst:595
+#: ../../specification/murano-api.rst:711
+msgid "`app_id` - application ID, optional"
+msgstr ""
+
+#: ../../specification/murano-api.rst:626
+msgid "POST applications"
+msgstr ""
+
+#: ../../specification/murano-api.rst:628
+msgid ""
+"New application can be added to the murano environment using session. Result"
+" JSON is calculated in Murano dashboard, which based on `UI definition "
+"<Dynamic UI Spec>`_"
+msgstr ""
+
+#: ../../specification/murano-api.rst:639
+msgid "/environments/<env_id>/services"
+msgstr ""
+
+#: ../../specification/murano-api.rst:639
+msgid "X-Configuration-Session"
+msgstr ""
+
+#: ../../specification/murano-api.rst:667
+msgid "Created application returned"
+msgstr ""
+
+#: ../../specification/murano-api.rst:696
+msgid "Delete application from environment"
+msgstr ""
+
+#: ../../specification/murano-api.rst:698
+msgid "Delete one or all applications from the environment"
+msgstr ""
+
+#: ../../specification/murano-api.rst:705
+msgid "/environments/<env_id>/services/<app_id>"
+msgstr ""
+
+#: ../../specification/murano-api.rst:705
+msgid "X-Configuration-Session(optional)"
+msgstr ""
+
+#: ../../specification/murano-api.rst:714
+msgid "Statistic API"
+msgstr ""
+
+#: ../../specification/murano-api.rst:716
+msgid "Statistic API intends to provide billing feature"
+msgstr ""
+
+#: ../../specification/murano-api.rst:719
+msgid "Instance environment statistics"
+msgstr ""
+
+#: ../../specification/murano-api.rst:723
+msgid ""
+"Get information about all deployed instances in the specified environment"
+msgstr ""
+
+#: ../../specification/murano-api.rst:728
+msgid "/environments/<env_id>/instance-statistics/raw/<instance_id>"
+msgstr ""
+
+#: ../../specification/murano-api.rst:734
+msgid ""
+"`instance_id` - ID of the instance for which need to provide statistic "
+"information, optional"
+msgstr ""
+
+#: ../../specification/murano-api.rst:742
+#: ../../specification/murano-api.rst:784
+msgid "type"
+msgstr ""
+
+#: ../../specification/murano-api.rst:742
+#: ../../specification/murano-api.rst:784
+msgid "Code of the statistic object; 200 - instance, 100 - application"
+msgstr ""
+
+#: ../../specification/murano-api.rst:744
+msgid "type_name"
+msgstr ""
+
+#: ../../specification/murano-api.rst:744
+#: ../../specification/murano-api.rst:822
+#: ../../specification/murano-api.rst:824
+msgid "Class name of the statistic object"
+msgstr ""
+
+#: ../../specification/murano-api.rst:746
+msgid "instance_id"
+msgstr ""
+
+#: ../../specification/murano-api.rst:746
+msgid "Id of deployed instance"
+msgstr ""
+
+#: ../../specification/murano-api.rst:748
+msgid "active"
+msgstr ""
+
+#: ../../specification/murano-api.rst:748
+#: ../../specification/murano-api.rst:830
+#: ../../specification/murano-repository.rst:57
+#: ../../specification/murano-repository.rst:74
+#: ../../specification/murano-repository.rst:76
+msgid "bool"
+msgstr ""
+
+#: ../../specification/murano-api.rst:748
+msgid "Instance status"
+msgstr ""
+
+#: ../../specification/murano-api.rst:750
+msgid "type_title"
+msgstr ""
+
+#: ../../specification/murano-api.rst:750
+msgid "User-friendly name for browsing statistic in UI"
+msgstr ""
+
+#: ../../specification/murano-api.rst:752
+#: ../../specification/murano-api.rst:786
+msgid "duration"
+msgstr ""
+
+#: ../../specification/murano-api.rst:752
+msgid "Seconds of instance uptime"
+msgstr ""
+
+#: ../../specification/murano-api.rst:776
+msgid "/environments/<env_id>/instance-statistics/aggregated"
+msgstr ""
+
+#: ../../specification/murano-api.rst:786
+msgid "Amount uptime of specified type objects"
+msgstr ""
+
+#: ../../specification/murano-api.rst:788
+msgid "count"
+msgstr ""
+
+#: ../../specification/murano-api.rst:788
+msgid "Quantity of specified type objects"
+msgstr ""
+
+#: ../../specification/murano-api.rst:805
+msgid "General Request Statistics"
+msgstr ""
+
+#: ../../specification/murano-api.rst:812
+msgid "/stats"
+msgstr ""
+
+#: ../../specification/murano-api.rst:820
+msgid "requests_per_tenant"
+msgstr ""
+
+#: ../../specification/murano-api.rst:820
+msgid "Number of incoming requests for user tenant"
+msgstr ""
+
+#: ../../specification/murano-api.rst:822
+msgid "errors_per_second"
+msgstr ""
+
+#: ../../specification/murano-api.rst:824
+msgid "errors_count"
+msgstr ""
+
+#: ../../specification/murano-api.rst:826
+msgid "requests_per_second"
+msgstr ""
+
+#: ../../specification/murano-api.rst:826
+#: ../../specification/murano-api.rst:836
+msgid "float"
+msgstr ""
+
+#: ../../specification/murano-api.rst:826
+msgid "Average number of incoming request received in one second"
+msgstr ""
+
+#: ../../specification/murano-api.rst:828
+msgid "requests_count"
+msgstr ""
+
+#: ../../specification/murano-api.rst:828
+msgid "Number of all requests sent to the server"
+msgstr ""
+
+#: ../../specification/murano-api.rst:830
+msgid "cpu_percent"
+msgstr ""
+
+#: ../../specification/murano-api.rst:830
+msgid "Current cpu usage"
+msgstr ""
+
+#: ../../specification/murano-api.rst:832
+msgid "cpu_count"
+msgstr ""
+
+#: ../../specification/murano-api.rst:832
+msgid "Available cpu power is ``cpu_count * 100%``"
+msgstr ""
+
+#: ../../specification/murano-api.rst:834
+msgid "host"
+msgstr ""
+
+#: ../../specification/murano-api.rst:834
+msgid "Server host-name"
+msgstr ""
+
+#: ../../specification/murano-api.rst:836
+msgid "average_response_time"
+msgstr ""
+
+#: ../../specification/murano-api.rst:836
+msgid "Average time response waiting, seconds"
+msgstr ""
+
+#: ../../specification/murano-api.rst:863
+msgid "Actions API"
+msgstr ""
+
+#: ../../specification/murano-api.rst:865
+msgid ""
+"Murano Actions are simple MuranoPL methods, that can be called on deployed "
+"applications. Application contains a list with available actions. Actions "
+"may return a result."
+msgstr ""
+
+#: ../../specification/murano-api.rst:869
+msgid "Execute an action"
+msgstr ""
+
+#: ../../specification/murano-api.rst:871
+msgid ""
+"Generate task with executing specified action. Input parameters may be "
+"provided."
+msgstr ""
+
+#: ../../specification/murano-api.rst:881
+msgid "/environments/<env_id>/actions/<action_id>"
+msgstr ""
+
+#: ../../specification/murano-api.rst:887
+msgid "`actions_id` - action ID to execute, required"
+msgstr ""
+
+#: ../../specification/murano-api.rst:899
+msgid "Task ID that executes specified action is returned"
+msgstr ""
+
+#: ../../specification/murano-api.rst:911
+msgid "GET action result"
+msgstr ""
+
+#: ../../specification/murano-api.rst:913
+msgid ""
+"Request result value after action execution finish. Not all actions have "
+"return values."
+msgstr ""
+
+#: ../../specification/murano-api.rst:921
+msgid "/environments/<env_id>/actions/<task_id>"
+msgstr ""
+
+#: ../../specification/murano-api.rst:927
+msgid "`task_id` - task ID, generated on desired action execution"
+msgstr ""
+
+#: ../../specification/murano-api.rst:931
+msgid ""
+"Json, describing action result is returned. Result type and value are "
+"provided."
+msgstr ""
+
+#: ../../specification/murano-repository.rst:17
+msgid "Application catalog API"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:19
+msgid ""
+"Manage application definitions in the Application Catalog. You can browse, "
+"edit and upload new application packages (.zip.package archive with all data"
+" that required for a service deployment)."
+msgstr ""
+
+#: ../../specification/murano-repository.rst:23
+msgid "Packages"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:25
+msgid "Methods for application package management"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:27
+msgid "**Package Properties**"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:29
+msgid ""
+"``id``: guid of a package (``fully_qualified_name`` can also be used for "
+"some API functions)"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:30
+msgid ""
+"``fully_qualified_name``: fully qualified domain name -  domain name that "
+"specifies exact application location"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:31
+msgid "``name``: user-friendly name"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:32
+msgid "``type``: package type, \"library\" or \"application\""
+msgstr ""
+
+#: ../../specification/murano-repository.rst:33
+msgid "``description``: text information about application"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:34
+msgid "``author``: name of application author"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:35
+msgid ""
+"``tags``: list of short names, connected with the package, which allows to "
+"search applications easily"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:36
+msgid "``categories``: list of application categories"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:37
+msgid "``class_definition``: list of class names used by a package"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:38
+msgid ""
+"``is_public``: determines whether the package is shared for other tenants"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:39
+msgid ""
+"``enabled``: determines whether the package is browsed in the Application "
+"Catalog"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:40
+msgid "``owner_id``: id of a tenant that owns the package"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:43
+msgid "List packages"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:45
+msgid ""
+"`/v1/catalog/packages?{marker}{limit}{order_by}{type}{category}{fqn}{owned}{catalog}{class_name}"
+" [GET]`"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:47
+msgid ""
+"This is the compound request to list and search through application catalog."
+" If there are no search parameters all packages that is_public, enabled and "
+"belong to the user's tenant will be listed. Default order is by 'created' "
+"field. For an admin role all packages are available."
+msgstr ""
+
+#: ../../specification/murano-repository.rst:52
+#: ../../specification/murano-repository.rst:191
+#: ../../specification/murano-repository.rst:237
+#: ../../specification/murano-repository.rst:313
+#: ../../specification/murano-repository.rst:329
+#: ../../specification/murano-repository.rst:349
+#: ../../specification/murano-repository.rst:377
+msgid "**Parameters**"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:57
+msgid "``catalog``"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:57
+msgid ""
+"If false (default) - search packages, that current user can edit (own for "
+"non-admin, all for admin) If true - search packages, that current user can "
+"deploy (i.e. his own + public)"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:60
+msgid "``marker``"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:60
+msgid ""
+"A package identifier marker may be specified. When present only packages "
+"which occur after the identifier ID will be listed"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:62
+msgid "``limit``"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:62
+msgid ""
+"When present the maximum number of results returned will not exceed the "
+"specified value. The typical pattern of limit and marker is to make an "
+"initial limited request and then to use the ID of the last package from the "
+"response as the marker parameter in a subsequent limited request."
+msgstr ""
+
+#: ../../specification/murano-repository.rst:66
+msgid "``order_by``"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:66
+msgid ""
+"Allows to sort packages by: `fqn`, `name`, `created`. Created is default "
+"value."
+msgstr ""
+
+#: ../../specification/murano-repository.rst:68
+msgid "``type``"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:68
+msgid "Allows to point a type of package: `application`, `library`"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:70
+msgid "``category``"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:70
+msgid "Allows to point a categories for a search"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:72
+msgid "``fqn``"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:72
+msgid "Allows to point a fully qualified package name for a search"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:74
+msgid "``owned``"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:74
+msgid "Search only from packages owned by current tenant"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:76
+msgid "``include_disabled``"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:76
+msgid "Include disabled packages in a the result"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:78
+msgid "``search``"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:78
+msgid ""
+"Gives opportunity to search specified data by all the package parameters"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:80
+msgid "``class_name``"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:80
+msgid "Search only for packages, that use specified class"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:83
+#: ../../specification/murano-repository.rst:158
+#: ../../specification/murano-repository.rst:195
+#: ../../specification/murano-repository.rst:271
+#: ../../specification/murano-repository.rst:408
+#: ../../specification/murano-repository.rst:433
+msgid "**Response 200 (application/json)**"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:121
+msgid "Upload a new package[POST]"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:123
+msgid "`/v1/catalog/packages`"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:125
+msgid ""
+"See the example of multipart/form-data request, It should contain two parts "
+"- text (json string) and file object"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:127
+msgid "**Request (multipart/form-data)**"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:185
+msgid "Get package details"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:187
+msgid "`/v1/catalog/packages/{id} [GET]`"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:189
+msgid "Display details for a package."
+msgstr ""
+
+#: ../../specification/murano-repository.rst:193
+#: ../../specification/murano-repository.rst:239
+#: ../../specification/murano-repository.rst:331
+#: ../../specification/murano-repository.rst:351
+#: ../../specification/murano-repository.rst:379
+msgid ""
+"``id`` (required)  Hexadecimal `id` (or fully qualified name) of the package"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:221
+#: ../../specification/murano-repository.rst:297
+#: ../../specification/murano-repository.rst:361
+#: ../../specification/murano-repository.rst:385
+msgid "**Response 403**"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:223
+msgid ""
+"In attempt to get a non-public package by a user whose tenant is not an "
+"owner of this package."
+msgstr ""
+
+#: ../../specification/murano-repository.rst:225
+#: ../../specification/murano-repository.rst:303
+#: ../../specification/murano-repository.rst:317
+#: ../../specification/murano-repository.rst:337
+#: ../../specification/murano-repository.rst:357
+#: ../../specification/murano-repository.rst:365
+#: ../../specification/murano-repository.rst:390
+msgid "**Response 404**"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:227
+msgid "In case the specified package id doesn't exist."
+msgstr ""
+
+#: ../../specification/murano-repository.rst:230
+msgid "Update a package"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:232
+msgid "`/v1/catalog/packages/{id} [PATCH]`"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:234
+msgid ""
+"Allows to edit mutable fields (categories, tags, name, description, "
+"is_public, enabled). See the full specification `here "
+"<http://tools.ietf.org/html/rfc6902>`_."
+msgstr ""
+
+#: ../../specification/murano-repository.rst:241
+msgid "**Content type**"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:243
+msgid "application/murano-packages-json-patch"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:245
+msgid "Allowed operations:"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:262
+msgid "**Request 200 (application/murano-packages-json-patch)**"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:299
+msgid "An attempt to update immutable fields"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:300
+msgid ""
+"An attempt to perform operation that is not allowed on the specified path"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:301
+msgid ""
+"An attempt to update non-public package by user whose tenant is not an owner"
+" of this package"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:305
+msgid "An attempt to update package that doesn't exist"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:309
+msgid "Delete application definition from the catalog"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:311
+msgid "`/v1/catalog/packages/{id} [DELETE]`"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:315
+msgid ""
+"``id`` (required)  Hexadecimal `id` (or fully qualified name) of the package"
+" to delete"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:319
+msgid "An attempt to delete package that doesn't exist"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:323
+msgid "Get application package"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:325
+msgid "`/v1/catalog/packages/{id}/download [GET]`"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:327
+msgid "Get application definition package"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:333
+msgid "**Response 200 (application/octetstream)**"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:335
+msgid "The sequence of bytes representing package content"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:339
+#: ../../specification/murano-repository.rst:359
+#: ../../specification/murano-repository.rst:367
+msgid "Specified package id doesn't exist"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:343
+msgid "Get UI definition"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:345
+msgid "`/v1/catalog/packages/{id}/ui [GET]`"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:347
+msgid ""
+"Retrieve UI definition for a application which described in a package with "
+"provided id"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:353
+#: ../../specification/murano-repository.rst:381
+msgid "**Response 200 (application/octet-stream)**"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:355
+msgid "The sequence of bytes representing UI definition"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:363
+#: ../../specification/murano-repository.rst:387
+#: ../../specification/murano-repository.rst:392
+msgid ""
+"Specified package is not public and not owned by user tenant, performing the"
+" request"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:371
+msgid "Get logo"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:373
+msgid ""
+"Retrieve application logo which described in a package with provided id"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:375
+msgid "`/v1/catalog/packages/{id}/logo [GET]`"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:383
+msgid "The sequence of bytes representing application logo"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:396
+msgid "Categories"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:398
+msgid ""
+"Provides category management. Categories are used in the Application Catalog"
+" to group application for easy browsing and search."
+msgstr ""
+
+#: ../../specification/murano-repository.rst:402
+msgid "List categories"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:404
+msgid "`/v1/catalog/packages/categories [GET]`"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:406
+msgid ""
+"!DEPRECATED (Plan to remove in L release) Retrieve list of all available "
+"application categories"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:410
+msgid "A list, containing category names"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:413
+#: ../../specification/murano-repository.rst:438
+#: ../../specification/murano-repository.rst:483
+#: ../../specification/murano-repository.rst:536
+#: ../../specification/murano-env-temp.rst:118
+#: ../../specification/murano-env-temp.rst:167
+#: ../../specification/murano-env-temp.rst:240
+#: ../../specification/murano-env-temp.rst:320
+#: ../../specification/murano-env-temp.rst:393
+msgid "*Content-Type*"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:422
+msgid "`/v1/catalog/categories [GET]`"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:427
+#: ../../specification/murano-repository.rst:532
+msgid "/catalog/categories"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:427
+msgid "Get list of existing categories"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:431
+msgid "Retrieve list of all available application categories"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:435
+msgid "A list, containing detailed information about each category"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:462
+msgid "Get category details"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:464
+msgid "`/catalog/categories/<category_id> [GET]`"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:466
+msgid "Return detailed information for a provided category"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:473
+#: ../../specification/murano-repository.rst:575
+msgid "/catalog/categories/<category_id>"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:473
+msgid "Get category detail"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:476
+#: ../../specification/murano-repository.rst:519
+msgid "*Parameters*"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:478
+#: ../../specification/murano-repository.rst:580
+msgid "``category_id`` - required, category ID, required"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:505
+#: ../../specification/murano-repository.rst:587
+msgid "OK. Category deleted successfully"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:509
+#: ../../specification/murano-repository.rst:591
+msgid "Not found. Specified category doesn`t exist"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:513
+msgid "Add new category"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:515
+msgid "`/catalog/categories [POST]`"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:517
+msgid "Add new category to the Application Catalog"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:532
+msgid "Create new category"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:539
+#: ../../specification/murano-env-temp.rst:121
+#: ../../specification/murano-env-temp.rst:242
+#: ../../specification/murano-env-temp.rst:395
+msgid "*Example*"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:539
+msgid "{\"name\": \"category_name\"}"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:557
+msgid "OK. Category created successfully"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:561
+msgid "Conflict. Category with specified name already exist"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:566
+msgid "Delete category"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:568
+msgid "`/catalog/categories [DELETE]`"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:575
+msgid "Delete category with specified id"
+msgstr ""
+
+#: ../../specification/murano-repository.rst:593
+msgid ""
+"Forbidden. Category with specified name is assigned to the package, "
+"presented in the catalog"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:17
+msgid "Environment template API"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:19
+msgid ""
+"Manage environment template definitions in Murano. It is possible to create,"
+" update, delete and deploy into OpenStack by translating it into an "
+"environment. In addition, applications can be added or delete to the "
+"environment template."
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:22
+msgid "**Environment Template Properties**"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:41
+msgid "description"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:41
+msgid "The environment template specification"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:54
+msgid "Methods for Environment Template API"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:57
+msgid "List Environments Templates"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:64
+#: ../../specification/murano-env-temp.rst:114
+msgid "/templates"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:64
+msgid "Get a list of existing environment templates"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:70
+msgid ""
+"This call returns a list of environment templates. Only the basic properties"
+" are returned."
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:100
+msgid "Create environment template"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:114
+msgid "Create a new environment template"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:121
+msgid "{\"name\": \"env_temp_name\"}"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:135
+#: ../../specification/murano-env-temp.rst:183
+#: ../../specification/murano-env-temp.rst:211
+#: ../../specification/murano-env-temp.rst:292
+#: ../../specification/murano-env-temp.rst:360
+#: ../../specification/murano-env-temp.rst:416
+msgid "*Error code*"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:144
+msgid "The environment template already exists"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:149
+msgid "Get environment templates details"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:153
+msgid ""
+"Return information about environment template itself and about applications,"
+" including to this environment template."
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:162
+msgid "`env-temp-id` - environment template ID, required"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:188
+#: ../../specification/murano-env-temp.rst:216
+#: ../../specification/murano-env-temp.rst:297
+#: ../../specification/murano-env-temp.rst:365
+msgid "OK. Environment Template created successfully"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:192
+#: ../../specification/murano-env-temp.rst:220
+#: ../../specification/murano-env-temp.rst:301
+#: ../../specification/murano-env-temp.rst:369
+#: ../../specification/murano-env-temp.rst:425
+msgid "The environment template does not exit"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:196
+msgid "Delete environment template"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:203
+msgid "/templates/<env-temp-id>"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:203
+msgid "Delete the template id"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:209
+msgid "`env-temp_id` - environment template ID, required"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:224
+msgid "Adding application to environment template"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:231
+msgid "/templates/{env-temp-id}/services"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:231
+msgid "Create a new application"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:236
+msgid "`env-temp-id` - The environment-template id, required"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:237
+msgid "payload - the service description"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:305
+msgid "Get applications information from an environment template"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:310
+msgid "URI                                 | Description"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:312
+msgid ""
+"/templates/{env-temp-id}/services   | It obtains the service description"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:317
+#: ../../specification/murano-env-temp.rst:386
+msgid "`env-temp-id` - The environment template ID, required"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:373
+msgid "Create an environment from an environment template"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:378
+msgid "URI                                        | Description"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:380
+msgid "/templates/{env-temp-id}/create-environment| Create an environment"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:388
+msgid "*Payload:*"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:390
+msgid "'environment name': The environment name to be created."
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:421
+msgid "OK. Environment template created successfully"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:427
+msgid "The environment already exists"
+msgstr ""

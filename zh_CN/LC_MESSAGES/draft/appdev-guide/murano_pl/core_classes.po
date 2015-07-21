@@ -1,0 +1,26 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/appdev-guide/murano_pl/core_classes.rst:4
+msgid "Core library"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/core_classes.rst:6
+msgid ""
+"You can use some objects and actions in several application deployments. All"
+" common parts are grouped into MuranoPL libraries. Murano core library is a "
+"set of classes needed in every deployment as helpers for application "
+"classes. This library is located under the `meta "
+"<http://git.openstack.org/cgit/openstack/murano/tree/meta/io.murano/>`_ "
+"directory."
+msgstr ""

@@ -1,0 +1,56 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/intro/use_cases.rst:8
+msgid "Use cases"
+msgstr ""
+
+#: ../../draft/intro/use_cases.rst:10
+msgid "*IT as a Service*"
+msgstr ""
+
+#: ../../draft/intro/use_cases.rst:12
+msgid ""
+"An IT organization wants to control applications, available to cloud users. "
+"Application management should be simple and not time-consuming. Users should"
+" be able to easily find and create the desired applications."
+msgstr ""
+
+#: ../../draft/intro/use_cases.rst:16
+msgid "*Self-service portal*"
+msgstr ""
+
+#: ../../draft/intro/use_cases.rst:18
+msgid ""
+"You may want to create compound combinations of applications dynamically "
+"from simple app blocks. And you can create an environment that satisfies "
+"your requirements in a matter of minutes. Examples of such an environment "
+"may be “Jenkins+Java+Tomcat” or “Jenkins+Gerrit+Java+JBoss”. So testing "
+"application in different environment combinations becomes easier."
+msgstr ""
+
+#: ../../draft/intro/use_cases.rst:24
+msgid "*Glue layer use case*"
+msgstr ""
+
+#: ../../draft/intro/use_cases.rst:26
+msgid ""
+"Any external service or technology may be linked to the application in the "
+"cloud. It can be done using the powerful Murano architecture. For example, "
+"Murano supports Docker and OracleDB applications, and to enable this support"
+" no single change was made to Murano itself. So, users can integrate with "
+"new external services with a minimum cost. Currently, murano applications "
+"have been integrated with the following technologies: Docker, Legacy apps "
+"VMs or bare metal, apps outside of OpenStack, and the following ones are "
+"planned for the future: cloudify and TOSCA, apache brooklin, APS."
+msgstr ""

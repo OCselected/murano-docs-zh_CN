@@ -1,0 +1,193 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../articles/heat_support.rst:18
+msgid "Uploading HOT templates to the application catalog"
+msgstr ""
+
+#: ../../articles/heat_support.rst:20
+msgid ""
+"Murano is an Application catalog which intends to support applications, "
+"defined in different formats. As a first step to universality, heat "
+"orchestration template support was added. It means that any heat template "
+"could be added as a separate application into the Application Catalog. This "
+"could be done in two ways: manual and automatic."
+msgstr ""
+
+#: ../../articles/heat_support.rst:24
+msgid "Automatic package composing"
+msgstr ""
+
+#: ../../articles/heat_support.rst:25
+msgid ""
+"Before uploading an application into the catalog, it should be prepared and "
+"archived. Murano command line will do all preparation for you. Just choose "
+"the desired Heat Orchestration Template and perform the following command:"
+msgstr ""
+
+#: ../../articles/heat_support.rst:33
+msgid "Note, that optional parameters could be specified:"
+msgstr ""
+
+#: ../../articles/heat_support.rst:35
+msgid "Application name, copied from template by default"
+msgstr ""
+
+#: ../../articles/heat_support.rst:36
+msgid "Application square logo, by default heat logo will be used"
+msgstr ""
+
+#: ../../articles/heat_support.rst:37
+msgid "Text information about an application, by default copied from template"
+msgstr ""
+
+#: ../../articles/heat_support.rst:38
+msgid "Name of application author, by default is set to"
+msgstr ""
+
+#: ../../articles/heat_support.rst:39
+msgid "Name of the output file archive to save locally"
+msgstr ""
+
+#: ../../articles/heat_support.rst:40
+msgid ""
+"Fully qualified domain name - domain name that specifies exact application "
+"location"
+msgstr ""
+
+#: ../../articles/heat_support.rst:43
+msgid ""
+"To performing this command python-muranoclient should be installed in the "
+"system"
+msgstr ""
+
+#: ../../articles/heat_support.rst:45
+msgid ""
+"As the result, application definition archive will be ready for an "
+"uploading."
+msgstr ""
+
+#: ../../articles/heat_support.rst:48
+msgid "Manual package composing"
+msgstr ""
+
+#: ../../articles/heat_support.rst:49
+msgid ""
+"Application package could be composed manually. Follow the 5 steps below."
+msgstr ""
+
+#: ../../articles/heat_support.rst:51
+msgid "*Step 1. Choose the desired heat orchestration template*"
+msgstr ""
+
+#: ../../articles/heat_support.rst:52
+msgid "*Step 2. Rename it to template.yaml*"
+msgstr ""
+
+#: ../../articles/heat_support.rst:53
+msgid "*Step 3. Prepare application logo (optional step)*"
+msgstr ""
+
+#: ../../articles/heat_support.rst:55
+msgid "It could be any picture associated with the application."
+msgstr ""
+
+#: ../../articles/heat_support.rst:57
+msgid "*Step 4. Create manifest.yaml file*"
+msgstr ""
+
+#: ../../articles/heat_support.rst:59
+msgid ""
+"All service information about the application is contained here. Specify the"
+" following parameters:"
+msgstr ""
+
+#: ../../articles/heat_support.rst:61
+msgid ""
+"Defines application definition format; should be set to ``Heat.HOT/1.0``"
+msgstr ""
+
+#: ../../articles/heat_support.rst:62
+msgid "Defines manifest type, should be set to ``Application``"
+msgstr ""
+
+#: ../../articles/heat_support.rst:63
+msgid ""
+"Unique name which will be used to identify the application in Murano Catalog"
+msgstr ""
+
+#: ../../articles/heat_support.rst:64
+msgid "Text information about an application"
+msgstr ""
+
+#: ../../articles/heat_support.rst:65
+msgid "Name of application author or company"
+msgstr ""
+
+#: ../../articles/heat_support.rst:66
+msgid "Keywords, associated with the application"
+msgstr ""
+
+#: ../../articles/heat_support.rst:67
+msgid "Name of the application logo file"
+msgstr ""
+
+#: ../../articles/heat_support.rst:69
+msgid "Take a look at the example:"
+msgstr ""
+
+#: ../../articles/heat_support.rst:85
+msgid ""
+"*Step 5. Create a zip archive, containing specified files(* "
+"``template.yaml``, ``manifest.yaml``, ``logo.png``)"
+msgstr ""
+
+#: ../../articles/heat_support.rst:89
+msgid "Package uploading"
+msgstr ""
+
+#: ../../articles/heat_support.rst:91
+msgid ""
+"After application package is ready, it can be uploaded to the catalog in two"
+" ways:"
+msgstr ""
+
+#: ../../articles/heat_support.rst:94
+msgid "Using murano CLI"
+msgstr ""
+
+#: ../../articles/heat_support.rst:96
+msgid ""
+"During uploading, it's required to provide category, that application "
+"belongs to. To browse all available categories preform:"
+msgstr ""
+
+#: ../../articles/heat_support.rst:103
+msgid "Specify any suitable category and path to the application archive."
+msgstr ""
+
+#: ../../articles/heat_support.rst:110
+msgid "Using Murano Dashboard"
+msgstr ""
+
+#: ../../articles/heat_support.rst:112
+msgid ""
+"Package uploading is available for admin users at Murano -> Manage -> "
+"Packages page."
+msgstr ""
+
+#: ../../articles/heat_support.rst:116
+msgid ""
+"After that, application is available in the Catalog and could be selected "
+"for a deployment."
+msgstr ""

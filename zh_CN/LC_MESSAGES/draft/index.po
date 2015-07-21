@@ -1,0 +1,73 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/index.rst:8
+msgid "Welcome to Murano Documentation (BETA)"
+msgstr ""
+
+#: ../../draft/index.rst:10
+msgid ""
+"**Murano** is an open source OpenStack project that combines an application "
+"catalog with versatile tooling to simplify and accelerate packaging and "
+"deployment. It can be used with almost any application and service in "
+"OpenStack, and is extensible to other clouds."
+msgstr ""
+
+#: ../../draft/index.rst:17
+msgid ""
+"This documentation guides application developers through the process of "
+"composing an application package to get it ready for uploading to Murano."
+msgstr ""
+
+#: ../../draft/index.rst:21
+msgid ""
+"Besides the deployment rules and requirements, it contains information on "
+"how to manage images, categories, and repositories using the murano client "
+"that will surely be helpful for cloud administrators."
+msgstr ""
+
+#: ../../draft/index.rst:26
+msgid ""
+"It also explains to end users how they can use the catalog directly from the"
+" dashboard. These include guidance on how to manage applications and "
+"environments."
+msgstr ""
+
+#: ../../draft/index.rst:30
+msgid ""
+"And of course, it provides information on how to contribute to the project."
+msgstr ""
+
+#: ../../draft/index.rst:34
+msgid "Introduction to Murano"
+msgstr ""
+
+#: ../../draft/index.rst:45
+msgid "Using Murano"
+msgstr ""
+
+#: ../../draft/index.rst:56
+msgid "Deploying Murano"
+msgstr ""
+
+#: ../../draft/index.rst:70
+msgid "Developing Applications"
+msgstr ""
+
+#: ../../draft/index.rst:85
+msgid "Contributing"
+msgstr ""
+
+#: ../../draft/index.rst:98
+msgid "Appendix"
+msgstr ""

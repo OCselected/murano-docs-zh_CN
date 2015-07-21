@@ -1,0 +1,113 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../guidelines.rst:3
+msgid "Development Guidelines"
+msgstr ""
+
+#: ../../guidelines.rst:6
+msgid "Coding Guidelines"
+msgstr ""
+
+#: ../../guidelines.rst:8
+msgid "For all the code in Murano we have a rule - it should pass `PEP 8`_."
+msgstr ""
+
+#: ../../guidelines.rst:10
+msgid "To check your code against PEP 8 run:"
+msgstr ""
+
+#: ../../guidelines.rst:19
+msgid "https://pep8.readthedocs.org/en/latest/"
+msgstr ""
+
+#: ../../guidelines.rst:20
+msgid "https://flake8.readthedocs.org"
+msgstr ""
+
+#: ../../guidelines.rst:21
+msgid "http://docs.openstack.org/developer/hacking/"
+msgstr ""
+
+#: ../../guidelines.rst:25
+msgid "Testing Guidelines"
+msgstr ""
+
+#: ../../guidelines.rst:27
+msgid ""
+"Murano has a suite of tests that are run on all submitted code, and it is "
+"recommended that developers execute the tests themselves to catch "
+"regressions early.  Developers are also expected to keep the test suite up-"
+"to-date with any submitted code changes."
+msgstr ""
+
+#: ../../guidelines.rst:32
+msgid "Unit tests are located at ``muranoapi/tests``."
+msgstr ""
+
+#: ../../guidelines.rst:34
+msgid ""
+"Murano's suite of unit tests can be executed in an isolated environment with"
+" `Tox`_. To execute the unit tests run the following from the root of Murano"
+" repo on Python 2.7:"
+msgstr ""
+
+#: ../../guidelines.rst:42
+msgid "For Python 2.6:"
+msgstr ""
+
+#: ../../guidelines.rst:50
+msgid "Documentation Guidelines"
+msgstr ""
+
+#: ../../guidelines.rst:52
+msgid ""
+"Murano dev-docs are written using Sphinx / RST and located in the main repo "
+"in ``doc`` directory."
+msgstr ""
+
+#: ../../guidelines.rst:55
+msgid ""
+"The documentation in docstrings should follow the `PEP 257`_ conventions (as"
+" mentioned in the `PEP 8`_ guidelines)."
+msgstr ""
+
+#: ../../guidelines.rst:58
+msgid "More specifically:"
+msgstr ""
+
+#: ../../guidelines.rst:60
+msgid "Triple quotes should be used for all docstrings."
+msgstr ""
+
+#: ../../guidelines.rst:61
+msgid ""
+"If the docstring is simple and fits on one line, then just use one line."
+msgstr ""
+
+#: ../../guidelines.rst:63
+msgid ""
+"For docstrings that take multiple lines, there should be a newline after the"
+" opening quotes, and before the closing quotes."
+msgstr ""
+
+#: ../../guidelines.rst:65
+msgid ""
+"`Sphinx`_ is used to build documentation, so use the restructured text "
+"markup to designate parameters, return values, etc.  Documentation on the "
+"sphinx specific markup can be found here:"
+msgstr ""
+
+#: ../../guidelines.rst:71
+msgid "Run the following command to build docs locally."
+msgstr ""

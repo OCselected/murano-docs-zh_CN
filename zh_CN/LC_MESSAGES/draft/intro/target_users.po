@@ -1,0 +1,77 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/intro/target_users.rst:5
+msgid "Target Users"
+msgstr ""
+
+#: ../../draft/intro/target_users.rst:7
+msgid ""
+"Cloud end users want to simply use applications as opposed to installing and"
+" managing them. Cloud administrators, in turn, would like to offer a well "
+"tested set of on demand self-service applications to dramatically reduce "
+"their support burden."
+msgstr ""
+
+#: ../../draft/intro/target_users.rst:12
+msgid ""
+"Murano solves the problems of both constituents. It enables cloud "
+"administrators to publish cloud-ready applications in an online catalog. "
+"Cloud end users can use the catalog to deploy these on demand applications, "
+"reliably and consistently, with a button click."
+msgstr ""
+
+#: ../../draft/intro/target_users.rst:20
+msgid "Cloud administrators"
+msgstr ""
+
+#: ../../draft/intro/target_users.rst:22
+msgid ""
+"For cloud administrators Murano provides UI and API to easily compose, "
+"deploy, run applications, and manage their lifecycle."
+msgstr ""
+
+#: ../../draft/intro/target_users.rst:26
+msgid ""
+"Designed to be operating system independent, it can handle apps on all "
+"manner of the environments in the cloud, either Windows or Linux/Unix-based "
+"operating systems."
+msgstr ""
+
+#: ../../draft/intro/target_users.rst:30
+msgid ""
+"It can be used to pre-configure and deploy anything that can run in the "
+"cloud, from low-level networking services to end-user applications. By "
+"automating these ongoing cloud application management activities, Murano "
+"speeds up the deployment, even for complex distributed applications, without"
+" sacrificing simplicity of use."
+msgstr ""
+
+#: ../../draft/intro/target_users.rst:41
+msgid "Cloud end users"
+msgstr ""
+
+#: ../../draft/intro/target_users.rst:43
+msgid ""
+"Murano catalog lets cloud end users choose from the available applications "
+"and services, and compose reliable distributed environments with an "
+"intuitive UI. Even users unfamiliar with cloud environments can easily "
+"deploy cloud-aware applications."
+msgstr ""
+
+#: ../../draft/intro/target_users.rst:49
+msgid ""
+"Murano masks cloud-infrastructure specifics from end users, letting them "
+"reliably compose and deploy applications in the cloud for the widest range "
+"of workloads and use cases without touching IaaS internals."
+msgstr ""

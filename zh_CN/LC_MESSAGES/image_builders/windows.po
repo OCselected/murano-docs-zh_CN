@@ -1,0 +1,705 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../image_builders/windows.rst:20
+msgid "Windows image"
+msgstr ""
+
+#: ../../image_builders/windows.rst:22
+msgid ""
+"Murano requires a Windows image in QCOW2 format to be built and uploaded "
+"into glance."
+msgstr ""
+
+#: ../../image_builders/windows.rst:24
+msgid ""
+"The easiest way to build a Windows image for murano is to build it on the "
+"host where your OpenStack is installed."
+msgstr ""
+
+#: ../../image_builders/windows.rst:29
+msgid "Prepare image builder host"
+msgstr ""
+
+#: ../../image_builders/windows.rst:33
+msgid "Install KVM"
+msgstr ""
+
+#: ../../image_builders/windows.rst:37
+msgid "This guide was tested on Ubuntu Server 12.04 x64."
+msgstr ""
+
+#: ../../image_builders/windows.rst:40
+msgid ""
+"KVM is a default hypervisor in OpenStack, so our build scripts are targeted "
+"to this hypervisor only. It may change in the future, though."
+msgstr ""
+
+#: ../../image_builders/windows.rst:42
+msgid ""
+"Install KVM and some additional packages that are required by our scripts"
+msgstr ""
+
+#: ../../image_builders/windows.rst:49
+msgid "Check that your hardware supports hardware virtualization."
+msgstr ""
+
+#: ../../image_builders/windows.rst:58
+msgid ""
+"If your output differs, check that hardware virtualization is enabled in "
+"your BIOS settings. You also could try import KVM kernel module"
+msgstr ""
+
+#: ../../image_builders/windows.rst:65
+msgid "or"
+msgstr ""
+
+#: ../../image_builders/windows.rst:72
+msgid ""
+"It might be helpful to add an appropriate module name into **/etc/modules** "
+"file to auto-load it during system boot. Sometimes it is required on Ubuntu "
+"systems."
+msgstr ""
+
+#: ../../image_builders/windows.rst:77
+msgid "Configure shared resource"
+msgstr ""
+
+#: ../../image_builders/windows.rst:79
+msgid ""
+"The murano image builder uses a shared folder located on the host system as "
+"an installation source for components. Makefile from the image builder will "
+"copy the required files to their locations, but you have to manually "
+"configure samba share. To do this, use the steps below."
+msgstr ""
+
+#: ../../image_builders/windows.rst:83
+msgid "Install samba"
+msgstr ""
+
+#: ../../image_builders/windows.rst:90
+msgid "Create folder that will be shared"
+msgstr ""
+
+#: ../../image_builders/windows.rst:98
+msgid "Configure samba server (/etc/samba/smb.conf)"
+msgstr ""
+
+#: ../../image_builders/windows.rst:119
+msgid "Restart samba services"
+msgstr ""
+
+#: ../../image_builders/windows.rst:130
+msgid "Download prerequisites"
+msgstr ""
+
+#: ../../image_builders/windows.rst:136
+msgid "Windows server installation ISO"
+msgstr ""
+
+#: ../../image_builders/windows.rst:142
+msgid "Windows Version"
+msgstr ""
+
+#: ../../image_builders/windows.rst:143
+msgid "Version String"
+msgstr ""
+
+#: ../../image_builders/windows.rst:144 ../../image_builders/windows.rst:175
+#: ../../image_builders/windows.rst:231
+msgid "Save to"
+msgstr ""
+
+#: ../../image_builders/windows.rst:146
+msgid "Windows Server 2008 R2 [#win2k8r2_link]_"
+msgstr ""
+
+#: ../../image_builders/windows.rst:147
+msgid "6.1.7601"
+msgstr ""
+
+#: ../../image_builders/windows.rst:148
+msgid "/opt/image-builder/share/libvirt/images/ws-2008-eval.iso"
+msgstr ""
+
+#: ../../image_builders/windows.rst:150
+msgid "Windows Server 2012 [#win2k12_link]_"
+msgstr ""
+
+#: ../../image_builders/windows.rst:151
+msgid "6.3.9200"
+msgstr ""
+
+#: ../../image_builders/windows.rst:152
+msgid "/opt/image-builder/share/libvirt/images/ws-2012-eval.iso"
+msgstr ""
+
+#: ../../image_builders/windows.rst:157
+msgid ""
+"Windows Server 2008 R2 must include Service Pack 1 updates. This is required"
+" to install PowerShell V3 which is required by the murano Agent."
+msgstr ""
+
+#: ../../image_builders/windows.rst:161
+msgid "http://www.microsoft.com/en-us/download/details.aspx?id=11093"
+msgstr ""
+
+#: ../../image_builders/windows.rst:162
+msgid ""
+"http://technet.microsoft.com/en-"
+"US/evalcenter/hh670538.aspx?ocid=&wt.mc_id=TEC_108_1_33"
+msgstr ""
+
+#: ../../image_builders/windows.rst:168
+msgid "Required Components"
+msgstr ""
+
+#: ../../image_builders/windows.rst:174 ../../image_builders/windows.rst:230
+msgid "Component"
+msgstr ""
+
+#: ../../image_builders/windows.rst:177
+msgid "VirtIO drivers for Windows [#virtio_iso_link]_"
+msgstr ""
+
+#: ../../image_builders/windows.rst:178
+msgid "/opt/image-builder/share/libvirt/images/virtio-win-0.1-74.iso"
+msgstr ""
+
+#: ../../image_builders/windows.rst:180
+msgid "CloudBase-Init for Windows [#cloudbase_init_link]_"
+msgstr ""
+
+#: ../../image_builders/windows.rst:181
+msgid "/opt/image-builder/share/files/CloudbaseInitSetup_Beta.msi"
+msgstr ""
+
+#: ../../image_builders/windows.rst:183
+msgid ".NET 4.0 [#dot_net_40_link]_"
+msgstr ""
+
+#: ../../image_builders/windows.rst:184
+msgid "/opt/image-builder/share/files/dotNetFx40_Full_x86_x64.exe"
+msgstr ""
+
+#: ../../image_builders/windows.rst:186
+msgid "PowerShell v3 [#powershell_v3_link]_"
+msgstr ""
+
+#: ../../image_builders/windows.rst:187
+msgid "/opt/image-builder/share/files/Windows6.1-KB2506143-x64.msu"
+msgstr ""
+
+#: ../../image_builders/windows.rst:189
+msgid "Murano Agent [#murano_agent_link]_"
+msgstr ""
+
+#: ../../image_builders/windows.rst:190
+msgid "/opt/image-builder/share/files/MuranoAgent.zip"
+msgstr ""
+
+#: ../../image_builders/windows.rst:192
+msgid "Git client [#msysgit_link]_"
+msgstr ""
+
+#: ../../image_builders/windows.rst:193
+msgid "/opt/image-builder/share/files/Git-1.8.1.2-preview20130601.exe"
+msgstr ""
+
+#: ../../image_builders/windows.rst:198
+msgid ""
+"PowerShell V3 is a **mandatory** prerequisite. It is required by the murano "
+"Agent. To check your PowerShell version use PowerShell command *Get-Host*."
+msgstr ""
+
+#: ../../image_builders/windows.rst:203
+msgid ""
+"When downloading VirtIO drivers choose only stable versions. Unstable "
+"versions might lead to errors during guest unattended installation. You can "
+"check the latest version available here: "
+"http://alt.fedoraproject.org/pub/alt/virtio-win/stable"
+msgstr ""
+
+#: ../../image_builders/windows.rst:209
+msgid "http://technet.microsoft.com/en-us/evalcenter/hh670538.aspx"
+msgstr ""
+
+#: ../../image_builders/windows.rst:210
+msgid ""
+"http://alt.fedoraproject.org/pub/alt/virtio-win/stable/virtio-win-0.1-74.iso"
+msgstr ""
+
+#: ../../image_builders/windows.rst:211
+msgid "https://www.cloudbase.it/downloads/CloudbaseInitSetup_Beta.msi"
+msgstr ""
+
+#: ../../image_builders/windows.rst:212
+msgid "http://www.microsoft.com/en-us/download/details.aspx?id=17718"
+msgstr ""
+
+#: ../../image_builders/windows.rst:213
+msgid "http://www.microsoft.com/en-us/download/details.aspx?id=34595"
+msgstr ""
+
+#: ../../image_builders/windows.rst:214
+msgid ""
+"https://www.dropbox.com/sh/zthldcxnp6r4flm/AADh6LkVkcw2j8nKZevqedHja/MuranoAgent.zip"
+msgstr ""
+
+#: ../../image_builders/windows.rst:215
+msgid "https://msysgit.googlecode.com/files/Git-1.8.3-preview20130601.exe"
+msgstr ""
+
+#: ../../image_builders/windows.rst:221
+msgid "Optional Components"
+msgstr ""
+
+#: ../../image_builders/windows.rst:223
+msgid ""
+"These components are not mandatory for the murano agent to function "
+"properly. However, they may help you work with the image after deployment."
+msgstr ""
+
+#: ../../image_builders/windows.rst:233
+msgid "Far Manager [#far_manager_link]_"
+msgstr ""
+
+#: ../../image_builders/windows.rst:234
+msgid "/opt/image-builder/share/files/Far30b3367.x64.20130717.msi"
+msgstr ""
+
+#: ../../image_builders/windows.rst:236
+msgid "Sysinternals Suite [#sysinternals_link]_"
+msgstr ""
+
+#: ../../image_builders/windows.rst:237
+msgid "/opt/image-builder/share/files/SysinternalsSuite.zip"
+msgstr ""
+
+#: ../../image_builders/windows.rst:239
+msgid "unzip.exe [#unzip_link]_"
+msgstr ""
+
+#: ../../image_builders/windows.rst:240
+msgid "/opt/image-builder/share/files/unzip.exe"
+msgstr ""
+
+#: ../../image_builders/windows.rst:242
+msgid ".NET 4.5 [#dot_net_45_link]_"
+msgstr ""
+
+#: ../../image_builders/windows.rst:243
+msgid "/opt/image-builder/share/files/dotNetFx45_Full_setup.exe"
+msgstr ""
+
+#: ../../image_builders/windows.rst:247
+msgid "http://www.farmanager.com/files/Far30b3525.x64.20130717.msi"
+msgstr ""
+
+#: ../../image_builders/windows.rst:248
+msgid "http://download.sysinternals.com/files/SysinternalsSuite.zip"
+msgstr ""
+
+#: ../../image_builders/windows.rst:249
+msgid ""
+"https://www.dropbox.com/sh/zthldcxnp6r4flm/AACwiyfcrlGDt3ygCFHrbwMra/unzip.exe"
+msgstr ""
+
+#: ../../image_builders/windows.rst:250
+msgid "http://www.microsoft.com/en-us/download/details.aspx?id=30653"
+msgstr ""
+
+#: ../../image_builders/windows.rst:257
+msgid "Additional tools"
+msgstr ""
+
+#: ../../image_builders/windows.rst:259
+msgid ""
+"Tools from this section are not necessary to build an image. However, they "
+"may be helpful if you want to create an image with a different "
+"configuration."
+msgstr ""
+
+#: ../../image_builders/windows.rst:264
+msgid "Windows assessment and deployment kit (ADK)"
+msgstr ""
+
+#: ../../image_builders/windows.rst:266
+msgid ""
+"*Windows ADK* is required if you want to build your own answer files for "
+"auto unattended Windows installation."
+msgstr ""
+
+#: ../../image_builders/windows.rst:268
+msgid ""
+"Download it from http://www.microsoft.com/en-"
+"us/download/details.aspx?id=30652"
+msgstr ""
+
+#: ../../image_builders/windows.rst:272
+msgid "Floppy image with unattended file"
+msgstr ""
+
+#: ../../image_builders/windows.rst:274
+msgid ""
+"Floppy image with answer file for unattended installation is needed to "
+"automate Windows installation process."
+msgstr ""
+
+#: ../../image_builders/windows.rst:276
+msgid "Create empty floppy image in your home folder"
+msgstr ""
+
+#: ../../image_builders/windows.rst:290
+msgid "Mount the image"
+msgstr ""
+
+#: ../../image_builders/windows.rst:298
+msgid ""
+"Download **autounattend.xml.template** file from "
+"https://github.com/openstack/murano-deployment/tree/master/contrib/windows"
+"/image-builder/share/files"
+msgstr ""
+
+#: ../../image_builders/windows.rst:300
+msgid ""
+"This folder contains unattended files for several Windows versions, choose "
+"one that matches your Windows version."
+msgstr ""
+
+#: ../../image_builders/windows.rst:302
+msgid "Copy that file to mounted floppy image"
+msgstr ""
+
+#: ../../image_builders/windows.rst:309
+msgid ""
+"Replace string **%_IMAGE_BUILDER_IP_%** in that file with **192.168.122.1**"
+msgstr ""
+
+#: ../../image_builders/windows.rst:311
+msgid "Unmount the image"
+msgstr ""
+
+#: ../../image_builders/windows.rst:321
+msgid "Build Windows image with murano"
+msgstr ""
+
+#: ../../image_builders/windows.rst:327
+msgid "Build Windows image using image builder script"
+msgstr ""
+
+#: ../../image_builders/windows.rst:329
+msgid "Clone **murano-deployment** repository"
+msgstr ""
+
+#: ../../image_builders/windows.rst:336
+msgid "Change directory to image-builder folder"
+msgstr ""
+
+#: ../../image_builders/windows.rst:343
+msgid "Create folder structure for image builder"
+msgstr ""
+
+#: ../../image_builders/windows.rst:350
+msgid "Download build prerequisites, and copy them to correct folders"
+msgstr ""
+
+#: ../../image_builders/windows.rst:352
+msgid ":ref:`windows_installation_iso`"
+msgstr ""
+
+#: ../../image_builders/windows.rst:353
+msgid ":ref:`required_prerequisites`"
+msgstr ""
+
+#: ../../image_builders/windows.rst:354
+msgid ":ref:`optional_prerequisites` (Optional)"
+msgstr ""
+
+#: ../../image_builders/windows.rst:356
+msgid "Test that all required files are in place"
+msgstr ""
+
+#: ../../image_builders/windows.rst:363
+msgid "Get list of available images"
+msgstr ""
+
+#: ../../image_builders/windows.rst:370
+msgid "Run image build process (e.g. to build Windows Server 2012)"
+msgstr ""
+
+#: ../../image_builders/windows.rst:377
+msgid "Wait until process finishes"
+msgstr ""
+
+#: ../../image_builders/windows.rst:379
+msgid ""
+"The image file **ws-2012-std.qcow2** should be stored inside **/opt/image-"
+"builder/share/images** folder."
+msgstr ""
+
+#: ../../image_builders/windows.rst:384
+msgid "Build windows image manually"
+msgstr ""
+
+#: ../../image_builders/windows.rst:388
+msgid ""
+"Please note that the preferred way to build images is to use Image Builder "
+"scripts, see :ref:`build_image_using_image_builder_scripts`"
+msgstr ""
+
+#: ../../image_builders/windows.rst:393
+msgid "Get post-install scripts"
+msgstr ""
+
+#: ../../image_builders/windows.rst:395
+msgid ""
+"There are a few scripts which perform all the required post-installation "
+"tasks."
+msgstr ""
+
+#: ../../image_builders/windows.rst:397
+msgid ""
+"They all are located in http://git.openstack.org/cgit/openstack/murano-"
+"deployment/tree/contrib/windows/image-builder/share/scripts"
+msgstr ""
+
+#: ../../image_builders/windows.rst:402
+msgid ""
+"There are subfolders for each supported Windows version. Choose one that "
+"matches Windows version you are building."
+msgstr ""
+
+#: ../../image_builders/windows.rst:406
+msgid "This folder contains several scripts"
+msgstr ""
+
+#: ../../image_builders/windows.rst:412
+msgid "Script Name"
+msgstr ""
+
+#: ../../image_builders/windows.rst:413 ../../image_builders/windows.rst:504
+msgid "Description"
+msgstr ""
+
+#: ../../image_builders/windows.rst:415
+msgid "wpi.ps1"
+msgstr ""
+
+#: ../../image_builders/windows.rst:416
+msgid "Handles component installation and system configuration tasks"
+msgstr ""
+
+#: ../../image_builders/windows.rst:418
+msgid "Start-Sysprep.ps1"
+msgstr ""
+
+#: ../../image_builders/windows.rst:419
+msgid ""
+"Prepares system to be syspreped (cleans log files, stops some services and "
+"so on), and starts sysprep"
+msgstr ""
+
+#: ../../image_builders/windows.rst:421
+msgid "Start-AtFirstBoot.ps1"
+msgstr ""
+
+#: ../../image_builders/windows.rst:422
+msgid "Performs basic after-installation tasks"
+msgstr ""
+
+#: ../../image_builders/windows.rst:426
+msgid ""
+"Download these scripts and save them into /opt/image-builder/share/scripts"
+msgstr ""
+
+#: ../../image_builders/windows.rst:430
+msgid "Create a VM"
+msgstr ""
+
+#: ../../image_builders/windows.rst:432
+msgid ""
+"Now you need a virtual machine instance. There are two possible ways to "
+"create it - using CLI or GUI tools. We describe both in this section."
+msgstr ""
+
+#: ../../image_builders/windows.rst:436
+msgid "Using CLI Tools"
+msgstr ""
+
+#: ../../image_builders/windows.rst:438
+msgid "Preallocate disk image"
+msgstr ""
+
+#: ../../image_builders/windows.rst:445
+msgid "Start the VM"
+msgstr ""
+
+#: ../../image_builders/windows.rst:464
+msgid "Using virt-manager UI"
+msgstr ""
+
+#: ../../image_builders/windows.rst:466
+msgid "Launch *virt-manager* from shell as root"
+msgstr ""
+
+#: ../../image_builders/windows.rst:468
+msgid "Set a name for VM and select Local install media"
+msgstr ""
+
+#: ../../image_builders/windows.rst:470
+msgid "Add one cdrom and attach Windows Server ISO image to it"
+msgstr ""
+
+#: ../../image_builders/windows.rst:472
+msgid "Select OS type **Windows**"
+msgstr ""
+
+#: ../../image_builders/windows.rst:474
+msgid "Set CPU and RAM amount"
+msgstr ""
+
+#: ../../image_builders/windows.rst:476
+msgid "Deselect option **Enable storage for this virtual machine**"
+msgstr ""
+
+#: ../../image_builders/windows.rst:478
+msgid "Add second cdrom for ISO image with virtio drivers"
+msgstr ""
+
+#: ../../image_builders/windows.rst:480
+msgid "Add a floppy drive and attach our floppy image to it"
+msgstr ""
+
+#: ../../image_builders/windows.rst:482
+msgid ""
+"Add (or create new) HDD image with Disk bus **VirtIO** and storage format "
+"**RAW**"
+msgstr ""
+
+#: ../../image_builders/windows.rst:484
+msgid "Set network device model **VirtIO**"
+msgstr ""
+
+#: ../../image_builders/windows.rst:486
+msgid ""
+"Start installation process and open guest vm screen through **Console** "
+"button"
+msgstr ""
+
+#: ../../image_builders/windows.rst:490
+msgid "Install OS"
+msgstr ""
+
+#: ../../image_builders/windows.rst:492
+msgid ""
+"Launch your virtual machine, connect to its virtual console and complete OS "
+"installation. At the end of this step you should have Windows Server system "
+"that you are able to log into."
+msgstr ""
+
+#: ../../image_builders/windows.rst:495
+msgid "Install prerequisites and murano"
+msgstr ""
+
+#: ../../image_builders/windows.rst:497
+msgid "Create folders where murano components will be installed"
+msgstr ""
+
+#: ../../image_builders/windows.rst:503
+msgid "Path"
+msgstr ""
+
+#: ../../image_builders/windows.rst:506
+msgid "C:\\\\Murano"
+msgstr ""
+
+#: ../../image_builders/windows.rst:507
+msgid "Root directory for Murano"
+msgstr ""
+
+#: ../../image_builders/windows.rst:509
+msgid "C:\\\\Murano\\\\Agent"
+msgstr ""
+
+#: ../../image_builders/windows.rst:510
+msgid "Murano Agent installation directory"
+msgstr ""
+
+#: ../../image_builders/windows.rst:512
+msgid "C:\\\\Murano\\\\Modules"
+msgstr ""
+
+#: ../../image_builders/windows.rst:513
+msgid "PowerShell modules required by Murano"
+msgstr ""
+
+#: ../../image_builders/windows.rst:515
+msgid "C:\\\\Murano\\\\Scripts"
+msgstr ""
+
+#: ../../image_builders/windows.rst:516
+msgid "PowerShell scripts and other files required by murano"
+msgstr ""
+
+#: ../../image_builders/windows.rst:519
+msgid ""
+"Open **Explorer** and navigate to **\\\\192.168.122.1\\share** "
+"**192.168.122.1** is an IP address of KVM hypervisor assigned by default."
+msgstr ""
+
+#: ../../image_builders/windows.rst:521
+msgid "Copy the murano agent files into C:\\Murano\\Agent"
+msgstr ""
+
+#: ../../image_builders/windows.rst:523
+msgid "Copy CoreFunctions directory (entire directory!) into C:\\Murano\\Modules"
+msgstr ""
+
+#: ../../image_builders/windows.rst:525
+msgid "Install .NET 4.0"
+msgstr ""
+
+#: ../../image_builders/windows.rst:527
+msgid "Register the murano agent"
+msgstr ""
+
+#: ../../image_builders/windows.rst:535
+msgid "Change PowerShell execution policy to less restricted"
+msgstr ""
+
+#: ../../image_builders/windows.rst:542
+msgid "Register CoreFunctions modules"
+msgstr ""
+
+#: ../../image_builders/windows.rst:549
+msgid "Install CloudInit"
+msgstr ""
+
+#: ../../image_builders/windows.rst:551
+msgid "Run Sysprep"
+msgstr ""
+
+#: ../../image_builders/windows.rst:558
+msgid "Wait until sysprep phase finishes and system powers off."
+msgstr ""
+
+#: ../../image_builders/windows.rst:561
+msgid "Convert the image from RAW to QCOW2 format"
+msgstr ""
+
+#: ../../image_builders/windows.rst:563
+msgid ""
+"The image must be converted from RAW format to QCOW2 before being imported "
+"into glance."
+msgstr ""

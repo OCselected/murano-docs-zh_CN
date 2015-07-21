@@ -1,0 +1,72 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:4
+msgid "Murano package repository"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:6
+msgid ""
+"Murano client and dashboard can install both packages and bundles of "
+"packages from murano repository. To do so you should set MURANO_REPO_URL "
+"settings in murano dashboard or MURANO_REPO_URL env variable for the CLI "
+"client, and use a respective command to import the package. These commands "
+"automatically import all the prerequisites required to install the "
+"application along with any images mentioned in the applications."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:9
+msgid "Setting up your own repository"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:14
+msgid ""
+"It is fairly easy to set up your own murano package repository. To do so you"
+" need a web server that would serve 3 directories:"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:12
+msgid "/apps/"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:13
+msgid "/bundles/"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:14
+msgid "/images/"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:16
+msgid ""
+"When importing an application by name, the client appends any version info, "
+"if present to the application name, ``.zip`` file extension and searches for"
+" that file in the ``apps`` directory."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:18
+msgid ""
+"When importing a bundle by name, the client appends ``.bundle`` file "
+"extension to the bundle name and searches it in the bundles directory. A "
+"bundle file is a json or a yaml file with the following structure:"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:30
+msgid ""
+"Glance images can be auto-imported by the client, when mentioned in "
+"``images.lst`` inside the package. Please see :ref:`step-by-step` for more "
+"information about package composition. When importing images from the "
+"``image.lst`` file, the client simply searches for a file with the same name"
+" as the name attribute of the image in the ``images`` directory of the "
+"repository."
+msgstr ""

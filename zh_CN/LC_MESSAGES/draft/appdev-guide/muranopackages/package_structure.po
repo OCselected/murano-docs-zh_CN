@@ -1,0 +1,93 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:4
+msgid "Package structure"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:6
+msgid ""
+"The structure of the Murano application package is predefined. An "
+"application could be successfully uploaded to an application catalog."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:9
+msgid "The application package root folder should contain the following:"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:14
+msgid "**manifest.yaml** file"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:12
+msgid "is an application entry point."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:14
+msgid "the filename is fixed, do not use any custom names."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:17
+msgid "**Classes** folder"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:17
+msgid "contains MuranoPL class definitions."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:22
+msgid "**Resources** folder"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:20
+msgid ""
+"contains an axecution plan template and the **scripts** folder with all the "
+"files required for an application deployment located in it."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:25
+msgid "**UI** folder"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:25
+msgid "contains the dynamic UI yaml definitions."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:33
+msgid "**logo.png** file (optional)"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:28
+msgid "is an image file associated to your application."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:31
+msgid ""
+"There are no any special limitations regarding an image filename. Though, if"
+" it differs from the default ``logo.png``, specify it in an application "
+"manifest file."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:36
+msgid "**images.lst** file (optional)"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:36
+msgid "contains a list of images required by an application."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:38
+msgid ""
+"Here is the visual representation of the Murano application package "
+"structure:"
+msgstr ""

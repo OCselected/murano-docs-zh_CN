@@ -1,0 +1,270 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/appdev-guide/exec_plan.rst:8
+msgid "Execution plan template"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:10
+msgid ""
+"An execution plan template is a set of metadata that describes the "
+"installation process of an application on a virtual machine. It is a minimal"
+" executable unit that can be triggered in Murano workflows and is "
+"understandable to the Murano agent, which is responsible for receiving, "
+"correctness verification and execution of the statements included in the "
+"template."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:18
+msgid ""
+"The execution plan template is able to trigger any type of script that "
+"executes commands and installs application components as the result. Each "
+"script included in the execution plan template may consist of a single file "
+"or a set of interrelated files. A single script can be reused across several"
+" execution plans."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:25
+msgid ""
+"This section is devoted to the structure and syntax of an execution plan "
+"template. For different configurations of templates, please refer to the "
+":ref:`Examples <examples>` section."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:30
+msgid "Template sections"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:32
+msgid ""
+"The table below contains the list of the sections that can be included in "
+"the execution plan template with the description of their meaning and the "
+"default attributes which are used by the agent if any of the listed "
+"parameters is not specified."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:38
+msgid "Section name"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:38
+msgid "Meaning and default value"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:40
+msgid "FormatVersion"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:40
+msgid ""
+"a version of the execution plan template syntax format. Default is "
+"``1.0.0``. **Optional**"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:43
+msgid "Name"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:43
+msgid ""
+"a human-readable name for the execution plan to be used for logging. "
+"**Optional**"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:46
+msgid "Version"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:46
+msgid ""
+"a version of the execution plan itself, is used for logging and tracing. "
+"Each time the content of the template content changes (main script, attached"
+" scripts, properties, etc.), the version value should be incremented. This "
+"is in contrast with ``FormatVersion``, which is used to distinguish the "
+"execution plan format. The default value is ``0.0.0``. **Optional**"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:56
+msgid "Body"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:56
+msgid ""
+"string that represents the Python statement and is executed by the murano-"
+"agent. Scripts defined in the Scripts section are invoked from here. "
+"**Required**"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:61
+msgid "Parameters"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:61
+msgid ""
+"a dictionary of the ``String->JsonObject`` type that maps parameter names to"
+" their values. **Optional**."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:65
+msgid "Scripts"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:65
+msgid ""
+"a dictionary that maps script names to their script definitions. "
+"**Required**"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:71
+msgid "FormatVersion property"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:73
+msgid ""
+"``FormatVersion`` is a property that all other depend on. That is why it is "
+"very important to specify it correctly."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:76
+msgid ""
+"FormatVersion 1.0.0 (default) is still used by Windows murano-agent. New "
+"features that are introduced in Kilo, such as Chef or Puppet, and "
+"downloadable files require version 2.1.0, while nearly all the applications "
+"in murano-apps repository work with FormatVersion 2.0.0. And if you omit the"
+" ``FormatVersion`` property or put something like ``<2.0.0``, it will lead "
+"to the incorrect behaviour. The same happens if, for example, "
+"``FormatVersion=2.1.0``, and a VM has the pre-Kilo agent."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:86
+msgid "Scripts section"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:88
+msgid ""
+"Scripts are the building blocks of execution plan templates. As the name "
+"implies those are the scripts for different deployment platforms."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:92
+msgid ""
+"Each script may consists of one or more files. Those files are script's "
+"program modules, resource files, configs, certificates etc."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:95
+msgid ""
+"Scripts may be executed as a whole (like a single piece of code), expose "
+"some functions that can be independently called in an execution plan script "
+"or both. This depends on deployment platform and executor capabilities."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:100
+msgid ""
+"Scripts are specified using ``Scripts`` attribute of execution plan. This "
+"attribute maps script name to a structure (document) that describes the "
+"script. It has the following properties:"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:108
+msgid "**Type**"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:105
+msgid ""
+"the name of a deployment platform the script is targeted to. The available "
+"alternative options for version>=2.1.0 are ``Application``, ``Chef``, "
+"``Puppet``, and for version<2.1.0 is ``Application`` only. String, required."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:112
+msgid "**Version**"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:111
+msgid ""
+"the minimum version of the deployment platform/executor required by the "
+"script. String, optional."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:116
+msgid "**EntryPoint**"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:115
+msgid ""
+"the name of the script file that is an entry point for this execution plan "
+"template. String, required."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:133
+msgid "**Files**"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:119
+msgid ""
+"the filenames of the additional files required for the script. Thus, if the "
+"script specified  in the ``EntryPoint`` section imports other scripts, they "
+"should be provided in this section."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:123
+msgid ""
+"The filenames may include slashes that the agent preserve on VM. If a "
+"filename is enclosed in the angle brackets (<...>) it will be "
+"base64-encoded. Otherwise, it will be treated as a plain-text that may "
+"affect line endings."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:128
+msgid ""
+"In Kilo, entries for this property may be not just strings but also "
+"dictionaries (for example, ``filename: URL``) to specify downloadable files "
+"or git repositories."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:132
+msgid ""
+"The default value is ``[]`` that means that no extra files are used. Array, "
+"optional."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:147
+msgid "**Options**"
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:136
+msgid ""
+"an optional dictionary of type ``String->JsonObject`` that contains "
+"additional options for the script executor. If not provided, an empty "
+"dictionary is assumed."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:140
+msgid ""
+"Available alternatives are: ``captureStdout``, ``captureStderr``, "
+"``verifyExitcode`` (raise an exception if result is not positive). As "
+"Options are executor-dependent, these three alternatives are available for "
+"the Application executor, but may have no sense for other types. "
+"``captureStdout``, ``captureStderr`` and ``verifyExitcode`` require boolean "
+"values, and have True as their default values."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:147
+msgid "Dictionary, optional."
+msgstr ""
+
+#: ../../draft/appdev-guide/exec_plan.rst:149
+msgid ""
+"Please make sure the files specified in EntryPoint and Files sections exist."
+msgstr ""

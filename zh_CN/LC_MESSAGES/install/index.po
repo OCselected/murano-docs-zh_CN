@@ -1,0 +1,766 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../install/index.rst:20
+msgid "Murano Installation Guide"
+msgstr ""
+
+#: ../../install/index.rst:23
+msgid "Content"
+msgstr ""
+
+#: ../../install/prepare.rst:18
+msgid "Prepare A Lab For Murano"
+msgstr ""
+
+#: ../../install/prepare.rst:19
+msgid ""
+"This section provides basic information about lab's system requirements. It "
+"also contains a description of a test which you may use to check if your "
+"hardware fits the requirements. To do this, run the test and compare the "
+"results with baseline data provided."
+msgstr ""
+
+#: ../../install/prepare.rst:25
+msgid "System prerequisites"
+msgstr ""
+
+#: ../../install/prepare.rst:26
+msgid "**Supported Operation Systems**"
+msgstr ""
+
+#: ../../install/prepare.rst:28
+msgid "Ubuntu Server 12.04 LTS"
+msgstr ""
+
+#: ../../install/prepare.rst:29
+msgid "RHEL/CentOS 6.4"
+msgstr ""
+
+#: ../../install/prepare.rst:31
+msgid "**System packages are required for Murano**"
+msgstr ""
+
+#: ../../install/prepare.rst:33
+msgid "*Ubuntu*"
+msgstr ""
+
+#: ../../install/prepare.rst:35 ../../install/prepare.rst:55
+msgid "gcc"
+msgstr ""
+
+#: ../../install/prepare.rst:37 ../../install/prepare.rst:57
+msgid "python-pip"
+msgstr ""
+
+#: ../../install/prepare.rst:39
+msgid "python-dev"
+msgstr ""
+
+#: ../../install/prepare.rst:41
+msgid "libxml2-dev"
+msgstr ""
+
+#: ../../install/prepare.rst:43
+msgid "libxslt-dev"
+msgstr ""
+
+#: ../../install/prepare.rst:45
+msgid "libffi-dev"
+msgstr ""
+
+#: ../../install/prepare.rst:47
+msgid "libpq-dev"
+msgstr ""
+
+#: ../../install/prepare.rst:49
+msgid "python-openssl"
+msgstr ""
+
+#: ../../install/prepare.rst:51
+msgid "mysql-client"
+msgstr ""
+
+#: ../../install/prepare.rst:53
+msgid "*CentOS*"
+msgstr ""
+
+#: ../../install/prepare.rst:59
+msgid "python-devel"
+msgstr ""
+
+#: ../../install/prepare.rst:61
+msgid "libxml2-devel"
+msgstr ""
+
+#: ../../install/prepare.rst:63
+msgid "libxslt-devel"
+msgstr ""
+
+#: ../../install/prepare.rst:65
+msgid "libffi-devel"
+msgstr ""
+
+#: ../../install/prepare.rst:67
+msgid "postgresql-devel"
+msgstr ""
+
+#: ../../install/prepare.rst:69
+msgid "pyOpenSSL"
+msgstr ""
+
+#: ../../install/prepare.rst:71
+msgid "mysql"
+msgstr ""
+
+#: ../../install/prepare.rst:75
+msgid "Lab Requirements"
+msgstr ""
+
+#: ../../install/prepare.rst:78
+msgid "Criteria"
+msgstr ""
+
+#: ../../install/prepare.rst:78
+msgid "Minimal"
+msgstr ""
+
+#: ../../install/prepare.rst:78
+msgid "Recommended"
+msgstr ""
+
+#: ../../install/prepare.rst:80
+msgid "CPU"
+msgstr ""
+
+#: ../../install/prepare.rst:80
+msgid "4 core @ 2.4 GHz"
+msgstr ""
+
+#: ../../install/prepare.rst:80
+msgid "24 core @ 2.67 GHz"
+msgstr ""
+
+#: ../../install/prepare.rst:82
+msgid "RAM"
+msgstr ""
+
+#: ../../install/prepare.rst:82
+msgid "8 GB"
+msgstr ""
+
+#: ../../install/prepare.rst:82
+msgid "24 GB or more"
+msgstr ""
+
+#: ../../install/prepare.rst:84
+msgid "HDD"
+msgstr ""
+
+#: ../../install/prepare.rst:84
+msgid "2 x 500 GB (7200 rpm)"
+msgstr ""
+
+#: ../../install/prepare.rst:84
+msgid "4 x 500 GB (7200 rpm"
+msgstr ""
+
+#: ../../install/prepare.rst:86
+msgid "RAID"
+msgstr ""
+
+#: ../../install/prepare.rst:86
+msgid ""
+"Software RAID-1 (use mdadm as it will improve read performance almost two "
+"times)"
+msgstr ""
+
+#: ../../install/prepare.rst:86
+msgid "Hardware RAID-10"
+msgstr ""
+
+#: ../../install/prepare.rst:91
+msgid "Table: Hardware requirements"
+msgstr ""
+
+#: ../../install/prepare.rst:93
+msgid ""
+"There are a few possible storage configurations except the shown above. All "
+"of them were tested and were working well."
+msgstr ""
+
+#: ../../install/prepare.rst:96
+msgid "1x SSD 500+ GB"
+msgstr ""
+
+#: ../../install/prepare.rst:99
+msgid "1x HDD (7200 rpm) 500+ GB and 1x SSD 250+ GB (install the system onto"
+msgstr ""
+
+#: ../../install/prepare.rst:99
+msgid "the HDD and mount the SSD drive to folder where VM images are)"
+msgstr ""
+
+#: ../../install/prepare.rst:101
+msgid "1x HDD (15000 rpm) 500+ GB"
+msgstr ""
+
+#: ../../install/prepare.rst:104
+msgid "Test Your Lab Host Performance"
+msgstr ""
+
+#: ../../install/prepare.rst:106
+msgid ""
+"We have measured time required to boot 1 to 5 instances of Windows system "
+"simultaneously. You can use this data as the baseline to check if your "
+"system is fast enough."
+msgstr ""
+
+#: ../../install/prepare.rst:110
+msgid ""
+"You should use sysprepped images for this test, to simulate VM first boot."
+msgstr ""
+
+#: ../../install/prepare.rst:113
+msgid "Steps to reproduce test:"
+msgstr ""
+
+#: ../../install/prepare.rst:115
+msgid ""
+"Prepare Windows 2012 Standard (with GUI) image in QCOW2 format. Let's assume"
+" that its name is ws-2012-std.qcow2"
+msgstr ""
+
+#: ../../install/prepare.rst:118
+msgid ""
+"Ensure that there is NO KVM PROCESSES on the host. To do this, run command:"
+msgstr ""
+
+#: ../../install/prepare.rst:125
+msgid "Make 5 copies of Windows image file:"
+msgstr ""
+
+#: ../../install/prepare.rst:132
+msgid "Create script start-vm.sh in the folder with .qcow2 files:"
+msgstr ""
+
+#: ../../install/prepare.rst:142
+msgid ""
+"Start ONE instance with command below (as root) and measure time between "
+"VM’s launch and the moment when Server Manager window appears. To view VM’s "
+"desktop, connect with VNC viewer to your host to VNC screen :1 (port 5901):"
+msgstr ""
+
+#: ../../install/prepare.rst:151
+msgid "Turn VM off. You may simply kill all KVM processes by"
+msgstr ""
+
+#: ../../install/prepare.rst:157
+msgid ""
+"7. Start FIVE instances with command below (as root) and measure time "
+"interval between ALL VM’s launch and the moment when LAST Server Manager "
+"window appears. To view VM’s desktops, connect with VNC viewer to your host "
+"to VNC screens :1 thru :5 (ports 5901-5905):"
+msgstr ""
+
+#: ../../install/prepare.rst:166
+msgid "Turn VMs off. You may simply kill all KVM processes by"
+msgstr ""
+
+#: ../../install/prepare.rst:173
+msgid "Baseline Data"
+msgstr ""
+
+#: ../../install/prepare.rst:175
+msgid ""
+"The table below provides baseline data which we've got in our environment."
+msgstr ""
+
+#: ../../install/prepare.rst:178
+msgid ""
+"**Avg. Time** refers to the lab with recommended hardware configuration, "
+"while **Max. Time** refers to minimal hardware configuration."
+msgstr ""
+
+#: ../../install/prepare.rst:182
+msgid "Boot ONE instance"
+msgstr ""
+
+#: ../../install/prepare.rst:182
+msgid "Boot FIVE instances"
+msgstr ""
+
+#: ../../install/prepare.rst:184
+msgid "Avg. Time"
+msgstr ""
+
+#: ../../install/prepare.rst:184
+msgid "3m:40s"
+msgstr ""
+
+#: ../../install/prepare.rst:184
+msgid "8m"
+msgstr ""
+
+#: ../../install/prepare.rst:186
+msgid "Max. Time"
+msgstr ""
+
+#: ../../install/prepare.rst:186
+msgid "5m"
+msgstr ""
+
+#: ../../install/prepare.rst:186
+msgid "20m"
+msgstr ""
+
+#: ../../install/prepare.rst:190
+msgid "Host Optimizations"
+msgstr ""
+
+#: ../../install/prepare.rst:192
+msgid ""
+"Default KVM installation could be improved to provide better performance."
+msgstr ""
+
+#: ../../install/prepare.rst:195
+msgid "The following optimizations may improve host performance up to 30%:"
+msgstr ""
+
+#: ../../install/prepare.rst:197
+msgid "change default scheduler from **CFQ** to **Deadline**"
+msgstr ""
+
+#: ../../install/prepare.rst:198
+msgid "use **ksm**"
+msgstr ""
+
+#: ../../install/prepare.rst:199
+msgid "use **vhost-net**"
+msgstr ""
+
+#: ../../install/development.rst:18
+msgid "Installing and Running the Development Version"
+msgstr ""
+
+#: ../../install/development.rst:20
+msgid ""
+"The `contrib/devstack`_ directory contains the files necessary to integrate "
+"Murano with `Devstack`_."
+msgstr ""
+
+#: ../../../../contrib/devstack/README.rst:1
+msgid ""
+"Follow Devstack documentation to setup a host for Devstack. Then clone "
+"Devstack source code."
+msgstr ""
+
+#: ../../../../contrib/devstack/README.rst:4
+msgid "Copy Murano integration scripts to Devstack::"
+msgstr ""
+
+#: ../../../../contrib/devstack/README.rst:10
+msgid "Create a ``localrc`` file as input to devstack."
+msgstr ""
+
+#: ../../../../contrib/devstack/README.rst:12
+msgid ""
+"The Murano services are not enabled by default, so they must be enabled in "
+"``localrc`` before running ``stack.sh``. This example ``localrc`` file shows"
+" all of the settings required for Murano::"
+msgstr ""
+
+#: ../../../../contrib/devstack/README.rst:22
+msgid "Deploy your OpenStack Cloud with Murano::"
+msgstr ""
+
+#: ../../install/manual.rst:21
+msgid "Installing and Running Manually"
+msgstr ""
+
+#: ../../install/manual.rst:24
+msgid "Prepare Environment"
+msgstr ""
+
+#: ../../install/manual.rst:27
+msgid "Install Prerequisites"
+msgstr ""
+
+#: ../../install/manual.rst:29
+msgid ""
+"First you need to install a number of packages with your OS package manager."
+" The list of packages depends on the OS you use."
+msgstr ""
+
+#: ../../install/manual.rst:33
+msgid "Ubuntu"
+msgstr ""
+
+#: ../../install/manual.rst:44
+msgid "Fedora"
+msgstr ""
+
+#: ../../install/manual.rst:48
+msgid ""
+"Fedora support wasn't thoroughly tested. We do not guarantee that Murano "
+"will work on Fedora."
+msgstr ""
+
+#: ../../install/manual.rst:59
+msgid "CentOS"
+msgstr ""
+
+#: ../../install/manual.rst:69
+msgid "Install tox"
+msgstr ""
+
+#: ../../install/manual.rst:78
+msgid "Install And Configure Database"
+msgstr ""
+
+#: ../../install/manual.rst:80
+msgid ""
+"Murano can use various database types on backend. For development purposes "
+"SQLite is enough in most cases. For production installations you should use "
+"MySQL or PostgreSQL databases."
+msgstr ""
+
+#: ../../install/manual.rst:86
+msgid ""
+"Although Murano could use PostgreSQL database on backend, it wasn't "
+"thoroughly tested and should be used with caution."
+msgstr ""
+
+#: ../../install/manual.rst:90
+msgid ""
+"To use MySQL database you should install it and create an empty database "
+"first:"
+msgstr ""
+
+#: ../../install/manual.rst:108
+msgid "Install the API service and Engine"
+msgstr ""
+
+#: ../../install/manual.rst:110
+msgid "Create a folder which will hold all Murano components."
+msgstr ""
+
+#: ../../install/manual.rst:117
+msgid "Clone the Murano git repository to the management server."
+msgstr ""
+
+#: ../../install/manual.rst:125
+msgid "Set up Murano config file"
+msgstr ""
+
+#: ../../install/manual.rst:127
+msgid "Murano has common config file for API and Engine services."
+msgstr ""
+
+#: ../../install/manual.rst:129
+msgid "First, generate sample configuration file, using tox"
+msgstr ""
+
+#: ../../install/manual.rst:136
+msgid "And make a copy of it for further modifications"
+msgstr ""
+
+#: ../../install/manual.rst:143
+msgid ""
+"Edit ``murano.conf`` with your favorite editor. Below is an example which "
+"contains basic settings your are likely need to configure."
+msgstr ""
+
+#: ../../install/manual.rst:148
+msgid ""
+"The example below uses SQLite database. Edit **[database]** section if you "
+"want to use other database type."
+msgstr ""
+
+#: ../../install/manual.rst:201
+msgid ""
+"Create a virtual environment and install Murano prerequisites. We will use "
+"*tox* for that. Virtual environment will be created under *.tox* directory."
+msgstr ""
+
+#: ../../install/manual.rst:210
+msgid "Create database tables for Murano."
+msgstr ""
+
+#: ../../install/manual.rst:219
+msgid ""
+"Open a new console and launch Murano API. A separate terminal is required "
+"because the console will be locked by a running process."
+msgstr ""
+
+#: ../../install/manual.rst:228
+msgid "Import Core Murano Library."
+msgstr ""
+
+#: ../../install/manual.rst:246
+msgid "Open a new console and launch Murano Engine. A separate terminal is"
+msgstr ""
+
+#: ../../install/manual.rst:239
+msgid "required because the console will be locked by a running process."
+msgstr ""
+
+#: ../../install/manual.rst:249
+msgid "Install Murano Dashboard"
+msgstr ""
+
+#: ../../install/manual.rst:251
+msgid ""
+"Murano API & Engine services provide the core of Murano. However, your need "
+"a control plane to use it. This section describes how to install and run "
+"Murano Dashboard."
+msgstr ""
+
+#: ../../install/manual.rst:255
+msgid "Clone the repository with Murano Dashboard."
+msgstr ""
+
+#: ../../install/manual.rst:263
+msgid "Clone horizon repository"
+msgstr ""
+
+#: ../../install/manual.rst:270
+msgid "Create venv and install muranodashboard as editable module."
+msgstr ""
+
+#: ../../install/manual.rst:278
+msgid "Copy muranodashboard plugin file."
+msgstr ""
+
+#: ../../install/manual.rst:280
+msgid "This step enables murano panel in horizon dashboard."
+msgstr ""
+
+#: ../../install/manual.rst:287
+msgid "Prepare local settings."
+msgstr ""
+
+#: ../../install/manual.rst:289
+msgid ""
+"To get more information, check out official `horizon documentation "
+"<http://docs.openstack.org/developer/horizon/topics/settings.html#openstack-"
+"settings-partial>`_."
+msgstr ""
+
+#: ../../install/manual.rst:296
+msgid "Customize local settings according to OpenStack installation."
+msgstr ""
+
+#: ../../install/manual.rst:316
+msgid ""
+"Also, it's better to change default session backend from  browser cookies to"
+" database to avoid issues with forms during creating applications:"
+msgstr ""
+
+#: ../../install/manual.rst:332
+msgid ""
+"If you do not plan to get murano service from keystone application catalog, "
+"provide where murano-api service is running:"
+msgstr ""
+
+#: ../../install/manual.rst:341
+msgid "Perform database synchronization."
+msgstr ""
+
+#: ../../install/manual.rst:343
+msgid ""
+"Optional step. Needed in case you set up database as a session backend."
+msgstr ""
+
+#: ../../install/manual.rst:350
+msgid ""
+"You can reply 'no' since for development purpose separate user is not "
+"needed."
+msgstr ""
+
+#: ../../install/manual.rst:352
+msgid ""
+"Run Django server at 127.0.0.1:8000 or provide different IP and PORT "
+"parameters."
+msgstr ""
+
+#: ../../install/manual.rst:359
+msgid ""
+"Development server will be restarted automatically on every code change."
+msgstr ""
+
+#: ../../install/manual.rst:361
+msgid "Open dashboard using url http://localhost:8000"
+msgstr ""
+
+#: ../../install/manual.rst:364
+msgid "Import Murano Applications"
+msgstr ""
+
+#: ../../install/manual.rst:366
+msgid ""
+"Applications are needed to be imported to fill the catalog. It can be done "
+"via dashboard, but also possible via CLI:"
+msgstr ""
+
+#: ../../install/manual.rst:369
+msgid "Clone Murano Apps repository."
+msgstr ""
+
+#: ../../install/manual.rst:377
+msgid ""
+"Import every package you need from this repository, using the command below."
+msgstr ""
+
+#: ../../install/configure_network.rst:18
+msgid "Network Configuration"
+msgstr ""
+
+#: ../../install/configure_network.rst:20
+msgid ""
+"Murano may work in various networking environments and is capable to detect "
+"the current network configuration and choose the appropriate settings "
+"automatically. However, some additional actions are required to support "
+"advanced scenarios."
+msgstr ""
+
+#: ../../install/configure_network.rst:26
+msgid "Nova network support"
+msgstr ""
+
+#: ../../install/configure_network.rst:28
+msgid ""
+"Nova Network is simplest networking solution, which has limited capabilities"
+" but is available on any OpenStack deployment without the need to deploy any"
+" additional components."
+msgstr ""
+
+#: ../../install/configure_network.rst:32
+msgid ""
+"When a new Murano Environment is created, Murano checks if a dedicated "
+"networking service (i.e. Neutron) exists in the current OpenStack "
+"deployment. It relies on Keystone's service catalog for that. If such a "
+"service is not present, Murano automatically falls back to Nova Network. No "
+"further configuration is needed in this case, all the VMs spawned by Murano "
+"will be joining the same Network."
+msgstr ""
+
+#: ../../install/configure_network.rst:40
+msgid "Neutron support"
+msgstr ""
+
+#: ../../install/configure_network.rst:42
+msgid ""
+"If Neutron is installed, Murano enables its advanced networking features "
+"that give you ability to not care about configuring networks for your "
+"application."
+msgstr ""
+
+#: ../../install/configure_network.rst:45
+msgid ""
+"By default it will create an isolated network for each environment and join "
+"all VMs needed by your application to that network. To install and configure"
+" application in just spawned virtual machine Murano also requires a router "
+"connected to the external network."
+msgstr ""
+
+#: ../../install/configure_network.rst:51
+msgid "Automatic Neutron network configuration"
+msgstr ""
+
+#: ../../install/configure_network.rst:53
+msgid ""
+"To create router automatically, provide the following parameters in config "
+"file:"
+msgstr ""
+
+#: ../../install/configure_network.rst:65
+msgid ""
+"To figure out the name of the external network, perform the following "
+"command:"
+msgstr ""
+
+#: ../../install/configure_network.rst:71
+msgid ""
+"During the first deploy, required networks and router with specified name "
+"will be created and set up."
+msgstr ""
+
+#: ../../install/configure_network.rst:74
+msgid "Manual neutron network configuration"
+msgstr ""
+
+#: ../../install/configure_network.rst:76
+msgid "Step 1. Create public network"
+msgstr ""
+
+#: ../../install/configure_network.rst:78
+msgid ""
+"First, you need to check for existence of external networks. Login as admin "
+"and go to *Project -> Network -> Network Topology*. And check network type "
+"in network details at *Admin -> Networks -> Network name* page. The same "
+"action can be done via CLI by running `neutron net-external-list`. To create"
+" new external network examine `OpenStack documentation "
+"<http://docs.openstack.org/trunk/install-guide/install/apt/content"
+"/neutron_initial-external-network.html>`_."
+msgstr ""
+
+#: ../../install/configure_network.rst:86
+msgid "Step 2. Create local network"
+msgstr ""
+
+#: ../../install/configure_network.rst:88
+msgid "Go to *Project -> Network -> Networks*."
+msgstr ""
+
+#: ../../install/configure_network.rst:89
+msgid "Click *Create Network* and fill the form."
+msgstr ""
+
+#: ../../install/configure_network.rst:96
+msgid "Step 3. Create router"
+msgstr ""
+
+#: ../../install/configure_network.rst:98
+msgid "Go to *Project -> Network -> Routers*"
+msgstr ""
+
+#: ../../install/configure_network.rst:100
+msgid "Click \"Create Router\""
+msgstr ""
+
+#: ../../install/configure_network.rst:101
+msgid "In the \"Router Name\" field, enter the *murano-default-router*"
+msgstr ""
+
+#: ../../install/configure_network.rst:106
+msgid ""
+"If you specify a name other than *murano-default-router*, it will be "
+"necessary to change the following settings in the config file:"
+msgstr ""
+
+#: ../../install/configure_network.rst:116
+msgid "Click on the specified router name"
+msgstr ""
+
+#: ../../install/configure_network.rst:117
+msgid "In the opened view click “Add interface”"
+msgstr ""
+
+#: ../../install/configure_network.rst:118
+msgid "Specify the subnet and IP address"
+msgstr ""
+
+#: ../../install/configure_network.rst:122
+msgid "And check the result in `Network Topology` tab."
+msgstr ""

@@ -1,0 +1,865 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/appendix/cli_ref.rst:8
+msgid "Murano command-line client"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:10
+msgid ""
+"The ``murano`` client is the command-line interface (CLI) for the "
+"Application catalog API and its extensions."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:13
+msgid "This chapter documents ``murano`` version ``0.6.1``."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:15
+msgid "For help on a specific ``murano`` command, enter:"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:37
+msgid "Subcommands"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:39
+msgid "*bundle-import* Import a bundle."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:41
+msgid "*category-create* Create a category."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:43
+msgid "*category-delete* Delete a category."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:45
+msgid "*category-list* List all available categories."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:47
+msgid "*category-show"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:49
+msgid "*deployment-list* List deployments for an environment."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:51
+msgid "*env-template-add-app* Add application to the environment template."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:53
+msgid "*env-template-create* Create an environment template."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:55
+msgid "*env-template-del-app* Delete application to the environment template."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:57
+msgid "*env-template-delete* Delete an environment template."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:59
+msgid "*env-template-list* List the environments templates."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:61
+msgid "*env-template-show* Display environment template details."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:63
+msgid "*env-template-update* Update an environment template."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:65
+msgid "*environment-create* Create an environment."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:67
+msgid "*environment-delete* Delete an environment."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:69
+msgid "*environment-list* List the environments."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:71
+msgid "*environment-rename* Rename an environment."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:73
+msgid "*environment-show* Display environment details."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:75
+msgid "*package-create* Create an application package."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:77
+msgid "*package-delete* Delete a package."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:79
+msgid "*package-download* Download a package to a filename or stdout."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:81
+msgid "*package-import* Import a package."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:83
+msgid "*package-list* List available packages."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:85
+msgid "*package-show* Display details for a package."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:87
+msgid "*service-show*"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:89
+msgid "*bash-completion* Prints all of the commands and options to stdout."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:91
+msgid "*help* Display help about this program or one of its subcommands."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:94
+msgid "Murano optional arguments"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:97
+msgid "**--version**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:97
+msgid "show program's version number and exit"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:100
+msgid "**-d, --debug**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:100
+msgid "Defaults to env[MURANOCLIENT_DEBUG]"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:103
+msgid "**-v, --verbose**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:103
+msgid "Print more verbose output"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:108
+msgid "**-k, --insecure**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:106
+msgid ""
+"Explicitly allow muranoclient to perform \"insecure\" SSL (https) requests. "
+"The server's certificate willnot be verified against any certificate "
+"authorities. This option should be used with caution."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:112
+msgid "**--os-cacert <ca-certificate>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:111
+msgid ""
+"Specify a CA bundle file to use in verifying a TLS (https) server "
+"certificate. Defaults to env[OS_CACERT]"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:116
+msgid "**--cert-file CERT_FILE**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:115
+msgid ""
+"Path of certificate file to use in SSL connection. This file can optionally "
+"be prepended with the private key."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:120
+msgid "**--key-file KEY_FILE**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:119
+msgid ""
+"Path of client key to use in SSL connection. This option is not necessary if"
+" your key is prepended to your cert file."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:124
+msgid "**--ca-file CA_FILE**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:123
+msgid ""
+"Path of CA SSL certificate(s) used to verify the remote server certificate. "
+"Without this option glance looks for the default system CA certificates."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:128
+msgid "**--api-timeout API_TIMEOUT"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:127
+msgid ""
+"Number of seconds to wait for an API response, defaults to system socket "
+"timeout"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:131
+msgid "**--os-username OS_USERNAME**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:131
+msgid "Defaults to env[OS_USERNAME]"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:134
+msgid "**--os-password OS_PASSWORD**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:134
+msgid "Defaults to env[OS_PASSWORD]"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:137
+msgid "**--os-tenant-id OS_TENANT_ID**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:137
+msgid "Defaults to env[OS_TENANT_ID]"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:140
+msgid "**--os-tenant-name OS_TENANT_NAME**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:140
+msgid "Defaults to env[OS_TENANT_NAME]"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:143
+msgid "**--os-auth-url OS_AUTH_URL**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:143
+msgid "Defaults to env[OS_AUTH_URL]"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:146
+msgid "**--os-region-name OS_REGION_NAME**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:146
+msgid "Defaults to env[OS_REGION_NAME]"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:149
+msgid "**--os-auth-token OS_AUTH_TOKEN**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:149
+msgid "Defaults to env[OS_AUTH_TOKEN]"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:152
+msgid "**--os-no-client-auth**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:152
+msgid ""
+"Do not contact keystone for a token. Defaults to env[OS_NO_CLIENT_AUTH]."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:155
+msgid "**--murano-url MURANO_URL**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:155
+msgid "Defaults to env[MURANO_URL]**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:158
+msgid "**--glance-url GLANCE_URL**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:158
+msgid "Defaults to env[GLANCE_URL]"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:161
+msgid "**--murano-api-version MURANO_API_VERSION**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:161
+msgid "Defaults to env[MURANO_API_VERSION] or 1"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:164
+msgid "**--os-service-type OS_SERVICE_TYPE**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:164
+msgid "Defaults to env[OS_SERVICE_TYPE]"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:167
+msgid "**--os-endpoint-type OS_ENDPOINT_TYPE**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:167
+msgid "Defaults to env[OS_ENDPOINT_TYPE]"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:170
+msgid "**--include-password**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:170
+msgid "Send os-username and os-password to murano."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:174
+msgid "**--murano-repo-url MURANO_REPO_URL**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:173
+msgid ""
+"Defaults to env[MURANO_REPO_URL] or `http://storage.apps.openstack.org_ `"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:177
+msgid "Application catalog API v1 commands"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:180
+msgid "murano bundle-import"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:187
+msgid ""
+"Import a bundle. ``FILE`` can be either a path to a zip file, URL or name "
+"from repo. if ``FILE`` is a local file does not attempt to parse "
+"requirements and treat Names of packages in a bundle as file names, relative"
+" to location of bundle file."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:193 ../../draft/appendix/cli_ref.rst:217
+#: ../../draft/appendix/cli_ref.rst:232 ../../draft/appendix/cli_ref.rst:254
+#: ../../draft/appendix/cli_ref.rst:269 ../../draft/appendix/cli_ref.rst:284
+#: ../../draft/appendix/cli_ref.rst:302 ../../draft/appendix/cli_ref.rst:315
+#: ../../draft/appendix/cli_ref.rst:333 ../../draft/appendix/cli_ref.rst:357
+#: ../../draft/appendix/cli_ref.rst:372 ../../draft/appendix/cli_ref.rst:390
+#: ../../draft/appendix/cli_ref.rst:405 ../../draft/appendix/cli_ref.rst:435
+#: ../../draft/appendix/cli_ref.rst:453 ../../draft/appendix/cli_ref.rst:536
+#: ../../draft/appendix/cli_ref.rst:616
+msgid "Positional arguments"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:196 ../../draft/appendix/cli_ref.rst:290
+#: ../../draft/appendix/cli_ref.rst:561
+msgid "**<FILE>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:196
+msgid "Bundle URL, bundle name, or path to the bundle file"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:199 ../../draft/appendix/cli_ref.rst:411
+#: ../../draft/appendix/cli_ref.rst:473 ../../draft/appendix/cli_ref.rst:589
+#: ../../draft/appendix/cli_ref.rst:622
+msgid "Optional arguments"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:202 ../../draft/appendix/cli_ref.rst:570
+msgid "**--is-public**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:202
+msgid "Make packages available to users from other tenants"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:205 ../../draft/appendix/cli_ref.rst:577
+msgid "**--exists-action {a,s,u}**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:205
+msgid "Default action when a package already exists"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:208
+msgid "murano category-create"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:214
+msgid "Create a category."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:220
+msgid "**<CATEGORY_NAME>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:220
+msgid "Category name"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:223
+msgid "murano category-delete"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:229
+msgid "Delete a category."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:235 ../../draft/appendix/cli_ref.rst:257
+#: ../../draft/appendix/cli_ref.rst:272 ../../draft/appendix/cli_ref.rst:336
+#: ../../draft/appendix/cli_ref.rst:360 ../../draft/appendix/cli_ref.rst:375
+#: ../../draft/appendix/cli_ref.rst:524 ../../draft/appendix/cli_ref.rst:539
+#: ../../draft/appendix/cli_ref.rst:606 ../../draft/appendix/cli_ref.rst:619
+msgid "**<ID>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:235
+msgid "ID of a category(s) to delete"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:238
+msgid "murano category-list"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:244
+msgid "List all available categories."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:247
+msgid "murano category-show"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:257
+msgid "ID of a category(s) to show"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:260
+msgid "murano deployment-list"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:266
+msgid "List deployments for an environment."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:272
+msgid "Environment ID for which to list deployments"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:275
+msgid "murano env-template-add-app"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:281
+msgid "Add application to the environment template."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:287 ../../draft/appendix/cli_ref.rst:305
+#: ../../draft/appendix/cli_ref.rst:378
+msgid "**<ENV_TEMPLATE_NAME>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:287 ../../draft/appendix/cli_ref.rst:305
+#: ../../draft/appendix/cli_ref.rst:378
+msgid "Environment template name"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:290
+msgid "Path to the template."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:293
+msgid "murano env-template-create"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:299
+msgid "Create an environment template."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:307
+msgid "murano env-template-del-app .. code-block::console"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:310
+msgid ""
+"usage: murano env-template-del-app <ENV_TEMPLATE_ID> <ENV_TEMPLATE_APP_ID>"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:312
+msgid "Delete application to the environment template."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:318
+msgid "**<ENV_TEMPLATE_ID>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:318 ../../draft/appendix/cli_ref.rst:360
+#: ../../draft/appendix/cli_ref.rst:375
+msgid "Environment template ID"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:321
+msgid "**<ENV_TEMPLATE_APP_ID>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:321
+msgid "Application ID"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:324
+msgid "murano env-template-delete"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:330
+msgid "Delete an environment template."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:336
+msgid "ID of environment(s) template to delete"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:339
+msgid "murano env-template-list"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:345
+msgid "List the environments templates."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:348
+msgid "murano env-template-show"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:354
+msgid "Display environment template details."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:363
+msgid "murano env-template-update"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:369
+msgid "Update an environment template."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:381
+msgid "murano environment-create"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:387
+msgid "Create an environment."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:393 ../../draft/appendix/cli_ref.rst:441
+msgid "**<ENVIRONMENT_NAME>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:393
+msgid "Environment name"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:396
+msgid "murano environment-delete"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:402
+msgid "Delete an environment."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:408 ../../draft/appendix/cli_ref.rst:438
+#: ../../draft/appendix/cli_ref.rst:456
+msgid "**<NAME or ID>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:408
+msgid "ID or name of environment(s) to delete"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:414
+msgid "**--abandon**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:414
+msgid "If set will abandon environment without deleting any of its resources"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:417
+msgid "murano environment-list"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:423
+msgid "List the environments."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:426
+msgid "murano environment-rename"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:432
+msgid "Rename an environment."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:438 ../../draft/appendix/cli_ref.rst:456
+msgid "Environment ID or name"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:441
+msgid "A name to which the environment will be renamed"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:444
+msgid "murano environment-show"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:450
+msgid "Display environment details."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:459
+msgid "murano package-create"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:470
+msgid "Create an application package."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:476
+msgid "**-t <HEAT_TEMPLATE>, --template <HEAT_TEMPLATE>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:476
+msgid "Path to the Heat template to import as an Application Definition"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:479
+msgid "**-c <CLASSES_DIRECTORY>, --classes-dir <CLASSES_DIRECTORY>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:479
+msgid "Path to the directory containing application classes"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:482
+msgid "**-r <RESOURCES_DIRECTORY>, --resources-dir <RESOURCES_DIRECTORY>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:482
+msgid "Path to the directory containing application resources"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:485
+msgid "**-n <DISPLAY_NAME>, --name <DISPLAY_NAME>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:485
+msgid "Display name of the Application in Catalog"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:488
+msgid "**-f <full-name>, --full-name <full-name>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:488
+msgid "Fully-qualified name of the Application in Catalog"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:491
+msgid "**-a <AUTHOR>, --author <AUTHOR>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:491
+msgid "Name of the publisher"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:494
+msgid "**--tags \\[<TAG1 TAG2> \\[<TAG1 TAG2> ...]]**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:494
+msgid "A list of keywords connected to the application"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:497
+msgid "**-d <DESCRIPTION>, --description <DESCRIPTION>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:497
+msgid "Detailed description for the Application in Catalog"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:500
+msgid "**-o <PACKAGE_NAME>, --output <PACKAGE_NAME>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:500
+msgid "The name of the output file archive to save locally"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:503
+msgid "**-u <UI_DEFINITION>, --ui <UI_DEFINITION>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:503
+msgid "Dynamic UI form definition"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:506
+msgid "**--type TYPE**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:506
+msgid "Package type. Possible values: Application or Library"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:509
+msgid "**-l <LOGO>, --logo <LOGO>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:509
+msgid "Path to the package logo"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:512
+msgid "murano package-delete"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:518
+msgid "Delete a package."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:524
+msgid "Package ID to delete"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:527
+msgid "murano package-download"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:533
+msgid "Download a package to a filename or stdout."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:539
+msgid "Package ID to download"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:542
+msgid "**file**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:542
+msgid "Filename for download (defaults to stdout)"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:545
+msgid "murano package-import"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:554
+msgid ""
+"Import a package. ``FILE`` can be either a path to a zip file, URL or a "
+"FQPN. ``categories`` can be separated by a comma."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:561
+msgid "URL of the murano zip package, FQPN, or path to zip package"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:567
+msgid ""
+"**-c \\[<CAT1 CAT2 CAT3> \\[<CAT1 CAT2 CAT3> ...]], --categories \\[<CAT1 "
+"CAT2 CAT3> \\[<CAT1 CAT2 CAT3> ...]]**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:567
+msgid "Category list to attach"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:570
+msgid "Make the package available for user from other tenants"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:574
+msgid "**--version VERSION**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:573
+msgid ""
+"Version of the package to use from repository (ignored when importing with "
+"multiple packages)"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:577
+msgid "Default action when package already exists"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:580
+msgid "murano package-list"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:586
+msgid "List available packages."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:591
+msgid "**--include-disabled**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:594
+msgid "murano package-show"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:600
+msgid "Display details for a package."
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:606
+msgid "Package ID to show"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:609
+msgid "murano service-show"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:619
+msgid "Environment ID to show applications from"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:624
+msgid "**-p <PATH>, --path <PATH>**"
+msgstr ""
+
+#: ../../draft/appendix/cli_ref.rst:626
+msgid ""
+"Level of detalization to show. Leave empty to browse all services in the "
+"environment"
+msgstr ""

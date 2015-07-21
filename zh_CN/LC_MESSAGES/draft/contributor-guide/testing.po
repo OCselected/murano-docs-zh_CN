@@ -1,0 +1,44 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/contributor-guide/testing.rst:8
+msgid "Testing"
+msgstr ""
+
+#: ../../draft/contributor-guide/testing.rst:11
+msgid "Testing guidelines"
+msgstr ""
+
+#: ../../draft/contributor-guide/testing.rst:14
+msgid "Continuous Integration service"
+msgstr ""
+
+#: ../../draft/contributor-guide/testing.rst:17
+msgid "UI testing"
+msgstr ""
+
+#: ../../draft/contributor-guide/testing.rst:20
+msgid "Tempest tests"
+msgstr ""
+
+#: ../../draft/contributor-guide/testing.rst:23
+msgid "Automated testing machinery"
+msgstr ""
+
+#: ../../draft/contributor-guide/testing.rst:26
+msgid "CI design"
+msgstr ""
+
+#: ../../draft/contributor-guide/testing.rst:28
+msgid "CI jobs"
+msgstr ""

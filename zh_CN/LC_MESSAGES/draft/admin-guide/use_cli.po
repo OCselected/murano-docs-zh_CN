@@ -1,0 +1,350 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/admin-guide/use_cli.rst:8
+msgid "Using CLI"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:11
+msgid "Install murano client"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:14
+msgid "Manage applications"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:17
+msgid "Manage environments"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:20
+msgid "Manage packages"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:22
+msgid ""
+"This section describes how to manage packages using the command line "
+"interface. You can easily:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:25
+msgid ""
+":ref:`import a package <cli_import>` or :ref:`bundles of packages "
+"<cli_bundles>`"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:26
+msgid ":ref:`list the existing packages <cli_list>`"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:27
+msgid ":ref:`display details for a package <cli_display>`"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:28
+msgid ":ref:`download a package <cli_download>`"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:29
+msgid ":ref:`delete a package <cli_delete>`"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:30
+msgid ":ref:`create a package <cli_create>`"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:35
+msgid "Import a package"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:37
+msgid ""
+"With the :command:`package-import` command you can import packages into "
+"murano in several different ways:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:40
+msgid ":ref:`from a local .zip file <cli_zip>`"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:41
+msgid ":ref:`from murano app repository <cli_repo>`"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:42
+msgid ":ref:`from an http URL <cli_url>`"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:46
+msgid "**From a local .zip file**"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:48
+msgid "To import a package from a local .zip file, run:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:54
+msgid "where ``PACKAGE`` is the name of the package stored on your computer."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:57
+#: ../../draft/admin-guide/use_cli.rst:220
+#: ../../draft/admin-guide/use_cli.rst:237
+#: ../../draft/admin-guide/use_cli.rst:332
+msgid "For example:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:69
+msgid ""
+"To make the package available for users from other tenants, use the ``--is-"
+"public`` parameter. For example:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:78
+msgid ""
+"The :command:`package-import` command supports multiple positional "
+"arguments. This means that you can import several packages at once."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:83
+msgid "**From murano app repository**"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:89
+msgid ""
+"To import a package from murano applications repository, specify the URL of "
+"the repository with ``--murano-repo-url`` and a fully qualified package "
+"name. For package names, go to |link_location|, and click on the desired "
+"package to see its full name."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:96
+msgid ""
+"You can also specify the URL of the repository with the corresponding "
+"MURANO_REPO_URL environment variable."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:100
+msgid ""
+"The following example shows how to import the MySQL package from the murano "
+"applications repository:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:108
+msgid ""
+"This command supports an optional ``--version`` parameter that instructs "
+"murano client to download a specified package version."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:111
+msgid ""
+"The :command:`package-import` command inspects package requirements "
+"specified in the package’s manifest under the *Require* section, and "
+"attempts to import them from murano repository. The :command:`package-"
+"import` command also inspects any image prerequisites mentioned in the "
+":file:`images.lst` file in the package. If there are any image requirements,"
+" client would inspect images already present in the image database. Unless "
+"image with the specific name is present, client would attempt to download "
+"it."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:124
+msgid ""
+"If any of the packages being installed is already registered in murano, the "
+"client asks you what to do with it. You can specify the default action with "
+"``--exists-action``, passing ``s`` - for skip, ``u`` - for update, and ``a``"
+" - for abort."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:131
+#: ../../draft/admin-guide/use_cli.rst:209
+msgid "**From an URL**"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:133
+msgid ""
+"To import an application package from an URL, use the following command:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:139
+msgid ""
+"The example below shows how to import a MySQL package from the murano "
+"applications repository using the package URL:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:156
+msgid "Import bundles of packages"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:158
+msgid ""
+"With the :command:`bundle-import` command you can install packages in "
+"several different ways:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:161
+msgid ":ref:`from a local bundle <cli_local_bundle>`"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:162
+msgid ":ref:`from an URL <cli_bundle_url>`"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:163
+msgid ":ref:`from murano app repository <cli_bundle_repo>`"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:165
+msgid ""
+"When importing bundles, you can specify their categories with "
+"``-c/--categories`` and set their publicity with ``--public``."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:170
+msgid "**From a local bundle**"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:172
+msgid ""
+"To import a bundle from the a local file system, use the following command:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:179
+msgid "This command imports all the requirements of packages and images."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:182
+msgid ""
+"When importing a bundle from a file system, the murano client searches for "
+"packages in a directory relative to the bundle location before attempting to"
+" download a package from repository. This facilitates cases with no Internet"
+" access."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:187
+msgid "The following example shows the import of a monitoring bundle:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:204
+msgid ""
+"The :command:`bundle-import` command supports multiple positional arguments."
+" This means that you can import several bundles at once."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:211
+msgid "To import a bundle from an URL, use the following command:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:217
+msgid ""
+"Where ``http://example.com/path/to/bundle/BUNDLE_NAME`` is any external "
+"http/https URL to load the bundle from."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:228
+msgid "**From murano applications repository**"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:230
+msgid ""
+"To import a bundle from murano applications repository, use the following "
+"command, where ``bundle_name`` stands for the bundle name:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:249
+msgid ""
+"For bundle names, go to |location|, click the **Format** tab to show bundles"
+" first, and then click on the desired bundle to see its name."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:256
+msgid "List packages"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:258
+msgid ""
+"To list all the existing packages you have, use the :command:`package-list` "
+"command. The result will show you the package ID, name, author and if it is "
+"public or not. For example:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:279
+msgid "Show packages"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:281
+msgid ""
+"To get full information about a package, use the :command:`package-show` "
+"command. For example:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:309
+msgid "Delete a package"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:311
+msgid "To delete a package, use the following command:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:320
+msgid "Download a package"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:322
+msgid ""
+"With the following command you can download a .zip archive with a specified "
+"package:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:329
+msgid ""
+"You need to specify the package ID and enter the .zip file name under which "
+"to save the package."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:341
+msgid "Create a package"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:343
+msgid ""
+"With the murano client you can create application packages from package "
+"source files or directories. The :command:`package-create` command is useful"
+" when application package files are spread across several directories. This "
+"command has the following required parameters::"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:355
+msgid "Example:"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:363
+msgid ""
+"After this, the package is ready to be imported to the application catalog."
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:366
+msgid ""
+"The :command:`package-create` command is also useful for autogenerating "
+"packages from heat templates. In this case you do not need to manually "
+"specify so many parameters. For more information on automatic package "
+"composition, please see :ref:`Automatic package composing <compose_package>`"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:373
+msgid "Manage categories"
+msgstr ""
+
+#: ../../draft/admin-guide/use_cli.rst:376
+msgid "Use Murano repository"
+msgstr ""

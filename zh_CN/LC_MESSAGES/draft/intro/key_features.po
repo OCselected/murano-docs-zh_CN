@@ -1,0 +1,180 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/intro/key_features.rst:8
+msgid "Key features"
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:10
+msgid ""
+"Murano has a number of features designed to interact with the application "
+"catalog, for instance managing  what’s in the catalog, and determining how "
+"apps in the catalog are deployed."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:16
+msgid "Application catalog"
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:18
+msgid "Easy browsing:"
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:20
+msgid ""
+"Icons display applications for point-and-click and drag-and-drop selection "
+"and deployment."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:23
+msgid ""
+"Each application provides configuration information required for deploying "
+"it to a cloud."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:26
+msgid ""
+"An application topology of your environment is available in a separate tab, "
+"and shows the number of instances spawned by each application."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:30
+msgid ""
+"The presence of the :guilabel:`Quick Deploy` button on the applications page"
+" saves the time."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:33
+msgid "Quick filtering by:"
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:35
+msgid "Tags and words included in application name and description."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:36
+msgid "Recent activity."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:37
+msgid "Predefined category."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:39
+msgid "Dependency tracking:"
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:41
+msgid ""
+"Automatic detection of dependent applications that minimizes the possibility"
+" of an application deployment with incorrect configuration."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:45
+msgid "No underlying IaaS configuration knowledge is required."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:49
+msgid "Application catalog management"
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:51
+msgid "Easy application uploading using UI or CLI from:"
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:53
+msgid "Local zip file."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:54
+msgid "URL."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:55
+msgid "Package name, using an application repository."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:57
+msgid "Managing applications include:"
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:59
+msgid "Application organization in categories or transfer between them."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:60
+msgid "Application name, description and tags update."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:61
+msgid "Predefined application categories list setting."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:63
+msgid "Deployment tracking includes the availability of:"
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:65
+msgid "Logs for deployments via UI."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:66
+msgid "Deployment modification history to track the recent changes."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:70
+msgid "Application lifecycle management"
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:72
+msgid "Simplified configuration and integration:"
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:74
+msgid ""
+"It is up to an application developer to decide what their application will "
+"be able to do."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:77
+msgid "Dependencies between applications are easily configured."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:79
+msgid "New applications can be connected with already existing ones."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:81
+msgid "Well specified application actions are available."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:83
+msgid "HA-mode and auto-scaling:"
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:85
+msgid ""
+"Application authors can set up any available monitoring system to track "
+"application events and call corresponding actions, such as failover, "
+"starting additional instances, and others."
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:89
+msgid "Isolation:"
+msgstr ""
+
+#: ../../draft/intro/key_features.rst:91
+msgid ""
+"Applications in the same environments can easily interact with each other, "
+"though applications between different tenants are isolated."
+msgstr ""

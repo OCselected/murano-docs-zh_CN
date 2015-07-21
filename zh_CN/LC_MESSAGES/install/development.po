@@ -1,0 +1,47 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../install/development.rst:18
+msgid "Installing and Running the Development Version"
+msgstr ""
+
+#: ../../install/development.rst:20
+msgid ""
+"The `contrib/devstack`_ directory contains the files necessary to integrate "
+"Murano with `Devstack`_."
+msgstr ""
+
+#: ../../../../contrib/devstack/README.rst:1
+msgid ""
+"Follow Devstack documentation to setup a host for Devstack. Then clone "
+"Devstack source code."
+msgstr ""
+
+#: ../../../../contrib/devstack/README.rst:4
+msgid "Copy Murano integration scripts to Devstack::"
+msgstr ""
+
+#: ../../../../contrib/devstack/README.rst:10
+msgid "Create a ``localrc`` file as input to devstack."
+msgstr ""
+
+#: ../../../../contrib/devstack/README.rst:12
+msgid ""
+"The Murano services are not enabled by default, so they must be enabled in "
+"``localrc`` before running ``stack.sh``. This example ``localrc`` file shows"
+" all of the settings required for Murano::"
+msgstr ""
+
+#: ../../../../contrib/devstack/README.rst:22
+msgid "Deploy your OpenStack Cloud with Murano::"
+msgstr ""

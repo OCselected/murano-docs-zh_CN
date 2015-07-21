@@ -1,0 +1,310 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../articles/test_docs.rst:18
+msgid "Murano automated tests description"
+msgstr ""
+
+#: ../../articles/test_docs.rst:19
+msgid "This page describes automated tests for a Murano project:"
+msgstr ""
+
+#: ../../articles/test_docs.rst:21
+msgid "where tests are located"
+msgstr ""
+
+#: ../../articles/test_docs.rst:22
+msgid "how they are run"
+msgstr ""
+
+#: ../../articles/test_docs.rst:23
+msgid "how execute tests on a local machine"
+msgstr ""
+
+#: ../../articles/test_docs.rst:24
+msgid "how to find the the root of problems with FAILed tests"
+msgstr ""
+
+#: ../../articles/test_docs.rst:27
+msgid "Murano continuous integration service"
+msgstr ""
+
+#: ../../articles/test_docs.rst:28
+msgid ""
+"Murano project has separate CI server, which runs tests for all commits and "
+"verifies that new code does not break anything."
+msgstr ""
+
+#: ../../articles/test_docs.rst:30
+msgid "Murano CI uses OpenStack QA cloud for testing infrastructure."
+msgstr ""
+
+#: ../../articles/test_docs.rst:32
+msgid ""
+"Murano CI url: https://murano-ci.mirantis.com/jenkins/ Anyone can login to "
+"that server, using launchpad credentials."
+msgstr ""
+
+#: ../../articles/test_docs.rst:34
+msgid ""
+"There you can find each job for each repository: one for the **murano** and "
+"another one for **murano-dashboard**."
+msgstr ""
+
+#: ../../articles/test_docs.rst:36
+msgid ""
+"\"gate-murano-dashboard-selenium\\*\" verifies each commit to murano-"
+"dashboard repository"
+msgstr ""
+
+#: ../../articles/test_docs.rst:37
+msgid "\"gate-murano-integration\\*\" verifies each commit to murano repository"
+msgstr ""
+
+#: ../../articles/test_docs.rst:39
+msgid ""
+"Other jobs allow to build and test Murano documentation and perform another "
+"usefull work to support Murano CI infrastructure. All jobs are run on fresh "
+"installation of operation system and all components are installed on each "
+"run."
+msgstr ""
+
+#: ../../articles/test_docs.rst:43
+msgid "Murano automated tests: UI tests"
+msgstr ""
+
+#: ../../articles/test_docs.rst:45
+msgid ""
+"The murano project has a web user interface and all possible user scenarios "
+"should be tested. All UI tests are located at the "
+"https://git.openstack.org/cgit/openstack/murano-"
+"dashboard/tree/muranodashboard/tests/functional"
+msgstr ""
+
+#: ../../articles/test_docs.rst:48
+msgid ""
+"Automated tests for Murano Web UI are written in Python using special "
+"Selenium library. This library is used to automate web browser interaction "
+"from Python. For more information please visit https://selenium-"
+"python.readthedocs.org/"
+msgstr ""
+
+#: ../../articles/test_docs.rst:53
+msgid "Prerequisites:"
+msgstr ""
+
+#: ../../articles/test_docs.rst:55
+msgid ""
+"Install Python module, called nose performing one of the following commands "
+"**easy_install nose** or **pip install nose** This will install the nose "
+"libraries, as well as the nosetests script, which you can use to "
+"automatically discover and run tests."
+msgstr ""
+
+#: ../../articles/test_docs.rst:57
+msgid ""
+"Install external Python libraries, which are required for Murano Web UI "
+"tests: **testtools** and **selenium**"
+msgstr ""
+
+#: ../../articles/test_docs.rst:60
+msgid "Download and run tests:"
+msgstr ""
+
+#: ../../articles/test_docs.rst:62
+msgid "First of all make sure that all additional components are installed."
+msgstr ""
+
+#: ../../articles/test_docs.rst:64
+msgid "Clone murano-dashboard git repository:"
+msgstr ""
+
+#: ../../articles/test_docs.rst:66
+msgid "git clone git://git.openstack.org/openstack/murano-dashboard*"
+msgstr ""
+
+#: ../../articles/test_docs.rst:67
+msgid "Change default settings:"
+msgstr ""
+
+#: ../../articles/test_docs.rst:69
+msgid ""
+"Copy muranodashboard/tests/functional/config/config.conf.example to "
+"config.conf"
+msgstr ""
+
+#: ../../articles/test_docs.rst:70
+msgid ""
+"Set appropriate urls and credentials for your OpenStack lab. Only admin "
+"users are appropriate."
+msgstr ""
+
+#: ../../articles/test_docs.rst:85
+msgid ""
+"All tests are kept in *sanity_check.py* and divided into 5 test suites:"
+msgstr ""
+
+#: ../../articles/test_docs.rst:87
+msgid ""
+"TestSuiteSmoke - verification of Murano panels; check, that could be open "
+"without errors."
+msgstr ""
+
+#: ../../articles/test_docs.rst:88
+msgid ""
+"TestSuiteEnvironment - verification of all operations with environment are "
+"finished successfully."
+msgstr ""
+
+#: ../../articles/test_docs.rst:89
+msgid "TestSuiteImage - verification of operations with images."
+msgstr ""
+
+#: ../../articles/test_docs.rst:90
+msgid "TestSuiteFields - verification of custom fields validators."
+msgstr ""
+
+#: ../../articles/test_docs.rst:91
+msgid "TestSuitePackages - verification of operations with Murano packages."
+msgstr ""
+
+#: ../../articles/test_docs.rst:92
+msgid ""
+"TestSuiteApplications - verification of Application Catalog page and of "
+"application creation process."
+msgstr ""
+
+#: ../../articles/test_docs.rst:94
+msgid ""
+"To specify which tests/suite to run, pass test/suite names on the command "
+"line:"
+msgstr ""
+
+#: ../../articles/test_docs.rst:96
+msgid "to run all tests: ``nosetests sanity_check.p``"
+msgstr ""
+
+#: ../../articles/test_docs.rst:97
+msgid "to run a single suite: ``nosetests sanity_check.py:<test suite name>``"
+msgstr ""
+
+#: ../../articles/test_docs.rst:98
+msgid ""
+"to run a single test: ``nosetests sanity_check.py:<test suite name>.<test "
+"name>``"
+msgstr ""
+
+#: ../../articles/test_docs.rst:101
+msgid "In case of SUCCESS execution, you should see something like this:"
+msgstr ""
+
+#: ../../articles/test_docs.rst:111
+msgid ""
+"In case of FAILURE, folder with screenshots of the last operation of tests "
+"that finished with errors would be created. It's located in "
+"*muranodashboard/tests/functional* folder."
+msgstr ""
+
+#: ../../articles/test_docs.rst:114
+msgid ""
+"There are also a number of command line options that can be used to control "
+"the test execution and generated outputs. For more details about "
+"*nosetests*, try: ::"
+msgstr ""
+
+#: ../../articles/test_docs.rst:121
+msgid "Murano Automated Tests: Tempest Tests"
+msgstr ""
+
+#: ../../articles/test_docs.rst:123
+msgid ""
+"All Murano services have tempest-based automated tests, which allow to "
+"verify API interfaces and deployment scenarios."
+msgstr ""
+
+#: ../../articles/test_docs.rst:125
+msgid ""
+"Tempest tests for Murano are located at the: "
+"https://git.openstack.org/cgit/openstack/murano/tree/murano/tests/functional"
+msgstr ""
+
+#: ../../articles/test_docs.rst:127
+msgid ""
+"The following Python files are contain basic tests suites for different "
+"Murano components."
+msgstr ""
+
+#: ../../articles/test_docs.rst:130
+msgid "API Tests"
+msgstr ""
+
+#: ../../articles/test_docs.rst:132
+msgid ""
+"Murano API tests are run on devstack gate and located at "
+"https://git.openstack.org/cgit/openstack/murano/tree/murano/tests/functional/api"
+msgstr ""
+
+#: ../../articles/test_docs.rst:134
+msgid ""
+"*test_murano_envs.py* contains test suite with actions on murano's "
+"environments(create, delete, get and etc.)"
+msgstr ""
+
+#: ../../articles/test_docs.rst:135
+msgid ""
+"*test_murano_sessions.py* contains test suite with actions on murano's "
+"sessions(create, delete, get and etc.)"
+msgstr ""
+
+#: ../../articles/test_docs.rst:136
+msgid ""
+"*test_murano_services.py* contains test suite with actions on murano's "
+"services(create, delete, get and etc.)"
+msgstr ""
+
+#: ../../articles/test_docs.rst:137
+msgid ""
+"*test_murano_repository.py* contains test suite with actions on murano's "
+"package repository"
+msgstr ""
+
+#: ../../articles/test_docs.rst:140
+msgid "Engine Tests"
+msgstr ""
+
+#: ../../articles/test_docs.rst:142
+msgid ""
+"Murano Engine Tests are run on murano-ci : "
+"https://git.openstack.org/cgit/openstack/murano/tree/murano/tests/functional/engine"
+msgstr ""
+
+#: ../../articles/test_docs.rst:144
+msgid ""
+"*base.py* contains base test class and tests with actions on deploy Murano "
+"services such as 'Telnet' and 'Apache'."
+msgstr ""
+
+#: ../../articles/test_docs.rst:147
+msgid "Command Line Tests"
+msgstr ""
+
+#: ../../articles/test_docs.rst:149
+msgid ""
+"Murano CLI tests case are currently in the middle of creation. The current "
+"scope is read only operations on a cloud that are hard to test via unit "
+"tests."
+msgstr ""
+
+#: ../../articles/test_docs.rst:152
+msgid "All tests have description and execution steps in there docstrings."
+msgstr ""

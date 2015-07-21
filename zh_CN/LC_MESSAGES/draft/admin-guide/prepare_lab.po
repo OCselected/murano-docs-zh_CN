@@ -1,0 +1,352 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/admin-guide/prepare_lab.rst:18
+msgid "Prepare A Lab For Murano"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:19
+msgid ""
+"This section provides basic information about lab's system requirements. It "
+"also contains a description of a test which you may use to check if your "
+"hardware fits the requirements. To do this, run the test and compare the "
+"results with baseline data provided."
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:28
+msgid "System prerequisites"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:31
+msgid "Supported Operation Systems"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:33
+msgid "Ubuntu Server 12.04 LTS"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:34
+msgid "RHEL/CentOS 6.4"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:36
+msgid "**System packages are required for Murano**"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:38
+msgid "*Ubuntu*"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:40
+#: ../../draft/admin-guide/prepare_lab.rst:66
+msgid "gcc"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:42
+#: ../../draft/admin-guide/prepare_lab.rst:68
+msgid "python-pip"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:44
+msgid "python-dev"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:46
+msgid "libxml2-dev"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:48
+msgid "libxslt-dev"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:50
+msgid "libffi-dev"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:52
+msgid "libpq-dev"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:54
+msgid "python-openssl"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:56
+msgid "mysql-client"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:58
+msgid "Install all the requirements on Ubuntu by running::"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:64
+msgid "*CentOS*"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:70
+msgid "python-devel"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:72
+msgid "libxml2-devel"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:74
+msgid "libxslt-devel"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:76
+msgid "libffi-devel"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:78
+msgid "postgresql-devel"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:80
+msgid "pyOpenSSL"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:82
+msgid "mysql"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:84
+msgid "Install all the requirements on CentOS by running::"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:93
+msgid "Lab Requirements"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:96
+msgid "Criteria"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:96
+msgid "Minimal"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:96
+msgid "Recommended"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:98
+msgid "CPU"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:98
+msgid "4 core @ 2.4 GHz"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:98
+msgid "24 core @ 2.67 GHz"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:100
+msgid "RAM"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:100
+msgid "8 GB"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:100
+msgid "24 GB or more"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:102
+msgid "HDD"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:102
+msgid "2 x 500 GB (7200 rpm)"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:102
+msgid "4 x 500 GB (7200 rpm"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:104
+msgid "RAID"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:104
+msgid ""
+"Software RAID-1 (use mdadm as it will improve read performance almost two "
+"times)"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:104
+msgid "Hardware RAID-10"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:109
+msgid "`Table: Hardware requirements`"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:111
+msgid ""
+"There are a few possible storage configurations except the shown above. All "
+"of them were tested and were working well."
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:114
+msgid "1x SSD 500+ GB"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:117
+msgid "1x HDD (7200 rpm) 500+ GB and 1x SSD 250+ GB (install the system onto"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:117
+msgid "the HDD and mount the SSD drive to folder where VM images are)"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:119
+msgid "1x HDD (15000 rpm) 500+ GB"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:123
+msgid "Test Your Lab Host Performance"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:125
+msgid ""
+"We have measured time required to boot 1 to 5 instances of Windows system "
+"simultaneously. You can use this data as the baseline to check if your "
+"system is fast enough."
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:129
+msgid ""
+"You should use sysprepped images for this test, to simulate VM first boot."
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:132
+msgid "Steps to reproduce test:"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:134
+msgid ""
+"Prepare Windows 2012 Standard (with GUI) image in QCOW2 format. Let's assume"
+" that its name is ws-2012-std.qcow2"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:137
+msgid ""
+"Ensure that there is NO KVM PROCESSES on the host. To do this, run command:"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:144
+msgid "Make 5 copies of Windows image file:"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:151
+msgid "Create script start-vm.sh in the folder with .qcow2 files:"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:161
+msgid ""
+"Start ONE instance with command below (as root) and measure time between "
+"VM’s launch and the moment when Server Manager window appears. To view VM’s "
+"desktop, connect with VNC viewer to your host to VNC screen :1 (port 5901):"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:170
+msgid "Turn VM off. You may simply kill all KVM processes by"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:176
+msgid ""
+"#. Start FIVE instances with command below (as root) and measure time "
+"interval between ALL VM’s launch and the moment when LAST Server Manager "
+"window appears. To view VM’s desktops, connect with VNC viewer to your host "
+"to VNC screens :1 thru :5 (ports 5901-5905):"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:185
+msgid "Turn VMs off. You may simply kill all KVM processes by"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:193
+msgid "Baseline Data"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:195
+msgid ""
+"The table below provides baseline data which we've got in our environment."
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:199
+msgid "Boot 1 instance"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:199
+msgid "Boot 5  instances"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:201
+msgid "Avg. Time"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:201
+msgid "3m:40s"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:201
+msgid "8m"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:203
+msgid "Max. Time"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:203
+msgid "5m"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:203
+msgid "20m"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:206
+msgid ""
+"``Avg. Time`` refers to the lab with recommended hardware configuration, "
+"while ``Max. Time`` refers to minimal hardware configuration."
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:211
+msgid "Host Optimizations"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:213
+msgid ""
+"Default KVM installation could be improved to provide better performance."
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:216
+msgid "The following optimizations may improve host performance up to 30%:"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:218
+msgid "change default scheduler from ``CFQ`` to ``Deadline``"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:219
+msgid "use ``ksm``"
+msgstr ""
+
+#: ../../draft/admin-guide/prepare_lab.rst:220
+msgid "use ``vhost-net``"
+msgstr ""

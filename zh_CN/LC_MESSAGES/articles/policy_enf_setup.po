@@ -1,0 +1,121 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../articles/policy_enf_setup.rst:3
+msgid "Murano Policy Enforcement Setup Guide"
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:8
+msgid "Introduction"
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:10
+msgid ""
+"Before policy enforcement feature will be used, it has to be configured. It "
+"has to be enabled in Murano configuration, and Congress has to have created "
+"policy and rules used during policy evaluation."
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:14
+msgid ""
+"This document does not cover Murano and Congress configuration options "
+"useful for Murano application deployment (e.g., DNS setup, floating IPs, "
+"...)."
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:18
+msgid "Setup"
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:20
+msgid ""
+"This setup uses *openstack* command. You can use copy-paste for commands."
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:22
+msgid ""
+"If you are using DevStack installation, you can setup environment using "
+"following command."
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:30
+msgid "**Murano**"
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:32
+msgid "Enable policy enforcement in Murano:"
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:34
+msgid ""
+"edit */etc/murano/murano.conf* to enable **enable_model_policy_enforcer** "
+"option:"
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:44
+msgid "restart murano-engine"
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:46
+msgid "**Congress**"
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:48
+msgid "Policy enforcement uses following policies:"
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:50
+msgid "**murano** policy"
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:52
+msgid ""
+"Policy is created by Congress' murano datasource driver, which is part of "
+"Congress. It has to be configured for the OpenStack tenant where Murano "
+"application will be deployed. Datasource driver retrieves deployed Murano "
+"environments and populates Congress' murano policy tables "
+"(:ref:`policyenf_dev`)."
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:58
+msgid ""
+"Following commands removes existing **murano** policy, and creates new "
+"**murano** policy configured for tenant *demo*."
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:76
+msgid "**murano_system** policy"
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:71
+msgid ""
+"Policy holds user defined rules for policy enforcement. Rules typically uses"
+" tables from other policies (e.g., murano, nova, keystone, ...). Policy "
+"enforcement expects *predeploy_errors* table here which is created by "
+"creating **predeploy_errors** rules."
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:76
+msgid "Following command creates **murano_system** rule"
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:87
+msgid "**murano_action** policy with internal management rules"
+msgstr ""
+
+#: ../../articles/policy_enf_setup.rst:84
+msgid ""
+"Following rules are used internally in policy enforcement request. These "
+"rules are stored in dedicated **murano_action** policy which is created "
+"here. They are important for case when an environment is deployed again."
+msgstr ""

@@ -1,0 +1,234 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../articles/policy_enf_dev.rst:3
+msgid "Murano Policy Enforcement - Developer Guide"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:7
+msgid "This document describes internals of murano policy enforcement."
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:10
+msgid "Model Decomposition"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:12
+msgid ""
+"Models of Murano applications are transformed to set of rules that are "
+"processed by congress. This represent data for policy validation."
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:14
+msgid ""
+"There are several \"tables\" created in murano policy for different kind of "
+"rules:"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:16 ../../articles/policy_enf_dev.rst:24
+msgid "``murano:objects(object_id, parent_id, type_name)``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:17 ../../articles/policy_enf_dev.rst:46
+msgid "``murano:properties(object_id, property_name, property_value)``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:18 ../../articles/policy_enf_dev.rst:91
+msgid "``murano:relationships(source, target, name)``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:19 ../../articles/policy_enf_dev.rst:135
+msgid "``murano:connected(source, target)``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:20
+msgid "``murano:parent_types(object_id, parent_type_name)``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:21 ../../articles/policy_enf_dev.rst:187
+msgid "``murano:states(environment_id, state)``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:26
+msgid ""
+"This rule is used for representation of all objects in Murano model "
+"(environment, applications, instances, ...). Value of property ``type`` is "
+"used as ``type_name`` parameter:"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:37 ../../articles/policy_enf_dev.rst:85
+#: ../../articles/policy_enf_dev.rst:175
+msgid "Transformed to these rules:"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:39
+msgid "``murano:objects+(\"83bff5ac\", \"tenant_id\", \"io.murano.Environment\")``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:40
+msgid "``murano:objects+(\"83bff5ac\", \"e7a13d3c\", \"io.murano.databases.MySql\")``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:42
+msgid "The owner of the environment is a tenant"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:48
+msgid ""
+"Each object can have properties. In this example we have application with "
+"one property:"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:57 ../../articles/policy_enf_dev.rst:71
+#: ../../articles/policy_enf_dev.rst:107 ../../articles/policy_enf_dev.rst:125
+msgid "Transformed to this rule:"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:59
+msgid "``murano:properties+(\"e7a13d3c\", \"database\", \"wordpress\")``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:61
+msgid "Inner properties are also supported using dot notation:"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:73
+msgid "``murano:properties+(\"825dc61d\", \"networks.useFlatNetwork\", \"False\")``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:75
+msgid ""
+"If model contains list of values it is represented as set of multiple rules:"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:87
+msgid "``murano:properties+(\"be3c5155\", \"networks.customNetworks\", \"10.0.1.0\")``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:88
+msgid "``murano:properties+(\"be3c5155\", \"networks.customNetworks\", \"10.0.2.0\")``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:93
+msgid ""
+"Murano app models can contain references to other applications. In this "
+"example WordPress application references MySQL in property \"database\":"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:109
+msgid "``murano:relationships+(\"50fa68ff\", \"0aafd67e\", \"database\")``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:111
+msgid "For property \"database\" we do not create rule ``murano:properties+``."
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:113
+msgid ""
+"Also if we define inner object inside other object, they will have "
+"relationship between them:"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:127
+msgid "``murano:relationships+(\"0aafd67e\", \"ed8df2b0\", \"instance\")``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:129
+msgid ""
+"There are special relationships \"services\" from the environment to its "
+"applications:"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:131
+msgid "``murano:relationships+(\"env_id\", \"app_id\", \"services\")``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:137
+msgid ""
+"This table stores both direct and indirect connections between instances. It"
+" is derived from the ``murano:relationships``:"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:153
+msgid "Transformed to rules:"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:155
+msgid "``murano:connected+(\"50fa68ff\", \"0aafd67e\")`` # WordPress to MySql"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:156
+msgid ""
+"``murano:connected+(\"50fa68ff\", \"ed8df2b0\")`` # WordPress to "
+"LinuxMuranoInstance"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:157
+msgid ""
+"``murano:connected+(\"0aafd67e\", \"ed8df2b0\")`` # MySql to "
+"LinuxMuranoInstance"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:161
+msgid "``murano:parent_types(object_id, parent_name)``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:163
+msgid ""
+"Each object in murano has a class type and these classes can inherit from "
+"one or more parents:"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:165
+msgid "e.g. ``LinuxMuranoInstance`` > ``LinuxInstance`` > ``Instance``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:167
+msgid "So this model:"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:177
+msgid "``murano:objects+(\"...\", \"be3c5155\", \"LinuxMuranoInstance\")``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:178
+msgid "``murano:parent_types+(\"be3c5155\", \"LinuxMuranoInstance\")``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:179
+msgid "``murano:parent_types+(\"be3c5155\", \"LinuxInstance\")``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:180
+msgid "``murano:parent_types+(\"be3c5155\", \"Instance\")``"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:182
+msgid ""
+"Type of object is also repeated among parent types (``LinuxMuranoInstance`` "
+"in example) for easier handling of user-created rules."
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:184
+msgid ""
+"If type inherits from more than one parent and those parents inherit from "
+"one common type, ``parent_type`` rule is included only once for common type."
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:189
+msgid "Currently only one record for environment is created:"
+msgstr ""
+
+#: ../../articles/policy_enf_dev.rst:191
+msgid "``murano:states+(\"uugi324\", \"pending\")``"
+msgstr ""

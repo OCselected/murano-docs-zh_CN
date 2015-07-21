@@ -1,0 +1,342 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../install/prepare.rst:18
+msgid "Prepare A Lab For Murano"
+msgstr ""
+
+#: ../../install/prepare.rst:19
+msgid ""
+"This section provides basic information about lab's system requirements. It "
+"also contains a description of a test which you may use to check if your "
+"hardware fits the requirements. To do this, run the test and compare the "
+"results with baseline data provided."
+msgstr ""
+
+#: ../../install/prepare.rst:25
+msgid "System prerequisites"
+msgstr ""
+
+#: ../../install/prepare.rst:26
+msgid "**Supported Operation Systems**"
+msgstr ""
+
+#: ../../install/prepare.rst:28
+msgid "Ubuntu Server 12.04 LTS"
+msgstr ""
+
+#: ../../install/prepare.rst:29
+msgid "RHEL/CentOS 6.4"
+msgstr ""
+
+#: ../../install/prepare.rst:31
+msgid "**System packages are required for Murano**"
+msgstr ""
+
+#: ../../install/prepare.rst:33
+msgid "*Ubuntu*"
+msgstr ""
+
+#: ../../install/prepare.rst:35 ../../install/prepare.rst:55
+msgid "gcc"
+msgstr ""
+
+#: ../../install/prepare.rst:37 ../../install/prepare.rst:57
+msgid "python-pip"
+msgstr ""
+
+#: ../../install/prepare.rst:39
+msgid "python-dev"
+msgstr ""
+
+#: ../../install/prepare.rst:41
+msgid "libxml2-dev"
+msgstr ""
+
+#: ../../install/prepare.rst:43
+msgid "libxslt-dev"
+msgstr ""
+
+#: ../../install/prepare.rst:45
+msgid "libffi-dev"
+msgstr ""
+
+#: ../../install/prepare.rst:47
+msgid "libpq-dev"
+msgstr ""
+
+#: ../../install/prepare.rst:49
+msgid "python-openssl"
+msgstr ""
+
+#: ../../install/prepare.rst:51
+msgid "mysql-client"
+msgstr ""
+
+#: ../../install/prepare.rst:53
+msgid "*CentOS*"
+msgstr ""
+
+#: ../../install/prepare.rst:59
+msgid "python-devel"
+msgstr ""
+
+#: ../../install/prepare.rst:61
+msgid "libxml2-devel"
+msgstr ""
+
+#: ../../install/prepare.rst:63
+msgid "libxslt-devel"
+msgstr ""
+
+#: ../../install/prepare.rst:65
+msgid "libffi-devel"
+msgstr ""
+
+#: ../../install/prepare.rst:67
+msgid "postgresql-devel"
+msgstr ""
+
+#: ../../install/prepare.rst:69
+msgid "pyOpenSSL"
+msgstr ""
+
+#: ../../install/prepare.rst:71
+msgid "mysql"
+msgstr ""
+
+#: ../../install/prepare.rst:75
+msgid "Lab Requirements"
+msgstr ""
+
+#: ../../install/prepare.rst:78
+msgid "Criteria"
+msgstr ""
+
+#: ../../install/prepare.rst:78
+msgid "Minimal"
+msgstr ""
+
+#: ../../install/prepare.rst:78
+msgid "Recommended"
+msgstr ""
+
+#: ../../install/prepare.rst:80
+msgid "CPU"
+msgstr ""
+
+#: ../../install/prepare.rst:80
+msgid "4 core @ 2.4 GHz"
+msgstr ""
+
+#: ../../install/prepare.rst:80
+msgid "24 core @ 2.67 GHz"
+msgstr ""
+
+#: ../../install/prepare.rst:82
+msgid "RAM"
+msgstr ""
+
+#: ../../install/prepare.rst:82
+msgid "8 GB"
+msgstr ""
+
+#: ../../install/prepare.rst:82
+msgid "24 GB or more"
+msgstr ""
+
+#: ../../install/prepare.rst:84
+msgid "HDD"
+msgstr ""
+
+#: ../../install/prepare.rst:84
+msgid "2 x 500 GB (7200 rpm)"
+msgstr ""
+
+#: ../../install/prepare.rst:84
+msgid "4 x 500 GB (7200 rpm"
+msgstr ""
+
+#: ../../install/prepare.rst:86
+msgid "RAID"
+msgstr ""
+
+#: ../../install/prepare.rst:86
+msgid ""
+"Software RAID-1 (use mdadm as it will improve read performance almost two "
+"times)"
+msgstr ""
+
+#: ../../install/prepare.rst:86
+msgid "Hardware RAID-10"
+msgstr ""
+
+#: ../../install/prepare.rst:91
+msgid "Table: Hardware requirements"
+msgstr ""
+
+#: ../../install/prepare.rst:93
+msgid ""
+"There are a few possible storage configurations except the shown above. All "
+"of them were tested and were working well."
+msgstr ""
+
+#: ../../install/prepare.rst:96
+msgid "1x SSD 500+ GB"
+msgstr ""
+
+#: ../../install/prepare.rst:99
+msgid "1x HDD (7200 rpm) 500+ GB and 1x SSD 250+ GB (install the system onto"
+msgstr ""
+
+#: ../../install/prepare.rst:99
+msgid "the HDD and mount the SSD drive to folder where VM images are)"
+msgstr ""
+
+#: ../../install/prepare.rst:101
+msgid "1x HDD (15000 rpm) 500+ GB"
+msgstr ""
+
+#: ../../install/prepare.rst:104
+msgid "Test Your Lab Host Performance"
+msgstr ""
+
+#: ../../install/prepare.rst:106
+msgid ""
+"We have measured time required to boot 1 to 5 instances of Windows system "
+"simultaneously. You can use this data as the baseline to check if your "
+"system is fast enough."
+msgstr ""
+
+#: ../../install/prepare.rst:110
+msgid ""
+"You should use sysprepped images for this test, to simulate VM first boot."
+msgstr ""
+
+#: ../../install/prepare.rst:113
+msgid "Steps to reproduce test:"
+msgstr ""
+
+#: ../../install/prepare.rst:115
+msgid ""
+"Prepare Windows 2012 Standard (with GUI) image in QCOW2 format. Let's assume"
+" that its name is ws-2012-std.qcow2"
+msgstr ""
+
+#: ../../install/prepare.rst:118
+msgid ""
+"Ensure that there is NO KVM PROCESSES on the host. To do this, run command:"
+msgstr ""
+
+#: ../../install/prepare.rst:125
+msgid "Make 5 copies of Windows image file:"
+msgstr ""
+
+#: ../../install/prepare.rst:132
+msgid "Create script start-vm.sh in the folder with .qcow2 files:"
+msgstr ""
+
+#: ../../install/prepare.rst:142
+msgid ""
+"Start ONE instance with command below (as root) and measure time between "
+"VM’s launch and the moment when Server Manager window appears. To view VM’s "
+"desktop, connect with VNC viewer to your host to VNC screen :1 (port 5901):"
+msgstr ""
+
+#: ../../install/prepare.rst:151
+msgid "Turn VM off. You may simply kill all KVM processes by"
+msgstr ""
+
+#: ../../install/prepare.rst:157
+msgid ""
+"7. Start FIVE instances with command below (as root) and measure time "
+"interval between ALL VM’s launch and the moment when LAST Server Manager "
+"window appears. To view VM’s desktops, connect with VNC viewer to your host "
+"to VNC screens :1 thru :5 (ports 5901-5905):"
+msgstr ""
+
+#: ../../install/prepare.rst:166
+msgid "Turn VMs off. You may simply kill all KVM processes by"
+msgstr ""
+
+#: ../../install/prepare.rst:173
+msgid "Baseline Data"
+msgstr ""
+
+#: ../../install/prepare.rst:175
+msgid ""
+"The table below provides baseline data which we've got in our environment."
+msgstr ""
+
+#: ../../install/prepare.rst:178
+msgid ""
+"**Avg. Time** refers to the lab with recommended hardware configuration, "
+"while **Max. Time** refers to minimal hardware configuration."
+msgstr ""
+
+#: ../../install/prepare.rst:182
+msgid "Boot ONE instance"
+msgstr ""
+
+#: ../../install/prepare.rst:182
+msgid "Boot FIVE instances"
+msgstr ""
+
+#: ../../install/prepare.rst:184
+msgid "Avg. Time"
+msgstr ""
+
+#: ../../install/prepare.rst:184
+msgid "3m:40s"
+msgstr ""
+
+#: ../../install/prepare.rst:184
+msgid "8m"
+msgstr ""
+
+#: ../../install/prepare.rst:186
+msgid "Max. Time"
+msgstr ""
+
+#: ../../install/prepare.rst:186
+msgid "5m"
+msgstr ""
+
+#: ../../install/prepare.rst:186
+msgid "20m"
+msgstr ""
+
+#: ../../install/prepare.rst:190
+msgid "Host Optimizations"
+msgstr ""
+
+#: ../../install/prepare.rst:192
+msgid ""
+"Default KVM installation could be improved to provide better performance."
+msgstr ""
+
+#: ../../install/prepare.rst:195
+msgid "The following optimizations may improve host performance up to 30%:"
+msgstr ""
+
+#: ../../install/prepare.rst:197
+msgid "change default scheduler from **CFQ** to **Deadline**"
+msgstr ""
+
+#: ../../install/prepare.rst:198
+msgid "use **ksm**"
+msgstr ""
+
+#: ../../install/prepare.rst:199
+msgid "use **vhost-net**"
+msgstr ""

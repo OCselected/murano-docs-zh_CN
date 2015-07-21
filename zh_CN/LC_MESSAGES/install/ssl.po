@@ -1,0 +1,125 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../install/ssl.rst:18
+msgid "SSL configuration"
+msgstr ""
+
+#: ../../install/ssl.rst:19
+msgid ""
+"Murano components are able to work with SSL. This chapter will help your to "
+"make proper settings with SSL configuration."
+msgstr ""
+
+#: ../../install/ssl.rst:23
+msgid "HTTPS for Murano API"
+msgstr ""
+
+#: ../../install/ssl.rst:25
+msgid ""
+"SSL for Murano API service can be configured in *ssl* section in "
+"``/etc/murano/murano.conf``. Just point to a valid SSL certificate. See the "
+"example below:"
+msgstr ""
+
+#: ../../install/ssl.rst:37
+msgid ""
+"*cert\\_file*    Path to the certificate file the server should use when "
+"binding to an SSL-wrapped socket."
+msgstr ""
+
+#: ../../install/ssl.rst:38
+msgid ""
+"*key\\_file*     Path to the private key file the server should use when "
+"binding to an SSL-wrapped socket."
+msgstr ""
+
+#: ../../install/ssl.rst:39
+msgid ""
+"*ca\\_file*      Path to the CA certificate file the server should use to "
+"validate client certificates provided during an SSL handshake. This is "
+"ignored if cert\\_file and \"key\\_file\" are not set."
+msgstr ""
+
+#: ../../install/ssl.rst:41
+msgid ""
+"The use of SSL is automatically started after point to HTTPS protocol "
+"instead of HTTP during registration Murano API service in endpoints (Change "
+"publicurl argument to start with \\https://). SSL for Murano API is "
+"implemented like in any other OpenStack component. This realization is based"
+" on ssl python module so more information about it can be found `here`_."
+msgstr ""
+
+#: ../../install/ssl.rst:51
+msgid "SSL for RabbitMQ"
+msgstr ""
+
+#: ../../install/ssl.rst:53
+msgid ""
+"All Murano components communicate with each other by RabbitMQ. This "
+"interaction can be encrypted with SSL. By default all messages in Rabbit MQ "
+"are not encrypted. Each RabbitMQ Exchange should be configured separately."
+msgstr ""
+
+#: ../../install/ssl.rst:58
+msgid "**Murano API <-> Rabbit MQ exchange <-> Murano Engine**"
+msgstr ""
+
+#: ../../install/ssl.rst:60
+msgid ""
+"Edit ssl parameters in default section of ``/etc/murano/murano.conf``. Set "
+"``rabbit_use_ssl`` option to *true* and configure ssl kombu parameters. "
+"Specify the path to the SSL keyfile and SSL CA certificate in a regular "
+"format: /path/to/file without quotes or leave it empty to allow self-signed "
+"certificates."
+msgstr ""
+
+#: ../../install/ssl.rst:85
+msgid "**Murano Agent -> Rabbit MQ exchange**"
+msgstr ""
+
+#: ../../install/ssl.rst:87
+msgid ""
+"In main murano configuration file there is a section ,named *rabbitmq*, that"
+" is responsible for set up communication between Murano Agent and Rabbit MQ."
+" Just set *ssl* parameter to True to enable ssl."
+msgstr ""
+
+#: ../../install/ssl.rst:100
+msgid ""
+"If you want to configure Murano Agent in a different way change the default "
+"template. It can be found in Murano Core Library, located at "
+"*http://git.openstack.org/cgit/openstack/murano/tree/meta/io.murano/Resources/Agent-v1.template*."
+" Take a look at appSettings section:"
+msgstr ""
+
+#: ../../install/ssl.rst:124
+msgid ""
+"Desired parameter should be set directly to the value of the key that you "
+"want to change. Quotes are need to be kept. Thus you can change "
+"\"rabbitmq.ssl\" and \"rabbitmq.port\" values to make Rabbit MQ work with "
+"this exchange in a different from Murano-Engine way. After modification, "
+"don't forget to zip and re-upload core library."
+msgstr ""
+
+#: ../../install/ssl.rst:131
+msgid "SSL for Murano Dashboard"
+msgstr ""
+
+#: ../../install/ssl.rst:133
+msgid ""
+"If you are going not to use self-signed certificates additional "
+"configuration do not need to be done. Just point https in the URL. "
+"Otherwise, set *MURANO_API_INSECURE = True* on horizon config. You can find "
+"it in ``/etc/openstack-dashboard/local_settings.py.``."
+msgstr ""

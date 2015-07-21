@@ -1,0 +1,219 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/enduser-guide/manage_applications.rst:8
+msgid "Managing applications"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:11
+msgid "Import an application package"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:13
+msgid ""
+"There are several ways of importing an application package into murano:"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:16
+msgid ":ref:`from a zip file <ui_zip>`"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:17
+msgid ":ref:`from murano applications repository <ui_repo>`"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:18
+msgid ":ref:`from bundles of applications <ui_bundles>`"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:23
+msgid "From a zip file"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:25
+msgid ""
+"Perform the following steps to import an application package from a .zip "
+"file:"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:28
+#: ../../draft/enduser-guide/manage_applications.rst:72
+#: ../../draft/enduser-guide/manage_applications.rst:106
+msgid "In horizon, navigate to Murano > Manage > Package Definitions."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:29
+#: ../../draft/enduser-guide/manage_applications.rst:73
+msgid "Click the **Import Package** button on the top right of the page."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:35
+msgid ""
+"From the **Package source** drop-down list choose **File**, then click "
+"**Browse** to select a .zip file you want to import, and then click "
+"**Next**."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:43
+#: ../../draft/enduser-guide/manage_applications.rst:87
+msgid ""
+"At this step, the package is already uploaded. If necessary, verify and "
+"update the information about the package, then click **Next**."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:46
+msgid ""
+"Optional: choose one or multiple categories from the **Application "
+"Category** menu and click the **Create** button."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:50
+msgid ""
+"Though specifying a category is optional, we recommend that you specify at "
+"least one. It helps to filter applications in the catalog."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:56
+msgid ""
+"A message `Success: Package parameters successfully updated.` appears at the"
+" top right corner when the application is successfully downloaded."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:61
+msgid "From a repository"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:63
+msgid ""
+"Perform the following steps to import an application package from murano "
+"applications repository:"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:67
+msgid ""
+"To import an application package from a repository, you need to know the "
+"full name of the package. For the packages names, go to "
+"http://apps.openstack.org/#tab=murano-apps and click on the desired package "
+"to see its full name."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:79
+msgid ""
+"From the **Package source** drop-down list, choose **Repository**, enter the"
+" package name, and then click **Next**. Note that you may also specify the "
+"version of the package."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:90
+msgid ""
+"Choose one or multiple categories from the **Application Category** menu, "
+"then click **Create**."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:96
+msgid "From a bundle of applications"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:98
+msgid "Perform the following steps to import a bundle of applications:"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:101
+msgid ""
+"To import an application bundle from a repository, you need to know the full"
+" name of the package bundle. To find it out, go to "
+"http://apps.openstack.org/#tab=murano-apps and click on the desired bundle "
+"to see its full name."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:107
+msgid "Click the **Import Bundle** button on the top right of the page."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:113
+msgid ""
+"From the **Package Bundle Source** drop-down list, choose **Repository**, "
+"enter the bundle name, and then click **Create**."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:121
+msgid "Search for an application in the catalog"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:123
+msgid ""
+"When you have imported many applications and want to quickly find a required"
+" one, you can filter them by category, tags and words that the application "
+"name or description contains:"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:127
+msgid ""
+"In dashboard, navigate to :menuselection:`Murano > Application Catalog > "
+"Applications`."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:130
+msgid "The page is divided into two sections:"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:132
+msgid ""
+"**Recent Activity** shows the most recently imported or deployed "
+"applications"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:135
+msgid ""
+"the bottom section contains all the available applications sorted "
+"alphabetically"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:138
+msgid ""
+"To view all the applications of a specific category, select it from the "
+"**App Category** drop-down list:"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:145
+msgid ""
+"To filter applications by tags or words from the application name or "
+"description, use the rightmost filter:"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:154
+msgid "Tags can be specified during the import of an application package."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:156
+msgid ""
+"For example, there is an application that has the word *community-developed*"
+" in description. Let's find it with the filter. The following screenshot "
+"shows you the result."
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:165
+msgid "Delete an application"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:168
+msgid "Deploy an application"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:171
+msgid "Show an application topology"
+msgstr ""
+
+#: ../../draft/enduser-guide/manage_applications.rst:174
+msgid "Show a deployment log location"
+msgstr ""

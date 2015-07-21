@@ -1,0 +1,85 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/appdev-guide/examples.rst:8
+msgid "Examples"
+msgstr ""
+
+#: ../../draft/appdev-guide/examples.rst:16
+msgid "Application name"
+msgstr ""
+
+#: ../../draft/appdev-guide/examples.rst:17
+msgid "Description"
+msgstr ""
+
+#: ../../draft/appdev-guide/examples.rst:20
+msgid ""
+"Zabbix Agent is a simple application. It doesn’t deploy a VM by itself, but "
+"is installed on a specific VM that may contain any other applications. This "
+"VM is tracked by Zabbix and by its configuration."
+msgstr ""
+
+#: ../../draft/appdev-guide/examples.rst:24
+msgid ""
+"So Murano performs the Zabbix agent configuration based on the user input. "
+"The user chooses the way of instance tracking - HTTP or ICMP that may "
+"perform some modifications in the application package."
+msgstr ""
+
+#: ../../draft/appdev-guide/examples.rst:28
+msgid ""
+"It is worth noting that application scripts are written in Python, not in "
+"Bash as usual. This application does not work without Zabbix server "
+"application since it’s a required property, determined in the application "
+"definition."
+msgstr ""
+
+#: ../../draft/appdev-guide/examples.rst:34
+msgid ""
+"Zabbix Server application interacts with Zabbix Agent by calling its "
+"setUpAgent method and providing information about itself: IP and hostname of"
+" VM on which the server is installed."
+msgstr ""
+
+#: ../../draft/appdev-guide/examples.rst:38
+msgid ""
+"Server installs MySQL database and requests database name, password and some"
+" other parameters from the user."
+msgstr ""
+
+#: ../../draft/appdev-guide/examples.rst:42
+msgid ""
+"This is a good example on how difficult logic may be simplified with the "
+"inheritance that is supported by MuranoPL. Definition of this app is simple,"
+" but the opportunity it provides is fantastic."
+msgstr ""
+
+#: ../../draft/appdev-guide/examples.rst:46
+msgid ""
+"Crate is a distributed database, in the Murano Application catalog it looks "
+"like a regular application. It may be deployed on Google Kubernetes or "
+"regular Docker server. The user picks the desired option while filling in "
+"the form since these options are set in the UI definition. The form field "
+"has a list of possible options::"
+msgstr ""
+
+#: ../../draft/appdev-guide/examples.rst:57
+msgid ""
+"Information about the application itself (docker image and port that is "
+"needed to be opened) is contained in the getContainer method. All other "
+"actions for the application configuration are located at the "
+"DockerStandaloneHost definition and its dependencies. Note that this "
+"application doesn’t have a filename:Resources folder at all since the "
+"installation is made by Docker itself."
+msgstr ""

@@ -1,0 +1,435 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../specification/murano-env-temp.rst:17
+msgid "Environment template API"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:19
+msgid ""
+"Manage environment template definitions in Murano. It is possible to create,"
+" update, delete and deploy into OpenStack by translating it into an "
+"environment. In addition, applications can be added or delete to the "
+"environment template."
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:22
+msgid "**Environment Template Properties**"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:25
+msgid "Attribute"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:25
+msgid "Type"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:25
+#: ../../specification/murano-env-temp.rst:47
+#: ../../specification/murano-env-temp.rst:62
+#: ../../specification/murano-env-temp.rst:112
+#: ../../specification/murano-env-temp.rst:138
+#: ../../specification/murano-env-temp.rst:186
+#: ../../specification/murano-env-temp.rst:201
+#: ../../specification/murano-env-temp.rst:214
+#: ../../specification/murano-env-temp.rst:229
+#: ../../specification/murano-env-temp.rst:295
+#: ../../specification/murano-env-temp.rst:363
+#: ../../specification/murano-env-temp.rst:419
+msgid "Description"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:27
+msgid "id"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:27
+#: ../../specification/murano-env-temp.rst:29
+#: ../../specification/murano-env-temp.rst:35
+#: ../../specification/murano-env-temp.rst:39
+#: ../../specification/murano-env-temp.rst:41
+msgid "string"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:27
+msgid "Unique ID"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:29
+msgid "name"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:29
+msgid "User-friendly name"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:31
+msgid "created"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:31
+#: ../../specification/murano-env-temp.rst:33
+msgid "datetime"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:31
+msgid "Creation date and time in ISO format"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:33
+msgid "updated"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:33
+msgid "Modification date and time in ISO format"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:35
+msgid "tenant_id"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:35
+msgid "OpenStack tenant ID"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:37
+msgid "version"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:37
+msgid "int"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:37
+msgid "Current version"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:39
+msgid "networking"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:39
+msgid "Network settings"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:41
+msgid "description"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:41
+msgid "The environment template specification"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:44
+msgid "**Common response codes**"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:47
+#: ../../specification/murano-env-temp.rst:138
+#: ../../specification/murano-env-temp.rst:186
+#: ../../specification/murano-env-temp.rst:214
+#: ../../specification/murano-env-temp.rst:295
+#: ../../specification/murano-env-temp.rst:363
+#: ../../specification/murano-env-temp.rst:419
+msgid "Code"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:49
+#: ../../specification/murano-env-temp.rst:140
+#: ../../specification/murano-env-temp.rst:188
+#: ../../specification/murano-env-temp.rst:216
+#: ../../specification/murano-env-temp.rst:297
+#: ../../specification/murano-env-temp.rst:365
+#: ../../specification/murano-env-temp.rst:421
+msgid "200"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:49
+#: ../../specification/murano-env-temp.rst:140
+msgid "Operation completed successfully"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:51
+#: ../../specification/murano-env-temp.rst:142
+#: ../../specification/murano-env-temp.rst:190
+#: ../../specification/murano-env-temp.rst:218
+#: ../../specification/murano-env-temp.rst:299
+#: ../../specification/murano-env-temp.rst:367
+#: ../../specification/murano-env-temp.rst:423
+msgid "401"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:51
+#: ../../specification/murano-env-temp.rst:142
+msgid "User is not authorized to perform the operation"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:54
+msgid "Methods for Environment Template API"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:57
+msgid "List Environments Templates"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:59
+#: ../../specification/murano-env-temp.rst:109
+#: ../../specification/murano-env-temp.rst:151
+#: ../../specification/murano-env-temp.rst:198
+#: ../../specification/murano-env-temp.rst:226
+#: ../../specification/murano-env-temp.rst:307
+#: ../../specification/murano-env-temp.rst:375
+msgid "*Request*"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:62
+#: ../../specification/murano-env-temp.rst:112
+#: ../../specification/murano-env-temp.rst:201
+#: ../../specification/murano-env-temp.rst:229
+#: ../../specification/murano-env-temp.rst:310
+#: ../../specification/murano-env-temp.rst:378
+msgid "Method"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:62
+#: ../../specification/murano-env-temp.rst:112
+#: ../../specification/murano-env-temp.rst:201
+#: ../../specification/murano-env-temp.rst:229
+msgid "URI"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:64
+#: ../../specification/murano-env-temp.rst:312
+msgid "GET"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:64
+#: ../../specification/murano-env-temp.rst:114
+msgid "/templates"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:64
+msgid "Get a list of existing environment templates"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:68
+#: ../../specification/murano-env-temp.rst:123
+#: ../../specification/murano-env-temp.rst:164
+#: ../../specification/murano-env-temp.rst:265
+#: ../../specification/murano-env-temp.rst:322
+#: ../../specification/murano-env-temp.rst:403
+msgid "*Response*"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:70
+msgid ""
+"This call returns a list of environment templates. Only the basic properties"
+" are returned."
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:100
+msgid "Create environment template"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:114
+#: ../../specification/murano-env-temp.rst:231
+#: ../../specification/murano-env-temp.rst:380
+msgid "POST"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:114
+msgid "Create a new environment template"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:118
+#: ../../specification/murano-env-temp.rst:167
+#: ../../specification/murano-env-temp.rst:240
+#: ../../specification/murano-env-temp.rst:320
+#: ../../specification/murano-env-temp.rst:393
+msgid "*Content-Type*"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:118
+#: ../../specification/murano-env-temp.rst:167
+#: ../../specification/murano-env-temp.rst:240
+#: ../../specification/murano-env-temp.rst:320
+#: ../../specification/murano-env-temp.rst:393
+msgid "application/json"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:121
+#: ../../specification/murano-env-temp.rst:242
+#: ../../specification/murano-env-temp.rst:395
+msgid "*Example*"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:121
+msgid "{\"name\": \"env_temp_name\"}"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:135
+#: ../../specification/murano-env-temp.rst:183
+#: ../../specification/murano-env-temp.rst:211
+#: ../../specification/murano-env-temp.rst:292
+#: ../../specification/murano-env-temp.rst:360
+#: ../../specification/murano-env-temp.rst:416
+msgid "*Error code*"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:144
+#: ../../specification/murano-env-temp.rst:427
+msgid "409"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:144
+msgid "The environment template already exists"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:149
+msgid "Get environment templates details"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:153
+msgid ""
+"Return information about environment template itself and about applications,"
+" including to this environment template."
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:162
+msgid "`env-temp-id` - environment template ID, required"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:188
+#: ../../specification/murano-env-temp.rst:216
+#: ../../specification/murano-env-temp.rst:297
+#: ../../specification/murano-env-temp.rst:365
+msgid "OK. Environment Template created successfully"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:190
+#: ../../specification/murano-env-temp.rst:218
+#: ../../specification/murano-env-temp.rst:299
+#: ../../specification/murano-env-temp.rst:367
+#: ../../specification/murano-env-temp.rst:423
+msgid "User is not authorized to access this session"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:192
+#: ../../specification/murano-env-temp.rst:220
+#: ../../specification/murano-env-temp.rst:301
+#: ../../specification/murano-env-temp.rst:369
+#: ../../specification/murano-env-temp.rst:425
+msgid "404"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:192
+#: ../../specification/murano-env-temp.rst:220
+#: ../../specification/murano-env-temp.rst:301
+#: ../../specification/murano-env-temp.rst:369
+#: ../../specification/murano-env-temp.rst:425
+msgid "The environment template does not exit"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:196
+msgid "Delete environment template"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:203
+msgid "DELETE"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:203
+msgid "/templates/<env-temp-id>"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:203
+msgid "Delete the template id"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:207
+#: ../../specification/murano-env-temp.rst:234
+#: ../../specification/murano-env-temp.rst:315
+#: ../../specification/murano-env-temp.rst:384
+msgid "*Parameters:*"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:209
+msgid "`env-temp_id` - environment template ID, required"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:224
+msgid "Adding application to environment template"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:231
+msgid "/templates/{env-temp-id}/services"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:231
+msgid "Create a new application"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:236
+msgid "`env-temp-id` - The environment-template id, required"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:237
+msgid "payload - the service description"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:305
+msgid "Get applications information from an environment template"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:310
+msgid "URI                                 | Description"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:312
+msgid ""
+"/templates/{env-temp-id}/services   | It obtains the service description"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:317
+#: ../../specification/murano-env-temp.rst:386
+msgid "`env-temp-id` - The environment template ID, required"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:373
+msgid "Create an environment from an environment template"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:378
+msgid "URI                                        | Description"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:380
+msgid "/templates/{env-temp-id}/create-environment| Create an environment"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:388
+msgid "*Payload:*"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:390
+msgid "'environment name': The environment name to be created."
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:421
+msgid "OK. Environment template created successfully"
+msgstr ""
+
+#: ../../specification/murano-env-temp.rst:427
+msgid "The environment already exists"
+msgstr ""

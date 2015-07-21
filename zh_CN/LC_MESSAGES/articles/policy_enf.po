@@ -1,0 +1,164 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../articles/policy_enf.rst:3
+msgid "Murano Policy Enforcement Example"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:6
+msgid "Introduction"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:7
+msgid ""
+"As a part of the policy guided fulfillment, we need to enforce policies on "
+"the Murano environment deployment. If the policy enforcement failed, "
+"deployment fails. Policies are defined and evaluated in the Congress_ "
+"project. The policy language for Congress is Datalog. The congress policy "
+"consists of Datalog rules and facts. The cloud administrator defines "
+"policies in Congress. Examples of such policies:"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:12
+msgid "all VM instances must have at least 2GB of RAM"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:13
+msgid "all Apache server instances must have given certified version"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:14
+msgid ""
+"data placement policy: all DB instances must be deployed at given geo "
+"location (enforcing some law restriction on data placement)"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:16
+msgid ""
+"These policies are evaluated over data in the form of tables (Congress data "
+"structures). A deployed Murano environment must be decomposed to Congress "
+"data structures. The decomposed environment is sent to congress for "
+"simulation. Congress simulates whether the resulting state does not violate "
+"any defined policy. Deployment is aborted in case of policy violation. "
+"Murano uses two predefined policies in Congress:"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:21
+msgid ""
+"*murano_system* contains rules and facts of policies defined by cloud admin."
+msgstr ""
+
+#: ../../articles/policy_enf.rst:22
+msgid ""
+"*murano* contains only facts/records reflecting resulting state after "
+"deployment of an environment."
+msgstr ""
+
+#: ../../articles/policy_enf.rst:24
+msgid ""
+"Records in the *murano* policy are queried by rules from the *murano_system*"
+" policy. The congress simulation does not create any records in the *murano*"
+" policy. Congress will only give feedback on whether the resulting state "
+"violates the policy or not."
+msgstr ""
+
+#: ../../articles/policy_enf.rst:30
+msgid "Example"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:31
+msgid ""
+"In this example we will create rules that prohibit creating VM instances "
+"with flavor with more than 2048 MB ram."
+msgstr ""
+
+#: ../../articles/policy_enf.rst:33
+msgid ""
+"Prior creating rules your OpenStack installation has to be configured as "
+"described in :ref:`policyenf_setup`."
+msgstr ""
+
+#: ../../articles/policy_enf.rst:36
+msgid "Example rules"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:38
+msgid "Create ``predeploy_errors`` rule"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:40
+msgid ""
+"Policy validation engine checks rule ``predeploy_errors`` and rules "
+"referenced inside this rule are evaluated by congress engine."
+msgstr ""
+
+#: ../../articles/policy_enf.rst:42
+msgid ""
+"We create example rule which references ``flavor_ram`` rule we create "
+"afterwards. It disables flavors with ram higher than 2048 MB and constructs "
+"message returned to the user in *msg* variable."
+msgstr ""
+
+#: ../../articles/policy_enf.rst:57 ../../articles/policy_enf.rst:70
+msgid "Use this command to create the rule:"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:64
+msgid ""
+"In this example we used data from policy **murano** which is represented by "
+"``murano:properties``. There are stored rows with decomposition of model "
+"representing murano application. We also used built-in functions of congress"
+" - ``gt`` - greater-than, and ``concat`` which joins two strings into "
+"variable."
+msgstr ""
+
+#: ../../articles/policy_enf.rst:66
+msgid "Create ``flavor_ram`` rule"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:68
+msgid ""
+"We create the rule that resolves parameters of flavor by flavor name and "
+"returns *ram* parameter. It uses rule *flavors* from *nova* policy. Data in "
+"this policy is filled by *nova* datasource driver."
+msgstr ""
+
+#: ../../articles/policy_enf.rst:78
+msgid "Example rules in murano app deployment"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:80
+msgid "Create environment with simple application"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:82
+msgid "Choose Git application from murano applications"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:83
+msgid ""
+"Create with **\"m1.medium\"** instance flavor which uses 4096MB so "
+"validation will fail"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:88
+msgid "Deploy environment"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:90
+msgid "Environment is in Status: **Deploy FAILURE**"
+msgstr ""
+
+#: ../../articles/policy_enf.rst:91
+msgid "Check deployment log:"
+msgstr ""

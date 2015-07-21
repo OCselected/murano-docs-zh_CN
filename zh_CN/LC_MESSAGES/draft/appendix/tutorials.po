@@ -1,0 +1,28 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/appendix/tutorials.rst:11
+msgid "Tutorials"
+msgstr ""
+
+#: ../../draft/appendix/tutorials.rst:14
+msgid "Integration with Docker"
+msgstr ""
+
+#: ../../draft/appendix/tutorials.rst:17
+msgid "Integration with Kubernetes"
+msgstr ""
+
+#: ../../draft/appendix/tutorials.rst:20
+msgid "HA and autoscaling"
+msgstr ""

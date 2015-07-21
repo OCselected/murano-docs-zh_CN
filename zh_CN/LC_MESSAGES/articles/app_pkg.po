@@ -1,0 +1,330 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../articles/app_pkg.rst:20
+msgid "Composing application package manual"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:22
+msgid ""
+"Murano is Application catalog that supports types of applications. This "
+"document intends to make composing application packages easily."
+msgstr ""
+
+#: ../../articles/app_pkg.rst:25
+msgid "Step 1.  Prepare Execution Plans"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:27
+msgid ""
+"An *Execution Plan* is a set of metadata that describes the installation "
+"process of an application in a virtual machine. It's a minimal unit of "
+"execution that can be triggered in Murano Workflows and should be "
+"understandable by Murano agent. From *Execution plans* any script can be "
+"triggered. It could be any type of scripts which will execute commands and "
+"install application components as the result. Each script may consist of one"
+" or more files. Scripts may be reused across several Execution Plans. One of"
+" the scripts should be an entry point and should be specified in a resource "
+"template file in *Scripts*. Besides the *Scripts* section the following "
+"sections must be presented in a resource template file:"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:33
+msgid "**FormatVersion** - version of *Execution Plan* syntax format"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:34
+msgid "**Version** - version of *Execution Plan*"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:35
+msgid "**Name** -  human-readable name of the Execution Plan"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:36
+msgid "**Parameters** - parameters received from MuranoPL"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:37
+msgid "**Body** - Python statement, should start with | symbol"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:38
+msgid "**Scripts** - dictionary that maps script names to script definitions."
+msgstr ""
+
+#: ../../articles/app_pkg.rst:40
+msgid ""
+"Scripts are the building blocks of Execution Plans and they may be executed "
+"as a whole (like a single piece of code), expose some functions that can be "
+"independently called in scripts. This depends on Deployment Platform and "
+"Executor capabilities. One script can be defined with the following "
+"properties"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:42
+msgid "**Type** Deployment Platform name that script is targeted to."
+msgstr ""
+
+#: ../../articles/app_pkg.rst:43
+msgid ""
+"**Version** optional minimum version of deployment platform/executor "
+"required by the script."
+msgstr ""
+
+#: ../../articles/app_pkg.rst:44
+msgid ""
+"**EntryPoint** relative path to the file that contains a script entry point"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:45
+msgid ""
+"**Files** This is an optional array of additional files required for the "
+"script. Use *<>* to specify a relative path to the file. The root directory "
+"is *Resource/scripts*."
+msgstr ""
+
+#: ../../articles/app_pkg.rst:46
+msgid "**Options** an optional argument of type contains additional options"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:50
+msgid "Example *DeployTelnet.template*"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:78
+msgid "Step 2.  Prepare MuranoPL class definitions"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:80
+msgid ""
+"MuranoPL classes control application deployment workflow execution. Full "
+"information about MuranoPL classes see here: :ref:`MuranoPL Spec`"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:84
+msgid "Example *telnet.yaml*"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:129
+msgid "Note, that"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:131
+msgid ""
+"*io.murano.system.Resources* is a system class, defined in MuranoPL. "
+"MuranoPL system classes are described `here "
+"<http://git.openstack.org/cgit/openstack/murano/tree/meta/io.murano/Classes>`_."
+msgstr ""
+
+#: ../../articles/app_pkg.rst:132
+msgid ""
+"*io.murano.resources.Instance* is a class, defined in the core Murano "
+"library, contains Murano Agent templates and virtual machine initialization "
+"scripts."
+msgstr ""
+
+#: ../../articles/app_pkg.rst:133
+msgid ""
+"$this.find(std:Environment).reporter.report($this, 'Creating VM for Telnet "
+"instance.') - this is the way of sending reports to Murano dashboard during "
+"deployment"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:136
+msgid "Step 3.  Prepare dynamic UI form definition"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:138
+msgid ""
+"Create a form definition in a yaml format. Before configuring a form, "
+"compose a list of parameters that will be required to set by a user. Some "
+"form fields that are responsible for choosing a flavor, image and "
+"availability zone are better to use in every application creation wizard. "
+"Syntax of  Dynamic UI can be found see at the corresponding section: "
+":ref:`Dynamic UI Definition specification <DynamicUISpec>`. Full example "
+"with Telnet application form definition :ref:`Telnet Definition <TelnetUI>`."
+msgstr ""
+
+#: ../../articles/app_pkg.rst:144
+msgid "Step 4.  Prepare application logo"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:146
+msgid ""
+"Find or create a simple image (in a .png format) associated with your "
+"application. Is should be small and have a square shape. You can specify any"
+" name of your image. In our example, let's name it *telnet.png*."
+msgstr ""
+
+#: ../../articles/app_pkg.rst:149
+msgid "Step 5.  Prepare manifest file"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:151
+msgid ""
+"General application metadata should be described in the application manifest"
+" file. It should be in a yaml format and should have the following sections"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:153
+msgid "**Format** - version of a manifest syntax format"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:154
+msgid "**Type** - package type. Valid choices are *Library* and *Application*"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:155
+msgid "**Name** - human-readable application name"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:156
+msgid "**Description** - a brief description of an application"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:157
+msgid ""
+"**Author** - person or company name which created an application package"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:158
+msgid ""
+"**Classes** - MuranoPL class list, on which application deployment is based"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:159
+msgid ""
+"**Tags** - list of words, associated with this application. Will be helpful "
+"during the search. *Optional* parameter"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:160
+msgid ""
+"**Require** - a dict of application names with versions, required by this "
+"application. Currently only used by repository importing mechanism. Versions"
+" can be omitted (or set to null), in that case package with no version would"
+" be imported. *Optional* parameter"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:164
+msgid "Example *manifest.yaml*"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:185
+msgid "Step 6.  Prepare images.lst file"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:187
+msgid ""
+"This step is optional. If you plan on providing images required by your "
+"application, you can include ``images.lst`` file with image specifications"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:190
+msgid "Example *images.lst*"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:213
+msgid ""
+"``Hash`` key is ignored right now. If you have 2 apps, both of which require"
+" the same image, importing these apps can cause this image to be downloaded "
+"twice. This situation occurs, because image hash is not available until the "
+"moment glance downloads it. It produces a situation, when there are two "
+"images with the same name (but with different hashes). If image name is "
+"written in the app definition, heat would not be able to create the "
+"template, based on that definition."
+msgstr ""
+
+#: ../../articles/app_pkg.rst:221
+msgid ""
+"If *Url* is omitted - the images would be searched for in the Murano "
+"Repository."
+msgstr ""
+
+#: ../../articles/app_pkg.rst:224
+msgid "Step 7.  Compose a zip archive"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:226
+msgid "An application archive should have the following structure"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:228
+msgid "*Classes* folder"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:229
+msgid "MuranoPL class definitions should be put inside this folder"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:231
+msgid "*Resources* folder"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:231
+msgid "This folder should contain Execution scripts"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:234
+msgid "*Scripts* folder"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:234
+msgid ""
+"All script files, needed for an application deployment should be placed here"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:236
+msgid "*UI* folder"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:237
+msgid ""
+"Place dynamic ui yaml definitions here or skip to use the default name "
+"*ui.yaml*"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:238
+msgid "*logo.png*"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:239
+msgid ""
+"Image file should be placed in the root folder. It can have any name, just "
+"specify it in the manifest file or skip to use default *logo.png* name"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:240
+msgid "*manifest.yaml*"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:241
+msgid ""
+"Application manifest file. It's an application entry point. The file name is"
+" fixed."
+msgstr ""
+
+#: ../../articles/app_pkg.rst:243
+msgid "*images.lst*"
+msgstr ""
+
+#: ../../articles/app_pkg.rst:243
+msgid "List of required images. Optional file."
+msgstr ""
+
+#: ../../articles/app_pkg.rst:245
+msgid ""
+"Congratulations! Your application is ready to be uploaded to an Application "
+"Catalog."
+msgstr ""

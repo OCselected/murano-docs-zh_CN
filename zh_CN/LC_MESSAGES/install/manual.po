@@ -1,0 +1,393 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../install/manual.rst:21
+msgid "Installing and Running Manually"
+msgstr ""
+
+#: ../../install/manual.rst:24
+msgid "Prepare Environment"
+msgstr ""
+
+#: ../../install/manual.rst:27
+msgid "Install Prerequisites"
+msgstr ""
+
+#: ../../install/manual.rst:29
+msgid ""
+"First you need to install a number of packages with your OS package manager."
+" The list of packages depends on the OS you use."
+msgstr ""
+
+#: ../../install/manual.rst:33
+msgid "Ubuntu"
+msgstr ""
+
+#: ../../install/manual.rst:44
+msgid "Fedora"
+msgstr ""
+
+#: ../../install/manual.rst:48
+msgid ""
+"Fedora support wasn't thoroughly tested. We do not guarantee that Murano "
+"will work on Fedora."
+msgstr ""
+
+#: ../../install/manual.rst:59
+msgid "CentOS"
+msgstr ""
+
+#: ../../install/manual.rst:69
+msgid "Install tox"
+msgstr ""
+
+#: ../../install/manual.rst:78
+msgid "Install And Configure Database"
+msgstr ""
+
+#: ../../install/manual.rst:80
+msgid ""
+"Murano can use various database types on backend. For development purposes "
+"SQLite is enough in most cases. For production installations you should use "
+"MySQL or PostgreSQL databases."
+msgstr ""
+
+#: ../../install/manual.rst:86
+msgid ""
+"Although Murano could use PostgreSQL database on backend, it wasn't "
+"thoroughly tested and should be used with caution."
+msgstr ""
+
+#: ../../install/manual.rst:90
+msgid ""
+"To use MySQL database you should install it and create an empty database "
+"first:"
+msgstr ""
+
+#: ../../install/manual.rst:108
+msgid "Install the API service and Engine"
+msgstr ""
+
+#: ../../install/manual.rst:110
+msgid "Create a folder which will hold all Murano components."
+msgstr ""
+
+#: ../../install/manual.rst:117
+msgid "Clone the Murano git repository to the management server."
+msgstr ""
+
+#: ../../install/manual.rst:125
+msgid "Set up Murano config file"
+msgstr ""
+
+#: ../../install/manual.rst:127
+msgid "Murano has common config file for API and Engine services."
+msgstr ""
+
+#: ../../install/manual.rst:129
+msgid "First, generate sample configuration file, using tox"
+msgstr ""
+
+#: ../../install/manual.rst:136
+msgid "And make a copy of it for further modifications"
+msgstr ""
+
+#: ../../install/manual.rst:143
+msgid ""
+"Edit ``murano.conf`` with your favorite editor. Below is an example which "
+"contains basic settings your are likely need to configure."
+msgstr ""
+
+#: ../../install/manual.rst:148
+msgid ""
+"The example below uses SQLite database. Edit **[database]** section if you "
+"want to use other database type."
+msgstr ""
+
+#: ../../install/manual.rst:201
+msgid ""
+"Create a virtual environment and install Murano prerequisites. We will use "
+"*tox* for that. Virtual environment will be created under *.tox* directory."
+msgstr ""
+
+#: ../../install/manual.rst:210
+msgid "Create database tables for Murano."
+msgstr ""
+
+#: ../../install/manual.rst:219
+msgid ""
+"Open a new console and launch Murano API. A separate terminal is required "
+"because the console will be locked by a running process."
+msgstr ""
+
+#: ../../install/manual.rst:228
+msgid "Import Core Murano Library."
+msgstr ""
+
+#: ../../install/manual.rst:246
+msgid "Open a new console and launch Murano Engine. A separate terminal is"
+msgstr ""
+
+#: ../../install/manual.rst:239
+msgid "required because the console will be locked by a running process."
+msgstr ""
+
+#: ../../install/manual.rst:249
+msgid "Install Murano Dashboard"
+msgstr ""
+
+#: ../../install/manual.rst:251
+msgid ""
+"Murano API & Engine services provide the core of Murano. However, your need "
+"a control plane to use it. This section describes how to install and run "
+"Murano Dashboard."
+msgstr ""
+
+#: ../../install/manual.rst:255
+msgid "Clone the repository with Murano Dashboard."
+msgstr ""
+
+#: ../../install/manual.rst:263
+msgid "Clone horizon repository"
+msgstr ""
+
+#: ../../install/manual.rst:270
+msgid "Create venv and install muranodashboard as editable module."
+msgstr ""
+
+#: ../../install/manual.rst:278
+msgid "Copy muranodashboard plugin file."
+msgstr ""
+
+#: ../../install/manual.rst:280
+msgid "This step enables murano panel in horizon dashboard."
+msgstr ""
+
+#: ../../install/manual.rst:287
+msgid "Prepare local settings."
+msgstr ""
+
+#: ../../install/manual.rst:289
+msgid ""
+"To get more information, check out official `horizon documentation "
+"<http://docs.openstack.org/developer/horizon/topics/settings.html#openstack-"
+"settings-partial>`_."
+msgstr ""
+
+#: ../../install/manual.rst:296
+msgid "Customize local settings according to OpenStack installation."
+msgstr ""
+
+#: ../../install/manual.rst:316
+msgid ""
+"Also, it's better to change default session backend from  browser cookies to"
+" database to avoid issues with forms during creating applications:"
+msgstr ""
+
+#: ../../install/manual.rst:332
+msgid ""
+"If you do not plan to get murano service from keystone application catalog, "
+"provide where murano-api service is running:"
+msgstr ""
+
+#: ../../install/manual.rst:341
+msgid "Perform database synchronization."
+msgstr ""
+
+#: ../../install/manual.rst:343
+msgid ""
+"Optional step. Needed in case you set up database as a session backend."
+msgstr ""
+
+#: ../../install/manual.rst:350
+msgid ""
+"You can reply 'no' since for development purpose separate user is not "
+"needed."
+msgstr ""
+
+#: ../../install/manual.rst:352
+msgid ""
+"Run Django server at 127.0.0.1:8000 or provide different IP and PORT "
+"parameters."
+msgstr ""
+
+#: ../../install/manual.rst:359
+msgid ""
+"Development server will be restarted automatically on every code change."
+msgstr ""
+
+#: ../../install/manual.rst:361
+msgid "Open dashboard using url http://localhost:8000"
+msgstr ""
+
+#: ../../install/manual.rst:364
+msgid "Import Murano Applications"
+msgstr ""
+
+#: ../../install/manual.rst:366
+msgid ""
+"Applications are needed to be imported to fill the catalog. It can be done "
+"via dashboard, but also possible via CLI:"
+msgstr ""
+
+#: ../../install/manual.rst:369
+msgid "Clone Murano Apps repository."
+msgstr ""
+
+#: ../../install/manual.rst:377
+msgid ""
+"Import every package you need from this repository, using the command below."
+msgstr ""
+
+#: ../../install/configure_network.rst:18
+msgid "Network Configuration"
+msgstr ""
+
+#: ../../install/configure_network.rst:20
+msgid ""
+"Murano may work in various networking environments and is capable to detect "
+"the current network configuration and choose the appropriate settings "
+"automatically. However, some additional actions are required to support "
+"advanced scenarios."
+msgstr ""
+
+#: ../../install/configure_network.rst:26
+msgid "Nova network support"
+msgstr ""
+
+#: ../../install/configure_network.rst:28
+msgid ""
+"Nova Network is simplest networking solution, which has limited capabilities"
+" but is available on any OpenStack deployment without the need to deploy any"
+" additional components."
+msgstr ""
+
+#: ../../install/configure_network.rst:32
+msgid ""
+"When a new Murano Environment is created, Murano checks if a dedicated "
+"networking service (i.e. Neutron) exists in the current OpenStack "
+"deployment. It relies on Keystone's service catalog for that. If such a "
+"service is not present, Murano automatically falls back to Nova Network. No "
+"further configuration is needed in this case, all the VMs spawned by Murano "
+"will be joining the same Network."
+msgstr ""
+
+#: ../../install/configure_network.rst:40
+msgid "Neutron support"
+msgstr ""
+
+#: ../../install/configure_network.rst:42
+msgid ""
+"If Neutron is installed, Murano enables its advanced networking features "
+"that give you ability to not care about configuring networks for your "
+"application."
+msgstr ""
+
+#: ../../install/configure_network.rst:45
+msgid ""
+"By default it will create an isolated network for each environment and join "
+"all VMs needed by your application to that network. To install and configure"
+" application in just spawned virtual machine Murano also requires a router "
+"connected to the external network."
+msgstr ""
+
+#: ../../install/configure_network.rst:51
+msgid "Automatic Neutron network configuration"
+msgstr ""
+
+#: ../../install/configure_network.rst:53
+msgid ""
+"To create router automatically, provide the following parameters in config "
+"file:"
+msgstr ""
+
+#: ../../install/configure_network.rst:65
+msgid ""
+"To figure out the name of the external network, perform the following "
+"command:"
+msgstr ""
+
+#: ../../install/configure_network.rst:71
+msgid ""
+"During the first deploy, required networks and router with specified name "
+"will be created and set up."
+msgstr ""
+
+#: ../../install/configure_network.rst:74
+msgid "Manual neutron network configuration"
+msgstr ""
+
+#: ../../install/configure_network.rst:76
+msgid "Step 1. Create public network"
+msgstr ""
+
+#: ../../install/configure_network.rst:78
+msgid ""
+"First, you need to check for existence of external networks. Login as admin "
+"and go to *Project -> Network -> Network Topology*. And check network type "
+"in network details at *Admin -> Networks -> Network name* page. The same "
+"action can be done via CLI by running `neutron net-external-list`. To create"
+" new external network examine `OpenStack documentation "
+"<http://docs.openstack.org/trunk/install-guide/install/apt/content"
+"/neutron_initial-external-network.html>`_."
+msgstr ""
+
+#: ../../install/configure_network.rst:86
+msgid "Step 2. Create local network"
+msgstr ""
+
+#: ../../install/configure_network.rst:88
+msgid "Go to *Project -> Network -> Networks*."
+msgstr ""
+
+#: ../../install/configure_network.rst:89
+msgid "Click *Create Network* and fill the form."
+msgstr ""
+
+#: ../../install/configure_network.rst:96
+msgid "Step 3. Create router"
+msgstr ""
+
+#: ../../install/configure_network.rst:98
+msgid "Go to *Project -> Network -> Routers*"
+msgstr ""
+
+#: ../../install/configure_network.rst:100
+msgid "Click \"Create Router\""
+msgstr ""
+
+#: ../../install/configure_network.rst:101
+msgid "In the \"Router Name\" field, enter the *murano-default-router*"
+msgstr ""
+
+#: ../../install/configure_network.rst:106
+msgid ""
+"If you specify a name other than *murano-default-router*, it will be "
+"necessary to change the following settings in the config file:"
+msgstr ""
+
+#: ../../install/configure_network.rst:116
+msgid "Click on the specified router name"
+msgstr ""
+
+#: ../../install/configure_network.rst:117
+msgid "In the opened view click “Add interface”"
+msgstr ""
+
+#: ../../install/configure_network.rst:118
+msgid "Specify the subnet and IP address"
+msgstr ""
+
+#: ../../install/configure_network.rst:122
+msgid "And check the result in `Network Topology` tab."
+msgstr ""

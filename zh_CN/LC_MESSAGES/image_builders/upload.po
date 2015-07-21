@@ -1,0 +1,142 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../image_builders/upload.rst:20
+msgid "Upload image into glance"
+msgstr ""
+
+#: ../../image_builders/upload.rst:22
+msgid ""
+"To deploy applications with murano, virtual machine images should be "
+"uploaded into glance in a special way - *murano_image_info* property should "
+"be set."
+msgstr ""
+
+#: ../../image_builders/upload.rst:24
+msgid ""
+"Use the glance image-create command to import your disk image to glance:"
+msgstr ""
+
+#: ../../image_builders/upload.rst:33
+msgid ""
+"Replace the command line arguments to glance image-create with the "
+"appropriate values for your environment and disk image:"
+msgstr ""
+
+#: ../../image_builders/upload.rst:35
+msgid ""
+"Replace **<NAME>** with the name that users will refer to the disk image by."
+" E.g. **ws-2012-std**"
+msgstr ""
+
+#: ../../image_builders/upload.rst:37
+msgid ""
+"Replace **<IMAGE_FILE>** with the local path to the image file to upload. "
+"E.g. **ws-2012-std.qcow2**."
+msgstr ""
+
+#: ../../image_builders/upload.rst:39
+msgid "Replace **<IMAGE_METADATA>** with the following property string"
+msgstr ""
+
+#: ../../image_builders/upload.rst:46
+msgid "where:"
+msgstr ""
+
+#: ../../image_builders/upload.rst:48
+msgid "**title** - user-friendly description of the image"
+msgstr ""
+
+#: ../../image_builders/upload.rst:49
+msgid "**type** - murano image type, see :ref:`murano_image_types`"
+msgstr ""
+
+#: ../../image_builders/upload.rst:51
+msgid "To update metadata of the existing image run the command:"
+msgstr ""
+
+#: ../../image_builders/upload.rst:58
+msgid "Replace **<IMAGE_ID>** with image id from the previous command output."
+msgstr ""
+
+#: ../../image_builders/upload.rst:60
+msgid "Replace **<IMAGE_METADATA>** with murano_image_info property, e.g."
+msgstr ""
+
+#: ../../image_builders/upload.rst:69
+msgid ""
+"The value of the **--property** argument (named **murano_image_info**) is a "
+"JSON string. Only double quotes are valid in JSON, so please type the string"
+" exactly as in the example above."
+msgstr ""
+
+#: ../../image_builders/upload.rst:75
+msgid ""
+"Existing images could be marked in a simple way in the horizon UI with the "
+"murano dashboard installed. Navigate to *Murano -> Manage -> Images -> Mark "
+"Image* and fill up a form:"
+msgstr ""
+
+#: ../../image_builders/upload.rst:78
+msgid "**Image** - ws-2012-std"
+msgstr ""
+
+#: ../../image_builders/upload.rst:79
+msgid "**Title** - My Prepared Image"
+msgstr ""
+
+#: ../../image_builders/upload.rst:80
+msgid "**Type** - Windows Server 2012"
+msgstr ""
+
+#: ../../image_builders/upload.rst:83
+msgid ""
+"After these steps desired image can be chosen in application creation "
+"wizard."
+msgstr ""
+
+#: ../../image_builders/upload.rst:89
+msgid "Murano image types"
+msgstr ""
+
+#: ../../image_builders/upload.rst:94
+msgid "Type Name"
+msgstr ""
+
+#: ../../image_builders/upload.rst:95
+msgid "Description"
+msgstr ""
+
+#: ../../image_builders/upload.rst:97
+msgid "windows.2012"
+msgstr ""
+
+#: ../../image_builders/upload.rst:98
+msgid "Windows Server 2012"
+msgstr ""
+
+#: ../../image_builders/upload.rst:100
+msgid "linux"
+msgstr ""
+
+#: ../../image_builders/upload.rst:101
+msgid "Generic Linux images, Ubuntu / Debian, RedHat / Centos, etc"
+msgstr ""
+
+#: ../../image_builders/upload.rst:103
+msgid "cirrus.demo"
+msgstr ""
+
+#: ../../image_builders/upload.rst:104
+msgid "Murano demo image, based on CirrOS"
+msgstr ""

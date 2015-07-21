@@ -1,0 +1,204 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/appdev-guide/use_cases.rst:8
+msgid "Use-cases"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:11
+msgid "Performing application interconnections"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:13
+msgid ""
+"Murano can handle application interconnections installed on virtual "
+"machines. The decision of how to combine applications is made by the author "
+"of an application."
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:17
+msgid ""
+"To illustrate the way such interconnection can be configured, let’s analyze "
+"the mechanisms applied in WordPress application, which uses MySql."
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:21
+msgid ""
+"MySql is a very popular database and can be used in quite a number of "
+"various applications. Instead of the creation of a database inside "
+"definition of the WordPress application, it calls the methods from the MySQL"
+" class. At the same time MySQL remains an independent application."
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:26
+msgid "MySql has a number of methods:"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:28
+msgid "``deploy``"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:29
+msgid "``createDatabase``"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:30
+msgid "``createUser``"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:31
+msgid "``assignUser``"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:32
+msgid "``getConnectionString``"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:34
+msgid ""
+"In the ``io.murano.apps.WordPress`` class definition the database property "
+"is a contact for the ``io.murano.databases.MySql`` class. So, the database "
+"configuration methods can be called with the parameters passed by the user "
+"in the main method:"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:45
+msgid ""
+"Any other methods of any other class can be invoked the same way to make the"
+" proposal application installation algorithm clear and constructive. Also, "
+"it allows not to duplicate the code in new applications."
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:51
+msgid "Using application already installed on the image"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:53
+msgid ""
+"Suppose you have everything already prepared on image. And you want to share"
+" this image with others. This problem can be solved in several ways."
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:56
+msgid ""
+"Let's use the `HDPSandbox <https://github.com/openstack/murano-"
+"apps/tree/master/HDPSandbox/package>`_ application to illustrate how this "
+"can be done with Murano."
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:61
+msgid "An image may not contain murano-agent at all."
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:63
+msgid "Prepare an application package of the structure:"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:77
+msgid ""
+"The ``Resources`` folder is not included in the package since the image "
+"contains everything that user expects. So no extra instructions are needed "
+"to be executed on murano-agent."
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:81
+msgid ""
+"UI is provided for specifying the application name, which is used for the "
+"application recognition in logging. And what is more, it contains the image "
+"name as a deployment instruction template (object model) in the "
+"``Application`` section:"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:100
+msgid ""
+"Moreover, the unsupported flavors can be specified here, so that the user "
+"can select only from the valid ones. Provide the requirements in the "
+"corresponding section to do this:"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:111
+msgid ""
+"After the UI form creation, and the HDPSandbox application deployment, the "
+"VM with the predefined image is spawned. Such type of applications may "
+"interact with regular applications. Thus, if you have an image with Puppet, "
+"you can call the ``deploy`` method of the Puppet application and then puppet"
+" manifests or any shell scripts on the freshly spawned VM."
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:117
+msgid ""
+"The presence of the logo.png should never be underestimated, since it helps "
+"to make your application recognizable among other applications included in "
+"the catalog."
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:121
+msgid "Interacting with non-OpenStack services"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:123
+msgid ""
+"This section tells about the interaction between an application and any non-"
+"OpenStack services, that have an API."
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:127
+msgid "External load-balancer"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:128
+msgid ""
+"Suppose, you have powerful load-balancer on a real server. And you want to "
+"run the application on an Openstack VM. Murano can set up new applications "
+"to be managed by that external load-balancer (LB). Let’s go into more "
+"details."
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:132
+msgid "To implement this case the following apps are used:"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:134
+msgid "``LbApp``:  its class methods call LB API"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:136
+msgid "``WebApp``:  runs on the real LB"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:138
+msgid ""
+"Several instances of ``WebApp`` are deployed with each of them calling two "
+"methods:"
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:147
+msgid ""
+"The first method creates a pool and associates it with a virtual server. "
+"This happens once only. The second one registers a member in the newly "
+"created pool."
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:150
+msgid ""
+"It is also possible to perform other modifications to the LB configuration, "
+"which are only restricted by the LB API functionality."
+msgstr ""
+
+#: ../../draft/appdev-guide/use_cases.rst:153
+msgid ""
+"So, you need to specify the maximum instance number in the UI form related "
+"to the ``WebApp`` application. All of them are subsequently added to the LB "
+"pool. After the deployment, the LB virtual IP, by which an application is "
+"accessible, is displayed."
+msgstr ""

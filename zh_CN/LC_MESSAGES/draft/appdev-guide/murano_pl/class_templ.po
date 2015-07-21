@@ -1,0 +1,340 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:5
+msgid "Common class structure"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:7
+msgid ""
+"Here is a common template for class declarations. Note, that it is in the "
+"YAML format."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:28
+msgid ""
+"Thus MuranoPL class is a YAML dictionary with predefined key names, all keys"
+" except for ``Name`` are optional and can be omitted (but must be valid if "
+"specified)."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:32
+msgid "Class name"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:34
+msgid ""
+"Class names are alphanumeric names of the classes. Traditionally, all class "
+"names begin with an upper-case letter symbol and are written in "
+"PascalCasing."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:37
+msgid ""
+"In MuranoPL all class names are unique. At the same time, MuranoPL supports "
+"namespaces. So, in different namespaces you can have classes with the same "
+"name. You can specify a namespace explicitly, like `ns:MyName`. If you omit "
+"the namespace specification, ``MyName`` is expanded using the default "
+"namespace ``=:``. Therefore, ``MyName`` equals ``=:MyName`` if ``=`` is a "
+"valid namespace."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:45
+msgid "Namespaces"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:47
+msgid ""
+"Namespaces declaration specifies prefixes that can be used in the class body"
+" to make long class names shorter."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:57
+msgid ""
+"In the example above, the ``srv: Something`` class name is automatically "
+"translated to ``io.murano.services.Something``."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:60
+msgid ""
+"``=`` means the current namespace, so that ``MyClass`` means "
+"``io.murano.services.windows.MyClass``."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:63
+msgid ""
+"If the class name contains the period (.) in its name, then it is assumed to"
+" be already fully namespace qualified and is not expanded. Thus "
+"``ns.Myclass`` remains as is."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:69
+msgid ""
+"To make class names globally unique, we recommend specifying a developer's "
+"domain name as a part of the namespace."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:73
+msgid "Extends"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:75
+msgid ""
+"MuranoPL supports multiple inheritance. If present, the ``Extends`` section "
+"shows base classes that are extended. If the list consists of a single "
+"entry, then you can write it as a scalar string instead of an array. If you "
+"do not specify any parents or omit the key, then the class extends "
+"``io.murano.Object``. Thus, ``io.murano.Object`` is the root class for all "
+"class hierarchies."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:83
+msgid "Properties"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:85
+msgid ""
+"Properties are class attributes that together with methods create public "
+"class interface. Usually, but not always, properties are the values, and "
+"reference other objects that have to be entered in an environment designer "
+"prior to a workflow invocation."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:90
+msgid "Properties have the following declaration format:"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:100
+msgid "Contract"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:102
+msgid ""
+"Contract is a YAQL expression that says what type of the value is expected "
+"for the property as well as additional constraints imposed on a property."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:106
+msgid "Operation"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:106
+msgid "Definition"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:148
+msgid "Usage"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:150
+msgid ""
+"Usage states the purpose of the property. This implies who and how can "
+"access it. The following usages are available:"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:182
+msgid ""
+"The usage attribute is optional and can be omitted (which implies ``In``)."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:184
+msgid ""
+"If the workflow tries to write to a property that is not declared with one "
+"of the types above, it is considered to be private and accessible only to "
+"that class (and not serialized to output and thus would be lost upon the "
+"next deployment). An attempt to read the property that was not initialized "
+"results in an exception."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:192
+msgid "Default"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:194
+msgid ""
+"Default is a value that is used if the property value is not mentioned in "
+"the input object model, but not when it is set to null. Default, if "
+"specified, must conform to a declared property contract. If Default is not "
+"specified, then null is the default."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:199
+msgid ""
+"For properties that are references to other classes, Default can modify a "
+"default value of the referenced objects. For example::"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:206
+msgid ""
+"This overrides default for the ``a`` property of ``MyClass`` for instance of"
+" ``MyClass`` that is created for this property."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:210
+msgid "Workflow"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:212
+msgid ""
+"Workflows are the methods that describe how the entities that are "
+"represented by MuranoPL classes are deployed."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:215
+msgid ""
+"In a typical scenario, the root object in an input data model is of the "
+"``io.murano.Environment`` type, and has the ``deploy`` method. This method "
+"invocation causes a series of infrastructure activities (typically, a Heat "
+"stack modification) and the deployment scripts execution initiated by VM "
+"agents commands. The role of the workflow is to map data from the input "
+"object model, or a result of previously executed actions, to the parameters "
+"of these activities and to initiate these activities in a correct order."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:226
+msgid "Methods"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:228
+msgid ""
+"Methods have input parameters, and can return a value to a caller. Methods "
+"are defined in the Workflow section of the class using the following "
+"template::"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:243
+msgid ""
+"Action is an optional parameter that specifies methods to be executed by "
+"direct triggering after deployment."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:246
+msgid ""
+"Arguments are optional too, and are declared using the same syntax as class "
+"properties, except for the Usage attribute that is meaningless for method "
+"parameters. For example, arguments also have a contract and optional "
+"default."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:251
+msgid ""
+"The Method body is an array of instructions that get executed sequentially. "
+"There are 3 types of instructions that can be found in a workflow body:"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:254
+msgid "expressions,"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:255
+msgid "assignments,"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:256
+msgid "block constructs."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:259
+msgid "Expressions"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:261
+msgid ""
+"Expressions are YAQL expressions that are executed for their side effect. "
+"All accessible object methods can be called in the expression using the "
+"``$obj.methodName(arguments)`` syntax."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:266
+msgid "Expression"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:266
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:290
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:325
+msgid "Explanation"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:283
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:290
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:325
+msgid "Assignment"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:285
+msgid ""
+"Assignments are single key dictionaries with a YAQL expression as a key and "
+"arbitrary structure as a value. Such a construct is evaluated as an "
+"assignment."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:317
+msgid "Block constructs"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:319
+msgid ""
+"Block constructs control a program flow. They are dictionaries that have "
+"strings as all their keys."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:322
+msgid "The following block constructs are available:"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:385
+msgid "Object model"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:387
+msgid ""
+"Object model is a JSON serialized representation of objects and their "
+"properties. Everything you do in the OpenStack dashboard is reflected in an "
+"object model. The object model is sent to the Application catalog engine "
+"when the user decides to deploy the built environment. On the engine side, "
+"MuranoPL objects are constructed and initialized from the received Object "
+"model, and a predefined method is executed on the root object."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:394
+msgid "Objects are serialized to JSON using the following template:"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:425
+msgid ""
+"Objects can be identified as dictionaries that contain the ``?`` entry. All "
+"system fields are hidden in that entry."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:428
+msgid "There are two ways to specify references:"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:430
+msgid ""
+"``reference1`` as in the example above. This method allows inline definition"
+" of an object. When the instance of the referenced object is created, an "
+"outer object becomes its parent/owner that is responsible for the object. "
+"The object itself may require that its parent (direct or indirect) be of a "
+"specified type, like all applications require to have ``Environment`` "
+"somewhere in a parent chain."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/class_templ.rst:437
+msgid ""
+"Refering to an object by specifying other object ID. That object must be "
+"defined elsewhre in an object tree. Object references distinguished from "
+"strings having the same value by evaluating property contracts. The former "
+"case would have ``$.class(Name)`` while the later - the ``$.string()`` "
+"contract."
+msgstr ""

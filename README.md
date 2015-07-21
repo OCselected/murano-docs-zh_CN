@@ -7,7 +7,7 @@ OpenStack murano documents for Chinese, just po files.
  
  cd murano/doc/source
  
- 添加下面两行内容到conf.p
+ 添加下面两行内容到conf.py
  
  locale_dirs = ['murano-docs-zh_CN/']   # path is example but recommended.
  

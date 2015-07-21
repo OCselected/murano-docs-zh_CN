@@ -1,0 +1,492 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/appdev-guide/murano_packages.rst:8
+msgid "Murano packages"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:4
+msgid "Package structure"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:6
+msgid ""
+"The structure of the Murano application package is predefined. An "
+"application could be successfully uploaded to an application catalog."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:9
+msgid "The application package root folder should contain the following:"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:14
+msgid "**manifest.yaml** file"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:12
+msgid "is an application entry point."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:14
+msgid "the filename is fixed, do not use any custom names."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:17
+msgid "**Classes** folder"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:17
+msgid "contains MuranoPL class definitions."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:22
+msgid "**Resources** folder"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:20
+msgid ""
+"contains an axecution plan template and the **scripts** folder with all the "
+"files required for an application deployment located in it."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:25
+msgid "**UI** folder"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:25
+msgid "contains the dynamic UI yaml definitions."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:33
+msgid "**logo.png** file (optional)"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:28
+msgid "is an image file associated to your application."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:31
+msgid ""
+"There are no any special limitations regarding an image filename. Though, if"
+" it differs from the default ``logo.png``, specify it in an application "
+"manifest file."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:36
+msgid "**images.lst** file (optional)"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:36
+msgid "contains a list of images required by an application."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/package_structure.rst:38
+msgid ""
+"Here is the visual representation of the Murano application package "
+"structure:"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:4
+msgid "Dynamic UI definition specification"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:6
+msgid ""
+"The main purpose of Dynamic UI is to generate application creation forms "
+"\"on-the-fly\".  The Murano dashboard does not know anything about "
+"applications that will be presented in the catalog and which web forms are "
+"required to create an application instance.  So all application definitions "
+"should contain an instruction, which tells the dashboard how to create an "
+"application and what validations need to be applied. This document will help"
+" you compose a valid UI definition for your application."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:15
+msgid "File Structure"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:17
+msgid ""
+"The UI definition should be a valid yaml file and should contain the "
+"following sections (for version 2):"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:19
+msgid "**Version** - points out to which syntax version is used, optional"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:20
+msgid ""
+"**Templates** - optional, auxiliary section, used together with an "
+"Application section, optional"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:21
+msgid ""
+"**Application** - object model description which will be used for "
+"application deployment, required"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:22
+msgid "**Forms** - web form definitions, required"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:25
+msgid "Version"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:27
+msgid ""
+"The syntax and format of dynamic UI definitions may change over time, so the"
+" concept of `format versions` is introduced. Each UI definition file may "
+"contain a top-level section called `Version` to indicate the minimum version"
+" of Murano Dynamic UI platform which is capable to process it. If the "
+"section is missing, the format version is assumed to be 1."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:33
+msgid ""
+"The version consists of two non-negative integer segments, separated by a "
+"dot, i.e. has a form of `MAJOR.MINOR`. Dynamic UI platforms having the same "
+"MAJOR version component are compatible: i.e. the platform having the higher "
+"version may process UI definitions with lower versions if their MAJOR "
+"segments are the same. For example, Murano Dynamic UI platform of version "
+"2.2 is able to process UI definitions of versions 2.0, 2.1 and 2.2, but is "
+"unable to process 2.3, 3.0 or 1.9."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:42
+msgid ""
+"Currently the latest version of Dynamic UI platform is 2.0. It is "
+"incompatible with UI definitions of Version 1, which were used in Murano "
+"releases before Juno."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:48
+msgid ""
+"Although the `Version` field is considered to be optional, it's default "
+"value is 1.0, and thus such definitions can't be processed with the latest "
+"Murano. So, be sure to specify the compatible format version when designing "
+"your UI definitions."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:55
+msgid "Application and Templates"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:57
+msgid ""
+"The Application section describes an *application object model*. This model "
+"will be translated into json, and an application will be deployed according "
+"to that json. The application section should contain all necessary keys that"
+" are required by the murano-engine to deploy an application. Note that under"
+" *?* section system part of the model goes. So murano understands that "
+"instead of simple value MuranoPL object is used. You can pick parameters you"
+" got from a user (they should be described in the Forms section) and pick "
+"the right place where they should be set. To do this `YAQL "
+"<https://github.com/ativelkov/yaql/blob/master/README.md>`_ is used. Two "
+"yaql functions are used for object model generation:"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:69
+msgid ""
+"**generateHostname** is used for machine hostname generation; it accepts 2 "
+"arguments: name pattern (string) and index (integer). If '#' symbol is "
+"present in name pattern, it will be replaced with the index provided. If "
+"pattern is not given, a random name will be generated."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:70
+msgid ""
+"**repeat** is used to produce a list of data snippets, given the template "
+"snippet (first argument) and number of times it should be reproduced (second"
+" argument). Inside that template snippet current step can be referenced as "
+"*$index*."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:81
+msgid "*Example:*"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:117
+msgid "Forms"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:119
+msgid ""
+"This section describes markup elements for defining forms, which are "
+"currently rendered and validated with Django. Each form has a name, field "
+"definitions (mandatory) and validator definitions (optionally)."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:122
+msgid "Note, that each form is splitted into 2 parts:"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:124
+msgid "**input area** - left side, where all the controls are located"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:125
+msgid ""
+"**description area** - right side, where descriptions of the controls are "
+"located"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:127
+msgid "Each field should contain:"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:129
+msgid "**name** -  system field name, could be any"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:130
+msgid "**type** - system field type"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:132
+msgid "Currently supported options for **type** attribute are:"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:134
+msgid "string - text field (no inherent validations) with one-line text input"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:135
+msgid "boolean - boolean field, rendered as a checkbox"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:136
+msgid "text - same as string, but with a multi-line input"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:137
+msgid ""
+"integer - integer field with an appropriate validation, one-line text input"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:138
+msgid ""
+"password - text field with validation for strong password, rendered as two "
+"masked text inputs (second one is for password confirmation)"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:139
+msgid ""
+"clusterip - specific text field, used for entering cluster IP address "
+"(validations for valid IP address syntax and for that IP to belong to a "
+"fixed subnet)"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:140
+msgid ""
+"floatingip - specific boolean field, used for specifying whether or not an "
+"instance should have floating IP; *DEPRECATED FIELD* - use boolean field "
+"instead"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:141
+msgid ""
+"domain - specific field, used for selecting Active Directory domain from a "
+"list (or creating a new Active Directory application); *DEPRECATED FIELD* - "
+"use io.murano.windows.ActiveDirectory instead"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:142
+msgid ""
+"databaselist - Specific field, a list of databases (comma-separated list of "
+"databases' names, where each name has the following syntax first symbol "
+"should be latin letter or underscore; subsequent symbols can be latin "
+"letter, numeric, underscore, at the sign, number sign or dollar sign), "
+"rendered as one-line text input"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:143
+msgid ""
+"image - specific field, used for filtering suitable images by image type "
+"provided in murano metadata in glance properties."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:144
+msgid ""
+"flavor - specific field, used for selection instance flavor from a list"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:145
+msgid "keypair - specific field, used for selecting a keypair from a list"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:146
+msgid ""
+"azone - specific field, used for selecting instance availability zone from a"
+" list"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:147
+msgid ""
+"any other value is considered to be a fully qualified name for some "
+"Application package and is rendered as a pair of controls: one for selecting"
+" already existing Applications of that type in an Environment, second - for "
+"creating a new Application of that type and selecting it"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:149
+msgid ""
+"Other arguments (and whether they are required or not) depends on a field's "
+"type and other attributes values. The most common attributes are the "
+"following:"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:153
+msgid ""
+"**label** - name, that will be displayed in the form; defaults to **name** "
+"being capitalized."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:154
+msgid ""
+"**description** - description, that will be displayed in the description "
+"area. Use yaml line folding character >- to keep the correct formatting "
+"during data transferring."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:156
+msgid ""
+"**descriptionTitle** - title of the description, defaults to **label**; "
+"displayed in the description area"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:157
+msgid ""
+"**hidden** whether field should be visible or not in the input area. Note "
+"that hidden field's description will still be visible in the descriptions "
+"area (if given). Hidden fields are used storing some data to be used by "
+"other, visible fields."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:160
+msgid ""
+"**minLength**, **maxLength** (for string fields) and **minValue**, "
+"**maxValue** (for integer fields) are transparently translated into django "
+"validation properties."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:161
+msgid ""
+"**validators** is a list of dictionaries, each dictionary should at least "
+"have *expr* key, under that key either some `YAQL "
+"<https://github.com/stackforge/yaql/blob/master/README.rst>`_ expression is "
+"stored, either one-element dictionary with *regexpValidator* key (and some "
+"regexp string as value). Another possible key of a validator dictionary is "
+"*message*, and although it is not required, it is highly desirable to "
+"specify it - otherwise, when validator fails (i.e. regexp doesn't match or "
+"YAQL expression evaluates to false) no message will be shown. Note that "
+"field-level validators use YAQL context different from all other attributes "
+"and section: here *$* root object is set to the value of field being "
+"validated (to make expressions shorter)."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:162
+msgid ""
+"**widgetMedia** sets some custom *CSS* and *JavaScript* used for the field's"
+" widget rendering. Note, that files should be placed to Django static folder"
+" in advance. Mostly they are used to do some client-side field "
+"enabling/disabling, hiding/unhiding etc. This is a temporary field which "
+"will be dropped once Version 3 of Dynamic UI is implemented (since it will "
+"transparently translate YAQL expressions into the appropriate *JavaScript*)."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:165
+msgid ""
+"**requirements** is used only with flavor field and prevents user to pick "
+"unstable for a deployment flavor. It allows to set minimum ram (in MBs), "
+"disk space (in GBs) or virtual CPU quantity."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:168
+msgid ""
+"Example that shows how to hide items smaller than regular 'small' flavor in "
+"a flavor select field:"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:180
+msgid ""
+"Besides field-level validators, form-level validators also exist. They use "
+"**standard context** for YAQL evaluation and are required when there is a "
+"need to validate some form's constraint across several fields."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:185
+msgid "*Example*"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:4
+msgid "Murano package repository"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:6
+msgid ""
+"Murano client and dashboard can install both packages and bundles of "
+"packages from murano repository. To do so you should set MURANO_REPO_URL "
+"settings in murano dashboard or MURANO_REPO_URL env variable for the CLI "
+"client, and use a respective command to import the package. These commands "
+"automatically import all the prerequisites required to install the "
+"application along with any images mentioned in the applications."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:9
+msgid "Setting up your own repository"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:14
+msgid ""
+"It is fairly easy to set up your own murano package repository. To do so you"
+" need a web server that would serve 3 directories:"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:12
+msgid "/apps/"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:13
+msgid "/bundles/"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:14
+msgid "/images/"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:16
+msgid ""
+"When importing an application by name, the client appends any version info, "
+"if present to the application name, ``.zip`` file extension and searches for"
+" that file in the ``apps`` directory."
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:18
+msgid ""
+"When importing a bundle by name, the client appends ``.bundle`` file "
+"extension to the bundle name and searches it in the bundles directory. A "
+"bundle file is a json or a yaml file with the following structure:"
+msgstr ""
+
+#: ../../draft/appdev-guide/muranopackages/repository.rst:30
+msgid ""
+"Glance images can be auto-imported by the client, when mentioned in "
+"``images.lst`` inside the package. Please see :ref:`step-by-step` for more "
+"information about package composition. When importing images from the "
+"``image.lst`` file, the client simply searches for a file with the same name"
+" as the name attribute of the image in the ``images`` directory of the "
+"repository."
+msgstr ""

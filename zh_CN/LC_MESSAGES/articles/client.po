@@ -1,0 +1,250 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../articles/client.rst:20
+msgid "Murano client"
+msgstr ""
+
+#: ../../articles/client.rst:22
+msgid ""
+"Module python-muranoclient comes with CLI *murano* utility, that interacts "
+"with Murano application catalog"
+msgstr ""
+
+#: ../../articles/client.rst:26
+msgid "Installation"
+msgstr ""
+
+#: ../../articles/client.rst:28
+msgid ""
+"To install latest murano CLI client run the following command in your "
+"shell::"
+msgstr ""
+
+#: ../../articles/client.rst:32
+msgid ""
+"Alternatively you can checkout the latest version from "
+"https://git.openstack.org/cgit/openstack/python-muranoclient"
+msgstr ""
+
+#: ../../articles/client.rst:37
+msgid "Using CLI client"
+msgstr ""
+
+#: ../../articles/client.rst:39
+msgid ""
+"In order to use the CLI, you must provide your OpenStack username, password,"
+" tenant name or id, and auth endpoint. Use the corresponding arguments "
+"(``--os-username``, ``--os-password``, ``--os-tenant-name`` or ``--os-"
+"tenant-id``, ``--os-auth-url`` and ``--murano-url``) or set corresponding "
+"environment variables::"
+msgstr ""
+
+#: ../../articles/client.rst:51
+msgid ""
+"Once you've configured your authentication parameters, you can run ``murano "
+"help`` to see a complete listing of available commands and arguments and "
+"``murano help <sub_command>`` to get help on specific subcommand."
+msgstr ""
+
+#: ../../articles/client.rst:57
+msgid "Bash completion"
+msgstr ""
+
+#: ../../articles/client.rst:59
+msgid ""
+"To get the latest bash completion script download `murano.bash_completion`_ "
+"from the source repository and add it to your completion scripts."
+msgstr ""
+
+#: ../../articles/client.rst:67
+msgid "Listing currently installed packages"
+msgstr ""
+
+#: ../../articles/client.rst:69
+msgid "To get list of currently installed packages run::"
+msgstr ""
+
+#: ../../articles/client.rst:73
+msgid "To show details about specific package run::"
+msgstr ""
+
+#: ../../articles/client.rst:78
+msgid "Importing packages in Murano"
+msgstr ""
+
+#: ../../articles/client.rst:83 ../../articles/client.rst:128
+msgid ""
+"``package-import`` subcommand can install packages in several different "
+"ways:"
+msgstr ""
+
+#: ../../articles/client.rst:81 ../../articles/client.rst:126
+msgid "from a locall file"
+msgstr ""
+
+#: ../../articles/client.rst:82 ../../articles/client.rst:127
+msgid "from a http url"
+msgstr ""
+
+#: ../../articles/client.rst:83 ../../articles/client.rst:128
+msgid "from murano app repository"
+msgstr ""
+
+#: ../../articles/client.rst:85 ../../articles/client.rst:130
+msgid ""
+"When creating a package you can specify it's categories with "
+"``-c/--categories`` and set it's publicity with ``--public``"
+msgstr ""
+
+#: ../../articles/client.rst:88
+msgid "To import a local package run::"
+msgstr ""
+
+#: ../../articles/client.rst:92
+msgid "To import a package from http url run::"
+msgstr ""
+
+#: ../../articles/client.rst:96
+msgid ""
+"And finally you can import a package from Murano repository. To do so you "
+"have to specify base url for the repository with ``--murano-repo-url`` or "
+"with the corresponding ``MURANO_REPO_URL`` environment variable. After doing"
+" so, running::"
+msgstr ""
+
+#: ../../articles/client.rst:103
+msgid ""
+"would access specified repository and download app ``io.app.foo`` from it's "
+"app directory. This option supports an optional ``--version`` parameter, "
+"that would instruct murano client to download package of a specific version."
+msgstr ""
+
+#: ../../articles/client.rst:107
+msgid ""
+"``package-import`` inspects package requirements specified in the package's "
+"manifest under `Require` section and attempts to import them from Murano "
+"Repository. ``package-import`` also inspects any image prerequisites, "
+"mentioned in the `images.lst` file in the package. If there are any image "
+"requirements client would inspect images already present in the image "
+"database. Unless image with the specific name and hash is present client "
+"would attempt to download it."
+msgstr ""
+
+#: ../../articles/client.rst:115
+msgid ""
+"For more info about specifying images and requirements for the package see "
+"package creation docs: :ref:`app_pkg`."
+msgstr ""
+
+#: ../../articles/client.rst:118
+msgid ""
+"If any of the packages, being installed is already registered in Murano, "
+"client would ask you what do do with it. You can specify the default action "
+"with ``--exists-action``, passing `s` for skip, `u` for update, and `a` for "
+"abort."
+msgstr ""
+
+#: ../../articles/client.rst:123
+msgid "Importing bundles of packages in Murano"
+msgstr ""
+
+#: ../../articles/client.rst:133
+msgid "To import a local bundle run::"
+msgstr ""
+
+#: ../../articles/client.rst:137
+msgid "To import a bundle from http url run::"
+msgstr ""
+
+#: ../../articles/client.rst:141
+msgid "To import a bundle from murano repository run::"
+msgstr ""
+
+#: ../../articles/client.rst:145
+msgid ""
+"Note: When importing from a local file packages would first be searched in a"
+" directory, relative to the directory containing the bundle file itself. "
+"This is done to facilitate installing bundles in an environment with no "
+"access to the repository itself."
+msgstr ""
+
+#: ../../articles/client.rst:151
+msgid "Deleting packages from murano"
+msgstr ""
+
+#: ../../articles/client.rst:153
+msgid "To delete a package run::"
+msgstr ""
+
+#: ../../articles/client.rst:159
+msgid "Downloading package file"
+msgstr ""
+
+#: ../../articles/client.rst:161
+msgid "Running::"
+msgstr ""
+
+#: ../../articles/client.rst:165
+msgid "would download the zip archive with specified package"
+msgstr ""
+
+#: ../../articles/client.rst:168
+msgid "Creating a package"
+msgstr ""
+
+#: ../../articles/client.rst:170
+msgid ""
+"Murano client is able to create application packages from package source "
+"files/directories. To find out more about this command run::"
+msgstr ""
+
+#: ../../articles/client.rst:175
+msgid ""
+"This command is useful, when application package files are spread across "
+"several directories, and for auto-generating packages from heat templates "
+"For more info about package composition please see package creation docs: "
+":ref:`app_pkg`."
+msgstr ""
+
+#: ../../articles/client.rst:182
+msgid "Managing Environments"
+msgstr ""
+
+#: ../../articles/client.rst:184
+msgid ""
+"It is possible to create/update/delete environments with following "
+"commands::"
+msgstr ""
+
+#: ../../articles/client.rst:192
+msgid "You can get list of deployments for environment with::"
+msgstr ""
+
+#: ../../articles/client.rst:197
+msgid "Managing Categories"
+msgstr ""
+
+#: ../../articles/client.rst:199
+msgid ""
+"It is possible to create/update/delete categories with following commands::"
+msgstr ""
+
+#: ../../articles/client.rst:207
+msgid "Managing environment templates"
+msgstr ""
+
+#: ../../articles/client.rst:209
+msgid ""
+"It is possible to manage environment templates with following commands::"
+msgstr ""

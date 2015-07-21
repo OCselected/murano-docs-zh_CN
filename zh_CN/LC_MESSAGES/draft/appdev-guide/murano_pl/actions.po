@@ -1,0 +1,89 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:8
+msgid "Murano actions"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:10
+msgid ""
+"Murano action is a type of MuranoPL method. The differences from a regular "
+"MuranoPL method are:"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:13
+msgid "Action is executed on deployed objects."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:14
+msgid ""
+"Action execution is initiated by API request, you do not have to call the "
+"method manually."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:17
+msgid "So murano action allows performing any operations on objects:"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:19
+msgid ""
+"Getting information from the VM, like a config that is generated during the "
+"deployment"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:21
+msgid "VM rebooting"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:22
+msgid "Scaling"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:24
+msgid ""
+"A list of available actions is formed during the environment deployment. "
+"Right after the deployment is finished, you can call action asynchronously. "
+"Murano engine generates a task for every action. Therefore, the action "
+"status can be tracked."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:30
+msgid ""
+"Actions may be called against any MuranoPL object, including "
+"``Environment``, ``Application``, and any other objects."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:33
+msgid "To mark a method as an action, use ``Usage: Action``."
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:35
+msgid ""
+"The following example shows an action that returns an archive with a "
+"configuration file:"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:51
+msgid ""
+"List of available actions can be found with environment details or "
+"application details API calls. It's located in object model special data. "
+"Take a look at the following example:"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:55
+msgid "Request: ``http://localhost:8082/v1/environments/<id>/services/<id>``"
+msgstr ""
+
+#: ../../draft/appdev-guide/murano_pl/actions.rst:58
+msgid "Response:"
+msgstr ""

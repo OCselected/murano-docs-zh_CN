@@ -1,0 +1,144 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../articles/debug_tips.rst:18
+msgid "Murano TroubleShooting and Debug Tips"
+msgstr ""
+
+#: ../../articles/debug_tips.rst:20
+msgid ""
+"During installation and setting environment of new projects you can run into"
+" different problems. This section intends to reduce the time spent on the "
+"solution of these problems."
+msgstr ""
+
+#: ../../articles/debug_tips.rst:24
+msgid "Problems during configuration"
+msgstr ""
+
+#: ../../articles/debug_tips.rst:27
+msgid "Log location"
+msgstr ""
+
+#: ../../articles/debug_tips.rst:29
+msgid ""
+"*Murano* is a multi component project, there several places where logs could"
+" be found."
+msgstr ""
+
+#: ../../articles/debug_tips.rst:31
+msgid ""
+"The location of the log file completely depends on the setting in the config"
+" file of the corresponding component. *log_file* parameter points to the log"
+" file, and if it's omitted or commented logging will be sent to stdout."
+msgstr ""
+
+#: ../../articles/debug_tips.rst:36
+msgid "Possible problem list"
+msgstr ""
+
+#: ../../articles/debug_tips.rst:38
+msgid "`murano-db-manage` failed to execute"
+msgstr ""
+
+#: ../../articles/debug_tips.rst:40
+msgid ""
+"Check `connection` parameter in provided config file. It should be a "
+"`connection string "
+"<http://docs.sqlalchemy.org/en/rel_0_8/core/engines.html>`_."
+msgstr ""
+
+#: ../../articles/debug_tips.rst:42
+msgid "Murano Dashboard is not working"
+msgstr ""
+
+#: ../../articles/debug_tips.rst:44
+msgid ""
+"Make sure, that *prepare_murano.sh* script was executed and *murano* file "
+"located in *enabled* folder under openstack_dashboard repository."
+msgstr ""
+
+#: ../../articles/debug_tips.rst:45
+msgid ""
+"Check, that murano data is not inserted twice in the settings file and as a "
+"plugin."
+msgstr ""
+
+#: ../../articles/debug_tips.rst:49
+msgid "Problems during deployment"
+msgstr ""
+
+#: ../../articles/debug_tips.rst:51
+msgid ""
+"Besides identifying errors from log files, there is another and more "
+"flexible way to browse deployment errors - directly from UI. After *Deploy "
+"Failed* status is appeared navigate to environment components and open "
+"*Deployment History* page. Click on the *Show details* button located at the"
+" corresponding deployment row of the table. Then go to the *Logs* tab. You "
+"can see steps of the deployments and the one that failed would have red "
+"color."
+msgstr ""
+
+#: ../../articles/debug_tips.rst:56
+msgid ""
+"Deployment freeze after ``Begin execution: io.murano.system.Agent.call`` "
+"problem with connection between Murano Agent and spawned instance."
+msgstr ""
+
+#: ../../articles/debug_tips.rst:58
+msgid ""
+"Need to check transport access to the virtual machine (check router has "
+"gateway)."
+msgstr ""
+
+#: ../../articles/debug_tips.rst:59
+msgid ""
+"Check for rabbitMq settings: verify that agent has been obtained valid "
+"rabbit parameters. Go to the spawned virtual machine and open "
+"*/etc/murano/agent.conf* or *C:\\Murano\\Agent\\agent.conf* on Windows-based"
+" machine. Also, you can examine agent logs, located by default at */var/log"
+"/murano-agent.log* The first part of the log file will contain reconnection "
+"attempts to the rabbit - since the valid rabbit address and queue have not "
+"been obtained yet."
+msgstr ""
+
+#: ../../articles/debug_tips.rst:63
+msgid "Check that *notification_driver* option is set to `messagingv2`"
+msgstr ""
+
+#: ../../articles/debug_tips.rst:64
+msgid "Check that linux image name is not starts with 'w' letter"
+msgstr ""
+
+#: ../../articles/debug_tips.rst:66
+msgid ""
+"``[exceptions.EnvironmentError]: Unexpected stack state NOT_FOUND`` - "
+"problem with heat stack creation, need to examine Heat log file. If you are "
+"running the deployment on new tenant check that router exists and it has "
+"gateway to the external network."
+msgstr ""
+
+#: ../../articles/debug_tips.rst:68
+msgid ""
+"``Router could not be created, no external network found`` - Find "
+"`external_network` parameter in config file and check that specified "
+"external network is really exist via UI or by executiong `neutron net-"
+"external-list` cimmand."
+msgstr ""
+
+#: ../../articles/debug_tips.rst:70
+msgid ""
+"``NoPackageForClassFound: Package for class io.murano.Environment is not "
+"found`` - Check that murano core package is uploaded. If no, the content of "
+"`meta/io.murano` folder should be zipped and uploaded to Murano."
+msgstr ""

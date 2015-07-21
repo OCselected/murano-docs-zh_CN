@@ -1,0 +1,137 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Murano 1.0.0.0b1.54\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-21 22:16\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../draft/enduser-guide/quickstart.rst:5
+msgid "Quickstart"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:7
+msgid ""
+"This is a brief walkthrough to quickly get you familiar with the basic "
+"operations you can perform when using the Application catalog directly from "
+"the dashboard."
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:11
+msgid ""
+"For the detailed instructions on how to :ref:`manage your environments "
+"<manage-environments>` and :ref:`applications <manage_applications>`, please"
+" proceed with dedicated sections."
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:17
+msgid "Upload an application"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:19
+#: ../../draft/enduser-guide/quickstart.rst:64
+msgid "Log in to the OpenStack dashboard."
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:21
+msgid "Navigate to :menuselection:`Murano > Manage > Package Definitions`."
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:23
+msgid "Click the :guilabel:`Import Package` button:"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:29
+msgid "In the :guilabel:`Import Package` dialog:"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:31
+msgid "Select ``URL`` from the ``Package Source`` drop-down list;"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:33
+msgid ""
+"Specify the URL in the :guilabel:`Package URL` field. Lets upload the Apache"
+" HTTP Server package using "
+"http://storage.apps.openstack.org/apps/io.murano.apps.apache.ApacheHttpServer.zip;"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:37
+msgid "Click :guilabel:`Next` to continue:"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:43
+msgid ""
+"View the package details in the new dialog, click :guilabel:`Next` to "
+"continue:"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:50
+msgid ""
+"Select the :guilabel:`Application Servers` from the application category "
+"list, click :guilabel:`Create` to import the application package:"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:57
+msgid ""
+"Now your application is available from :menuselection:`Murano > Applcation "
+"Catalog > Applications` page."
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:62
+msgid "Deploy an application"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:66
+msgid ""
+"Navigate to :menuselection:`Murano > Application Catalog > Applications`."
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:68
+msgid ""
+"Click on the :guilabel:`Quick Deploy` button from the required application "
+"from the list. Lets deploy Apache HTTP Server, for example:"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:75
+msgid ""
+"Check :guilabel:`Assign Floating IP` and click :guilabel:`Next` to proceed:"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:81
+msgid ""
+"Select the :guilabel:`Instance Image` from the drop-down list and click "
+":guilabel:`Create`:"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:88
+msgid ""
+"Now the Apache HTTP Server application is successfully added to the newly "
+"created ``quick-env-1`` environment. Click the :guilabel:`Deploy This "
+"Environment` button to start the deployment:"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:96
+msgid ""
+"It may take some time for the environment to deploy. Wait until the status "
+"is changed from ``Deploying`` to ``Ready``."
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:99
+msgid ""
+"Navigate to `Murano > Application Catalog > Environments` to view the "
+"details."
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:104
+msgid "Reconfigure an application"
+msgstr ""
+
+#: ../../draft/enduser-guide/quickstart.rst:108
+msgid "Delete an application"
+msgstr ""
