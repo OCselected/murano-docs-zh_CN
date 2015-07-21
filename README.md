@@ -13,6 +13,7 @@ OpenStack murano documents for Chinese, just po files.
  
  gettext_compact = False     # optional.
 
+ git clone https://github.com/OCselected/murano-docs-zh_CN.git
  执行 $sphinx-intl build
  
  编译：
