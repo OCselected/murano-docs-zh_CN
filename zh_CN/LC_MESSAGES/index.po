@@ -20,13 +20,17 @@ msgid ""
 "The latest version of this documentation is under development at the moment."
 " The most recently updated information is published as the :ref:`BETA "
 "version of the Murano documentation <content>`."
-msgstr ""
+msgstr "" 
+"目前本文档的最后版本仍然正在开发中。最近的更新信息会发布在"
+":ref:`BETA version of the Murano documentation <content>`."
 
 #: ../../index.rst:27
 msgid ""
 "We are restructuring and updating the information to make your user "
 "experience awesome, and apologize for any inconvenience this may cause."
-msgstr ""
+msgstr "" 
+"我们重构和更新信息以使您拥有惊叹的用户体验，也同时对任何的给您带来"
+"不便表示歉意。"
 
 #: ../../index.rst:33
 msgid "Introduction"
@@ -51,78 +55,86 @@ msgid ""
 "composite environments on the Application abstraction level and then manage "
 "their lifecycle."
 msgstr ""
+"关键的目标是提供用户界面和应用程序接口，这些均允许在应用程序的抽象层撰写和部署"
+"综合的环境，然后管理它们的生命周期。"
 
 #: ../../index.rst:54
 msgid "Murano consists of several source code repositories:"
-msgstr ""
+msgstr "Murano由多个源代码仓库:"
 
 #: ../../index.rst:47
 msgid ""
 "`murano`_ - is the main repository. It contains code for Murano API server, "
 "Murano engine and MuranoPL"
 msgstr ""
+"`murano`_ - 是主要的仓库。它包含了Murano API 服务的代码，以及Murano 引擎和"
+"MuranoPL"
 
 #: ../../index.rst:49
 msgid ""
 "`murano-agent`_ - agent which runs on guest VMs and executes deployment plan"
 msgstr ""
+"`murano-agent`_ - 运行在客户虚拟机中的代理，可执行部署计划"
 
 #: ../../index.rst:51
 msgid ""
 "`murano-dashboard`_ - Murano UI implemented as a plugin for OpenStack "
 "Dashboard"
 msgstr ""
+"`murano-dashboard`_ - Murano 在OpenStack 面板中的插件实现"
+""
 
 #: ../../index.rst:53
 msgid "`python-muranoclient`_ - Client library and CLI client for Murano"
-msgstr ""
+msgstr "`python-muranoclient`_ - Murano的客户端程序可和命令行工具"
 
 #: ../../index.rst:61
 msgid ""
 "This documentation offers information on how Murano works and how to "
 "contribute to the project."
 msgstr ""
+"本文档提供了Murano是如何工作的以及如何为项目做贡献的信息。"
 
 #: ../../index.rst:65
 msgid "Developing Applications"
-msgstr ""
+msgstr "开发应用程序"
 
 #: ../../index.rst:80
 msgid "**Installation**"
-msgstr ""
+msgstr "**安装**"
 
 #: ../../index.rst:87
 msgid "**Background Concepts for Murano**"
-msgstr ""
+msgstr "**Murano的背景概念**"
 
 #: ../../index.rst:96
 msgid "**Tutorials**"
-msgstr ""
+msgstr "**教程**"
 
 #: ../../index.rst:106
 msgid "**Client**"
-msgstr ""
+msgstr "**客户端**"
 
 #: ../../index.rst:113
 msgid "**Guidelines**"
-msgstr ""
+msgstr "**指南**"
 
 #: ../../index.rst:124
 msgid "**API specification**"
-msgstr ""
+msgstr "API 规范"
 
 #: ../../index.rst:133
 msgid "Indices and tables"
-msgstr ""
+msgstr "指数和表格"
 
 #: ../../index.rst:135
 msgid ":ref:`genindex`"
-msgstr ""
+msgstr ":ref:`genindex`"
 
 #: ../../index.rst:136
 msgid ":ref:`modindex`"
-msgstr ""
+msgstr ":ref:`modindex`"
 
 #: ../../index.rst:137
 msgid ":ref:`search`"
-msgstr ""
+msgstr ":ref:`search`"
