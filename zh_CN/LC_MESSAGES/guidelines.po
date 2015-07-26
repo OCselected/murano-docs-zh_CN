@@ -13,7 +13,7 @@ msgstr ""
 
 #: ../../guidelines.rst:3
 msgid "Development Guidelines"
-msgstr ""
+msgstr "开发指南"
 
 #: ../../guidelines.rst:6
 msgid "Coding Guidelines"

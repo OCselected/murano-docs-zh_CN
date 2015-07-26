@@ -13,7 +13,7 @@ msgstr ""
 
 #: ../../install/development.rst:18
 msgid "Installing and Running the Development Version"
-msgstr ""
+msgstr "安装和运行开发版本"
 
 #: ../../install/development.rst:20
 msgid ""
