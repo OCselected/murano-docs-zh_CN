@@ -5,7 +5,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-21 22:16\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: LiJiansheng<lijiangsheng1@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,31 +17,31 @@ msgstr "开发指南"
 
 #: ../../guidelines.rst:6
 msgid "Coding Guidelines"
-msgstr ""
+msgstr "代码编写指南"
 
 #: ../../guidelines.rst:8
 msgid "For all the code in Murano we have a rule - it should pass `PEP 8`_."
-msgstr ""
+msgstr "对于Murano所有的代码而言只有一个规则 - 它必须通过 `PEP 8`_。"
 
 #: ../../guidelines.rst:10
 msgid "To check your code against PEP 8 run:"
-msgstr ""
+msgstr "要检查你的代码是否满足PEP 8 运行："
 
 #: ../../guidelines.rst:19
 msgid "https://pep8.readthedocs.org/en/latest/"
-msgstr ""
+msgstr "https://pep8.readthedocs.org/en/latest/"
 
 #: ../../guidelines.rst:20
 msgid "https://flake8.readthedocs.org"
-msgstr ""
+msgstr "https://flake8.readthedocs.org"
 
 #: ../../guidelines.rst:21
 msgid "http://docs.openstack.org/developer/hacking/"
-msgstr ""
+msgstr "http://docs.openstack.org/developer/hacking/"
 
 #: ../../guidelines.rst:25
 msgid "Testing Guidelines"
-msgstr ""
+msgstr "测试指南"
 
 #: ../../guidelines.rst:27
 msgid ""
@@ -50,10 +50,12 @@ msgid ""
 "regressions early.  Developers are also expected to keep the test suite up-"
 "to-date with any submitted code changes."
 msgstr ""
+"Murano有一组测试套件，覆盖了所有的子模块，而且是强烈建议开发者们执行这些测试，"
+"以尽早的捕获异常。开发者们还应该在写下任何或更改子模块的代码后保持测试套件也更新。"
 
 #: ../../guidelines.rst:32
 msgid "Unit tests are located at ``muranoapi/tests``."
-msgstr ""
+msgstr "单元测试存放在``muranoapi/tests``下。"
 
 #: ../../guidelines.rst:34
 msgid ""
@@ -61,45 +63,51 @@ msgid ""
 " `Tox`_. To execute the unit tests run the following from the root of Murano"
 " repo on Python 2.7:"
 msgstr ""
+"Murano的单元测试套件可以使用 `Tox`_ 的隔离环境来执行。要执行单元测试，在Murano"
+"项目的根目录下，Python版本为2.7的环境中，执行下面程序:"
 
 #: ../../guidelines.rst:42
 msgid "For Python 2.6:"
-msgstr ""
+msgstr "对于Python 2.6来说："
 
 #: ../../guidelines.rst:50
 msgid "Documentation Guidelines"
-msgstr ""
+msgstr "文档指南"
 
 #: ../../guidelines.rst:52
 msgid ""
 "Murano dev-docs are written using Sphinx / RST and located in the main repo "
 "in ``doc`` directory."
 msgstr ""
+"Murano 文档使用 Sphinx / RST 来写作，存放在项目代码的``doc``目录下。"
 
 #: ../../guidelines.rst:55
 msgid ""
 "The documentation in docstrings should follow the `PEP 257`_ conventions (as"
 " mentioned in the `PEP 8`_ guidelines)."
 msgstr ""
+"文档的字符须遵循``PEP 257`_ 格式(正如在`PEP 8`_ 指南中所强调的)。"
 
 #: ../../guidelines.rst:58
 msgid "More specifically:"
-msgstr ""
+msgstr "更多须注意的："
 
 #: ../../guidelines.rst:60
 msgid "Triple quotes should be used for all docstrings."
-msgstr ""
+msgstr "所有的文档字符都应使用三重引号。"
 
 #: ../../guidelines.rst:61
 msgid ""
 "If the docstring is simple and fits on one line, then just use one line."
 msgstr ""
+"如果文档字符校简单且适合放在一行，那么就尽量使用这一航。"
 
 #: ../../guidelines.rst:63
 msgid ""
 "For docstrings that take multiple lines, there should be a newline after the"
 " opening quotes, and before the closing quotes."
 msgstr ""
+"对于涉及多行内容的字符，需要在新的一行以一个引号标记，当然最后引号必须是成对出现的。"
 
 #: ../../guidelines.rst:65
 msgid ""
@@ -107,7 +115,9 @@ msgid ""
 "markup to designate parameters, return values, etc.  Documentation on the "
 "sphinx specific markup can be found here:"
 msgstr ""
+"`Sphinx`_ 用来构建文档的，它使用富结构文本来标记指派参数，返回值等。sphinx的文档特殊"
+"标记可以在这里找到:"
 
 #: ../../guidelines.rst:71
 msgid "Run the following command to build docs locally."
-msgstr ""
+msgstr "运行以下命令来构建本地文档。"

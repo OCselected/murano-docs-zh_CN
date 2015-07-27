@@ -13,101 +13,104 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:3
 msgid "Contributing to Murano"
-msgstr ""
+msgstr "为Murano作贡献"
 
 #: ../../../../CONTRIBUTING.rst:5
 msgid ""
 "If you're interested in contributing to the Murano project, the following "
 "will help get you started."
 msgstr ""
+"如果你对Murano项目贡献有极大的兴趣，以下内容是帮助你如何快速入门的。"
 
 #: ../../../../CONTRIBUTING.rst:9
 msgid "Contributor License Agreement"
-msgstr ""
+msgstr "贡献者许可协议"
 
 #: ../../../../CONTRIBUTING.rst:11
 msgid ""
 "In order to contribute to the Murano project, you need to have signed "
 "OpenStack's contributor's agreement:"
 msgstr ""
+"要为Murano项目作贡献，你需要接受OpenStack的贡献者协议:"
 
 #: ../../../../CONTRIBUTING.rst:14
 msgid "http://docs.openstack.org/infra/manual/developers.html"
-msgstr ""
+msgstr "http://docs.openstack.org/infra/manual/developers.html"
 
 #: ../../../../CONTRIBUTING.rst:15
 msgid "http://wiki.openstack.org/CLA"
-msgstr ""
+msgstr "http://wiki.openstack.org/CLA"
 
 #: ../../../../CONTRIBUTING.rst:19
 msgid "Project Hosting Details"
-msgstr ""
+msgstr "项目托管的细节"
 
 #: ../../../../CONTRIBUTING.rst:22
 msgid "Bug tracker"
-msgstr ""
+msgstr "Bug 跟踪"
 
 #: ../../../../CONTRIBUTING.rst:22
 msgid "https://launchpad.net/murano"
-msgstr ""
+msgstr "https://launchpad.net/murano"
 
 #: ../../../../CONTRIBUTING.rst:25
 msgid "Mailing list (prefix subjects with ``[Murano]`` for faster responses)"
-msgstr ""
+msgstr "邮件列表(以``[Murano]``为前缀的子项目，可快速的响应)"
 
 #: ../../../../CONTRIBUTING.rst:25
 msgid "http://lists.openstack.org/cgi-bin/mailman/listinfo/openstack-dev"
-msgstr ""
+msgstr "http://lists.openstack.org/cgi-bin/mailman/listinfo/openstack-dev"
 
 #: ../../../../CONTRIBUTING.rst:28
 msgid "Wiki"
-msgstr ""
+msgstr "维基百科"
 
 #: ../../../../CONTRIBUTING.rst:28
 msgid "https://wiki.openstack.org/wiki/Murano"
-msgstr ""
+msgstr "https://wiki.openstack.org/wiki/Murano"
 
 #: ../../../../CONTRIBUTING.rst:33
 msgid "IRC channel"
-msgstr ""
+msgstr "IRC 频道"
 
 #: ../../../../CONTRIBUTING.rst:31
 msgid "#murano at FreeNode"
-msgstr ""
+msgstr "驻扎在FreeNode上的 #murano"
 
 #: ../../../../CONTRIBUTING.rst:33
 msgid "https://wiki.openstack.org/wiki/Meetings#Murano_meeting"
-msgstr ""
+msgstr "https://wiki.openstack.org/wiki/Meetings#Murano_meeting"
 
 #: ../../../../CONTRIBUTING.rst:42
 msgid "Code Hosting"
-msgstr ""
+msgstr "代码托管"
 
 #: ../../../../CONTRIBUTING.rst:36
 msgid "https://git.openstack.org/cgit/openstack/murano"
-msgstr ""
+msgstr "https://git.openstack.org/cgit/openstack/murano"
 
 #: ../../../../CONTRIBUTING.rst:38
 msgid "https://git.openstack.org/cgit/openstack/murano-agent"
-msgstr ""
+msgstr "https://git.openstack.org/cgit/openstack/murano-agent"
 
 #: ../../../../CONTRIBUTING.rst:40
 msgid "https://git.openstack.org/cgit/openstack/murano-dashboard"
-msgstr ""
+msgstr "https://git.openstack.org/cgit/openstack/murano-dashboard"
 
 #: ../../../../CONTRIBUTING.rst:42
 msgid "https://git.openstack.org/cgit/openstack/python-muranoclient"
-msgstr ""
+msgstr "https://git.openstack.org/cgit/openstack/python-muranoclient"
 
 #: ../../../../CONTRIBUTING.rst:47
 msgid "Code Review"
-msgstr ""
+msgstr "代码审核"
 
 #: ../../../../CONTRIBUTING.rst:45
 msgid "https://review.openstack.org/#/q/murano+AND+status:+open,n,z"
-msgstr ""
+msgstr "https://review.openstack.org/#/q/murano+AND+status:+open,n,z"
 
 #: ../../../../CONTRIBUTING.rst:47
 msgid ""
 "http://docs.openstack.org/infra/manual/developers.html#development-workflow"
 msgstr ""
+"http://docs.openstack.org/infra/manual/developers.html#development-workflow"
