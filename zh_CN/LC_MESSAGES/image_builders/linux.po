@@ -13,59 +13,64 @@ msgstr ""
 
 #: ../../image_builders/linux.rst:18
 msgid "Linux Image"
-msgstr ""
+msgstr "Linux镜像"
 
 #: ../../image_builders/linux.rst:20
 msgid ""
 "At the moment the best way to build a Linux image with the murano agent is "
 "to use disk image builder."
 msgstr ""
+"眼下最好的构建带有murnao代理的Linux镜像的方法是使用磁盘镜像构建器。"
 
 #: ../../image_builders/linux.rst:26
 msgid "Disk image builder requires sudo rights"
-msgstr ""
+msgstr "磁盘镜像构建器需要suod权限"
 
 #: ../../image_builders/linux.rst:29
 msgid ""
 "The process is quite simple. Let's assume that you use a directory ~/git for"
 " cloning git repositories:"
 msgstr ""
+"过程很简单。先假设你使用目录~/git来存放一些git仓库:"
 
 #: ../../image_builders/linux.rst:38
 msgid "Clone the components required to build an image to that directory:"
-msgstr ""
+msgstr "克隆一些构建镜像所需要的组件到此目录："
 
 #: ../../image_builders/linux.rst:48
 msgid ""
 "Checkout a change request that allows to build an image using disk image "
 "builder completely installed to virtual environment:"
 msgstr ""
+"查看一个变更需求，从而允许使用磁盘镜像构建器构建一个镜像是完全安装到虚拟环境的:"
 
 #: ../../image_builders/linux.rst:57
 msgid "Install additional packages required by disk image builder:"
-msgstr ""
+msgstr "磁盘镜像构建器所需要安装的额外的软件包:"
 
 #: ../../image_builders/linux.rst:64
 msgid "Export paths where additional dib elements are located:"
-msgstr ""
+msgstr "设置路径环境变量，以能够找到额外的零散的组件元素:"
 
 #: ../../image_builders/linux.rst:71
 msgid "And build Ubuntu-based image with the murano agent:"
-msgstr ""
+msgstr "然后开始构建安装有murano代理的基于Ubuntu的镜像:"
 
 #: ../../image_builders/linux.rst:79
 msgid ""
 "If you need a Fedora based image, replace 'ubuntu' to 'fedora' in the last "
 "command."
 msgstr ""
+"如果你需要一个基于Fedora的镜像，在最后的命令里将'ubuntu'替换为'fedora'即可。"
 
 #: ../../image_builders/linux.rst:81
 msgid ""
 "It'll take a while (up to 30 minutes if your hard drive and internet "
 "connection are slow)."
 msgstr ""
+"这会花费一点时间(如果你硬盘和互联网很慢的话可能会达到30分钟)。"
 
 #: ../../image_builders/linux.rst:83
 msgid ""
 "When you are done upload the murano-agent.qcow2 image to glance and play :)"
-msgstr ""
+msgstr "当构建完成后，上传镜像murano-agent.qcow2到glance，然后就可以使用了:)"

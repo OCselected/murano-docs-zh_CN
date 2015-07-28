@@ -13,7 +13,7 @@ msgstr ""
 
 #: ../../articles/workflow.rst:18
 msgid "Murano workflow"
-msgstr ""
+msgstr "Murano 工作流"
 
 #: ../../articles/workflow.rst:19
 msgid ""
@@ -21,10 +21,12 @@ msgid ""
 "document will use the Telnet package referenced elsewhere as an example. It "
 "assumes the package has been previously uploaded to Murano."
 msgstr ""
+"在环境中当组件被创建之后发生了什么？"
+"此文档以Telnet软件包为参考案例。它假设的前提是软件包已经上传给Murano。"
 
 #: ../../articles/workflow.rst:25
 msgid "Step 1.  Begin deployment"
-msgstr ""
+msgstr "步骤 1. 开始部署"
 
 #: ../../articles/workflow.rst:26
 msgid ""

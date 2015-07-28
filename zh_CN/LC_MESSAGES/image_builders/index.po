@@ -13,4 +13,4 @@ msgstr ""
 
 #: ../../image_builders/index.rst:18
 msgid "Building Murano Image"
-msgstr ""
+msgstr "构建Murano镜像"

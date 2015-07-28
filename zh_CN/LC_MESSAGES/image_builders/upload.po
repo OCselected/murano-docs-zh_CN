@@ -13,7 +13,7 @@ msgstr ""
 
 #: ../../image_builders/upload.rst:20
 msgid "Upload image into glance"
-msgstr ""
+msgstr "上传镜像到glance"
 
 #: ../../image_builders/upload.rst:22
 msgid ""
@@ -107,36 +107,36 @@ msgstr ""
 
 #: ../../image_builders/upload.rst:89
 msgid "Murano image types"
-msgstr ""
+msgstr "Murano镜像类型"
 
 #: ../../image_builders/upload.rst:94
 msgid "Type Name"
-msgstr ""
+msgstr "类型名称"
 
 #: ../../image_builders/upload.rst:95
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../image_builders/upload.rst:97
 msgid "windows.2012"
-msgstr ""
+msgstr "windows.2012"
 
 #: ../../image_builders/upload.rst:98
 msgid "Windows Server 2012"
-msgstr ""
+msgstr "Windows Server 2012"
 
 #: ../../image_builders/upload.rst:100
 msgid "linux"
-msgstr ""
+msgstr "linux"
 
 #: ../../image_builders/upload.rst:101
 msgid "Generic Linux images, Ubuntu / Debian, RedHat / Centos, etc"
-msgstr ""
+msgstr "通用Linux镜像，Ubuntu / Debian, RedHat /Centos，等"
 
 #: ../../image_builders/upload.rst:103
 msgid "cirrus.demo"
-msgstr ""
+msgstr "cirrus.demo"
 
 #: ../../image_builders/upload.rst:104
 msgid "Murano demo image, based on CirrOS"
-msgstr ""
+msgstr "Murano 演示镜像，基于CirrOS"

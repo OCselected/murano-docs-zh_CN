@@ -347,7 +347,7 @@ msgstr ""
 
 #: ../../install/configure_network.rst:74
 msgid "Manual neutron network configuration"
-msgstr ""
+msgstr "neutron网络配置手册"
 
 #: ../../install/configure_network.rst:76
 msgid "Step 1. Create public network"
