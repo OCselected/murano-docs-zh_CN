@@ -13,7 +13,7 @@ msgstr ""
 
 #: ../../draft/index.rst:8
 msgid "Welcome to Murano Documentation (BETA)"
-msgstr ""
+msgstr "欢迎阅读Murano文档(BETA)"
 
 #: ../../draft/index.rst:10
 msgid ""
@@ -22,12 +22,17 @@ msgid ""
 "deployment. It can be used with almost any application and service in "
 "OpenStack, and is extensible to other clouds."
 msgstr ""
+"**Murano**是一个开源的OpenStack项目，其可通过多种多样的工具合并应用目录，从而"
+"简化和加快打包和部署。它可用于OpenStack中几乎所有的应用和服务，并正在向其它的"
+"云中扩展。"
 
 #: ../../draft/index.rst:17
 msgid ""
 "This documentation guides application developers through the process of "
 "composing an application package to get it ready for uploading to Murano."
 msgstr ""
+"本文档为应用开发者提供了向导性的内容，通过准备好一个应用软件包到"
+"上传到Murano的一整个流程来阐明。"
 
 #: ../../draft/index.rst:21
 msgid ""
@@ -35,6 +40,8 @@ msgid ""
 "how to manage images, categories, and repositories using the murano client "
 "that will surely be helpful for cloud administrators."
 msgstr ""
+"在部署的规则和需求之外，它还包括了使用murano客户端如何管理镜像、目录和仓库的"
+"信息，这对于云管理员是非常又用的信息。"
 
 #: ../../draft/index.rst:26
 msgid ""
@@ -42,32 +49,36 @@ msgid ""
 " dashboard. These include guidance on how to manage applications and "
 "environments."
 msgstr ""
+"它还为最终用户解释了如何在web界面中直接使用应用目录。包括如何管理应用和环境的"
+"指南。"
+
 
 #: ../../draft/index.rst:30
 msgid ""
 "And of course, it provides information on how to contribute to the project."
 msgstr ""
+"当然，它也会提供关于如何为项目作贡献的信息。"
 
 #: ../../draft/index.rst:34
 msgid "Introduction to Murano"
-msgstr ""
+msgstr "Murano介绍"
 
 #: ../../draft/index.rst:45
 msgid "Using Murano"
-msgstr ""
+msgstr "使用Murano"
 
 #: ../../draft/index.rst:56
 msgid "Deploying Murano"
-msgstr ""
+msgstr "部署Murano"
 
 #: ../../draft/index.rst:70
 msgid "Developing Applications"
-msgstr ""
+msgstr "开发应用"
 
 #: ../../draft/index.rst:85
 msgid "Contributing"
-msgstr ""
+msgstr "参与"
 
 #: ../../draft/index.rst:98
 msgid "Appendix"
-msgstr ""
+msgstr "附录"

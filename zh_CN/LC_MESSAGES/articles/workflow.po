@@ -35,10 +35,13 @@ msgid ""
 "document containing the class types required to create the environment, as "
 "well as any parameters the user selected prior to deployment. Examples are:"
 msgstr ""
+"API发送消息给murano-engine，即murano-engine接受了指令，murano-engine是Murano的"
+"工作流组件，用来部署环境的。消息由JSON文档组成，包括创建环境所需要的类的类型，"
+"以及其它用户在部署期间所选择的参数。举例来说:"
 
 #: ../../articles/workflow.rst:31
 msgid "An :ref:`Environment` object (io.murano.Environment) with a *name*"
-msgstr ""
+msgstr "对象 :ref:`Environment` (io.murano.Environment) 的*name*"
 
 #: ../../articles/workflow.rst:32
 msgid ""
@@ -95,23 +98,23 @@ msgstr ""
 
 #: ../../articles/workflow.rst:62
 msgid ":ref:`Network`"
-msgstr ""
+msgstr ":ref:`Network`"
 
 #: ../../articles/workflow.rst:63
 msgid ":ref:`Instance`"
-msgstr ""
+msgstr ":ref:`Instance`"
 
 #: ../../articles/workflow.rst:64
 msgid ":ref:`Object`"
-msgstr ""
+msgstr ":ref:`Object`"
 
 #: ../../articles/workflow.rst:65
 msgid ":ref:`Environment`"
-msgstr ""
+msgstr ":ref:`Environment`"
 
 #: ../../articles/workflow.rst:69
 msgid "Step 3.   Deploy resources"
-msgstr ""
+msgstr "步骤 3. 部署资源"
 
 #: ../../articles/workflow.rst:70
 msgid ""
@@ -173,7 +176,7 @@ msgstr ""
 
 #: ../../articles/workflow.rst:111
 msgid "Step 5.  Done"
-msgstr ""
+msgstr "步骤 5. 完成"
 
 #: ../../articles/workflow.rst:112
 msgid ""
