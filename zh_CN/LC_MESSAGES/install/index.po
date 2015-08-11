@@ -418,6 +418,8 @@ msgid ""
 "First you need to install a number of packages with your OS package manager."
 " The list of packages depends on the OS you use."
 msgstr ""
+"首先你需要使用你的操作系统软件包管理器来安装一些软件包。"
+"具体的列表要视你使用的发行版而定。"
 
 #: ../../install/manual.rst:33
 msgid "Ubuntu"
@@ -432,6 +434,7 @@ msgid ""
 "Fedora support wasn't thoroughly tested. We do not guarantee that Murano "
 "will work on Fedora."
 msgstr ""
+"对Fedora的支持没有经过测试，我们无法确保Murano能够在Fedora下正常工作。"
 
 #: ../../install/manual.rst:59
 msgid "CentOS"
@@ -451,90 +454,101 @@ msgid ""
 "SQLite is enough in most cases. For production installations you should use "
 "MySQL or PostgreSQL databases."
 msgstr ""
+"Murano的后端支持多种数据库。若是仅开发使用，SQLite就可以满足大部分的情景。若为"
+"生产环境的话，你需要安装MySQL或者是PostgreSQL数据库。"
 
 #: ../../install/manual.rst:86
 msgid ""
 "Although Murano could use PostgreSQL database on backend, it wasn't "
 "thoroughly tested and should be used with caution."
 msgstr ""
+"尽管Murano的后端是可以使用PostgreSQL数据库的，但是并没有通过测试，所以"
+"要谨慎使用。"
 
 #: ../../install/manual.rst:90
 msgid ""
 "To use MySQL database you should install it and create an empty database "
 "first:"
 msgstr ""
+"要使用MySQL数据库的话，你需要首先安装它，然后创建一个空的数据库:"
 
 #: ../../install/manual.rst:108
 msgid "Install the API service and Engine"
-msgstr ""
+msgstr "安装API服务和引擎"
 
 #: ../../install/manual.rst:110
 msgid "Create a folder which will hold all Murano components."
-msgstr ""
+msgstr "创建一个目录，存放所有的Murano组件。"
 
 #: ../../install/manual.rst:117
 msgid "Clone the Murano git repository to the management server."
-msgstr ""
+msgstr "克隆Murano的git仓库到管理服务器。"
 
 #: ../../install/manual.rst:125
 msgid "Set up Murano config file"
-msgstr ""
+msgstr "设置Murano配置文件"
 
 #: ../../install/manual.rst:127
 msgid "Murano has common config file for API and Engine services."
-msgstr ""
+msgstr "Murano针对API和引擎服务有通用的配置文件。"
 
 #: ../../install/manual.rst:129
 msgid "First, generate sample configuration file, using tox"
-msgstr ""
+msgstr "首先，使用tox生成示例配置文件"
 
 #: ../../install/manual.rst:136
 msgid "And make a copy of it for further modifications"
-msgstr ""
+msgstr "然后，复制一份用来进一步的修改"
 
 #: ../../install/manual.rst:143
 msgid ""
 "Edit ``murano.conf`` with your favorite editor. Below is an example which "
 "contains basic settings your are likely need to configure."
 msgstr ""
+"使用你喜爱的编辑器编辑``murano.conf``,下面的例子是你需要的最基本的配置。"
 
 #: ../../install/manual.rst:148
 msgid ""
 "The example below uses SQLite database. Edit **[database]** section if you "
 "want to use other database type."
 msgstr ""
+"下面的例子使用了SQLite数据库。若你使用其它类型的数据库，就编辑**[database]**一节。"
 
 #: ../../install/manual.rst:201
 msgid ""
 "Create a virtual environment and install Murano prerequisites. We will use "
 "*tox* for that. Virtual environment will be created under *.tox* directory."
 msgstr ""
+"创建一个虚拟环境并且安装Murano前提需要。我们将使用*tox*来完成这步。虚拟环境"
+"会被创建在目录*.tox*下。"
 
 #: ../../install/manual.rst:210
 msgid "Create database tables for Murano."
-msgstr ""
+msgstr "为Murano创建数据库表。"
 
 #: ../../install/manual.rst:219
 msgid ""
 "Open a new console and launch Murano API. A separate terminal is required "
 "because the console will be locked by a running process."
 msgstr ""
+"打开一个新的终端，然后启动Murano API。需要一个分离的终端是因为运行进程的时候"
+"终端会被锁住。"
 
 #: ../../install/manual.rst:228
 msgid "Import Core Murano Library."
-msgstr ""
+msgstr "导入Murano核心库。"
 
 #: ../../install/manual.rst:246
 msgid "Open a new console and launch Murano Engine. A separate terminal is"
-msgstr ""
+msgstr "打开一个新的终端，然后启动Murano API。需要一个分离的终端是因为运行进程的时候"
 
 #: ../../install/manual.rst:239
 msgid "required because the console will be locked by a running process."
-msgstr ""
+msgstr "终端会被锁住。"
 
 #: ../../install/manual.rst:249
 msgid "Install Murano Dashboard"
-msgstr ""
+msgstr "安装Murano面板"
 
 #: ../../install/manual.rst:251
 msgid ""
@@ -542,30 +556,32 @@ msgid ""
 "a control plane to use it. This section describes how to install and run "
 "Murano Dashboard."
 msgstr ""
+"Murano API & 引擎服务提供了Murano的核心部分，尽管如此，你还是需要一个控制面板"
+"来使用它。此章描述了如何安装和运行Murano面板。"
 
 #: ../../install/manual.rst:255
 msgid "Clone the repository with Murano Dashboard."
-msgstr ""
+msgstr "克隆Murano Dashboard项目的仓库。"
 
 #: ../../install/manual.rst:263
 msgid "Clone horizon repository"
-msgstr ""
+msgstr "克隆Horizon的仓库"
 
 #: ../../install/manual.rst:270
 msgid "Create venv and install muranodashboard as editable module."
-msgstr ""
+msgstr "创建虚拟环境并且作为可编辑模块来安装muranodashboard。"
 
 #: ../../install/manual.rst:278
 msgid "Copy muranodashboard plugin file."
-msgstr ""
+msgstr "拷贝muranodashboard插件文件。"
 
 #: ../../install/manual.rst:280
 msgid "This step enables murano panel in horizon dashboard."
-msgstr ""
+msgstr "此步是在horizon面板中启用murano模块。"
 
 #: ../../install/manual.rst:287
 msgid "Prepare local settings."
-msgstr ""
+msgstr "准备本地设置."
 
 #: ../../install/manual.rst:289
 msgid ""
@@ -573,10 +589,14 @@ msgid ""
 "<http://docs.openstack.org/developer/horizon/topics/settings.html#openstack-"
 "settings-partial>`_."
 msgstr ""
+"要获得更多信息，请参考官方`horizon文档`"
+"<http://docs.openstack.org/developer/horizon/topics/settings.html#openstack-"
+"settings-partial>`_."
+
 
 #: ../../install/manual.rst:296
 msgid "Customize local settings according to OpenStack installation."
-msgstr ""
+msgstr "在OpenStack安装期间定制本地设置。"
 
 #: ../../install/manual.rst:316
 msgid ""
@@ -592,7 +612,7 @@ msgstr ""
 
 #: ../../install/manual.rst:341
 msgid "Perform database synchronization."
-msgstr ""
+msgstr "执行数据库同步。"
 
 #: ../../install/manual.rst:343
 msgid ""
@@ -618,11 +638,11 @@ msgstr ""
 
 #: ../../install/manual.rst:361
 msgid "Open dashboard using url http://localhost:8000"
-msgstr ""
+msgstr "使用URL http://localhost:8000 打开面板"
 
 #: ../../install/manual.rst:364
 msgid "Import Murano Applications"
-msgstr ""
+msgstr "导入Murano应用程序"
 
 #: ../../install/manual.rst:366
 msgid ""
@@ -632,7 +652,7 @@ msgstr ""
 
 #: ../../install/manual.rst:369
 msgid "Clone Murano Apps repository."
-msgstr ""
+msgstr "克隆Murano应用仓库。"
 
 #: ../../install/manual.rst:377
 msgid ""
@@ -641,7 +661,7 @@ msgstr ""
 
 #: ../../install/configure_network.rst:18
 msgid "Network Configuration"
-msgstr ""
+msgstr "网络配置"
 
 #: ../../install/configure_network.rst:20
 msgid ""
@@ -653,7 +673,7 @@ msgstr ""
 
 #: ../../install/configure_network.rst:26
 msgid "Nova network support"
-msgstr ""
+msgstr "Nova network支持"
 
 #: ../../install/configure_network.rst:28
 msgid ""
@@ -674,7 +694,7 @@ msgstr ""
 
 #: ../../install/configure_network.rst:40
 msgid "Neutron support"
-msgstr ""
+msgstr "Neutron支持"
 
 #: ../../install/configure_network.rst:42
 msgid ""
@@ -693,7 +713,7 @@ msgstr ""
 
 #: ../../install/configure_network.rst:51
 msgid "Automatic Neutron network configuration"
-msgstr ""
+msgstr "Neutron 网络自动配置"
 
 #: ../../install/configure_network.rst:53
 msgid ""
@@ -715,11 +735,11 @@ msgstr ""
 
 #: ../../install/configure_network.rst:74
 msgid "Manual neutron network configuration"
-msgstr ""
+msgstr "Neutron网络手动配置"
 
 #: ../../install/configure_network.rst:76
 msgid "Step 1. Create public network"
-msgstr ""
+msgstr "步骤 1. 创建公共网络"
 
 #: ../../install/configure_network.rst:78
 msgid ""
