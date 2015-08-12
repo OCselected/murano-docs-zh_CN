@@ -20,20 +20,22 @@ msgid ""
 "The `contrib/devstack`_ directory contains the files necessary to integrate "
 "Murano with `Devstack`_."
 msgstr ""
+"目录`contrib/devstack`_包含了Murano整合`Devstack`_的必要的文件。"
 
 #: ../../../../contrib/devstack/README.rst:1
 msgid ""
 "Follow Devstack documentation to setup a host for Devstack. Then clone "
 "Devstack source code."
 msgstr ""
+"遵循Devstack的文档以设置一个主机，克隆Devstack的源代码。"
 
 #: ../../../../contrib/devstack/README.rst:4
 msgid "Copy Murano integration scripts to Devstack::"
-msgstr ""
+msgstr "复制Murano的整合脚本到Devstack::"
 
 #: ../../../../contrib/devstack/README.rst:10
 msgid "Create a ``localrc`` file as input to devstack."
-msgstr ""
+msgstr "创建一个``localrc``文件作为devstack的输入。"
 
 #: ../../../../contrib/devstack/README.rst:12
 msgid ""
@@ -41,7 +43,9 @@ msgid ""
 "``localrc`` before running ``stack.sh``. This example ``localrc`` file shows"
 " all of the settings required for Murano::"
 msgstr ""
+"默认情况下，Murano的服务并没有激活，所以它必须在``localrc``中被启用，且须在"
+"运行``stack.sh``之前进行。此``localrc``的示例文件展示了Murano所有必须的设置::"
 
 #: ../../../../contrib/devstack/README.rst:22
 msgid "Deploy your OpenStack Cloud with Murano::"
-msgstr ""
+msgstr "将Murano一起部署你的OpenStack云::"

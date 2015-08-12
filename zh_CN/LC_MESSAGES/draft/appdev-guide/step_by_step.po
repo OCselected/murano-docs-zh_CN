@@ -13,7 +13,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:5
 msgid "Step-by-Step"
-msgstr ""
+msgstr "手把手教你"
 
 #: ../../draft/appdev-guide/step_by_step.rst:7
 msgid ""
@@ -61,7 +61,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:41
 msgid "Step 1. Create the structure of the package"
-msgstr ""
+msgstr "步骤1. 创建包的结构"
 
 #: ../../draft/appdev-guide/step_by_step.rst:43
 msgid ""
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:71
 msgid "Step 2. Create the manifest file"
-msgstr ""
+msgstr "步骤 2. 创建manifest文件"
 
 #: ../../draft/appdev-guide/step_by_step.rst:73
 msgid ""
@@ -245,7 +245,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:244
 msgid "Step 3. Create the execution plan template"
-msgstr ""
+msgstr "步骤 3. 创建执行计划模版"
 
 #: ../../draft/appdev-guide/step_by_step.rst:246
 msgid ""
@@ -278,7 +278,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:286
 msgid "Step 4. Create the dynamic UI form definition"
-msgstr ""
+msgstr "步骤 4. 从定义创建动态的UI"
 
 #: ../../draft/appdev-guide/step_by_step.rst:288
 msgid "ApacheHTTPServer's ui.yaml source code:"
@@ -372,7 +372,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:424
 msgid "Step 5: Define MuranoPL class definitions"
-msgstr ""
+msgstr "步骤 5：定义 MuranoPl 类的定义"
 
 #: ../../draft/appdev-guide/step_by_step.rst:426
 msgid ""
@@ -517,7 +517,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:570
 msgid "Step 6. Add the application logo (optional)"
-msgstr ""
+msgstr "步骤 6. 添加应用程序logo (可选)"
 
 #: ../../draft/appdev-guide/step_by_step.rst:572
 msgid ""
@@ -533,7 +533,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:582
 msgid "Step 7.  Compose a zip archive"
-msgstr ""
+msgstr "步骤 7. 组成一个zip压缩文件"
 
 #: ../../draft/appdev-guide/step_by_step.rst:584
 msgid ""

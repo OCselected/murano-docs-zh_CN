@@ -603,12 +603,16 @@ msgid ""
 "Also, it's better to change default session backend from  browser cookies to"
 " database to avoid issues with forms during creating applications:"
 msgstr ""
+"同样,更改默认的会话后端更好些，从浏览器cookies更改到数据库以避免在创建应用的"
+"表单错误:"
 
 #: ../../install/manual.rst:332
 msgid ""
 "If you do not plan to get murano service from keystone application catalog, "
 "provide where murano-api service is running:"
 msgstr ""
+"如果你没有打算从keystone的应用目录中获得murano服务，则须提供murano-api服务运行"
+"的地方:"
 
 #: ../../install/manual.rst:341
 msgid "Perform database synchronization."
@@ -618,23 +622,27 @@ msgstr "执行数据库同步。"
 msgid ""
 "Optional step. Needed in case you set up database as a session backend."
 msgstr ""
+"可选步骤。需要你设置数据库作为后端会话。"
 
 #: ../../install/manual.rst:350
 msgid ""
 "You can reply 'no' since for development purpose separate user is not "
 "needed."
 msgstr ""
+"你可以回答`否`，若是基于开发目的无须分离用户的话"
 
 #: ../../install/manual.rst:352
 msgid ""
 "Run Django server at 127.0.0.1:8000 or provide different IP and PORT "
 "parameters."
 msgstr ""
+"在127.0.0.1:8000运行Django服务，或者给参数提供不同的IP和端口。"
 
 #: ../../install/manual.rst:359
 msgid ""
 "Development server will be restarted automatically on every code change."
 msgstr ""
+"在每次代码变更后，开发服务会自动重启。"
 
 #: ../../install/manual.rst:361
 msgid "Open dashboard using url http://localhost:8000"
@@ -649,6 +657,7 @@ msgid ""
 "Applications are needed to be imported to fill the catalog. It can be done "
 "via dashboard, but also possible via CLI:"
 msgstr ""
+"应用程序需要导入进来到目录。它可通过面板来完成，但通常是通过命令行:"
 
 #: ../../install/manual.rst:369
 msgid "Clone Murano Apps repository."
@@ -658,6 +667,7 @@ msgstr "克隆Murano应用仓库。"
 msgid ""
 "Import every package you need from this repository, using the command below."
 msgstr ""
+"你需要从此仓库导入每个软件包，使用以下命令。"
 
 #: ../../install/configure_network.rst:18
 msgid "Network Configuration"
@@ -670,6 +680,8 @@ msgid ""
 "automatically. However, some additional actions are required to support "
 "advanced scenarios."
 msgstr ""
+"Murano可以工作在各种网络环境下，且具有探测当前网络配置和自动选择相应设置的能力，"
+"尽管如此，在一些复杂的场景下还是需要一些额外的操作的。"
 
 #: ../../install/configure_network.rst:26
 msgid "Nova network support"
@@ -681,6 +693,8 @@ msgid ""
 " but is available on any OpenStack deployment without the need to deploy any"
 " additional components."
 msgstr ""
+"Nova Network是最为简单的网络解决方案，其拥有有限的能力，但是部署到OpenStack无须"
+"任何额外的组件。"
 
 #: ../../install/configure_network.rst:32
 msgid ""
@@ -691,6 +705,10 @@ msgid ""
 "further configuration is needed in this case, all the VMs spawned by Murano "
 "will be joining the same Network."
 msgstr ""
+"当一个新的Murano环境被创建后，Murano会检查当前的OpenStack部署环境对应的网络"
+"服务(例如,Neutron)。这是由访问keystone的服务目录来完成的，如果此服务不存在了，"
+"Murano会自动的切回到Nova Network。没有额外的配置需要去做，所有由Murano生成的"
+"虚拟机都会自动的加入此网络。"
 
 #: ../../install/configure_network.rst:40
 msgid "Neutron support"
@@ -702,6 +720,8 @@ msgid ""
 "that give you ability to not care about configuring networks for your "
 "application."
 msgstr ""
+"如果Neutron已经安装，Murano会启用其高级网络特性，以省去用户去为自己的应用"
+"配置关于网络的部分。"
 
 #: ../../install/configure_network.rst:45
 msgid ""
@@ -710,6 +730,9 @@ msgid ""
 " application in just spawned virtual machine Murano also requires a router "
 "connected to the external network."
 msgstr ""
+"默认情况下它会为每个环境创建一个分离的网络，然后将用户的应用程序所跑的虚拟机加"
+"入到网络。要安装和配置应用的话，即哪些由Murano生成的虚拟机中，会需要一个路由连接"
+"到外网。"
 
 #: ../../install/configure_network.rst:51
 msgid "Automatic Neutron network configuration"
@@ -720,18 +743,21 @@ msgid ""
 "To create router automatically, provide the following parameters in config "
 "file:"
 msgstr ""
+"要自动的创建路由的话，在配置文件中提供下面的参数："
 
 #: ../../install/configure_network.rst:65
 msgid ""
 "To figure out the name of the external network, perform the following "
 "command:"
 msgstr ""
+"要指定外网的名称的话，执行下面的命令:"
 
 #: ../../install/configure_network.rst:71
 msgid ""
 "During the first deploy, required networks and router with specified name "
 "will be created and set up."
 msgstr ""
+"在第一次部署时，需要指定创建和设置的网络和路由的名称。"
 
 #: ../../install/configure_network.rst:74
 msgid "Manual neutron network configuration"
@@ -751,53 +777,62 @@ msgid ""
 "<http://docs.openstack.org/trunk/install-guide/install/apt/content"
 "/neutron_initial-external-network.html>`_."
 msgstr ""
+"首先，你需要检查已经存在的外部网络。以管理员用户登录，然后到*项目->网络->"
+"网络拓扑*。然后在*Admin ->网络->网络名称*页面的网络详情中检查网络类型。同样"
+"的操作可通过运行命令行`neutron net-external-list`来实现。要创建一个新的外部"
+"外部网络的话，请参看`OpenStack 文档"
+"<http://docs.openstack.org/trunk/install-guide/install/apt/content"
+"/neutron_initial-external-network.html>`_."
+
 
 #: ../../install/configure_network.rst:86
 msgid "Step 2. Create local network"
-msgstr ""
+msgstr "步骤 2. 创建本地网络"
 
 #: ../../install/configure_network.rst:88
 msgid "Go to *Project -> Network -> Networks*."
-msgstr ""
+msgstr "到 *项目 -> 网络 -> 网络*。"
 
 #: ../../install/configure_network.rst:89
 msgid "Click *Create Network* and fill the form."
-msgstr ""
+msgstr "点击 *创建网络* 然后填写表单。"
 
 #: ../../install/configure_network.rst:96
 msgid "Step 3. Create router"
-msgstr ""
+msgstr "步骤 3。创建路由"
 
 #: ../../install/configure_network.rst:98
 msgid "Go to *Project -> Network -> Routers*"
-msgstr ""
+msgstr "到 *项目->网络 ->路由*"
 
 #: ../../install/configure_network.rst:100
 msgid "Click \"Create Router\""
-msgstr ""
+msgstr "点击 \"创建路由\""
 
 #: ../../install/configure_network.rst:101
 msgid "In the \"Router Name\" field, enter the *murano-default-router*"
-msgstr ""
+msgstr "在\"路由名称\"一栏，输入 *murano-default-route*"
 
 #: ../../install/configure_network.rst:106
 msgid ""
 "If you specify a name other than *murano-default-router*, it will be "
 "necessary to change the following settings in the config file:"
 msgstr ""
+"如果你指定的名称不是*murano-default-router*,那么就需要在配置文件中作以下"
+"必要的变更："
 
 #: ../../install/configure_network.rst:116
 msgid "Click on the specified router name"
-msgstr ""
+msgstr "点击指定的路由名称"
 
 #: ../../install/configure_network.rst:117
 msgid "In the opened view click “Add interface”"
-msgstr ""
+msgstr "在打开的视图中点击\"添加接口\""
 
 #: ../../install/configure_network.rst:118
 msgid "Specify the subnet and IP address"
-msgstr ""
+msgstr "指定子网和IP地址"
 
 #: ../../install/configure_network.rst:122
 msgid "And check the result in `Network Topology` tab."
-msgstr ""
+msgstr "然后在`网络拓扑`选项卡下查看结果。"
