@@ -13,11 +13,11 @@ msgstr ""
 
 #: ../../draft/intro/use_cases.rst:8
 msgid "Use cases"
-msgstr ""
+msgstr "应用场景"
 
 #: ../../draft/intro/use_cases.rst:10
 msgid "*IT as a Service*"
-msgstr ""
+msgstr "*IT即服务*"
 
 #: ../../draft/intro/use_cases.rst:12
 msgid ""
@@ -25,10 +25,12 @@ msgid ""
 "Application management should be simple and not time-consuming. Users should"
 " be able to easily find and create the desired applications."
 msgstr ""
+"一个IT组织打算控制应用程序，提供给云的用户。应用的管理须足够简单且不能花费太多"
+"时间，用户还可轻松的发现和创建想要的应用。"
 
 #: ../../draft/intro/use_cases.rst:16
 msgid "*Self-service portal*"
-msgstr ""
+msgstr "*自服务门户*"
 
 #: ../../draft/intro/use_cases.rst:18
 msgid ""
@@ -38,10 +40,13 @@ msgid ""
 "may be “Jenkins+Java+Tomcat” or “Jenkins+Gerrit+Java+JBoss”. So testing "
 "application in different environment combinations becomes easier."
 msgstr ""
+"你或许打算从几个简单的app来动态的创建混合的应用程序。又或者是你在短短的几分"
+"钟内就可以创建出满意的环境，例如“Jenkins+Java+Tomcat” 或 “Jenkins+Gerrit+Java+JBoss”"
+"的环境。那么Murano让这些测试的应用在不同的环境变得更加简单。"
 
 #: ../../draft/intro/use_cases.rst:24
 msgid "*Glue layer use case*"
-msgstr ""
+msgstr "粘合层用例"
 
 #: ../../draft/intro/use_cases.rst:26
 msgid ""
@@ -54,3 +59,8 @@ msgid ""
 "VMs or bare metal, apps outside of OpenStack, and the following ones are "
 "planned for the future: cloudify and TOSCA, apache brooklin, APS."
 msgstr ""
+"在云的内部的一些应用或许和外部的服务或技术有联系，这可以通过强大的Murano架构"
+"来完成。举例来说，Murano支持Docker和OracleDB的应用，且启动这些支持，仅Murano"
+"本身就可独立完成。所以，用户以最小的代价整合了外部的服务。目前，Murano应用已经"
+"整合的技术有：Docker,旧的应用虚拟机或物理机，OpenStack之外的app,而且，即将整合"
+"的有：cloudify和 TOSCA，apache brooklin,APS等。"

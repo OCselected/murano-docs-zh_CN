@@ -13,7 +13,7 @@ msgstr ""
 
 #: ../../draft/intro/target_users.rst:5
 msgid "Target Users"
-msgstr ""
+msgstr "目标用户"
 
 #: ../../draft/intro/target_users.rst:7
 msgid ""
@@ -22,6 +22,8 @@ msgid ""
 "tested set of on demand self-service applications to dramatically reduce "
 "their support burden."
 msgstr ""
+"云的最终用户期望简单的使用应用，和平时的安装和管理区别不大。云管理员，则期望，"
+"非常乐意提供一组经过测试的满足需求的自服务的应用，从而降低他们的支持压力。"
 
 #: ../../draft/intro/target_users.rst:12
 msgid ""
@@ -30,16 +32,20 @@ msgid ""
 "Cloud end users can use the catalog to deploy these on demand applications, "
 "reliably and consistently, with a button click."
 msgstr ""
+"Murano同时解决了这两个问题。它为云管理员在在线目录中发布为云而准备的应用。"
+"云最终用户则可以使用此目录来按需部署他们的应用，一键搞定，可靠、一致。"
 
 #: ../../draft/intro/target_users.rst:20
 msgid "Cloud administrators"
-msgstr ""
+msgstr "云管理员"
 
 #: ../../draft/intro/target_users.rst:22
 msgid ""
 "For cloud administrators Murano provides UI and API to easily compose, "
 "deploy, run applications, and manage their lifecycle."
 msgstr ""
+"对于云管理员来说，Murano提供了图形界面和API，让其可以轻松的组建，部署，"
+"运行应用，以及管理它们的生命周期。"
 
 #: ../../draft/intro/target_users.rst:26
 msgid ""
@@ -47,6 +53,8 @@ msgid ""
 "manner of the environments in the cloud, either Windows or Linux/Unix-based "
 "operating systems."
 msgstr ""
+"Murano被设计为独立于操作系统的，其可以在云中的环境掌控应用的全部行为，无论是"
+"Windows 还是 Linux/Unix 操作系统。"
 
 #: ../../draft/intro/target_users.rst:30
 msgid ""
@@ -56,10 +64,13 @@ msgid ""
 "speeds up the deployment, even for complex distributed applications, without"
 " sacrificing simplicity of use."
 msgstr ""
+"它可以用于预配置的，且可部署任何可以在云中运行的应用，从底层的网络服务到用户的"
+"应用程序，通过自动化他们正在进行的云应用管理动作，Murano可以加速部署，哪怕是复杂"
+"的分布式应用，且不会牺牲简单性。"
 
 #: ../../draft/intro/target_users.rst:41
 msgid "Cloud end users"
-msgstr ""
+msgstr "云最终用户"
 
 #: ../../draft/intro/target_users.rst:43
 msgid ""
@@ -68,6 +79,9 @@ msgid ""
 "intuitive UI. Even users unfamiliar with cloud environments can easily "
 "deploy cloud-aware applications."
 msgstr ""
+"Murano目录允许云最终用户选择可用的应用和服务，且基于交互的图形界面来组建可靠"
+"的分布式环境。即使用户不熟悉云的环境也可轻松部署为云而生的应用。"
+""
 
 #: ../../draft/intro/target_users.rst:49
 msgid ""
@@ -75,3 +89,5 @@ msgid ""
 "reliably compose and deploy applications in the cloud for the widest range "
 "of workloads and use cases without touching IaaS internals."
 msgstr ""
+"Murano为最终用户隐藏了云基础设施的细节，让他们可以在云中可靠的组建和部署应用，"
+"且支持范围非常广泛的负载和用例，重要的是无须关心IaaS内部的细节。"

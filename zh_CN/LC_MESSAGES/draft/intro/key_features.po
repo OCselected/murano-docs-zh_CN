@@ -13,7 +13,7 @@ msgstr ""
 
 #: ../../draft/intro/key_features.rst:8
 msgid "Key features"
-msgstr ""
+msgstr "关键特性"
 
 #: ../../draft/intro/key_features.rst:10
 msgid ""
@@ -21,146 +21,156 @@ msgid ""
 "catalog, for instance managing  what’s in the catalog, and determining how "
 "apps in the catalog are deployed."
 msgstr ""
+"Murano拥有多个特性设计以和应用目录作交互，如在目录中实例管理什么，以及在目录"
+"中app如何决定部署。"
 
 #: ../../draft/intro/key_features.rst:16
 msgid "Application catalog"
-msgstr ""
+msgstr "应用目录"
 
 #: ../../draft/intro/key_features.rst:18
 msgid "Easy browsing:"
-msgstr ""
+msgstr "轻松浏览:"
 
 #: ../../draft/intro/key_features.rst:20
 msgid ""
 "Icons display applications for point-and-click and drag-and-drop selection "
 "and deployment."
 msgstr ""
+"用于一键部署，拖放选择的应用。且以图标的方式显示。"
+
 
 #: ../../draft/intro/key_features.rst:23
 msgid ""
 "Each application provides configuration information required for deploying "
 "it to a cloud."
 msgstr ""
+"每个应用均提供部署其本身到云中所必需的配置信息。"
 
 #: ../../draft/intro/key_features.rst:26
 msgid ""
 "An application topology of your environment is available in a separate tab, "
 "and shows the number of instances spawned by each application."
 msgstr ""
+"在另外一个选项卡中有你的环境的应用拓扑，而且还展示了由每个应用所生成的实例的"
+"数量。"
 
 #: ../../draft/intro/key_features.rst:30
 msgid ""
 "The presence of the :guilabel:`Quick Deploy` button on the applications page"
 " saves the time."
 msgstr ""
+"在应用的页面上存在一个 :guilabel:`Quick Deploy`，是用来节省时间的。"
 
 #: ../../draft/intro/key_features.rst:33
 msgid "Quick filtering by:"
-msgstr ""
+msgstr "快速过滤,由："
 
 #: ../../draft/intro/key_features.rst:35
 msgid "Tags and words included in application name and description."
-msgstr ""
+msgstr "标签以及应用的名称和描述中的关键字。"
 
 #: ../../draft/intro/key_features.rst:36
 msgid "Recent activity."
-msgstr ""
+msgstr "近期活动。"
 
 #: ../../draft/intro/key_features.rst:37
 msgid "Predefined category."
-msgstr ""
+msgstr "预定义的目录。"
 
 #: ../../draft/intro/key_features.rst:39
 msgid "Dependency tracking:"
-msgstr ""
+msgstr "依赖跟踪："
 
 #: ../../draft/intro/key_features.rst:41
 msgid ""
 "Automatic detection of dependent applications that minimizes the possibility"
 " of an application deployment with incorrect configuration."
 msgstr ""
+"自动发现应用的依赖，这样可以最小化由于错误的配置而导致的应用部署失败率。"
 
 #: ../../draft/intro/key_features.rst:45
 msgid "No underlying IaaS configuration knowledge is required."
-msgstr ""
+msgstr "无须具备IaaS的配置知识。"
 
 #: ../../draft/intro/key_features.rst:49
 msgid "Application catalog management"
-msgstr ""
+msgstr "应用目录管理"
 
 #: ../../draft/intro/key_features.rst:51
 msgid "Easy application uploading using UI or CLI from:"
-msgstr ""
+msgstr "非常轻松的使用图形界面或命令行工具来上传应用，从这里上传："
 
 #: ../../draft/intro/key_features.rst:53
 msgid "Local zip file."
-msgstr ""
+msgstr "本地压缩文件。"
 
 #: ../../draft/intro/key_features.rst:54
 msgid "URL."
-msgstr ""
+msgstr "URL。"
 
 #: ../../draft/intro/key_features.rst:55
 msgid "Package name, using an application repository."
-msgstr ""
+msgstr "软件包名称 ，用于应用的仓库。"
 
 #: ../../draft/intro/key_features.rst:57
 msgid "Managing applications include:"
-msgstr ""
+msgstr "管理应用包括："
 
 #: ../../draft/intro/key_features.rst:59
 msgid "Application organization in categories or transfer between them."
-msgstr ""
+msgstr "在分类中的应用组织或者在它们之间转换。"
 
 #: ../../draft/intro/key_features.rst:60
 msgid "Application name, description and tags update."
-msgstr ""
+msgstr "应用名称，描述和标签更新。"
 
 #: ../../draft/intro/key_features.rst:61
 msgid "Predefined application categories list setting."
-msgstr ""
+msgstr "预定义的应用分类列表设置。"
 
 #: ../../draft/intro/key_features.rst:63
 msgid "Deployment tracking includes the availability of:"
-msgstr ""
+msgstr "部署跟踪，包括的活动有:"
 
 #: ../../draft/intro/key_features.rst:65
 msgid "Logs for deployments via UI."
-msgstr ""
+msgstr "通过图形界面查看部署日志。"
 
 #: ../../draft/intro/key_features.rst:66
 msgid "Deployment modification history to track the recent changes."
-msgstr ""
+msgstr "部署变动的历史，用来跟踪近期的变更。"
 
 #: ../../draft/intro/key_features.rst:70
 msgid "Application lifecycle management"
-msgstr ""
+msgstr "应用程序生命周期管理"
 
 #: ../../draft/intro/key_features.rst:72
 msgid "Simplified configuration and integration:"
-msgstr ""
+msgstr "简单的配置和集成："
 
 #: ../../draft/intro/key_features.rst:74
 msgid ""
 "It is up to an application developer to decide what their application will "
 "be able to do."
 msgstr ""
+"这是由应用的开发者所决定的，什么是应用将会做的。"
 
 #: ../../draft/intro/key_features.rst:77
 msgid "Dependencies between applications are easily configured."
-msgstr ""
+msgstr "应用之间的依赖容易配置。"
 
 #: ../../draft/intro/key_features.rst:79
 msgid "New applications can be connected with already existing ones."
-msgstr ""
+msgstr "新的应用可以连接到已经存在的应用。"
 
 #: ../../draft/intro/key_features.rst:81
 msgid "Well specified application actions are available."
-msgstr ""
+msgstr "指定应用程序的行为。"
 
 #: ../../draft/intro/key_features.rst:83
 msgid "HA-mode and auto-scaling:"
-msgstr ""
+msgstr "高可用模式和自动扩展："
 
 #: ../../draft/intro/key_features.rst:85
 msgid ""
@@ -168,13 +178,17 @@ msgid ""
 "application events and call corresponding actions, such as failover, "
 "starting additional instances, and others."
 msgstr ""
+"应用程序开发者可以设置任何的监控系统来跟踪应用的事件，然后调用对应的动作，"
+"例如失效切换，启动额外的实例，等等。"
 
 #: ../../draft/intro/key_features.rst:89
 msgid "Isolation:"
-msgstr ""
+msgstr "隔离："
 
 #: ../../draft/intro/key_features.rst:91
 msgid ""
 "Applications in the same environments can easily interact with each other, "
 "though applications between different tenants are isolated."
 msgstr ""
+"在同一个环境中的应用可轻松实现彼此之间的互动，即使应用是在相互隔离的不同的租户"
+"之间。"

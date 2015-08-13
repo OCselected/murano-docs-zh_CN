@@ -13,7 +13,7 @@ msgstr ""
 
 #: ../../draft/intro/architecture.rst:5
 msgid "Architecture"
-msgstr ""
+msgstr "架构"
 
 #: ../../draft/intro/architecture.rst:7
 msgid ""
@@ -22,23 +22,29 @@ msgid ""
 "REST API (via their python clients). The most used external services are "
 "keystone and heat."
 msgstr ""
+"Murano使用了OpenStack的一些服务从而可以实现使用已经存在的功能。Murano使用它们"
+"的 REST API （通过它们的python客户端）实现和这些服务的交互，最多使用的服务是"
+"keystone和heat。"
 
 #: ../../draft/intro/architecture.rst:12
 msgid ""
 "Heat is used to orchestrate the infrastructural resources such as servers,"
 msgstr ""
+"Heat被用来编排诸如服务之类的基础设施资源。"
 
 #: ../../draft/intro/architecture.rst:13
 msgid ""
 "volumes, and networks. Murano dynamically creates the heat templates based "
 "on the application definition."
 msgstr ""
+"卷，以及网络。Murano基于应用程序所定义的动态创建heat模板。"
 
 #: ../../draft/intro/architecture.rst:16
 msgid ""
 "All remote operations to the user’s servers are done via an AMQP queue to "
 "the"
 msgstr ""
+"所有的对用户服务的远程操作均通过AMQP连接到murano-agent来完成。"
 
 #: ../../draft/intro/architecture.rst:17
 msgid ""
@@ -47,3 +53,5 @@ msgid ""
 "separate instance of AMQP to ensure that the infrastructure and servers are "
 "isolated."
 msgstr ""
+"此例子即是在服务器中安装和配置软件。请注意，此处的通信可以很容易的被配置为分开的"
+"AMQP的实例，从而确保基础设施和服务是隔离的。"
