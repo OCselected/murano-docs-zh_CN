@@ -13,12 +13,12 @@ msgstr ""
 
 #: ../../draft/admin-guide/installation.rst:8
 msgid "Installation"
-msgstr ""
+msgstr "安装"
 
 #: ../../draft/admin-guide/installation.rst:11
 msgid "Network configuration"
-msgstr ""
+msgstr "网络配置"
 
 #: ../../draft/admin-guide/installation.rst:14
 msgid "Policy configuration"
-msgstr ""
+msgstr "策略配置"

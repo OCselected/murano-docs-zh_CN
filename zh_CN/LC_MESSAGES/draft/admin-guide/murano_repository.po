@@ -13,12 +13,12 @@ msgstr ""
 
 #: ../../draft/admin-guide/murano_repository.rst:8
 msgid "Murano repository"
-msgstr ""
+msgstr "Murano仓库"
 
 #: ../../draft/admin-guide/murano_repository.rst:11
 msgid "Use an existing repository"
-msgstr ""
+msgstr "使用已有的仓库"
 
 #: ../../draft/admin-guide/murano_repository.rst:14
 msgid "Set up a custom repository"
-msgstr ""
+msgstr "设置自定义的仓库"

@@ -13,4 +13,4 @@ msgstr ""
 
 #: ../../draft/admin-guide/manage_categories.rst:8
 msgid "Managing categories"
-msgstr ""
+msgstr "管理分类"

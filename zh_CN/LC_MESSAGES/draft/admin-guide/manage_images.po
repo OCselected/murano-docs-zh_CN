@@ -13,12 +13,12 @@ msgstr ""
 
 #: ../../draft/admin-guide/manage_images.rst:8
 msgid "Managing images"
-msgstr ""
+msgstr "管理镜像"
 
 #: ../../draft/admin-guide/manage_images.rst:11
 msgid "Build an image"
-msgstr ""
+msgstr "构建一个镜像"
 
 #: ../../draft/admin-guide/manage_images.rst:14
 msgid "Manage images"
-msgstr ""
+msgstr "管理镜像"

@@ -283,6 +283,9 @@ msgid ""
 "window appears. To view VM’s desktops, connect with VNC viewer to your host "
 "to VNC screens :1 thru :5 (ports 5901-5905):"
 msgstr ""
+"7. 使用下面命令来启动5个实例(以root身份)，测量从所有虚拟机启动到可以看到服务管"
+"理器出现之间的时间。要查看虚拟机的桌面，使用VNC viewer连接到你主机的VNC screen"
+":1到:5 (端口5901-5905)"
 
 #: ../../install/prepare.rst:166
 msgid "Turn VMs off. You may simply kill all KVM processes by"

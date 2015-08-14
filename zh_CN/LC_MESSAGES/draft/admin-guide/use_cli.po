@@ -13,112 +13,119 @@ msgstr ""
 
 #: ../../draft/admin-guide/use_cli.rst:8
 msgid "Using CLI"
-msgstr ""
+msgstr "使用命令行"
 
 #: ../../draft/admin-guide/use_cli.rst:11
 msgid "Install murano client"
-msgstr ""
+msgstr "安装murano客户端"
 
 #: ../../draft/admin-guide/use_cli.rst:14
 msgid "Manage applications"
-msgstr ""
+msgstr "管理应用"
 
 #: ../../draft/admin-guide/use_cli.rst:17
 msgid "Manage environments"
-msgstr ""
+msgstr "管理环境"
 
 #: ../../draft/admin-guide/use_cli.rst:20
 msgid "Manage packages"
-msgstr ""
+msgstr "管理软件包"
 
 #: ../../draft/admin-guide/use_cli.rst:22
 msgid ""
 "This section describes how to manage packages using the command line "
 "interface. You can easily:"
 msgstr ""
+"此节描述了如何使用命令行接口来管理软件包。你可以很轻松的："
 
 #: ../../draft/admin-guide/use_cli.rst:25
 msgid ""
 ":ref:`import a package <cli_import>` or :ref:`bundles of packages "
 "<cli_bundles>`"
 msgstr ""
+":ref:`import a package <cli_import>` 或 :ref:`bundles of packages "
+"<cli_bundles>`"
 
 #: ../../draft/admin-guide/use_cli.rst:26
 msgid ":ref:`list the existing packages <cli_list>`"
-msgstr ""
+msgstr ":ref:`列出已存在的软件包 <cli_list>`"
 
 #: ../../draft/admin-guide/use_cli.rst:27
 msgid ":ref:`display details for a package <cli_display>`"
-msgstr ""
+msgstr ":ref:`显示一个软件包的细节 <cli_display>`"
 
 #: ../../draft/admin-guide/use_cli.rst:28
 msgid ":ref:`download a package <cli_download>`"
-msgstr ""
+msgstr ":ref:`下载一个软件包 <cli_download>`"
 
 #: ../../draft/admin-guide/use_cli.rst:29
 msgid ":ref:`delete a package <cli_delete>`"
-msgstr ""
+msgstr ":ref:`删除一个软件包 <cli_delete>`"
 
 #: ../../draft/admin-guide/use_cli.rst:30
 msgid ":ref:`create a package <cli_create>`"
-msgstr ""
+msgstr ":ref:`创建一个软件包 <cli_create>`"
 
 #: ../../draft/admin-guide/use_cli.rst:35
 msgid "Import a package"
-msgstr ""
+msgstr "导入一个软件包"
 
 #: ../../draft/admin-guide/use_cli.rst:37
 msgid ""
 "With the :command:`package-import` command you can import packages into "
 "murano in several different ways:"
 msgstr ""
+"基于:command:`package-import` 命令，你可以用多种不同方法导入软件包到Murano:"
 
 #: ../../draft/admin-guide/use_cli.rst:40
 msgid ":ref:`from a local .zip file <cli_zip>`"
-msgstr ""
+msgstr ":ref:`从本地的.zip文件 <cli_zip>`"
 
 #: ../../draft/admin-guide/use_cli.rst:41
 msgid ":ref:`from murano app repository <cli_repo>`"
-msgstr ""
+msgstr ":ref:`从murano app仓库 <cli_repo>`"
 
 #: ../../draft/admin-guide/use_cli.rst:42
 msgid ":ref:`from an http URL <cli_url>`"
-msgstr ""
+msgstr ":ref:`从一个http URL <cli_url>`"
 
 #: ../../draft/admin-guide/use_cli.rst:46
 msgid "**From a local .zip file**"
-msgstr ""
+msgstr "**从本地的.zip文件**"
 
 #: ../../draft/admin-guide/use_cli.rst:48
 msgid "To import a package from a local .zip file, run:"
-msgstr ""
+msgstr "要从本地的.zip文件到一个软件包，运行:"
 
 #: ../../draft/admin-guide/use_cli.rst:54
 msgid "where ``PACKAGE`` is the name of the package stored on your computer."
-msgstr ""
+msgstr "``PACKAGE``是存储在你的电脑中的软件包的名称。"
 
 #: ../../draft/admin-guide/use_cli.rst:57
 #: ../../draft/admin-guide/use_cli.rst:220
 #: ../../draft/admin-guide/use_cli.rst:237
 #: ../../draft/admin-guide/use_cli.rst:332
 msgid "For example:"
-msgstr ""
+msgstr "例如:"
 
 #: ../../draft/admin-guide/use_cli.rst:69
 msgid ""
 "To make the package available for users from other tenants, use the ``--is-"
 "public`` parameter. For example:"
 msgstr ""
+"要使软件包让其他租户的用户也可用，使用参数``--is-public``。例如："
 
 #: ../../draft/admin-guide/use_cli.rst:78
 msgid ""
 "The :command:`package-import` command supports multiple positional "
 "arguments. This means that you can import several packages at once."
 msgstr ""
+"命令 :command:`package-import`支持多个位置的参数，这就意味着你可以一次"
+"导入多个软件包。"
 
 #: ../../draft/admin-guide/use_cli.rst:83
 msgid "**From murano app repository**"
-msgstr ""
+msgstr "**从murano app仓库**"
 
 #: ../../draft/admin-guide/use_cli.rst:89
 msgid ""
@@ -127,24 +134,31 @@ msgid ""
 "name. For package names, go to |link_location|, and click on the desired "
 "package to see its full name."
 msgstr ""
+"要从murano 应用仓库导入一个软件包的话，使用参数``--murano-repo-url``指定仓库"
+"的URL，以及包的完整名称，对于软件包的名称，到 |link_location|，然后点击想要的"
+"软件包查看其全名即可。"
 
 #: ../../draft/admin-guide/use_cli.rst:96
 msgid ""
 "You can also specify the URL of the repository with the corresponding "
 "MURANO_REPO_URL environment variable."
 msgstr ""
+"你可以通过设置环境变量MURANO_REPO_URL，来指定URL的仓库。"
 
 #: ../../draft/admin-guide/use_cli.rst:100
 msgid ""
 "The following example shows how to import the MySQL package from the murano "
 "applications repository:"
 msgstr ""
+"以下的例子展示了如何从murano应用仓库导入MySQL软件包:"
 
 #: ../../draft/admin-guide/use_cli.rst:108
 msgid ""
 "This command supports an optional ``--version`` parameter that instructs "
 "murano client to download a specified package version."
 msgstr ""
+"此命令还支持可选的参数``--version``，其是告诉murano客户端下载指定的软件包"
+"版本。"
 
 #: ../../draft/admin-guide/use_cli.rst:111
 msgid ""
@@ -157,6 +171,11 @@ msgid ""
 "image with the specific name is present, client would attempt to download "
 "it."
 msgstr ""
+"命令 :command:`package-import` 会检查软件包的需求，这在软件包的manifest文件中"
+"的*Require*指定，且会尝试从murano仓库导入它们。命令:command:`package-import`"
+"还会检查软件包中的:file:`images.lst`文件所提到的镜像前提条件，如果存在任何的"
+"镜像需求，客户端会检查镜像数据库中是否存在，除非镜像指定了特定的名称，否则客户"
+"端会尝试下载它。"
 
 #: ../../draft/admin-guide/use_cli.rst:124
 msgid ""
@@ -165,63 +184,72 @@ msgid ""
 "``--exists-action``, passing ``s`` - for skip, ``u`` - for update, and ``a``"
 " - for abort."
 msgstr ""
+"如果出现安装的软件包已经注册到了murano，客户端会询问你如何做，你可以通过参数"
+"``--existes-action``来指定默认的动作，它们分别是``s``表示忽略，``u``表示更新，"
+"以及``a``表示取消。"
 
 #: ../../draft/admin-guide/use_cli.rst:131
 #: ../../draft/admin-guide/use_cli.rst:209
 msgid "**From an URL**"
-msgstr ""
+msgstr "**从一个URL**"
 
 #: ../../draft/admin-guide/use_cli.rst:133
 msgid ""
 "To import an application package from an URL, use the following command:"
 msgstr ""
+"要从一个URL来导入应用软件包，使用下面的命令："
 
 #: ../../draft/admin-guide/use_cli.rst:139
 msgid ""
 "The example below shows how to import a MySQL package from the murano "
 "applications repository using the package URL:"
 msgstr ""
+"以下例子展示了如何使用软件包的URL导入一个MySQL软件包:"
 
 #: ../../draft/admin-guide/use_cli.rst:156
 msgid "Import bundles of packages"
-msgstr ""
+msgstr "导入软件包集"
 
 #: ../../draft/admin-guide/use_cli.rst:158
 msgid ""
 "With the :command:`bundle-import` command you can install packages in "
 "several different ways:"
 msgstr ""
+"基于命令:command:`bundle-import`，你可以有多种方法安装软件包:"
 
 #: ../../draft/admin-guide/use_cli.rst:161
 msgid ":ref:`from a local bundle <cli_local_bundle>`"
-msgstr ""
+msgstr ":ref:`从本地的集合 <cli_local_bundle>`"
 
 #: ../../draft/admin-guide/use_cli.rst:162
 msgid ":ref:`from an URL <cli_bundle_url>`"
-msgstr ""
+msgstr ":ref:`从一个URL <cli_bundle_url>`"
 
 #: ../../draft/admin-guide/use_cli.rst:163
 msgid ":ref:`from murano app repository <cli_bundle_repo>`"
-msgstr ""
+msgstr ":ref:`从murano app仓库 <cli_bundle_repo>`"
 
 #: ../../draft/admin-guide/use_cli.rst:165
 msgid ""
 "When importing bundles, you can specify their categories with "
 "``-c/--categories`` and set their publicity with ``--public``."
 msgstr ""
+"当导入软件包集时，你可是使用参数``-c/--categories``来指定分类，"
+"以及使用``--public``来设置其是否公开。"
 
 #: ../../draft/admin-guide/use_cli.rst:170
 msgid "**From a local bundle**"
-msgstr ""
+msgstr "**从一个本地集合**"
 
 #: ../../draft/admin-guide/use_cli.rst:172
 msgid ""
 "To import a bundle from the a local file system, use the following command:"
 msgstr ""
+"要从本地文件系统导入一个集合，使用下面的命令:"
 
 #: ../../draft/admin-guide/use_cli.rst:179
 msgid "This command imports all the requirements of packages and images."
-msgstr ""
+msgstr "此命令导入软件包和镜像的所有需求。"
 
 #: ../../draft/admin-guide/use_cli.rst:182
 msgid ""
@@ -230,46 +258,57 @@ msgid ""
 " download a package from repository. This facilitates cases with no Internet"
 " access."
 msgstr ""
+"当从一个文件系统导入集合时，murano客户端在尝试从仓库下载软件包之前先搜索本地的"
+"目录，这在没有互联网接入的话可节省时间。"
+""
 
 #: ../../draft/admin-guide/use_cli.rst:187
 msgid "The following example shows the import of a monitoring bundle:"
-msgstr ""
+msgstr "下面的例子说明了导入监控集合:"
 
 #: ../../draft/admin-guide/use_cli.rst:204
 msgid ""
 "The :command:`bundle-import` command supports multiple positional arguments."
 " This means that you can import several bundles at once."
 msgstr ""
+"命令:command:`bundle-import`支持多个位置的参数，这就意味着你可以一次导入多个"
+"集合。"
 
 #: ../../draft/admin-guide/use_cli.rst:211
 msgid "To import a bundle from an URL, use the following command:"
-msgstr ""
+msgstr "要从一个URL导入集合，使用下面的命令："
 
 #: ../../draft/admin-guide/use_cli.rst:217
 msgid ""
 "Where ``http://example.com/path/to/bundle/BUNDLE_NAME`` is any external "
 "http/https URL to load the bundle from."
 msgstr ""
+" ``http://example.com/path/to/bundle/BUNDLE_NAME``表示的是任何外部的http/https"
+"的URL，加载集合的来源。"
 
 #: ../../draft/admin-guide/use_cli.rst:228
 msgid "**From murano applications repository**"
-msgstr ""
+msgstr "**从murano应用仓库**"
 
 #: ../../draft/admin-guide/use_cli.rst:230
 msgid ""
 "To import a bundle from murano applications repository, use the following "
 "command, where ``bundle_name`` stands for the bundle name:"
 msgstr ""
+"要从murano应用仓库导入一个集合，使用下面的命令，``bundle-name``表示的集合的"
+"名称:"
 
 #: ../../draft/admin-guide/use_cli.rst:249
 msgid ""
 "For bundle names, go to |location|, click the **Format** tab to show bundles"
 " first, and then click on the desired bundle to see its name."
 msgstr ""
+"关于集合名称，请到|location|,点击**格式**选项卡，会首先显示集合，然后选择你想"
+"要的集合，查看其名称即可。"
 
 #: ../../draft/admin-guide/use_cli.rst:256
 msgid "List packages"
-msgstr ""
+msgstr "列出软件包"
 
 #: ../../draft/admin-guide/use_cli.rst:258
 msgid ""
@@ -277,44 +316,50 @@ msgid ""
 "command. The result will show you the package ID, name, author and if it is "
 "public or not. For example:"
 msgstr ""
+"要列出所有你已经拥有的软件包，使用命令:command:`package-list`。结果会显示软件包"
+"的ID，名称，作者以及是否是公用的。例如:"
 
 #: ../../draft/admin-guide/use_cli.rst:279
 msgid "Show packages"
-msgstr ""
+msgstr "显示软件包"
 
 #: ../../draft/admin-guide/use_cli.rst:281
 msgid ""
 "To get full information about a package, use the :command:`package-show` "
 "command. For example:"
 msgstr ""
+"要获得一个软件包的全部信息，使用命令:command:`package-show`。例如:"
 
 #: ../../draft/admin-guide/use_cli.rst:309
 msgid "Delete a package"
-msgstr ""
+msgstr "删除一个软件包"
 
 #: ../../draft/admin-guide/use_cli.rst:311
 msgid "To delete a package, use the following command:"
-msgstr ""
+msgstr "要删除一个软件包，使用下面的命令:"
 
 #: ../../draft/admin-guide/use_cli.rst:320
 msgid "Download a package"
-msgstr ""
+msgstr "下载一个软件包"
 
 #: ../../draft/admin-guide/use_cli.rst:322
 msgid ""
 "With the following command you can download a .zip archive with a specified "
 "package:"
 msgstr ""
+"使用下面的命令，你可以下载到一个指定的软件包的.zip的归档文件:"
+""
 
 #: ../../draft/admin-guide/use_cli.rst:329
 msgid ""
 "You need to specify the package ID and enter the .zip file name under which "
 "to save the package."
 msgstr ""
+"你需要指定软件包的ID，且输入.zip文件的名字，在保存的目录下。"
 
 #: ../../draft/admin-guide/use_cli.rst:341
 msgid "Create a package"
-msgstr ""
+msgstr "创建一个软件包"
 
 #: ../../draft/admin-guide/use_cli.rst:343
 msgid ""
@@ -323,15 +368,19 @@ msgid ""
 " when application package files are spread across several directories. This "
 "command has the following required parameters::"
 msgstr ""
+"使用murano客户端，你可以从包的源文件和目录来创建一个应用软件包，命令行"
+":command:`package-create`在文件散落在不同的目录时非常的有用。此命令须指定"
+"下面必要的参数::"
 
 #: ../../draft/admin-guide/use_cli.rst:355
 msgid "Example:"
-msgstr ""
+msgstr "例如:"
 
 #: ../../draft/admin-guide/use_cli.rst:363
 msgid ""
 "After this, the package is ready to be imported to the application catalog."
 msgstr ""
+"完成这步，软件包就已经准备好导入到应用目录中了。"
 
 #: ../../draft/admin-guide/use_cli.rst:366
 msgid ""
@@ -340,11 +389,14 @@ msgid ""
 "specify so many parameters. For more information on automatic package "
 "composition, please see :ref:`Automatic package composing <compose_package>`"
 msgstr ""
+"命令:command:`package-create`还有一个非常有用的功能，那就是用来从heat模板自动生成"
+"软件包。在此中情形下，你无须为其指点多个参数。关于automatic软件包的组成的详情，"
+"请参阅 :ref:`Automatic package composing <compose_package>`。"
 
 #: ../../draft/admin-guide/use_cli.rst:373
 msgid "Manage categories"
-msgstr ""
+msgstr "管理分类"
 
 #: ../../draft/admin-guide/use_cli.rst:376
 msgid "Use Murano repository"
-msgstr ""
+msgstr "使用Murano仓库"
