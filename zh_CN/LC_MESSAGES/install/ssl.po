@@ -13,17 +13,18 @@ msgstr ""
 
 #: ../../install/ssl.rst:18
 msgid "SSL configuration"
-msgstr ""
+msgstr "SSL 配置"
 
 #: ../../install/ssl.rst:19
 msgid ""
 "Murano components are able to work with SSL. This chapter will help your to "
 "make proper settings with SSL configuration."
 msgstr ""
+"Murano组件均可在SSL下工作。此章将会帮助你来正确的设置SSL配置。"
 
 #: ../../install/ssl.rst:23
 msgid "HTTPS for Murano API"
-msgstr ""
+msgstr "Murano API的HTTPS"
 
 #: ../../install/ssl.rst:25
 msgid ""
@@ -31,18 +32,22 @@ msgid ""
 "``/etc/murano/murano.conf``. Just point to a valid SSL certificate. See the "
 "example below:"
 msgstr ""
+"Murano API的SSL服务配置在``/etc/murano/murano.conf``的*ssl*小节中。只需要指定"
+"合法的SSL证书，请参考下面的例子:"
 
 #: ../../install/ssl.rst:37
 msgid ""
 "*cert\\_file*    Path to the certificate file the server should use when "
 "binding to an SSL-wrapped socket."
 msgstr ""
+"*cert\\_file*  服务器的证书文件路径，用于绑定SSL-wrapped套接字。"
 
 #: ../../install/ssl.rst:38
 msgid ""
 "*key\\_file*     Path to the private key file the server should use when "
 "binding to an SSL-wrapped socket."
 msgstr ""
+"*key\\_file* 服务器私钥文件的路径，用户绑定SSL-wrapped套接字。"
 
 #: ../../install/ssl.rst:39
 msgid ""
@@ -50,6 +55,8 @@ msgid ""
 "validate client certificates provided during an SSL handshake. This is "
 "ignored if cert\\_file and \"key\\_file\" are not set."
 msgstr ""
+"*ca\\_file* 服务器CA证书文件的路径，用于在SSL握手期间验证客户端所提供的合法性。"
+"若cert\\_file和\"key\\_file\"没有设置的话，此可以忽略。"
 
 #: ../../install/ssl.rst:41
 msgid ""
@@ -59,10 +66,13 @@ msgid ""
 "implemented like in any other OpenStack component. This realization is based"
 " on ssl python module so more information about it can be found `here`_."
 msgstr ""
+"在从端点向Murano API服务注册时替代HTTP协议而使用HTTPS协议，SSL会自动的生效(变更。"
+"公共url以\\https://开头)。Murano API的SSL的实现和其它的OpenStack组件没有不一样。"
+"它们的实现都是基于python的ssl模块，关于python的此模块更多信息，可以访问`here`_。"
 
 #: ../../install/ssl.rst:51
 msgid "SSL for RabbitMQ"
-msgstr ""
+msgstr "RabbitMQ的SSL"
 
 #: ../../install/ssl.rst:53
 msgid ""
@@ -70,10 +80,13 @@ msgid ""
 "interaction can be encrypted with SSL. By default all messages in Rabbit MQ "
 "are not encrypted. Each RabbitMQ Exchange should be configured separately."
 msgstr ""
+"所有的Murano组件间的通信都是由RabbitMQ完成的。这里的互动可以通过SSL来加密。"
+"默认情况下，RabbitMQ中所有的信息都是不加密的。每个RabbitMQ的交换都须分开来"
+"配置。"
 
 #: ../../install/ssl.rst:58
 msgid "**Murano API <-> Rabbit MQ exchange <-> Murano Engine**"
-msgstr ""
+msgstr "**Murano API <-> Rabbit MQ exchange <-> Murano引擎**"
 
 #: ../../install/ssl.rst:60
 msgid ""
@@ -83,10 +96,13 @@ msgid ""
 "format: /path/to/file without quotes or leave it empty to allow self-signed "
 "certificates."
 msgstr ""
+"在``/etc/murano/murano.conf``的默认小节中编辑ssl参数。设置``rabbit_use_ssl``"
+"为*true*,然后配置kombu ssl的参数。以正则格式：/path/to/file指定SSL私钥和SSL "
+"CA证书的路径，没有引号，或者留为空白以允许自我签名的认证。"
 
 #: ../../install/ssl.rst:85
 msgid "**Murano Agent -> Rabbit MQ exchange**"
-msgstr ""
+msgstr "**Murano Agent -> RabbitMQ exchange**"
 
 #: ../../install/ssl.rst:87
 msgid ""
@@ -94,6 +110,8 @@ msgid ""
 " is responsible for set up communication between Murano Agent and Rabbit MQ."
 " Just set *ssl* parameter to True to enable ssl."
 msgstr ""
+"在murano的主配置文件中有个小节，名称叫做*rabbitmq*，它的作用就是设置Murano 代理"
+"和RabbitMQ之间的通信。只需要设置*ssl*的参数为Ture就启用了ssl。"
 
 #: ../../install/ssl.rst:100
 msgid ""
@@ -102,6 +120,10 @@ msgid ""
 "*http://git.openstack.org/cgit/openstack/murano/tree/meta/io.murano/Resources/Agent-v1.template*."
 " Take a look at appSettings section:"
 msgstr ""
+"如果你打算采用不同的办法来配置Murano代理的话，就去更改其默认的模板吧。可以在Murano 核心库中找到，"
+"具体路径在这里："
+"*http://git.openstack.org/cgit/openstack/murano/tree/meta/io.murano/Resources/Agent-v1.template*."
+"在appSettings一节:"
 
 #: ../../install/ssl.rst:124
 msgid ""
@@ -111,10 +133,13 @@ msgid ""
 "this exchange in a different from Murano-Engine way. After modification, "
 "don't forget to zip and re-upload core library."
 msgstr ""
+"想要的参数须直接设置为你打算更改的键的值，引号要保持不变。因此你可以更改"
+"\"rabbitmq.ssl\"和\"rabbitmq.port\"的值，以让RabbitMQ可以在不同的Murano-Engine"
+"的方式下仍然可正常交换。修改完成后，不要忘记压缩然后重新上传核心库。"
 
 #: ../../install/ssl.rst:131
 msgid "SSL for Murano Dashboard"
-msgstr ""
+msgstr "Murano 图形面板的SSL"
 
 #: ../../install/ssl.rst:133
 msgid ""
@@ -123,3 +148,6 @@ msgid ""
 "Otherwise, set *MURANO_API_INSECURE = True* on horizon config. You can find "
 "it in ``/etc/openstack-dashboard/local_settings.py.``."
 msgstr ""
+"如果你不是使用的自我签名的证书做额外配置的话，就不需要做什么。使用HTTPS的URL即可。"
+"另外，就是在horizon配置中设置*MURANO_API_INSECURE = True*，此键值对你可以在文件"
+"``/etc/openstack-dashboard/local_settings.py``找到。"

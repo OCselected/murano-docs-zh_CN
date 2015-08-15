@@ -236,17 +236,20 @@ msgid ""
 "You can reply 'no' since for development purpose separate user is not "
 "needed."
 msgstr ""
+"如果你仅是开发目的的话就没有必要分离出用户，你回复为`no`就好了。"
 
 #: ../../install/manual.rst:352
 msgid ""
 "Run Django server at 127.0.0.1:8000 or provide different IP and PORT "
 "parameters."
 msgstr ""
+"运行Django服务在127.0.0.1:8000，或者提供给参数不同的IP和端口。"
 
 #: ../../install/manual.rst:359
 msgid ""
 "Development server will be restarted automatically on every code change."
 msgstr ""
+"只要代码有改动，开发服务器就会自动重启。"
 
 #: ../../install/manual.rst:361
 msgid "Open dashboard using url http://localhost:8000"
@@ -261,6 +264,7 @@ msgid ""
 "Applications are needed to be imported to fill the catalog. It can be done "
 "via dashboard, but also possible via CLI:"
 msgstr ""
+"应用需要导入到目录中来，这可以通过图形面板来完成，也可通过命令行来完成:"
 
 #: ../../install/manual.rst:369
 msgid "Clone Murano Apps repository."
@@ -270,6 +274,7 @@ msgstr "克隆Murano Apps仓库。"
 msgid ""
 "Import every package you need from this repository, using the command below."
 msgstr ""
+"从此仓库导入你需要的所有软件包，使用下面的命令。"
 
 #: ../../install/configure_network.rst:18
 msgid "Network Configuration"
@@ -282,6 +287,8 @@ msgid ""
 "automatically. However, some additional actions are required to support "
 "advanced scenarios."
 msgstr ""
+"Murano可以适应多种网络环境，而且还具有探测当前网络配置和自动选择相应设置的能力，"
+"尽管如此，在一些复杂的场景下还是需要做一些额外的工作的。"
 
 #: ../../install/configure_network.rst:26
 msgid "Nova network support"
@@ -293,6 +300,8 @@ msgid ""
 " but is available on any OpenStack deployment without the need to deploy any"
 " additional components."
 msgstr ""
+"Nova Network是最为简单的网络解决方案，虽然其仅有有限的能力，但是它在任何的"
+"OpenStack部署中均可用，且毋须部署任何额外的组件。"
 
 #: ../../install/configure_network.rst:32
 msgid ""
@@ -303,6 +312,10 @@ msgid ""
 "further configuration is needed in this case, all the VMs spawned by Murano "
 "will be joining the same Network."
 msgstr ""
+"当一个新的Murano环境创建好后，Murano就会去检查在当前的OpenStack环境中相应的网"
+"络服务(例如，Neutron)是否存在。它是通过Keystone的服务目录来完成的，如果类似的"
+"服务不存在，Murano会自动的切换回Nova Network模式。在此情形下无须进一步的配置，"
+"所有的由Murano所生成的虚拟机都会自动加入相同的网络。"
 
 #: ../../install/configure_network.rst:40
 msgid "Neutron support"
@@ -314,6 +327,8 @@ msgid ""
 "that give you ability to not care about configuring networks for your "
 "application."
 msgstr ""
+"如果Neutron已经安装，Murano会启用其高级网络特性，以省去用户去为自己的应用"
+"配置关于网络的部分。"
 
 #: ../../install/configure_network.rst:45
 msgid ""
@@ -322,28 +337,34 @@ msgid ""
 " application in just spawned virtual machine Murano also requires a router "
 "connected to the external network."
 msgstr ""
+"默认情况下它会为每个环境创建一个分离的网络，然后将用户的应用程序所跑的虚拟机加"
+"入到网络。要安装和配置应用的话，即哪些由Murano生成的虚拟机中，会需要一个路由连接"
+"到外网。"
 
 #: ../../install/configure_network.rst:51
 msgid "Automatic Neutron network configuration"
-msgstr ""
+msgstr "Neutron 网络自动配置"
 
 #: ../../install/configure_network.rst:53
 msgid ""
 "To create router automatically, provide the following parameters in config "
 "file:"
 msgstr ""
+"要自动的创建路由的话，在配置文件中提供下面的参数："
 
 #: ../../install/configure_network.rst:65
 msgid ""
 "To figure out the name of the external network, perform the following "
 "command:"
 msgstr ""
+"要指定外网的名称的话，执行下面的命令:"
 
 #: ../../install/configure_network.rst:71
 msgid ""
 "During the first deploy, required networks and router with specified name "
 "will be created and set up."
 msgstr ""
+"在第一次部署时，需要指定创建和设置的网络和路由的名称。"
 
 #: ../../install/configure_network.rst:74
 msgid "Manual neutron network configuration"
@@ -363,18 +384,24 @@ msgid ""
 "<http://docs.openstack.org/trunk/install-guide/install/apt/content"
 "/neutron_initial-external-network.html>`_."
 msgstr ""
+"首先，你需要检查已经存在的外部网络。以管理员用户登录，然后到*项目->网络->"
+"网络拓扑*。然后在*Admin ->网络->网络名称*页面的网络详情中检查网络类型。同样"
+"的操作可通过运行命令行`neutron net-external-list`来实现。要创建一个新的外部"
+"外部网络的话，请参看`OpenStack 文档"
+"<http://docs.openstack.org/trunk/install-guide/install/apt/content"
+"/neutron_initial-external-network.html>`_."
 
 #: ../../install/configure_network.rst:86
 msgid "Step 2. Create local network"
-msgstr ""
+msgstr "步骤 2. 创建本地网络"
 
 #: ../../install/configure_network.rst:88
 msgid "Go to *Project -> Network -> Networks*."
-msgstr ""
+msgstr "到 *项目 -> 网络 -> 网络*。"
 
 #: ../../install/configure_network.rst:89
 msgid "Click *Create Network* and fill the form."
-msgstr ""
+msgstr "点击 *创建网络* 然后填写表单。"
 
 #: ../../install/configure_network.rst:96
 msgid "Step 3. Create router"
@@ -382,21 +409,23 @@ msgstr "步骤 3.创建路由"
 
 #: ../../install/configure_network.rst:98
 msgid "Go to *Project -> Network -> Routers*"
-msgstr ""
+msgstr "到 *项目->网络 ->路由*"
 
 #: ../../install/configure_network.rst:100
 msgid "Click \"Create Router\""
-msgstr ""
+msgstr "点击 \"创建路由\""
 
 #: ../../install/configure_network.rst:101
 msgid "In the \"Router Name\" field, enter the *murano-default-router*"
-msgstr ""
+msgstr "在\"路由名称\"一栏，输入 *murano-default-route*"
 
 #: ../../install/configure_network.rst:106
 msgid ""
 "If you specify a name other than *murano-default-router*, it will be "
 "necessary to change the following settings in the config file:"
 msgstr ""
+"如果你指定的名称不是*murano-default-router*,那么就需要在配置文件中作以下"
+"必要的变更："
 
 #: ../../install/configure_network.rst:116
 msgid "Click on the specified router name"

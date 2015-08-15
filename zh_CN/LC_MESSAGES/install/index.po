@@ -307,6 +307,7 @@ msgid ""
 "while **Max. Time** refers to minimal hardware configuration."
 msgstr ""
 "**平均时间** 是建议的硬件配置的实验数据，**最长时间**是最小的硬件配置。"
+
 #: ../../install/prepare.rst:182
 msgid "Boot ONE instance"
 msgstr "启动一个实例"

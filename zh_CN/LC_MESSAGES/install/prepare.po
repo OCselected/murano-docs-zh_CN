@@ -13,7 +13,7 @@ msgstr ""
 
 #: ../../install/prepare.rst:18
 msgid "Prepare A Lab For Murano"
-msgstr ""
+msgstr "为Murano准备一个实验"
 
 #: ../../install/prepare.rst:19
 msgid ""
@@ -22,194 +22,198 @@ msgid ""
 "hardware fits the requirements. To do this, run the test and compare the "
 "results with baseline data provided."
 msgstr ""
+"此节提供了关于实验的系统需求的基本信息。它也包括了测试的描述，对于你检查硬件"
+"是否满足需求有用处。要做这些，运行测试并且将结果和所提供的基准数据做比较。"
 
 #: ../../install/prepare.rst:25
 msgid "System prerequisites"
-msgstr ""
+msgstr "系统需求"
 
 #: ../../install/prepare.rst:26
 msgid "**Supported Operation Systems**"
-msgstr ""
+msgstr "**支持的操作系统**"
 
 #: ../../install/prepare.rst:28
 msgid "Ubuntu Server 12.04 LTS"
-msgstr ""
+msgstr "Ubuntu Server 12.04 LTS"
 
 #: ../../install/prepare.rst:29
 msgid "RHEL/CentOS 6.4"
-msgstr ""
+msgstr "RHEL/CentOS 6.4"
 
 #: ../../install/prepare.rst:31
 msgid "**System packages are required for Murano**"
-msgstr ""
+msgstr "**Murano所需要的系统软件包**"
 
 #: ../../install/prepare.rst:33
 msgid "*Ubuntu*"
-msgstr ""
+msgstr "*Ubuntu*"
 
 #: ../../install/prepare.rst:35 ../../install/prepare.rst:55
 msgid "gcc"
-msgstr ""
+msgstr "gcc"
 
 #: ../../install/prepare.rst:37 ../../install/prepare.rst:57
 msgid "python-pip"
-msgstr ""
+msgstr "python-pip"
 
 #: ../../install/prepare.rst:39
 msgid "python-dev"
-msgstr ""
+msgstr "python-dev"
 
 #: ../../install/prepare.rst:41
 msgid "libxml2-dev"
-msgstr ""
+msgstr "libxml2-dev"
 
 #: ../../install/prepare.rst:43
 msgid "libxslt-dev"
-msgstr ""
+msgstr "libxslt-dev"
 
 #: ../../install/prepare.rst:45
 msgid "libffi-dev"
-msgstr ""
+msgstr "libffi-dev"
 
 #: ../../install/prepare.rst:47
 msgid "libpq-dev"
-msgstr ""
+msgstr "libpq-dev"
 
 #: ../../install/prepare.rst:49
 msgid "python-openssl"
-msgstr ""
+msgstr "python-openssl"
 
 #: ../../install/prepare.rst:51
 msgid "mysql-client"
-msgstr ""
+msgstr "mysql-client"
 
 #: ../../install/prepare.rst:53
 msgid "*CentOS*"
-msgstr ""
+msgstr "*CentOS*"
 
 #: ../../install/prepare.rst:59
 msgid "python-devel"
-msgstr ""
+msgstr "python-devel"
 
 #: ../../install/prepare.rst:61
 msgid "libxml2-devel"
-msgstr ""
+msgstr "libxml2-devel"
 
 #: ../../install/prepare.rst:63
 msgid "libxslt-devel"
-msgstr ""
+msgstr "libxslt-devel"
 
 #: ../../install/prepare.rst:65
 msgid "libffi-devel"
-msgstr ""
+msgstr "libffi-devel"
 
 #: ../../install/prepare.rst:67
 msgid "postgresql-devel"
-msgstr ""
+msgstr "postgresql-devel"
 
 #: ../../install/prepare.rst:69
 msgid "pyOpenSSL"
-msgstr ""
+msgstr "pyOpenSSL"
 
 #: ../../install/prepare.rst:71
 msgid "mysql"
-msgstr ""
+msgstr "mysql"
 
 #: ../../install/prepare.rst:75
 msgid "Lab Requirements"
-msgstr ""
+msgstr "实验需求"
 
 #: ../../install/prepare.rst:78
 msgid "Criteria"
-msgstr ""
+msgstr "标准"
 
 #: ../../install/prepare.rst:78
 msgid "Minimal"
-msgstr ""
+msgstr "最低"
 
 #: ../../install/prepare.rst:78
 msgid "Recommended"
-msgstr ""
+msgstr "建议"
 
 #: ../../install/prepare.rst:80
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 #: ../../install/prepare.rst:80
 msgid "4 core @ 2.4 GHz"
-msgstr ""
+msgstr "4 core @ 2.4 GHz"
 
 #: ../../install/prepare.rst:80
 msgid "24 core @ 2.67 GHz"
-msgstr ""
+msgstr "24 core @ 2.67 GHz"
 
 #: ../../install/prepare.rst:82
 msgid "RAM"
-msgstr ""
+msgstr "内存"
 
 #: ../../install/prepare.rst:82
 msgid "8 GB"
-msgstr ""
+msgstr "8 GB"
 
 #: ../../install/prepare.rst:82
 msgid "24 GB or more"
-msgstr ""
+msgstr "24GB 或更多"
 
 #: ../../install/prepare.rst:84
 msgid "HDD"
-msgstr ""
+msgstr "HDD"
 
 #: ../../install/prepare.rst:84
 msgid "2 x 500 GB (7200 rpm)"
-msgstr ""
+msgstr "2 x 500 GB (7200 rpm)"
 
 #: ../../install/prepare.rst:84
 msgid "4 x 500 GB (7200 rpm"
-msgstr ""
+msgstr "4 x 500 GB (7200 rpm"
 
 #: ../../install/prepare.rst:86
 msgid "RAID"
-msgstr ""
+msgstr "RAID"
 
 #: ../../install/prepare.rst:86
 msgid ""
 "Software RAID-1 (use mdadm as it will improve read performance almost two "
 "times)"
 msgstr ""
+"软件 RAID-1 (使用mdadm将会改进近2倍的性能)"
 
 #: ../../install/prepare.rst:86
 msgid "Hardware RAID-10"
-msgstr ""
+msgstr "硬件 RAID-10"
 
 #: ../../install/prepare.rst:91
 msgid "Table: Hardware requirements"
-msgstr ""
+msgstr "表: 硬件需求"
 
 #: ../../install/prepare.rst:93
 msgid ""
 "There are a few possible storage configurations except the shown above. All "
 "of them were tested and were working well."
 msgstr ""
+"除了上述所展示的，还有一些可用的存储配置，所有的都是经过测试并运行良好。"
 
 #: ../../install/prepare.rst:96
 msgid "1x SSD 500+ GB"
-msgstr ""
+msgstr "1x SSD 500+ GB"
 
 #: ../../install/prepare.rst:99
 msgid "1x HDD (7200 rpm) 500+ GB and 1x SSD 250+ GB (install the system onto"
-msgstr ""
+msgstr "1x HDD (7200 rpm) 500+ GB 和 1x SSD 250+ GB (用于安装系统"
 
 #: ../../install/prepare.rst:99
 msgid "the HDD and mount the SSD drive to folder where VM images are)"
-msgstr ""
+msgstr "HDD和SSD均挂载到虚拟机镜像所在的目录)"
 
 #: ../../install/prepare.rst:101
 msgid "1x HDD (15000 rpm) 500+ GB"
-msgstr ""
+msgstr "1x HDD (15000 rpm) 500+ GB"
 
 #: ../../install/prepare.rst:104
 msgid "Test Your Lab Host Performance"
-msgstr ""
+msgstr "测试你的实验主机性能"
 
 #: ../../install/prepare.rst:106
 msgid ""
@@ -217,34 +221,39 @@ msgid ""
 "simultaneously. You can use this data as the baseline to check if your "
 "system is fast enough."
 msgstr ""
+"我们衡量模拟启动1-5个windows系统的实例所花费的时间。你可以使用此数据作为检查"
+"你的系统是否足够的快的基准。"
 
 #: ../../install/prepare.rst:110
 msgid ""
 "You should use sysprepped images for this test, to simulate VM first boot."
 msgstr ""
+"此测试需要你使用sysprepped的镜像，用来模拟虚拟机第一次启动。"
 
 #: ../../install/prepare.rst:113
 msgid "Steps to reproduce test:"
-msgstr ""
+msgstr "重现测试的步骤:"
 
 #: ../../install/prepare.rst:115
 msgid ""
 "Prepare Windows 2012 Standard (with GUI) image in QCOW2 format. Let's assume"
 " that its name is ws-2012-std.qcow2"
 msgstr ""
+"准备好Windows 2012标准版(带GUI)的QCOW2格式的镜像。我们分配其名称为ws-2012-std.qcow2"
 
 #: ../../install/prepare.rst:118
 msgid ""
 "Ensure that there is NO KVM PROCESSES on the host. To do this, run command:"
 msgstr ""
+"确保主机上没有运行KVM进程。要做这些，运行命令:"
 
 #: ../../install/prepare.rst:125
 msgid "Make 5 copies of Windows image file:"
-msgstr ""
+msgstr "复制5份Windows镜像文件:"
 
 #: ../../install/prepare.rst:132
 msgid "Create script start-vm.sh in the folder with .qcow2 files:"
-msgstr ""
+msgstr "在.qcow2文件所在的目录中创建start-vm.sh脚本:"
 
 #: ../../install/prepare.rst:142
 msgid ""
@@ -252,10 +261,12 @@ msgid ""
 "VM’s launch and the moment when Server Manager window appears. To view VM’s "
 "desktop, connect with VNC viewer to your host to VNC screen :1 (port 5901):"
 msgstr ""
+"使用下面的命令启动一个实例(以root身份)，并测量虚拟机启动和管理服务窗口出现"
+"之间的时间。要查看虚拟机的桌面，使用VNC viewer连接到VNC屏幕 :1(端口 5901):"
 
 #: ../../install/prepare.rst:151
 msgid "Turn VM off. You may simply kill all KVM processes by"
-msgstr ""
+msgstr "关闭虚拟机。你简单粗暴的kill掉所有KVM进程即可"
 
 #: ../../install/prepare.rst:157
 msgid ""
@@ -264,79 +275,85 @@ msgid ""
 "window appears. To view VM’s desktops, connect with VNC viewer to your host "
 "to VNC screens :1 thru :5 (ports 5901-5905):"
 msgstr ""
+"7. 使用下面命令来启动5个实例(以root身份)，测量从所有虚拟机启动到可以看到服务管"
+"理器出现之间的时间。要查看虚拟机的桌面，使用VNC viewer连接到你主机的VNC screen"
+":1到:5 (端口5901-5905)"
 
 #: ../../install/prepare.rst:166
 msgid "Turn VMs off. You may simply kill all KVM processes by"
-msgstr ""
+msgstr "关闭虚拟机。你简单粗暴的kill掉所有KVM进程即可"
 
 #: ../../install/prepare.rst:173
 msgid "Baseline Data"
-msgstr ""
+msgstr "基准数据"
 
 #: ../../install/prepare.rst:175
 msgid ""
 "The table below provides baseline data which we've got in our environment."
 msgstr ""
+"下面的表格提供了基准数据，当然是从我们自己的环境中获得的。:"
 
 #: ../../install/prepare.rst:178
 msgid ""
 "**Avg. Time** refers to the lab with recommended hardware configuration, "
 "while **Max. Time** refers to minimal hardware configuration."
 msgstr ""
+"**平均时间** 是建议的硬件配置的实验数据，**最长时间**是最小的硬件配置。"
 
 #: ../../install/prepare.rst:182
 msgid "Boot ONE instance"
-msgstr ""
+msgstr "启动一个实例"
 
 #: ../../install/prepare.rst:182
 msgid "Boot FIVE instances"
-msgstr ""
+msgstr "启动五个实例"
 
 #: ../../install/prepare.rst:184
 msgid "Avg. Time"
-msgstr ""
+msgstr "平均时间"
 
 #: ../../install/prepare.rst:184
 msgid "3m:40s"
-msgstr ""
+msgstr "3分40秒"
 
 #: ../../install/prepare.rst:184
 msgid "8m"
-msgstr ""
+msgstr "8分"
 
 #: ../../install/prepare.rst:186
 msgid "Max. Time"
-msgstr ""
+msgstr "最长时间"
 
 #: ../../install/prepare.rst:186
 msgid "5m"
-msgstr ""
+msgstr "5分"
 
 #: ../../install/prepare.rst:186
 msgid "20m"
-msgstr ""
+msgstr "20分"
 
 #: ../../install/prepare.rst:190
 msgid "Host Optimizations"
-msgstr ""
+msgstr "主机优化"
 
 #: ../../install/prepare.rst:192
 msgid ""
 "Default KVM installation could be improved to provide better performance."
 msgstr ""
+"默认的KVM安装已经提供了较好性能的改进。"
 
 #: ../../install/prepare.rst:195
 msgid "The following optimizations may improve host performance up to 30%:"
-msgstr ""
+msgstr "下面的优化可讲主机的性能提升30%:"
 
 #: ../../install/prepare.rst:197
 msgid "change default scheduler from **CFQ** to **Deadline**"
-msgstr ""
+msgstr "变更默认的调度器，从**CFQ**更改为**Deadline**"
 
 #: ../../install/prepare.rst:198
 msgid "use **ksm**"
-msgstr ""
+msgstr "使用**ksm**"
 
 #: ../../install/prepare.rst:199
 msgid "use **vhost-net**"
-msgstr ""
+msgstr "使用 **vhost-net**"
