@@ -21,57 +21,64 @@ msgid ""
 "uploaded into glance in a special way - *murano_image_info* property should "
 "be set."
 msgstr ""
+"要基于Murano部署应用的话，虚拟机镜像须通过特殊的方式上传到glance中，*murano_image_info*"
+"属性需要被设置。"
 
 #: ../../image_builders/upload.rst:24
 msgid ""
 "Use the glance image-create command to import your disk image to glance:"
 msgstr ""
+"使用glance的命令image-create来将你的磁盘镜像导入到glance:"
 
 #: ../../image_builders/upload.rst:33
 msgid ""
 "Replace the command line arguments to glance image-create with the "
 "appropriate values for your environment and disk image:"
 msgstr ""
+"根据你自身的环境和磁盘镜像，将glance的命令image-create的参数替换为相应的值："
 
 #: ../../image_builders/upload.rst:35
 msgid ""
 "Replace **<NAME>** with the name that users will refer to the disk image by."
 " E.g. **ws-2012-std**"
 msgstr ""
+"替换磁盘镜像的名称**<NAME>**，例如,**ws-2012-std**"
 
 #: ../../image_builders/upload.rst:37
 msgid ""
 "Replace **<IMAGE_FILE>** with the local path to the image file to upload. "
 "E.g. **ws-2012-std.qcow2**."
 msgstr ""
+"替换 **<IMAGE_FILE>**为要上传的镜像文件的本地路径。例如,**ws-2012-std.qcow2**"
+
 
 #: ../../image_builders/upload.rst:39
 msgid "Replace **<IMAGE_METADATA>** with the following property string"
-msgstr ""
+msgstr "替换**<IMAGE_METADATA>**为下面的字符"
 
 #: ../../image_builders/upload.rst:46
 msgid "where:"
-msgstr ""
+msgstr "地点:"
 
 #: ../../image_builders/upload.rst:48
 msgid "**title** - user-friendly description of the image"
-msgstr ""
+msgstr "**题目** - 镜像的友好描述"
 
 #: ../../image_builders/upload.rst:49
 msgid "**type** - murano image type, see :ref:`murano_image_types`"
-msgstr ""
+msgstr "**类型** - murano镜像类型，请参阅 :ref:`murano_image_types`"
 
 #: ../../image_builders/upload.rst:51
 msgid "To update metadata of the existing image run the command:"
-msgstr ""
+msgstr "要更新现有镜像的元数据，运行命令:"
 
 #: ../../image_builders/upload.rst:58
 msgid "Replace **<IMAGE_ID>** with image id from the previous command output."
-msgstr ""
+msgstr "替换**<IMAGE_ID>**为刚才命令输出的镜像ID。"
 
 #: ../../image_builders/upload.rst:60
 msgid "Replace **<IMAGE_METADATA>** with murano_image_info property, e.g."
-msgstr ""
+msgstr "替换**<IAMGE_METADATA>**为murano_image_info 属性，例如"
 
 #: ../../image_builders/upload.rst:69
 msgid ""
@@ -79,6 +86,8 @@ msgid ""
 "JSON string. Only double quotes are valid in JSON, so please type the string"
 " exactly as in the example above."
 msgstr ""
+"参数**--property**(名称为**murano_image_info**)的值是一个JSON字符。在JSON中只有"
+"双引号是合法的，所以请按照上面例子中那样键入字符。"
 
 #: ../../image_builders/upload.rst:75
 msgid ""
@@ -86,24 +95,28 @@ msgid ""
 "murano dashboard installed. Navigate to *Murano -> Manage -> Images -> Mark "
 "Image* and fill up a form:"
 msgstr ""
+"在安装有murano面板的horizon界面中，须以简易的方式标记已有的镜像。导航到 *Murano"
+"->Mange -> 镜像 ->标记镜像* 然后填写下面表单:"
+""
 
 #: ../../image_builders/upload.rst:78
 msgid "**Image** - ws-2012-std"
-msgstr ""
+msgstr "**镜像** - ws-2012-std"
 
 #: ../../image_builders/upload.rst:79
 msgid "**Title** - My Prepared Image"
-msgstr ""
+msgstr "**题目** - 我的镜像"
 
 #: ../../image_builders/upload.rst:80
 msgid "**Type** - Windows Server 2012"
-msgstr ""
+msgstr "**类型** - Windows Server 2012"
 
 #: ../../image_builders/upload.rst:83
 msgid ""
 "After these steps desired image can be chosen in application creation "
 "wizard."
 msgstr ""
+"在这些步骤之后，可通过应用创建向导来选择想要的镜像。"
 
 #: ../../image_builders/upload.rst:89
 msgid "Murano image types"

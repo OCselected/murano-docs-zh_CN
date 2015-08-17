@@ -13,56 +13,63 @@ msgstr ""
 
 #: ../../image_builders/windows.rst:20
 msgid "Windows image"
-msgstr ""
+msgstr "Windows 镜像"
 
 #: ../../image_builders/windows.rst:22
 msgid ""
 "Murano requires a Windows image in QCOW2 format to be built and uploaded "
 "into glance."
 msgstr ""
+"Murano需要一个QCOW2格式构建的Windows镜像且须上传到glance。"
 
 #: ../../image_builders/windows.rst:24
 msgid ""
 "The easiest way to build a Windows image for murano is to build it on the "
 "host where your OpenStack is installed."
 msgstr ""
+"为Murano构建Windows镜像最简单的办法就是再你安装OpenStack的主机中进行构建。"
 
 #: ../../image_builders/windows.rst:29
 msgid "Prepare image builder host"
-msgstr ""
+msgstr "准备构建镜像的机器"
 
 #: ../../image_builders/windows.rst:33
 msgid "Install KVM"
-msgstr ""
+msgstr "安装KVM"
 
 #: ../../image_builders/windows.rst:37
 msgid "This guide was tested on Ubuntu Server 12.04 x64."
-msgstr ""
+msgstr "本指南在Ubuntu 服务器版 12.04 64位下测试通过。"
 
 #: ../../image_builders/windows.rst:40
 msgid ""
 "KVM is a default hypervisor in OpenStack, so our build scripts are targeted "
 "to this hypervisor only. It may change in the future, though."
 msgstr ""
+"KVM是OpenStack默认的hypervisor，所以我们的构建脚本都是仅基于KVM的。将来我们会"
+"考虑支持更多。"
 
 #: ../../image_builders/windows.rst:42
 msgid ""
 "Install KVM and some additional packages that are required by our scripts"
 msgstr ""
+"安装KVM，以及我们的脚本所需要的额外的软件包"
 
 #: ../../image_builders/windows.rst:49
 msgid "Check that your hardware supports hardware virtualization."
-msgstr ""
+msgstr "检查下你的硬件是支持硬件虚拟化的。"
 
 #: ../../image_builders/windows.rst:58
 msgid ""
 "If your output differs, check that hardware virtualization is enabled in "
 "your BIOS settings. You also could try import KVM kernel module"
 msgstr ""
+"如果你的输出是不一样的，请检查你的BIOS设置是否器用了硬件虚拟化。你可以尝试"
+"加在KVM内核模块"
 
 #: ../../image_builders/windows.rst:65
 msgid "or"
-msgstr ""
+msgstr "或者"
 
 #: ../../image_builders/windows.rst:72
 msgid ""
@@ -70,10 +77,12 @@ msgid ""
 "file to auto-load it during system boot. Sometimes it is required on Ubuntu "
 "systems."
 msgstr ""
+"在系统启动期间就自动加载，但是须将一些对应的模块添加到**/etc/moduels**文件中"
+"只是Ubuntu系统所需要的。"
 
 #: ../../image_builders/windows.rst:77
 msgid "Configure shared resource"
-msgstr ""
+msgstr "配置共享资源"
 
 #: ../../image_builders/windows.rst:79
 msgid ""
@@ -82,145 +91,154 @@ msgid ""
 "copy the required files to their locations, but you have to manually "
 "configure samba share. To do this, use the steps below."
 msgstr ""
+"murano镜像的构建使用了主机系统上的一个共享目录作为组件的安装源。镜像构建的Makefile"
+"会从这里复制一些必要的文件，你可以手动的配置samba共享，要完成此，按照下面的步骤做就"
+"可以了："
 
 #: ../../image_builders/windows.rst:83
 msgid "Install samba"
-msgstr ""
+msgstr "安装samba"
 
 #: ../../image_builders/windows.rst:90
 msgid "Create folder that will be shared"
-msgstr ""
+msgstr "创建用来共享的目录"
 
 #: ../../image_builders/windows.rst:98
 msgid "Configure samba server (/etc/samba/smb.conf)"
-msgstr ""
+msgstr "配置samba服务(/etc/samba/smb.conf)"
 
 #: ../../image_builders/windows.rst:119
 msgid "Restart samba services"
-msgstr ""
+msgstr "重启samba服务"
 
 #: ../../image_builders/windows.rst:130
 msgid "Download prerequisites"
-msgstr ""
+msgstr "下载前提需求"
 
 #: ../../image_builders/windows.rst:136
 msgid "Windows server installation ISO"
-msgstr ""
+msgstr "Windows 服务器安装ISO介质"
 
 #: ../../image_builders/windows.rst:142
 msgid "Windows Version"
-msgstr ""
+msgstr "Windows版本"
 
 #: ../../image_builders/windows.rst:143
 msgid "Version String"
-msgstr ""
+msgstr "版本字符"
 
 #: ../../image_builders/windows.rst:144 ../../image_builders/windows.rst:175
 #: ../../image_builders/windows.rst:231
 msgid "Save to"
-msgstr ""
+msgstr "保存到"
 
 #: ../../image_builders/windows.rst:146
 msgid "Windows Server 2008 R2 [#win2k8r2_link]_"
-msgstr ""
+msgstr "Windows Server 2008 R2 [#win2k8r2_link]_"
 
 #: ../../image_builders/windows.rst:147
 msgid "6.1.7601"
-msgstr ""
+msgstr "6.1.7601"
 
 #: ../../image_builders/windows.rst:148
 msgid "/opt/image-builder/share/libvirt/images/ws-2008-eval.iso"
-msgstr ""
+msgstr "/opt/image-builder/share/libvirt/images/ws-2008-eval.iso"
 
 #: ../../image_builders/windows.rst:150
 msgid "Windows Server 2012 [#win2k12_link]_"
-msgstr ""
+msgstr "Windows Server 2012 [#win2k12_link]_"
 
 #: ../../image_builders/windows.rst:151
 msgid "6.3.9200"
-msgstr ""
+msgstr "6.3.9200"
 
 #: ../../image_builders/windows.rst:152
 msgid "/opt/image-builder/share/libvirt/images/ws-2012-eval.iso"
-msgstr ""
+msgstr "/opt/image-builder/share/libvirt/images/ws-2012-eval.iso"
 
 #: ../../image_builders/windows.rst:157
 msgid ""
 "Windows Server 2008 R2 must include Service Pack 1 updates. This is required"
 " to install PowerShell V3 which is required by the murano Agent."
 msgstr ""
+"Windows Server 2008 R2 必须包含SP1的更新。这会要求安装PowerShell V3 ,其实这也是"
+"Murano 代理所要求的。"
 
 #: ../../image_builders/windows.rst:161
 msgid "http://www.microsoft.com/en-us/download/details.aspx?id=11093"
-msgstr ""
+msgstr "http://www.microsoft.com/en-us/download/details.aspx?id=11093"
 
 #: ../../image_builders/windows.rst:162
 msgid ""
 "http://technet.microsoft.com/en-"
 "US/evalcenter/hh670538.aspx?ocid=&wt.mc_id=TEC_108_1_33"
 msgstr ""
+"http://technet.microsoft.com/en-"
+"US/evalcenter/hh670538.aspx?ocid=&wt.mc_id=TEC_108_1_33"
 
 #: ../../image_builders/windows.rst:168
 msgid "Required Components"
-msgstr ""
+msgstr "需要的组件"
 
 #: ../../image_builders/windows.rst:174 ../../image_builders/windows.rst:230
 msgid "Component"
-msgstr ""
+msgstr "组件"
 
 #: ../../image_builders/windows.rst:177
 msgid "VirtIO drivers for Windows [#virtio_iso_link]_"
-msgstr ""
+msgstr "Windows 的VirtIO 驱动[#virtio_iso_link]_"
 
 #: ../../image_builders/windows.rst:178
 msgid "/opt/image-builder/share/libvirt/images/virtio-win-0.1-74.iso"
-msgstr ""
+msgstr "/opt/image-builder/share/libvirt/images/virtio-win-0.1-74.iso"
 
 #: ../../image_builders/windows.rst:180
 msgid "CloudBase-Init for Windows [#cloudbase_init_link]_"
-msgstr ""
+msgstr "Windows的CloudBase-Init [#cloudbase_init_link]_"
 
 #: ../../image_builders/windows.rst:181
 msgid "/opt/image-builder/share/files/CloudbaseInitSetup_Beta.msi"
-msgstr ""
+msgstr "/opt/image-builder/share/files/CloudbaseInitSetup_Beta.msi"
 
 #: ../../image_builders/windows.rst:183
 msgid ".NET 4.0 [#dot_net_40_link]_"
-msgstr ""
+msgstr ".NET 4.0 [#dot_net_40_link]_"
 
 #: ../../image_builders/windows.rst:184
 msgid "/opt/image-builder/share/files/dotNetFx40_Full_x86_x64.exe"
-msgstr ""
+msgstr "/opt/image-builder/share/files/dotNetFx40_Full_x86_x64.exe"
 
 #: ../../image_builders/windows.rst:186
 msgid "PowerShell v3 [#powershell_v3_link]_"
-msgstr ""
+msgstr "PowerShell v3 [#powershell_v3_link]_"
 
 #: ../../image_builders/windows.rst:187
 msgid "/opt/image-builder/share/files/Windows6.1-KB2506143-x64.msu"
-msgstr ""
+msgstr "/opt/image-builder/share/files/Windows6.1-KB2506143-x64.msu"
 
 #: ../../image_builders/windows.rst:189
 msgid "Murano Agent [#murano_agent_link]_"
-msgstr ""
+msgstr "Murano 代理 [#murano_agent_link]_"
 
 #: ../../image_builders/windows.rst:190
 msgid "/opt/image-builder/share/files/MuranoAgent.zip"
-msgstr ""
+msgstr "/opt/image-builder/share/files/MuranoAgent.zip"
 
 #: ../../image_builders/windows.rst:192
 msgid "Git client [#msysgit_link]_"
-msgstr ""
+msgstr "Git 客户端 [#msysgit_link]_"
 
 #: ../../image_builders/windows.rst:193
 msgid "/opt/image-builder/share/files/Git-1.8.1.2-preview20130601.exe"
-msgstr ""
+msgstr "/opt/image-builder/share/files/Git-1.8.1.2-preview20130601.exe"
 
 #: ../../image_builders/windows.rst:198
 msgid ""
 "PowerShell V3 is a **mandatory** prerequisite. It is required by the murano "
 "Agent. To check your PowerShell version use PowerShell command *Get-Host*."
 msgstr ""
+"PowerShell V3是一个**强制性**的前提需要。murano代理必须是这个。要检查你的PowerShell"
+"版本，使用PowerShell命令 *Get-Host*。"
 
 #: ../../image_builders/windows.rst:203
 msgid ""
@@ -229,99 +247,107 @@ msgid ""
 "check the latest version available here: "
 "http://alt.fedoraproject.org/pub/alt/virtio-win/stable"
 msgstr ""
+"当下载VirtIO驱动时，仅下载其稳定版。不稳定的版本可能会导致客户操作系统意想不到的错误。"
+"你可以在此检查最新的版本可用："
+"http://alt.fedoraproject.org/pub/alt/virtio-win/stable"
 
 #: ../../image_builders/windows.rst:209
 msgid "http://technet.microsoft.com/en-us/evalcenter/hh670538.aspx"
-msgstr ""
+msgstr "http://technet.microsoft.com/en-us/evalcenter/hh670538.aspx"
 
 #: ../../image_builders/windows.rst:210
 msgid ""
 "http://alt.fedoraproject.org/pub/alt/virtio-win/stable/virtio-win-0.1-74.iso"
 msgstr ""
+"http://alt.fedoraproject.org/pub/alt/virtio-win/stable/virtio-win-0.1-74.iso"
 
 #: ../../image_builders/windows.rst:211
 msgid "https://www.cloudbase.it/downloads/CloudbaseInitSetup_Beta.msi"
-msgstr ""
+msgstr "https://www.cloudbase.it/downloads/CloudbaseInitSetup_Beta.msi"
 
 #: ../../image_builders/windows.rst:212
 msgid "http://www.microsoft.com/en-us/download/details.aspx?id=17718"
-msgstr ""
+msgstr "http://www.microsoft.com/en-us/download/details.aspx?id=17718"
 
 #: ../../image_builders/windows.rst:213
 msgid "http://www.microsoft.com/en-us/download/details.aspx?id=34595"
-msgstr ""
+msgstr "http://www.microsoft.com/en-us/download/details.aspx?id=34595"
 
 #: ../../image_builders/windows.rst:214
 msgid ""
 "https://www.dropbox.com/sh/zthldcxnp6r4flm/AADh6LkVkcw2j8nKZevqedHja/MuranoAgent.zip"
 msgstr ""
+"https://www.dropbox.com/sh/zthldcxnp6r4flm/AADh6LkVkcw2j8nKZevqedHja/MuranoAgent.zip"
 
 #: ../../image_builders/windows.rst:215
 msgid "https://msysgit.googlecode.com/files/Git-1.8.3-preview20130601.exe"
-msgstr ""
+msgstr "https://msysgit.googlecode.com/files/Git-1.8.3-preview20130601.exe"
 
 #: ../../image_builders/windows.rst:221
 msgid "Optional Components"
-msgstr ""
+msgstr "可选组件"
 
 #: ../../image_builders/windows.rst:223
 msgid ""
 "These components are not mandatory for the murano agent to function "
 "properly. However, they may help you work with the image after deployment."
 msgstr ""
+"这些组件都是非强制性的，不会影响到murano 代理的主要功能，尽管如此，这些组件"
+"还是对部署镜像完成就帮助的。"
 
 #: ../../image_builders/windows.rst:233
 msgid "Far Manager [#far_manager_link]_"
-msgstr ""
+msgstr "Far Manager [#far_manager_link]_"
 
 #: ../../image_builders/windows.rst:234
 msgid "/opt/image-builder/share/files/Far30b3367.x64.20130717.msi"
-msgstr ""
+msgstr "/opt/image-builder/share/files/Far30b3367.x64.20130717.msi"
 
 #: ../../image_builders/windows.rst:236
 msgid "Sysinternals Suite [#sysinternals_link]_"
-msgstr ""
+msgstr "Sysinternals Suite [#sysinternals_link]_"
 
 #: ../../image_builders/windows.rst:237
 msgid "/opt/image-builder/share/files/SysinternalsSuite.zip"
-msgstr ""
+msgstr "/opt/image-builder/share/files/SysinternalsSuite.zip"
 
 #: ../../image_builders/windows.rst:239
 msgid "unzip.exe [#unzip_link]_"
-msgstr ""
+msgstr "unzip.exe [#unzip_link]_"
 
 #: ../../image_builders/windows.rst:240
 msgid "/opt/image-builder/share/files/unzip.exe"
-msgstr ""
+msgstr "/opt/image-builder/share/files/unzip.exe"
 
 #: ../../image_builders/windows.rst:242
 msgid ".NET 4.5 [#dot_net_45_link]_"
-msgstr ""
+msgstr ".NET 4.5 [#dot_net_45_link]_"
 
 #: ../../image_builders/windows.rst:243
 msgid "/opt/image-builder/share/files/dotNetFx45_Full_setup.exe"
-msgstr ""
+msgstr "/opt/image-builder/share/files/dotNetFx45_Full_setup.exe"
 
 #: ../../image_builders/windows.rst:247
 msgid "http://www.farmanager.com/files/Far30b3525.x64.20130717.msi"
-msgstr ""
+msgstr "http://www.farmanager.com/files/Far30b3525.x64.20130717.msi"
 
 #: ../../image_builders/windows.rst:248
 msgid "http://download.sysinternals.com/files/SysinternalsSuite.zip"
-msgstr ""
+msgstr "http://download.sysinternals.com/files/SysinternalsSuite.zip"
 
 #: ../../image_builders/windows.rst:249
 msgid ""
 "https://www.dropbox.com/sh/zthldcxnp6r4flm/AACwiyfcrlGDt3ygCFHrbwMra/unzip.exe"
 msgstr ""
+"https://www.dropbox.com/sh/zthldcxnp6r4flm/AACwiyfcrlGDt3ygCFHrbwMra/unzip.exe"
 
 #: ../../image_builders/windows.rst:250
 msgid "http://www.microsoft.com/en-us/download/details.aspx?id=30653"
-msgstr ""
+msgstr "http://www.microsoft.com/en-us/download/details.aspx?id=30653"
 
 #: ../../image_builders/windows.rst:257
 msgid "Additional tools"
-msgstr ""
+msgstr "额外的工具"
 
 #: ../../image_builders/windows.rst:259
 msgid ""
@@ -329,40 +355,46 @@ msgid ""
 "may be helpful if you want to create an image with a different "
 "configuration."
 msgstr ""
+"此节所列出的工具对于构建镜像是非必要的。尽管如此，它们会对你创建不同配置的镜像"
+"还是有所帮助的。"
 
 #: ../../image_builders/windows.rst:264
 msgid "Windows assessment and deployment kit (ADK)"
-msgstr ""
+msgstr "Windows assessment and deployment kit (ADK)"
 
 #: ../../image_builders/windows.rst:266
 msgid ""
 "*Windows ADK* is required if you want to build your own answer files for "
 "auto unattended Windows installation."
 msgstr ""
+"如果你打算构建你自己的应答文件以实现自动安装的话，那么你需要Windows ADK*。 "
 
 #: ../../image_builders/windows.rst:268
 msgid ""
 "Download it from http://www.microsoft.com/en-"
 "us/download/details.aspx?id=30652"
 msgstr ""
+"从 http://www.microsoft.com/en-"
+"us/download/details.aspx?id=30652 下载"
 
 #: ../../image_builders/windows.rst:272
 msgid "Floppy image with unattended file"
-msgstr ""
+msgstr "无人值守文件的软盘镜像"
 
 #: ../../image_builders/windows.rst:274
 msgid ""
 "Floppy image with answer file for unattended installation is needed to "
 "automate Windows installation process."
 msgstr ""
+"基于应答文件的软盘镜像，对于无人值守安装的自动化windows安装过程来说是必须的。"
 
 #: ../../image_builders/windows.rst:276
 msgid "Create empty floppy image in your home folder"
-msgstr ""
+msgstr "在你的主目录下创建一个空的软盘镜像"
 
 #: ../../image_builders/windows.rst:290
 msgid "Mount the image"
-msgstr ""
+msgstr "挂载镜像"
 
 #: ../../image_builders/windows.rst:298
 msgid ""
@@ -370,236 +402,252 @@ msgid ""
 "https://github.com/openstack/murano-deployment/tree/master/contrib/windows"
 "/image-builder/share/files"
 msgstr ""
+"下载**autounattend.xml.template** 文件， 从 "
+"https://github.com/openstack/murano-deployment/tree/master/contrib/windows"
+"/image-builder/share/files"
 
 #: ../../image_builders/windows.rst:300
 msgid ""
 "This folder contains unattended files for several Windows versions, choose "
 "one that matches your Windows version."
 msgstr ""
+"此目录包含了多个windows版本的无人值守文件，选择一个匹配你的版本。"
 
 #: ../../image_builders/windows.rst:302
 msgid "Copy that file to mounted floppy image"
-msgstr ""
+msgstr "复制它们到挂载的软盘镜像"
 
 #: ../../image_builders/windows.rst:309
 msgid ""
 "Replace string **%_IMAGE_BUILDER_IP_%** in that file with **192.168.122.1**"
 msgstr ""
+"将文件中字符串 **%_IMAGE_BUILDER_IP_%替换为**192.168.122.1**"
 
 #: ../../image_builders/windows.rst:311
 msgid "Unmount the image"
-msgstr ""
+msgstr "卸载镜像"
 
 #: ../../image_builders/windows.rst:321
 msgid "Build Windows image with murano"
-msgstr ""
+msgstr "用murano来构建windows镜像"
 
 #: ../../image_builders/windows.rst:327
 msgid "Build Windows image using image builder script"
-msgstr ""
+msgstr "使用镜像构建脚本构建windows镜像"
 
 #: ../../image_builders/windows.rst:329
 msgid "Clone **murano-deployment** repository"
-msgstr ""
+msgstr "克隆 **murano-deployment** 仓库"
 
 #: ../../image_builders/windows.rst:336
 msgid "Change directory to image-builder folder"
-msgstr ""
+msgstr "切换到目录image-builder"
 
 #: ../../image_builders/windows.rst:343
 msgid "Create folder structure for image builder"
-msgstr ""
+msgstr "为镜像构建创建目录结构"
 
 #: ../../image_builders/windows.rst:350
 msgid "Download build prerequisites, and copy them to correct folders"
-msgstr ""
+msgstr "下载构建的前提需求，然后复制它们到正确的目录"
 
 #: ../../image_builders/windows.rst:352
 msgid ":ref:`windows_installation_iso`"
-msgstr ""
+msgstr ":ref:`windows_installation_iso`"
 
 #: ../../image_builders/windows.rst:353
 msgid ":ref:`required_prerequisites`"
-msgstr ""
+msgstr ":ref:`required_prerequisites`"
 
 #: ../../image_builders/windows.rst:354
 msgid ":ref:`optional_prerequisites` (Optional)"
-msgstr ""
+msgstr ":ref:`optional_prerequisites` (可选)"
 
 #: ../../image_builders/windows.rst:356
 msgid "Test that all required files are in place"
-msgstr ""
+msgstr "测试所有的需求文件都在正确的位置"
 
 #: ../../image_builders/windows.rst:363
 msgid "Get list of available images"
-msgstr ""
+msgstr "获得可用镜像的列表"
 
 #: ../../image_builders/windows.rst:370
 msgid "Run image build process (e.g. to build Windows Server 2012)"
-msgstr ""
+msgstr "运行镜像构建流程(例如，构建Windows Server 2012)"
 
 #: ../../image_builders/windows.rst:377
 msgid "Wait until process finishes"
-msgstr ""
+msgstr "等待过程结束"
 
 #: ../../image_builders/windows.rst:379
 msgid ""
 "The image file **ws-2012-std.qcow2** should be stored inside **/opt/image-"
 "builder/share/images** folder."
 msgstr ""
+"镜像文件**ws-2012-std.qcow2**须被放到**/opt/image-builder/share/images**目录下"
 
 #: ../../image_builders/windows.rst:384
 msgid "Build windows image manually"
-msgstr ""
+msgstr "手动构建windows镜像"
 
 #: ../../image_builders/windows.rst:388
 msgid ""
 "Please note that the preferred way to build images is to use Image Builder "
 "scripts, see :ref:`build_image_using_image_builder_scripts`"
 msgstr ""
+"请注意，构建镜像的首选方式是使用镜像构建脚本，请参考:ref:`build_image_using_image_builder_scripts`"
 
 #: ../../image_builders/windows.rst:393
 msgid "Get post-install scripts"
-msgstr ""
+msgstr "获取安装后执行的脚本"
 
 #: ../../image_builders/windows.rst:395
 msgid ""
 "There are a few scripts which perform all the required post-installation "
 "tasks."
 msgstr ""
+"有几个脚本的执行是安装后必须的任务。"
 
 #: ../../image_builders/windows.rst:397
 msgid ""
 "They all are located in http://git.openstack.org/cgit/openstack/murano-"
 "deployment/tree/contrib/windows/image-builder/share/scripts"
 msgstr ""
+"可以在此地方找到，http://git.openstack.org/cgit/openstack/murano-"
+"deployment/tree/contrib/windows/image-builder/share/scripts"
 
 #: ../../image_builders/windows.rst:402
 msgid ""
 "There are subfolders for each supported Windows version. Choose one that "
 "matches Windows version you are building."
 msgstr ""
+"每个支持的windows版本都有子目录。选择你要构建的相匹配的版本。"
 
 #: ../../image_builders/windows.rst:406
 msgid "This folder contains several scripts"
-msgstr ""
+msgstr "此目录包含多个脚本"
 
 #: ../../image_builders/windows.rst:412
 msgid "Script Name"
-msgstr ""
+msgstr "脚本名称"
 
 #: ../../image_builders/windows.rst:413 ../../image_builders/windows.rst:504
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../image_builders/windows.rst:415
 msgid "wpi.ps1"
-msgstr ""
+msgstr "wpi.ps1"
 
 #: ../../image_builders/windows.rst:416
 msgid "Handles component installation and system configuration tasks"
-msgstr ""
+msgstr "掌控组件安装和系统配置任务"
 
 #: ../../image_builders/windows.rst:418
 msgid "Start-Sysprep.ps1"
-msgstr ""
+msgstr "Start-Sysprep.ps1"
 
 #: ../../image_builders/windows.rst:419
 msgid ""
 "Prepares system to be syspreped (cleans log files, stops some services and "
 "so on), and starts sysprep"
 msgstr ""
+"为syspreped准备系统(清理日志文件，停止一些服务等)，然后启动sysprep"
 
 #: ../../image_builders/windows.rst:421
 msgid "Start-AtFirstBoot.ps1"
-msgstr ""
+msgstr "Start-AtFirstBoot.ps1"
 
 #: ../../image_builders/windows.rst:422
 msgid "Performs basic after-installation tasks"
-msgstr ""
+msgstr "执行基本的安装后任务"
 
 #: ../../image_builders/windows.rst:426
 msgid ""
 "Download these scripts and save them into /opt/image-builder/share/scripts"
 msgstr ""
+"下载这些脚本，并存放到/opt/image-build/share/scripts下"
 
 #: ../../image_builders/windows.rst:430
 msgid "Create a VM"
-msgstr ""
+msgstr "创建一个虚拟机"
 
 #: ../../image_builders/windows.rst:432
 msgid ""
 "Now you need a virtual machine instance. There are two possible ways to "
 "create it - using CLI or GUI tools. We describe both in this section."
 msgstr ""
-
+"现在你需要一个虚拟机实例。有两种可能的方式来创建它- 使用命令行或GUI工具。"
+"此节我们对此两种方式都会有所描述。"
 #: ../../image_builders/windows.rst:436
 msgid "Using CLI Tools"
-msgstr ""
+msgstr "使用命令行工具"
 
 #: ../../image_builders/windows.rst:438
 msgid "Preallocate disk image"
-msgstr ""
+msgstr "预分配磁盘镜像"
 
 #: ../../image_builders/windows.rst:445
 msgid "Start the VM"
-msgstr ""
+msgstr "启动虚拟机"
 
 #: ../../image_builders/windows.rst:464
 msgid "Using virt-manager UI"
-msgstr ""
+msgstr "使用virt-manager 界面"
 
 #: ../../image_builders/windows.rst:466
 msgid "Launch *virt-manager* from shell as root"
-msgstr ""
+msgstr "从shell以root启动*virt-manager*"
 
 #: ../../image_builders/windows.rst:468
 msgid "Set a name for VM and select Local install media"
-msgstr ""
+msgstr "为虚拟机设置一个名称，然后选择本地安装介质"
 
 #: ../../image_builders/windows.rst:470
 msgid "Add one cdrom and attach Windows Server ISO image to it"
-msgstr ""
+msgstr "添加一个cdrom且为之挂接Windows Server ISO镜像"
 
 #: ../../image_builders/windows.rst:472
 msgid "Select OS type **Windows**"
-msgstr ""
+msgstr "选择OS的类型为**Windows**"
 
 #: ../../image_builders/windows.rst:474
 msgid "Set CPU and RAM amount"
-msgstr ""
+msgstr "设置CPU和内容的值"
 
 #: ../../image_builders/windows.rst:476
 msgid "Deselect option **Enable storage for this virtual machine**"
-msgstr ""
+msgstr "去掉属性**为此虚拟机激活存储**"
 
 #: ../../image_builders/windows.rst:478
 msgid "Add second cdrom for ISO image with virtio drivers"
-msgstr ""
+msgstr "添加第二块cdrom，此ISO镜像是virtio驱动"
 
 #: ../../image_builders/windows.rst:480
 msgid "Add a floppy drive and attach our floppy image to it"
-msgstr ""
+msgstr "添加一个软件驱动，然后将软件镜像给它挂接上"
 
 #: ../../image_builders/windows.rst:482
 msgid ""
 "Add (or create new) HDD image with Disk bus **VirtIO** and storage format "
 "**RAW**"
 msgstr ""
+"添加(或创建新的)HDD镜像，磁盘总线选择**VirtIO**,以及存储格式为**RAW**"
 
 #: ../../image_builders/windows.rst:484
 msgid "Set network device model **VirtIO**"
-msgstr ""
+msgstr "设置网卡的模式为**VirtIO**"
 
 #: ../../image_builders/windows.rst:486
 msgid ""
 "Start installation process and open guest vm screen through **Console** "
 "button"
 msgstr ""
+"启动安装进程，通过**终端**按钮可以打开客户机的屏幕"
 
 #: ../../image_builders/windows.rst:490
 msgid "Install OS"
-msgstr ""
+msgstr "安装操作系统"
 
 #: ../../image_builders/windows.rst:492
 msgid ""
@@ -607,99 +655,105 @@ msgid ""
 "installation. At the end of this step you should have Windows Server system "
 "that you are able to log into."
 msgstr ""
+"启动你的虚拟机，连接到它的虚拟终端，然后完成操作系统的安装。在此步的最后，你须"
+"能够登录到windows服务器系统中。"
 
 #: ../../image_builders/windows.rst:495
 msgid "Install prerequisites and murano"
-msgstr ""
+msgstr "安装前提需求以及murano"
 
 #: ../../image_builders/windows.rst:497
 msgid "Create folders where murano components will be installed"
-msgstr ""
+msgstr "创建murano组件将要安装到的目录"
 
 #: ../../image_builders/windows.rst:503
 msgid "Path"
-msgstr ""
+msgstr "路径"
 
 #: ../../image_builders/windows.rst:506
 msgid "C:\\\\Murano"
-msgstr ""
+msgstr "C:\\\\Murano"
 
 #: ../../image_builders/windows.rst:507
 msgid "Root directory for Murano"
-msgstr ""
+msgstr "Murano的根目录"
 
 #: ../../image_builders/windows.rst:509
 msgid "C:\\\\Murano\\\\Agent"
-msgstr ""
+msgstr "C:\\\\Murano\\\\Agent"
 
 #: ../../image_builders/windows.rst:510
 msgid "Murano Agent installation directory"
-msgstr ""
+msgstr "Murano代理安装目录"
 
 #: ../../image_builders/windows.rst:512
 msgid "C:\\\\Murano\\\\Modules"
-msgstr ""
+msgstr "C:\\\\Murano\\\\Modules"
 
 #: ../../image_builders/windows.rst:513
 msgid "PowerShell modules required by Murano"
-msgstr ""
+msgstr "Murano需要的PowerShell模块"
 
 #: ../../image_builders/windows.rst:515
 msgid "C:\\\\Murano\\\\Scripts"
-msgstr ""
+msgstr "C:\\\\Murano\\\\Scripts"
 
 #: ../../image_builders/windows.rst:516
 msgid "PowerShell scripts and other files required by murano"
-msgstr ""
+msgstr "murano需要的PowerShell脚步和其它文件"
 
 #: ../../image_builders/windows.rst:519
 msgid ""
 "Open **Explorer** and navigate to **\\\\192.168.122.1\\share** "
 "**192.168.122.1** is an IP address of KVM hypervisor assigned by default."
 msgstr ""
+"打开**浏览器**然后输入**\\\\192.168.122.1\\share**，**\\\\192.168.122.1\\share**"
+"是KVM hypervisor默认分配的IP地址。"
 
 #: ../../image_builders/windows.rst:521
 msgid "Copy the murano agent files into C:\\Murano\\Agent"
-msgstr ""
+msgstr "复制murano代理的文件到C:\\Murano\\Agent"
 
 #: ../../image_builders/windows.rst:523
 msgid "Copy CoreFunctions directory (entire directory!) into C:\\Murano\\Modules"
-msgstr ""
+msgstr "复制CoreFunctions目录(整个目录!)到 C:\\Murnao\\Modules"
 
 #: ../../image_builders/windows.rst:525
 msgid "Install .NET 4.0"
-msgstr ""
+msgstr "安装 .NET 4.0"
 
 #: ../../image_builders/windows.rst:527
 msgid "Register the murano agent"
-msgstr ""
+msgstr "注册murano代理"
 
 #: ../../image_builders/windows.rst:535
 msgid "Change PowerShell execution policy to less restricted"
-msgstr ""
+msgstr "变更PowerShell的执行规则以减少受限"
 
 #: ../../image_builders/windows.rst:542
 msgid "Register CoreFunctions modules"
-msgstr ""
+msgstr "注册核心功能模块"
 
 #: ../../image_builders/windows.rst:549
 msgid "Install CloudInit"
-msgstr ""
+msgstr "安装CloudInit"
 
 #: ../../image_builders/windows.rst:551
 msgid "Run Sysprep"
-msgstr ""
+msgstr "运行Sysprep"
 
 #: ../../image_builders/windows.rst:558
 msgid "Wait until sysprep phase finishes and system powers off."
-msgstr ""
+msgstr "等待syspreq部署完成且关闭系统。"
 
 #: ../../image_builders/windows.rst:561
 msgid "Convert the image from RAW to QCOW2 format"
-msgstr ""
+msgstr "从RAW格式转换为QCOW2格式"
 
 #: ../../image_builders/windows.rst:563
 msgid ""
 "The image must be converted from RAW format to QCOW2 before being imported "
 "into glance."
 msgstr ""
+"在导入到glance之前，必须将镜像从RAW格式转换为QCOW2格式。"
+
