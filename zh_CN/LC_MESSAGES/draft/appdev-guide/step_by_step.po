@@ -21,6 +21,7 @@ msgid ""
 "taken while composing an application package to get it ready for uploading "
 "to Murano."
 msgstr ""
+"此文档的母的在于带领开发者们一步步的将自己的应用打包并上传到Murano。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:11
 msgid ""
@@ -28,6 +29,8 @@ msgid ""
 "how you can create your own Murano application from scratch. We will walk "
 "you through its source code and explain how to upload it."
 msgstr ""
+"此教程使用了名字叫ApacheHTTPServer道应用道示例来演示给你，如何从零开始创建自己"
+"的Murano应用程序。我们会带领你进入其源码的世界，且会解释如何上传它。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:16
 msgid ""
@@ -35,6 +38,8 @@ msgid ""
 "machine and installs Apache HTTP Server on it. It may also install php if a "
 "user wants to."
 msgstr ""
+"ApacheHTTPServer是一个简单的Murano应用程序，其会生成一个虚拟机，然后在其中安装"
+"Apache HTTP 服务。如果用户愿意的话也会安装PHP。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:20
 msgid ""
@@ -42,6 +47,9 @@ msgid ""
 "<https://github.com/openstack/murano-"
 "apps/tree/master/ApacheHTTPServer/package>`_."
 msgstr ""
+"ApacheHTTPServer的源码托管在`github"
+"<https://github.com/openstack/murano-"
+"apps/tree/master/ApacheHTTPServer/package>`_上。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:23
 msgid ""
@@ -50,6 +58,9 @@ msgid ""
 "instances. The detailed explanation of its syntax can be found in the "
 ":ref:`MuranoPL reference <murano-pl>`."
 msgstr ""
+"ApacheHTTPServer的源代码是使用MuranoPL语言写就的，此是一种面向对象的编程"
+"语言，我们将会看到类、对象以及对象实例等。:ref:`MuranoPL reference <murano-pl>`"
+"解释了此语言的细节，请参阅。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:30
 msgid ""
@@ -58,6 +69,9 @@ msgid ""
 "requirements <lab_requirements>` in order you do not risk starting with a "
 "wrong environment"
 msgstr ""
+"在你开始创建Murano应用程序的流程之前，请仔细阅读 :ref:`系统前提需求<system_prerequisites>` "
+"和 :ref:`需求<system_prerequisites>` ，以降低搭建了错误的环境的风险。"
+
 
 #: ../../draft/appdev-guide/step_by_step.rst:41
 msgid "Step 1. Create the structure of the package"
@@ -68,16 +82,19 @@ msgid ""
 "You should structure an application package very neatly in order the "
 "application could be managed and deployed in the catalog successfully."
 msgstr ""
+"你须整齐的组织应用程序包的结构，为了能够在将应用成功的部署和可管理。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:47
 msgid "The package structure of ApacheHTTPServer package is::"
-msgstr ""
+msgstr "ApacheHTTPServer的包的结构是::"
 
 #: ../../draft/appdev-guide/step_by_step.rst:66
 msgid ""
 "The detailed information regarding the package structure can be found in the"
 " `Murano packages structure <package_structure>`_ section."
 msgstr ""
+"关于包的结构的细节信息，请查阅`Murano包结构<package_structure>`_ section。"
+
 
 #: ../../draft/appdev-guide/step_by_step.rst:71
 msgid "Step 2. Create the manifest file"
@@ -89,18 +106,21 @@ msgid ""
 "an entry-point for each Murano application, and is very similar to the "
 "manifest of a jar archive. It has a fixed format based on YAML."
 msgstr ""
+"应用程序的manifest文件包含了通用的应用元数据。它是每个Murano应用的入口点，且"
+"它非常类似于jar归档的manifest。它的固定格式基于YAML。"
+
 
 #: ../../draft/appdev-guide/step_by_step.rst:77
 msgid "The ApacheHTTPServer's manifest file:"
-msgstr ""
+msgstr "ApacheHTTPServer的manifest文件:"
 
 #: ../../draft/appdev-guide/step_by_step.rst:96
 msgid "Now, let's inspect ``manifest.yaml`` line-by-line."
-msgstr ""
+msgstr "现在，让我们逐行的检查``manifest.yaml``。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:99
 msgid "Format"
-msgstr ""
+msgstr "格式"
 
 #: ../../draft/appdev-guide/step_by_step.rst:101
 msgid ""
@@ -108,24 +128,27 @@ msgid ""
 "changes. Format key presents in each manifest file. Currently, ``1.0`` is "
 "the only available version:"
 msgstr ""
+"指定mainfest.xml格式的版本是跟踪语法的变更。在每个manifest文件中都有格式关键字，"
+"目前，``1.0``是唯一可用的版本："
 
 #: ../../draft/appdev-guide/step_by_step.rst:110
 msgid "Type"
-msgstr ""
+msgstr "类型"
 
 #: ../../draft/appdev-guide/step_by_step.rst:112
 msgid "Specifies the type of the package:"
-msgstr ""
+msgstr "指定包的类型:"
 
 #: ../../draft/appdev-guide/step_by_step.rst:119
 msgid ""
 "``Application`` starts with the capital letter. This is the naming "
 "convention for all the pre-defined values in Murano code."
 msgstr ""
+"``应用``以大写字母开始。这是在Murano代码中预先定义的命名规范。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:124
 msgid "FullName"
-msgstr ""
+msgstr "全名"
 
 #: ../../draft/appdev-guide/step_by_step.rst:126
 msgid ""
@@ -133,6 +156,8 @@ msgid ""
 "recognize to which scope an application belongs. All other applications can "
 "address to the Apache application methods by this name."
 msgstr ""
+"代表了唯一的服务应用名。此名允许简单的识别应用属于那个范畴。所有的其它应用"
+"都可通过此名称来找到Apache应用。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:131
 msgid ""
@@ -141,6 +166,8 @@ msgid ""
 "``io.murano.apps.apache.`` part is the \"package\" part of the name, while "
 "``ApacheHttpServer`` stands for the \"class\" part of the name:"
 msgstr ""
+"要确保全局唯一，和Java包有着相同的命名规范和相应的类。``io.murano.apps.apache.``"
+"部分是\"package\"名的一部分，``ApacheHttpServer``代表了名称的\"class\"部分："
 
 #: ../../draft/appdev-guide/step_by_step.rst:142
 msgid ""
@@ -149,21 +176,26 @@ msgid ""
 "applications may have full names, started with ``org.openstack.apps``, for "
 "example, ``org.openstack.apps.Rally``"
 msgstr ""
+"有必要将所有的应用归到同一个域下。此命名方式允许通过它的名称来决定应用的组。"
+"OpenStack相关的应用有全名，以``org.openstack.apps``开头，例如，``org.openstack.apps.Rally``"
+
 
 #: ../../draft/appdev-guide/step_by_step.rst:149
 #: ../../draft/appdev-guide/step_by_step.rst:497
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #: ../../draft/appdev-guide/step_by_step.rst:151
 msgid ""
 "Stands for the display name of the application. You will be able to reset a "
 "display name when you upload ApacheHTTPServer package to Murano:"
 msgstr ""
+"代表了应用程序所显示的名称。当你将ApacheHTTPServer包上传到Murano时，可以将此"
+"显示的名称重置："
 
 #: ../../draft/appdev-guide/step_by_step.rst:159
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../draft/appdev-guide/step_by_step.rst:161
 msgid ""
@@ -194,7 +226,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:192
 msgid "Author"
-msgstr ""
+msgstr "作者"
 
 #: ../../draft/appdev-guide/step_by_step.rst:194
 msgid ""
@@ -210,7 +242,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:207
 msgid "Tags"
-msgstr ""
+msgstr "标签"
 
 #: ../../draft/appdev-guide/step_by_step.rst:209
 msgid ""
@@ -226,7 +258,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:229
 msgid "Classes"
-msgstr ""
+msgstr "类"
 
 #: ../../draft/appdev-guide/step_by_step.rst:231
 msgid ""
@@ -287,11 +319,11 @@ msgstr ""
 #: ../../draft/appdev-guide/step_by_step.rst:350
 #: ../../draft/appdev-guide/step_by_step.rst:476
 msgid "Now, let's inspect it line-by-line."
-msgstr ""
+msgstr "现在，让我们逐行的来看源代码。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:353
 msgid "Application"
-msgstr ""
+msgstr "应用"
 
 #: ../../draft/appdev-guide/step_by_step.rst:355
 msgid ""
