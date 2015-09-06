@@ -13,4 +13,4 @@ msgstr ""
 
 #: ../../draft/appendix/glossary.rst:8
 msgid "Glossary"
-msgstr ""
+msgstr "词汇表"

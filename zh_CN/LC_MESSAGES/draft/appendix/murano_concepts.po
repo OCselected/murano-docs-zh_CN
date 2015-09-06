@@ -13,4 +13,4 @@ msgstr ""
 
 #: ../../draft/appendix/murano_concepts.rst:8
 msgid "High-level definitions of Murano concepts"
-msgstr ""
+msgstr "Murano的概念的抽象定义"

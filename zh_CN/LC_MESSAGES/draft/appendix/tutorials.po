@@ -13,16 +13,16 @@ msgstr ""
 
 #: ../../draft/appendix/tutorials.rst:11
 msgid "Tutorials"
-msgstr ""
+msgstr "教程"
 
 #: ../../draft/appendix/tutorials.rst:14
 msgid "Integration with Docker"
-msgstr ""
+msgstr "和Docker集成"
 
 #: ../../draft/appendix/tutorials.rst:17
 msgid "Integration with Kubernetes"
-msgstr ""
+msgstr "集成Kubernetes"
 
 #: ../../draft/appendix/tutorials.rst:20
 msgid "HA and autoscaling"
-msgstr ""
+msgstr "高可用和自动伸缩"

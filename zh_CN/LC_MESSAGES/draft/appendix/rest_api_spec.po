@@ -13,4 +13,4 @@ msgstr ""
 
 #: ../../draft/appendix/rest_api_spec.rst:8
 msgid "REST API specification"
-msgstr ""
+msgstr "REST API 规范"

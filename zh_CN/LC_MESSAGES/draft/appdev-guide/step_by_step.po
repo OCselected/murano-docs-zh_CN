@@ -120,7 +120,7 @@ msgstr "现在，让我们逐行的检查``manifest.yaml``。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:99
 msgid "Format"
-msgstr "格式"
+msgstr "Format"
 
 #: ../../draft/appdev-guide/step_by_step.rst:101
 msgid ""
@@ -133,7 +133,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:110
 msgid "Type"
-msgstr "类型"
+msgstr "Type"
 
 #: ../../draft/appdev-guide/step_by_step.rst:112
 msgid "Specifies the type of the package:"
@@ -148,7 +148,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:124
 msgid "FullName"
-msgstr "全名"
+msgstr "FullName"
 
 #: ../../draft/appdev-guide/step_by_step.rst:126
 msgid ""
@@ -183,7 +183,7 @@ msgstr ""
 #: ../../draft/appdev-guide/step_by_step.rst:149
 #: ../../draft/appdev-guide/step_by_step.rst:497
 msgid "Name"
-msgstr "名称"
+msgstr "Name"
 
 #: ../../draft/appdev-guide/step_by_step.rst:151
 msgid ""
@@ -195,16 +195,17 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:159
 msgid "Description"
-msgstr "描述"
+msgstr "Description"
 
 #: ../../draft/appdev-guide/step_by_step.rst:161
 msgid ""
 "Contains the application decription rendered under the application title:"
 msgstr ""
+"包含了应用程序的描述，进一步的诠释了应用的标题:"
 
 #: ../../draft/appdev-guide/step_by_step.rst:175
 msgid "Lets's take a closer look at the syntax:"
-msgstr ""
+msgstr "让我们近距离看一下语法:"
 
 #: ../../draft/appdev-guide/step_by_step.rst:177
 msgid ""
@@ -215,6 +216,10 @@ msgid ""
 "useful for long, multi-line descriptions, because this affects how they are "
 "desplayed on the UI."
 msgstr ""
+"竖杠``|``符号来自YAML的语法。``>``符号用于互换。这些是`YAML模块式的指标"
+"<http://yaml.org/spec/current.html#id2537921>`_,意思是所有的缩进和新行的符号"
+"须保留。这对于长的，多行的描述非常有用，因为这会影响到在界面中如何显示。"
+""
 
 #: ../../draft/appdev-guide/step_by_step.rst:185
 msgid ""
@@ -223,6 +228,9 @@ msgid ""
 "misleading. We recommend that you check the YAML syntax before composing the"
 " application package using any of the available online tools."
 msgstr ""
+"在YAML文件中要避免tab键，如果YAML包含了tab键，将无法正常的解析。错误的信息可能"
+"是隐含的或误导性的。我们建议在打包应用之前要检查YAML的语法，可使用任何的在线工具"
+"来完成。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:192
 msgid "Author"
@@ -233,12 +241,15 @@ msgid ""
 "Contains the name of the author of an application, it is only displayed in "
 "the application details and does not affect anything."
 msgstr ""
+"包含应用程序的作者的名字，它将仅显示在应用的细节中，且影响不了任何事。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:202
 msgid ""
 "Single quotes usage is optional here: ``Author: 'Mirantis, Inc'``, thus they"
 " are omitted in the code extract below."
 msgstr ""
+"单引号的使用在这里是可选的：``Author: 'Mirantis, Inc'``,因此在下面的代码中会"
+"被忽略。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:207
 msgid "Tags"
@@ -249,16 +260,18 @@ msgid ""
 "Is an array of tags. You can search an application by its tag. You may want "
 "to specify several tags for one application:"
 msgstr ""
+"标签的矩阵，你可以通过这些标签来搜索应用。你也许会为一个应用指定多个标签"
 
 #: ../../draft/appdev-guide/step_by_step.rst:216
 msgid ""
 "Besides, YAML allows tag specification using another syntax, which is an "
 "equivalent to the one given above:"
 msgstr ""
+"另外，YAML允许标签的指定使用其它的语法，等同于上面给出的:"
 
 #: ../../draft/appdev-guide/step_by_step.rst:229
 msgid "Classes"
-msgstr "类"
+msgstr "Classes"
 
 #: ../../draft/appdev-guide/step_by_step.rst:231
 msgid ""
@@ -267,6 +280,9 @@ msgid ""
 "relatioonship, which means that there is one and the only class per a single"
 " file."
 msgstr ""
+"在ApacheHttpServer应用中所有的类和包含这些类的定义的文件名之间的映射。这是一对一"
+"的关系，也就意味着在单个文件中有且仅有一个类。"
+""
 
 #: ../../draft/appdev-guide/step_by_step.rst:235
 msgid ""
@@ -274,6 +290,10 @@ msgid ""
 "says that the class ``io.murano.apps.apache.ApacheHttpServer`` is defined in"
 " the file ``ApacheHttpServer.yaml``:"
 msgstr ""
+"行 ``io.murano.apps.apache.ApacheHttpServer: ApacheHttpServer.yaml`` 表示类"
+"``io.murano.apps.apache.ApacheHttpServer``在文件``ApacheHttpServer.yaml``中"
+"所定义:"
+
 
 #: ../../draft/appdev-guide/step_by_step.rst:244
 msgid "Step 3. Create the execution plan template"
@@ -286,10 +306,12 @@ msgid ""
 "file with the ``.template`` extension located in the ``/APP_NAME/resources``"
 " directory."
 msgstr ""
+"执行计划模版包含了murano代理可以理解的须执行什么来部署应用的说明。它是后缀``"
+".template``的文件，放在``/APP_NAME/resrouce``目录下。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:250
 msgid "The ApacheHTTPServer's DeployApache.template:"
-msgstr ""
+msgstr "ApacheHTTPServer的DeployApache.template:"
 
 #: ../../draft/appdev-guide/step_by_step.rst:275
 msgid ""
@@ -307,6 +329,8 @@ msgid ""
 "sections and syntax, please refer to the :ref:`Execution plan template "
 "<exec_plan>`."
 msgstr ""
+"想获得执行计划模版的章节和语法的细节信息，请参阅:ref:`Execution plan template "
+"<exec_plan>`。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:286
 msgid "Step 4. Create the dynamic UI form definition"
@@ -314,7 +338,7 @@ msgstr "步骤 4. 从定义创建动态的UI"
 
 #: ../../draft/appdev-guide/step_by_step.rst:288
 msgid "ApacheHTTPServer's ui.yaml source code:"
-msgstr ""
+msgstr "ApacheHTTPServer的 ui.yaml 源代码:"
 
 #: ../../draft/appdev-guide/step_by_step.rst:350
 #: ../../draft/appdev-guide/step_by_step.rst:476
@@ -330,6 +354,7 @@ msgid ""
 "Defines the object model by which engine deploys the ApacheHTTPServer "
 "application, and includes YAQL expressions."
 msgstr ""
+
 
 #: ../../draft/appdev-guide/step_by_step.rst:358
 msgid ""
@@ -364,7 +389,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:395
 msgid "Forms"
-msgstr ""
+msgstr "Forms"
 
 #: ../../draft/appdev-guide/step_by_step.rst:397
 msgid ""
@@ -400,7 +425,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:416
 msgid "Here is how the second dialog looks like:"
-msgstr ""
+msgstr "以下是第二个对话框的样子："
 
 #: ../../draft/appdev-guide/step_by_step.rst:424
 msgid "Step 5: Define MuranoPL class definitions"
@@ -412,14 +437,16 @@ msgid ""
 "ApacheHttpServer uses only one class, just one file can be found in this "
 "directory."
 msgstr ""
+"所有的应用类都放在``Classes``文件夹下。由于ApacheHTTPServer仅使用了一个类，"
+"所以在此目录下只能找到一个文件。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:429
 msgid "Here is how it looks like:"
-msgstr ""
+msgstr "下面是它的样子:"
 
 #: ../../draft/appdev-guide/step_by_step.rst:479
 msgid "Namespaces"
-msgstr ""
+msgstr "Namespaces"
 
 #: ../../draft/appdev-guide/step_by_step.rst:481
 msgid ""
@@ -440,11 +467,11 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:507
 msgid "One .yaml file should contain only one class definition."
-msgstr ""
+msgstr "一个.yaml文件须只能包含一个类的定义。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:510
 msgid "Extends"
-msgstr ""
+msgstr "Extends"
 
 #: ../../draft/appdev-guide/step_by_step.rst:512
 msgid ""
@@ -469,7 +496,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:527
 msgid "Properties"
-msgstr ""
+msgstr "Properties"
 
 #: ../../draft/appdev-guide/step_by_step.rst:529
 msgid ""
@@ -491,7 +518,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:538
 msgid "Methods"
-msgstr ""
+msgstr "Methods"
 
 #: ../../draft/appdev-guide/step_by_step.rst:540
 msgid ""
@@ -518,15 +545,15 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:559
 msgid "It performs the following actions:"
-msgstr ""
+msgstr "它执行下面的动作:"
 
 #: ../../draft/appdev-guide/step_by_step.rst:561
 msgid "configures securityGroups;"
-msgstr ""
+msgstr "配置安全组;"
 
 #: ../../draft/appdev-guide/step_by_step.rst:562
 msgid "initiates new virtual machine spawning: ``$.instance.deploy()``"
-msgstr ""
+msgstr "发起新的虚拟机的生成:``$.instance.deploy()``"
 
 #: ../../draft/appdev-guide/step_by_step.rst:563
 msgid ""
@@ -534,18 +561,23 @@ msgid ""
 " the instance of resources class: "
 "``$resources.yaml('DeployApache.template')``"
 msgstr ""
+"加载可执行的计划模版，在``Resources``目录下，实例的资源类:"
+"``$resources.yaml('DeployApache.template')``"
 
 #: ../../draft/appdev-guide/step_by_step.rst:565
 msgid ""
 "updates the plan with parameters taken from the user: ``bind(dict(enablePHP "
 "=> $.enablePHP))``"
 msgstr ""
+"使用由用户提供的参数``bind(dict(enablePHP => $.enablePHP))``更新计划"
 
 #: ../../draft/appdev-guide/step_by_step.rst:566
 msgid ""
 "sends ready-to-execute-plan to murano agent: "
 "``$.instance.agent.call($template, $resources)``"
 msgstr ""
+"发送ready-to-execute-plan给murano 代理:"
+"``$.instance.agent.call($template, $resources)``"
 
 #: ../../draft/appdev-guide/step_by_step.rst:570
 msgid "Step 6. Add the application logo (optional)"
@@ -555,6 +587,7 @@ msgstr "步骤 6. 添加应用程序logo (可选)"
 msgid ""
 "Download or create your own ``.png`` image associated with your application."
 msgstr ""
+"下载或创建你自己的``.png``图片，将之分配给你的应用。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:574
 msgid ""
@@ -562,6 +595,8 @@ msgid ""
 "are no limits regarding the image filename. In Apache HTTP Server we use the"
 " default name ``logo.png``:"
 msgstr ""
+"建议的大小是 70x70 px，优先正方形。对图片的文件名没有任何的限制。在Apache HTTP"
+"服务中，我们使用默认的名称``logo.png``："
 
 #: ../../draft/appdev-guide/step_by_step.rst:582
 msgid "Step 7.  Compose a zip archive"
@@ -573,15 +608,20 @@ msgid ""
 "format. If the command is executed from the console, do not forget to add "
 "the ``-r`` option to include all the attachments."
 msgstr ""
+"选择所有为软件包所准备的文件，然后创建一个zip格式的归档。如果是从终端执行命令，"
+"不要忘记参数``-r``来将所有的文件都纳入。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:589
 msgid ""
 "The manifest file should not contain the root folder. In other words, the "
 "manifest should be located in the archive root directory."
 msgstr ""
+"mainfest文件不应包含根文件夹。换句话说，manifest须在归档的root目录下。"
+""
 
 #: ../../draft/appdev-guide/step_by_step.rst:594
 msgid ""
 "**Congratulations! Your application is ready to be uploaded to the "
 "application catalog.**"
 msgstr ""
+"**恭喜！你的应用已经准备好上传到应用目录中了。**"

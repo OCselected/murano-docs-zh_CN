@@ -13,15 +13,15 @@ msgstr ""
 
 #: ../../draft/appdev-guide/examples.rst:8
 msgid "Examples"
-msgstr ""
+msgstr "示例"
 
 #: ../../draft/appdev-guide/examples.rst:16
 msgid "Application name"
-msgstr ""
+msgstr "应用名称"
 
 #: ../../draft/appdev-guide/examples.rst:17
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../draft/appdev-guide/examples.rst:20
 msgid ""
@@ -29,6 +29,8 @@ msgid ""
 "is installed on a specific VM that may contain any other applications. This "
 "VM is tracked by Zabbix and by its configuration."
 msgstr ""
+"Zabbix 代理是一个简单的应用。它自身不会部署一个虚拟机，但是会安装到一个特定的"
+"虚拟机，此虚拟机可能还囊括了其它的应用。此虚拟机由Zabbix和其配置来追踪。"
 
 #: ../../draft/appdev-guide/examples.rst:24
 msgid ""
@@ -36,6 +38,8 @@ msgid ""
 "The user chooses the way of instance tracking - HTTP or ICMP that may "
 "perform some modifications in the application package."
 msgstr ""
+"所以Murano基于用户的输入来执行对Zabbix代理的配置。用户选择追踪实例的方法 - "
+"HTTP 或 ICMP,也可以在应用程序包执行一些修改。"
 
 #: ../../draft/appdev-guide/examples.rst:28
 msgid ""
@@ -44,6 +48,8 @@ msgid ""
 "application since it’s a required property, determined in the application "
 "definition."
 msgstr ""
+"值的注意的是此应用程序使用Python写就的，不是通常常见的Bash。此应用离了Zabbix"
+"服务就无法工作，因为它需要的属性由应用的定义所决定。"
 
 #: ../../draft/appdev-guide/examples.rst:34
 msgid ""
@@ -51,12 +57,15 @@ msgid ""
 "setUpAgent method and providing information about itself: IP and hostname of"
 " VM on which the server is installed."
 msgstr ""
+"Zabbix服务通过调用其setUpAgent方法来和Zabbix代理交互，以及提供关于其自身的信息:"
+"IP 和安装服务所在的虚拟机的主机名。"
 
 #: ../../draft/appdev-guide/examples.rst:38
 msgid ""
 "Server installs MySQL database and requests database name, password and some"
 " other parameters from the user."
 msgstr ""
+"服务会安装MySQL数据库，以及满足用户所请求的数据库名称，密码以及其它一些参数。"
 
 #: ../../draft/appdev-guide/examples.rst:42
 msgid ""
@@ -64,6 +73,8 @@ msgid ""
 "inheritance that is supported by MuranoPL. Definition of this app is simple,"
 " but the opportunity it provides is fantastic."
 msgstr ""
+"这是一个由MuranoPL所支持的将复杂的逻辑由集成变得简单的很好的例子。此app的定义"
+"很简单，但它提供的机会非常的不错。"
 
 #: ../../draft/appdev-guide/examples.rst:46
 msgid ""
@@ -73,6 +84,9 @@ msgid ""
 "the form since these options are set in the UI definition. The form field "
 "has a list of possible options::"
 msgstr ""
+"在Murano应用目录中创建一个分布式数据库和常见的应用没什么不一样。可以部署像"
+"Google Kubernetes或者常规的Docker服务器。用户只需要选择自己想要的属性，因为"
+"这些属性已经在UI所预先定义好了的。表单中可能会出现的属性有::"
 
 #: ../../draft/appdev-guide/examples.rst:57
 msgid ""
@@ -83,3 +97,8 @@ msgid ""
 "application doesn’t have a filename:Resources folder at all since the "
 "installation is made by Docker itself."
 msgstr ""
+"关于应用自身的信息(Docker镜像以及需要打开的端口)包含在了getContainer方法中，"
+"应用配置的所有其它的动作都在DockerStandaloneHost定义中以及其依赖。注意，此应用"
+"没有filename:Resources目录，所有的安装都由Docker自身来完成。"
+
+

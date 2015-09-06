@@ -13,7 +13,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl.rst:8
 msgid "MuranoPL Reference"
-msgstr ""
+msgstr "MuranoPL 参考"
 
 #: ../../draft/appdev-guide/murano_pl.rst:10
 msgid ""
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/yaml.rst:4
 msgid "YAML"
-msgstr ""
+msgstr "YAML"
 
 #: ../../draft/appdev-guide/murano_pl/yaml.rst:6
 msgid ""
@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/yaql.rst:4
 msgid "YAQL"
-msgstr ""
+msgstr "YAQL"
 
 #: ../../draft/appdev-guide/murano_pl/yaql.rst:6
 msgid ""
@@ -127,7 +127,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:5
 msgid "Common class structure"
-msgstr ""
+msgstr "通用类结构"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:7
 msgid ""
@@ -144,7 +144,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:32
 msgid "Class name"
-msgstr ""
+msgstr "类名"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:34
 msgid ""
@@ -165,7 +165,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:45
 msgid "Namespaces"
-msgstr ""
+msgstr "命名空间"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:47
 msgid ""
@@ -200,7 +200,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:73
 msgid "Extends"
-msgstr ""
+msgstr "扩展"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:75
 msgid ""
@@ -214,7 +214,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:83
 msgid "Properties"
-msgstr ""
+msgstr "属性"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:85
 msgid ""
@@ -272,7 +272,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:192
 msgid "Default"
-msgstr ""
+msgstr "默认"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:194
 msgid ""
@@ -296,7 +296,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:210
 msgid "Workflow"
-msgstr ""
+msgstr "工作流"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:212
 msgid ""
@@ -542,4 +542,4 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/actions.rst:58
 msgid "Response:"
-msgstr ""
+msgstr "响应"
