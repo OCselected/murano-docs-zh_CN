@@ -13,29 +13,31 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_packages.rst:8
 msgid "Murano packages"
-msgstr ""
+msgstr "Murano 软件包"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:4
 msgid "Package structure"
-msgstr ""
+msgstr "软件包结构"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:6
 msgid ""
 "The structure of the Murano application package is predefined. An "
 "application could be successfully uploaded to an application catalog."
 msgstr ""
+"Murano应用软件包有预先定义的结构。一个应用应该成功地上船到应用目录中。"
+""
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:9
 msgid "The application package root folder should contain the following:"
-msgstr ""
+msgstr "应用软件包根目录应该包含下面内容:"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:14
 msgid "**manifest.yaml** file"
-msgstr ""
+msgstr "**manifest.yaml**文件"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:12
 msgid "is an application entry point."
-msgstr ""
+msgstr "是应用的入口。"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:14
 msgid "the filename is fixed, do not use any custom names."

@@ -13,12 +13,12 @@ msgstr ""
 
 #: ../../draft/appdev-guide/packages.rst:8
 msgid "Packages"
-msgstr ""
+msgstr "软件包"
 
 #: ../../draft/appdev-guide/packages.rst:11
 msgid "HOT-based packages"
-msgstr ""
+msgstr "基于HOT的软件包"
 
 #: ../../draft/appdev-guide/packages.rst:14
 msgid "Murano native packages"
-msgstr ""
+msgstr "Murano 本身的软件包"

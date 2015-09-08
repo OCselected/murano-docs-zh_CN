@@ -13,11 +13,11 @@ msgstr ""
 
 #: ../../draft/appdev-guide/use_cases.rst:8
 msgid "Use-cases"
-msgstr ""
+msgstr "使用案例"
 
 #: ../../draft/appdev-guide/use_cases.rst:11
 msgid "Performing application interconnections"
-msgstr ""
+msgstr "应用程序内部通信的执行"
 
 #: ../../draft/appdev-guide/use_cases.rst:13
 msgid ""
@@ -25,12 +25,16 @@ msgid ""
 "machines. The decision of how to combine applications is made by the author "
 "of an application."
 msgstr ""
+"Murano可以掌控安装在虚拟机内的应用的内部通信。如何组合应用的决定由应用的作者"
+"决定。"
 
 #: ../../draft/appdev-guide/use_cases.rst:17
 msgid ""
 "To illustrate the way such interconnection can be configured, let’s analyze "
 "the mechanisms applied in WordPress application, which uses MySql."
 msgstr ""
+"为了说明内部通信可配置的方式，让我们分析使用MySQL的WordPress应用的机制。"
+""
 
 #: ../../draft/appdev-guide/use_cases.rst:21
 msgid ""
@@ -39,30 +43,33 @@ msgid ""
 "definition of the WordPress application, it calls the methods from the MySQL"
 " class. At the same time MySQL remains an independent application."
 msgstr ""
+"MySQL是非常流行的数据库，可用于很多的各种各样的应用程序。我们不使用WordPress"
+"内部所定义的创建数据库方法，而是从MySQL类调用方法。同时MySQL仍然是独立的应用。"
+
 
 #: ../../draft/appdev-guide/use_cases.rst:26
 msgid "MySql has a number of methods:"
-msgstr ""
+msgstr "MySQL用用多个方法："
 
 #: ../../draft/appdev-guide/use_cases.rst:28
 msgid "``deploy``"
-msgstr ""
+msgstr "``部署``"
 
 #: ../../draft/appdev-guide/use_cases.rst:29
 msgid "``createDatabase``"
-msgstr ""
+msgstr "``创建数据库``"
 
 #: ../../draft/appdev-guide/use_cases.rst:30
 msgid "``createUser``"
-msgstr ""
+msgstr "``创建用户``"
 
 #: ../../draft/appdev-guide/use_cases.rst:31
 msgid "``assignUser``"
-msgstr ""
+msgstr "``分配用户``"
 
 #: ../../draft/appdev-guide/use_cases.rst:32
 msgid "``getConnectionString``"
-msgstr ""
+msgstr "``getConnectionString``"
 
 #: ../../draft/appdev-guide/use_cases.rst:34
 msgid ""
@@ -71,6 +78,8 @@ msgid ""
 "configuration methods can be called with the parameters passed by the user "
 "in the main method:"
 msgstr ""
+"在``io.murano.apps.WordPress``类中定义了数据库属性是连接到``io.murano.database.MySql``"
+"类。所以，数据库配置方法的调用在主要的方法中可由用户传入参数来完成:"
 
 #: ../../draft/appdev-guide/use_cases.rst:45
 msgid ""
@@ -78,16 +87,20 @@ msgid ""
 " proposal application installation algorithm clear and constructive. Also, "
 "it allows not to duplicate the code in new applications."
 msgstr ""
+"任何其他类的任何其他方法都可以调用同样的方法，使提案的应用程序安装明确的和良好结构的算法。"
+"另外，在新的应用中不允许由重复的代码。"
 
 #: ../../draft/appdev-guide/use_cases.rst:51
 msgid "Using application already installed on the image"
-msgstr ""
+msgstr "使用已经安装到镜像的应用"
 
 #: ../../draft/appdev-guide/use_cases.rst:53
 msgid ""
 "Suppose you have everything already prepared on image. And you want to share"
 " this image with others. This problem can be solved in several ways."
 msgstr ""
+"希望你已经在镜像中准备好了一切。且你打算将此镜像分享。此问题有多种方法可以解决"
+"掉。"
 
 #: ../../draft/appdev-guide/use_cases.rst:56
 msgid ""
@@ -95,14 +108,16 @@ msgid ""
 "apps/tree/master/HDPSandbox/package>`_ application to illustrate how this "
 "can be done with Murano."
 msgstr ""
+"让我们使用`HDPSandbox <https://github.com/openstack/murano-"
+"apps/tree/master/HDPSandbox/package>`_ 应用来说明Murano是如何来完成这些的。"
 
 #: ../../draft/appdev-guide/use_cases.rst:61
 msgid "An image may not contain murano-agent at all."
-msgstr ""
+msgstr "镜像也许没有包含murano-agent。"
 
 #: ../../draft/appdev-guide/use_cases.rst:63
 msgid "Prepare an application package of the structure:"
-msgstr ""
+msgstr "准备好应用软件包的结构："
 
 #: ../../draft/appdev-guide/use_cases.rst:77
 msgid ""
@@ -110,6 +125,8 @@ msgid ""
 "contains everything that user expects. So no extra instructions are needed "
 "to be executed on murano-agent."
 msgstr ""
+"``Resources``目录并不在软件包中，由于镜像包含了用户所期望的一切。所以没有额外"
+"的说明murano-agent需要执行。"
 
 #: ../../draft/appdev-guide/use_cases.rst:81
 msgid ""
@@ -118,6 +135,8 @@ msgid ""
 "name as a deployment instruction template (object model) in the "
 "``Application`` section:"
 msgstr ""
+"UI 会提供用于指定应用的名称，其可用于在日志中识别应用。以及它还包含了镜像的名称"
+"，而此在``Application``一节中可作为部署说明模版(对象模型)："
 
 #: ../../draft/appdev-guide/use_cases.rst:100
 msgid ""
@@ -125,6 +144,8 @@ msgid ""
 "can select only from the valid ones. Provide the requirements in the "
 "corresponding section to do this:"
 msgstr ""
+"还有，它也会指出不支持的云类型，所以用户可以只能选择一个合法的类型。提供在相应的“
+”部分来做到这一点的要求："
 
 #: ../../draft/appdev-guide/use_cases.rst:111
 msgid ""
@@ -134,6 +155,10 @@ msgid ""
 "you can call the ``deploy`` method of the Puppet application and then puppet"
 " manifests or any shell scripts on the freshly spawned VM."
 msgstr ""
+"在UI表单创建完成后，且HDPSandbox应用部署完成，原先由预定义镜像所生成的虚拟机"
+"也启动了，类似如此类型的应用可以和常规的应用来做交互了。因此，如果你的镜像支持"
+"Puppet，你就可以调用Puppet应用的``deploy``方法了，然后puppet manifest或者是任何"
+"任何的shell脚本都会在虚拟机中执行。"
 
 #: ../../draft/appdev-guide/use_cases.rst:117
 msgid ""
@@ -141,20 +166,23 @@ msgid ""
 "to make your application recognizable among other applications included in "
 "the catalog."
 msgstr ""
+"该logo.png的存在不应该被低估，因为它能够在目录中帮助你的应用能够识别其它应用。"
 
 #: ../../draft/appdev-guide/use_cases.rst:121
 msgid "Interacting with non-OpenStack services"
-msgstr ""
+msgstr "和非OpenStack的服务交互"
 
 #: ../../draft/appdev-guide/use_cases.rst:123
 msgid ""
 "This section tells about the interaction between an application and any non-"
 "OpenStack services, that have an API."
 msgstr ""
+"此节阐述了应用和任何其它非OpenStack服务之间的交互，它是有API的。"
+""
 
 #: ../../draft/appdev-guide/use_cases.rst:127
 msgid "External load-balancer"
-msgstr ""
+msgstr "外部的负载均衡器"
 
 #: ../../draft/appdev-guide/use_cases.rst:128
 msgid ""
@@ -163,24 +191,27 @@ msgid ""
 "to be managed by that external load-balancer (LB). Let’s go into more "
 "details."
 msgstr ""
+"假设，你拥有强大的真实的负载均衡服务器。然后你打算在OpenStack虚拟机里运行应用。"
+"Murano可以设置新的应用由外部的负载均衡器(LB)来管理。让我们来看更多的细节。"
 
 #: ../../draft/appdev-guide/use_cases.rst:132
 msgid "To implement this case the following apps are used:"
-msgstr ""
+msgstr "要实现此场景，以下应用用的到:"
 
 #: ../../draft/appdev-guide/use_cases.rst:134
 msgid "``LbApp``:  its class methods call LB API"
-msgstr ""
+msgstr "``LbApp``: LB API的类方法调用"
 
 #: ../../draft/appdev-guide/use_cases.rst:136
 msgid "``WebApp``:  runs on the real LB"
-msgstr ""
+msgstr "``WebApp``: 运行在真实的LB上"
 
 #: ../../draft/appdev-guide/use_cases.rst:138
 msgid ""
 "Several instances of ``WebApp`` are deployed with each of them calling two "
 "methods:"
 msgstr ""
+"部署多个``WebApp``实例，每个都调用两个方法:"
 
 #: ../../draft/appdev-guide/use_cases.rst:147
 msgid ""
@@ -188,17 +219,24 @@ msgid ""
 "This happens once only. The second one registers a member in the newly "
 "created pool."
 msgstr ""
+"第一个方法创建一个池，然后关联到虚拟服务器。这只发生一次。第二次注册一个"
+"成员会创建新的池。"
 
 #: ../../draft/appdev-guide/use_cases.rst:150
 msgid ""
 "It is also possible to perform other modifications to the LB configuration, "
 "which are only restricted by the LB API functionality."
 msgstr ""
+"另外，也可以进行其它修改到LB配置，这仅受限于LB API功能。"
 
 #: ../../draft/appdev-guide/use_cases.rst:153
 msgid ""
 "So, you need to specify the maximum instance number in the UI form related "
 "to the ``WebApp`` application. All of them are subsequently added to the LB "
-"pool. After the deployment, the LB virtual IP, by which an application is "
+"pool. After the deployment, the LB virtual IP, by which an application is "PI功能。
 "accessible, is displayed."
 msgstr ""
+"所以，你需要在UI表单中指定和``WebApp``应用相关的实例的最大数量。所有的这些虚拟机"
+"继而都会添加到LB池。部署完成后，LB的虚拟IP将会显示。"
+
+

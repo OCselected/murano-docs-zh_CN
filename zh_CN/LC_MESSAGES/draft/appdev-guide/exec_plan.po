@@ -13,7 +13,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/exec_plan.rst:8
 msgid "Execution plan template"
-msgstr ""
+msgstr "执行计划模版"
 
 #: ../../draft/appdev-guide/exec_plan.rst:10
 msgid ""
@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/exec_plan.rst:30
 msgid "Template sections"
-msgstr ""
+msgstr "模版章节"
 
 #: ../../draft/appdev-guide/exec_plan.rst:32
 msgid ""
@@ -241,7 +241,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/exec_plan.rst:147
 msgid "**Options**"
-msgstr ""
+msgstr "**可选型**"
 
 #: ../../draft/appdev-guide/exec_plan.rst:136
 msgid ""
@@ -262,7 +262,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/exec_plan.rst:147
 msgid "Dictionary, optional."
-msgstr ""
+msgstr "目录，可选"
 
 #: ../../draft/appdev-guide/exec_plan.rst:149
 msgid ""
