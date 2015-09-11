@@ -29,7 +29,7 @@ msgid ""
 "how you can create your own Murano application from scratch. We will walk "
 "you through its source code and explain how to upload it."
 msgstr ""
-"此教程使用了名字叫ApacheHTTPServer道应用道示例来演示给你，如何从零开始创建自己"
+"此教程使用了名字叫ApacheHTTPServer的应用示例来演示给你，如何从零开始创建自己"
 "的Murano应用程序。我们会带领你进入其源码的世界，且会解释如何上传它。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:16

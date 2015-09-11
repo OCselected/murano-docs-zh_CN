@@ -21,6 +21,8 @@ msgid ""
 "Language (MuranoPL). It is represented by easily readable YAML and YAQL "
 "languages. The sections below describe these languages."
 msgstr ""
+"为了开发应用程序，murano项目开发了Murano 程序语言(MuranoPL)。它其实代表"
+"简单的可读的YAML和YAQL语言。下面一节就解释了这些语言。"
 
 #: ../../draft/appdev-guide/murano_pl/yaml.rst:4
 msgid "YAML"
@@ -35,6 +37,10 @@ msgid ""
 " brackets in most C-like languages. Also YAML may contain more data types as"
 " compared to JSON. See http://yaml.org/ for a detailed description of YAML."
 msgstr ""
+"YAML是易读的数据串行话的格式，它是JSON的一个超集。不像JSON，YAML的设计更加的"
+"容易让人读和写，而且依靠视觉缩进来表示数据结构的嵌套。这一点很像Python为何使用"
+"缩进来表示块的结构而不是像多数C系的语言使用大括号。YAML相比于JSON也包含了更多"
+"的数据类型。请参阅http://yaml.org/ 获得更多描述YAML的细节。 "
 
 #: ../../draft/appdev-guide/murano_pl/yaml.rst:14
 msgid ""
@@ -47,6 +53,11 @@ msgid ""
 "a database, a remote repository, etc.) and possibly use some other "
 "serialization formats instead of YAML."
 msgstr ""
+"MuranoPL是被设计为以YAML表示的，所以MuranoPL代码仍然保持可读性和结构化。通常"
+"MuranoPL文件就是YAML编码的文档。但是MuranoPL引擎本身不能够直接处理YAML文档，"
+"且它拿到它是由该托管的应用来定位和反序列化特定类的定义。这就给了托管应用程序"
+"控制哪里可以找到这些定义的能力(文件系统，数据库，远端的仓库，等)以及使用其它"
+"串行化格式从而替代YAML的能力。"
 
 #: ../../draft/appdev-guide/murano_pl/yaml.rst:22
 msgid ""
@@ -57,6 +68,9 @@ msgid ""
 "but in YAML, a developer can always state the type by using YAML tags "
 "explicitly. For example:"
 msgstr ""
+"当在源定义中发现YAQL时，MuranoPL引擎依赖于主机的反序列化代码。它以Yaql表达式类"
+"的实例提供给它们，而不是文本字符。通常，YAQL表达式可以通过 $ (美元符号)来和操作"
+"作区分，开发者可以总是明确的使用YAML标签来注明类型。例如："
 
 #: ../../draft/appdev-guide/murano_pl/yaql.rst:4
 msgid "YAQL"
@@ -69,6 +83,8 @@ msgid ""
 " description of YAQL can be found `here "
 "<https://github.com/ativelkov/yaql>`_."
 msgstr ""
+"YAQL (另外一种查询语言)是一种查询语言，也是作为murano项目一部分所设计的。MuranoPL"
+"大量使用YAQL。关于YAQL的描述可以在`这里<https://github.com/ativelkov/yaql>`_找到。"
 
 #: ../../draft/appdev-guide/murano_pl/yaql.rst:10
 msgid ""
@@ -76,6 +92,8 @@ msgid ""
 "following examples are all valid YAQL expressions: ``2 + 2, foo() > bar(), "
 "true != false``."
 msgstr ""
+"简单来讲，YAQL是一种表达式求值的语言。下面的例子都是合法的YAQL表达式：``2 + 2,"
+"foo() > bar(),true != false``。"
 
 #: ../../draft/appdev-guide/murano_pl/yaql.rst:14
 msgid ""
@@ -86,6 +104,9 @@ msgid ""
 " depends on explicitly provided implementations of \"foo\" and "
 "\"operator_*\"."
 msgstr ""
+"YAQL中有趣的是它没有内建的函数列表。YAQL的可访问的一切都是可定制的。YAQL不会"
+"调用任何没有明确注册的函数来让YAQL访问。对于操作亦是一样。所以2 * foo(3, 4)"
+"表达式的结果完全取决于\"foo\"和\"operator_*\"所提供的实现。"
 
 #: ../../draft/appdev-guide/murano_pl/yaql.rst:21
 msgid ""
@@ -97,6 +118,10 @@ msgid ""
 "argument. Thus, \"$\" in the beginning of an expression and \"$\" in the "
 "middle of it can refer to different things."
 msgstr ""
+"YAQL使用美元符号($)来访问外部的变量，此变量通常由托管的应用程序和函数参数来"
+"明确的提供，``$variable``是获取变量\"$variable\"值的语法，$1,$2,等都是函数"
+"参数的定义。\"$\"是当前对象的名称：该表达式求值的数据，或者是单个参数的名称。"
+"因此，\"$\"是一个表达式的开始，当然，\"$\"在中间的话可以表达不同的内容。"
 
 #: ../../draft/appdev-guide/murano_pl/yaql.rst:29
 msgid ""
@@ -108,12 +133,18 @@ msgid ""
 "objects, and result in another array that is a filtration and projection of "
 "a source data."
 msgstr ""
+"默认情况下，YAQL拥有大量的函数可以注册到YAQL上下文中。这非常类似于SQL的工作原理"
+"但是使用了类Python的语法。例如：:code:`$.where($.myObj.myScalar > 5`,"
+":code:`$.myObj.myArray.len() > 0`, 和 :code:`$.myObj.myArray.any($ = "
+"4)).select($.myObj.myArray[0])` 可以执行在:code:`$ = array`的对象上，而且结果"
+"是放在一个源数据filtration和projection的数组中。"
 
 #: ../../draft/appdev-guide/murano_pl/yaql.rst:36
 msgid ""
 "There is no assignment operator in YAQL, and ``=`` means comparison, the "
 "same what ``==`` means in Python."
 msgstr ""
+"在YAQL中没有分配操作符，且``=``意思是比较，``==``和Python中的是一样的。"
 
 #: ../../draft/appdev-guide/murano_pl/yaql.rst:39
 msgid ""
@@ -124,6 +155,9 @@ msgid ""
 "YAQL expressions that are used to specify property contracts are not "
 "necessarily valid in workflow definitions."
 msgstr ""
+"因为YAQL没有访问操作系统底层的资源且由主机完全控制，随意执行YAQL表示式是安全的"
+"无须建立信任方可执行代码。同样，因为函数没有预定义，不同的方法可以访问不同的内"
+"容。所以用于指定属性contracts的YAQL表达式没有必要在工作流定义中作验证。"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:5
 msgid "Common class structure"
@@ -134,6 +168,7 @@ msgid ""
 "Here is a common template for class declarations. Note, that it is in the "
 "YAML format."
 msgstr ""
+"这里是一个类声明的通用模版。注意，它是YAML格式的。"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:28
 msgid ""
@@ -141,6 +176,8 @@ msgid ""
 " except for ``Name`` are optional and can be omitted (but must be valid if "
 "specified)."
 msgstr ""
+"因此MuranoPL类是一个预先定义了键名称的YAML字典，所有的键除了``Name``之外都是"
+"可选的，而且可忽略(但是若指定了就必须验证)。"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:32
 msgid "Class name"
@@ -152,6 +189,8 @@ msgid ""
 "names begin with an upper-case letter symbol and are written in "
 "PascalCasing."
 msgstr ""
+"类的名称是字母数字，按照传统，所有的类名都以一大写字母开始，且以PascalCasing"
+"风格写就。"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:37
 msgid ""
@@ -162,6 +201,10 @@ msgid ""
 "namespace ``=:``. Therefore, ``MyName`` equals ``=:MyName`` if ``=`` is a "
 "valid namespace."
 msgstr ""
+"在MuranoPL中所有的类名都是唯一的。同时，MuranoPL支持命名空间。所以，在不同的"
+"命名空间中你可以拥有相同的名称。你可以明确的指定一个命名空间。例如 `ns:MyName`。"
+"如果你忽略了指定命名空间，``MyName``会扩展使用默认的命名空间``=:``。因此，"
+"``MyName``等同于``=:MyName`` ，如果``=``是合法的命名空间的话。"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:45
 msgid "Namespaces"
@@ -197,6 +240,7 @@ msgid ""
 "To make class names globally unique, we recommend specifying a developer's "
 "domain name as a part of the namespace."
 msgstr ""
+"要确保类名全局唯一的话，我们建议指定一个开发者的域名来作为命名空间的一部分。"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:73
 msgid "Extends"
@@ -226,11 +270,11 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:90
 msgid "Properties have the following declaration format:"
-msgstr ""
+msgstr "属性具有下列所申明的格式："
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:100
 msgid "Contract"
-msgstr ""
+msgstr "Contract"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:102
 msgid ""
@@ -240,15 +284,15 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:106
 msgid "Operation"
-msgstr ""
+msgstr "Operation"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:106
 msgid "Definition"
-msgstr ""
+msgstr "Definition"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:148
 msgid "Usage"
-msgstr ""
+msgstr "Usage"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:150
 msgid ""
@@ -317,7 +361,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:226
 msgid "Methods"
-msgstr ""
+msgstr "Methods"
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:228
 msgid ""
@@ -404,7 +448,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:322
 msgid "The following block constructs are available:"
-msgstr ""
+msgstr "以下是可用的块结构："
 
 #: ../../draft/appdev-guide/murano_pl/class_templ.rst:385
 msgid "Object model"
@@ -455,7 +499,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/core_classes.rst:4
 msgid "Core library"
-msgstr ""
+msgstr "核心库"
 
 #: ../../draft/appdev-guide/murano_pl/core_classes.rst:6
 msgid ""
@@ -499,11 +543,11 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/actions.rst:21
 msgid "VM rebooting"
-msgstr ""
+msgstr "虚拟机重启"
 
 #: ../../draft/appdev-guide/murano_pl/actions.rst:22
 msgid "Scaling"
-msgstr ""
+msgstr "扩展"
 
 #: ../../draft/appdev-guide/murano_pl/actions.rst:24
 msgid ""
@@ -538,7 +582,7 @@ msgstr ""
 
 #: ../../draft/appdev-guide/murano_pl/actions.rst:55
 msgid "Request: ``http://localhost:8082/v1/environments/<id>/services/<id>``"
-msgstr ""
+msgstr "向``http://localhost:8082/v1/environments/<id>/services/<id>``发出请求"
 
 #: ../../draft/appdev-guide/murano_pl/actions.rst:58
 msgid "Response:"

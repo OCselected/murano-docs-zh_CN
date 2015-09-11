@@ -24,12 +24,12 @@ msgid ""
 "The structure of the Murano application package is predefined. An "
 "application could be successfully uploaded to an application catalog."
 msgstr ""
-"Murano应用软件包有预先定义的结构。一个应用应该成功地上船到应用目录中。"
-""
+"Murano应用程序软件包的结构是预先定义的，一个应用需能够成功的将之上传"
+"到应用程序目录。"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:9
 msgid "The application package root folder should contain the following:"
-msgstr "应用软件包根目录应该包含下面内容:"
+msgstr "应用程序软件包根文件夹须包含下面内容："
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:14
 msgid "**manifest.yaml** file"
@@ -37,45 +37,47 @@ msgstr "**manifest.yaml**文件"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:12
 msgid "is an application entry point."
-msgstr "是应用的入口。"
+msgstr "是应用程序的入口。"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:14
 msgid "the filename is fixed, do not use any custom names."
-msgstr ""
+msgstr "文件名是固定的，不可以使用任何定制过的名称。"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:17
 msgid "**Classes** folder"
-msgstr ""
+msgstr "**Classes** 文件夹"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:17
 msgid "contains MuranoPL class definitions."
-msgstr ""
+msgstr "包含了MuranoPL类的定义。"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:22
 msgid "**Resources** folder"
-msgstr ""
+msgstr "**Resrouces** 文件夹"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:20
 msgid ""
 "contains an axecution plan template and the **scripts** folder with all the "
 "files required for an application deployment located in it."
 msgstr ""
+"包含了可执行的计划模版，以及**scripts**文件夹，其又包含了应用部署需要查找的"
+"文件。"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:25
 msgid "**UI** folder"
-msgstr ""
+msgstr "**UI** 文件夹"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:25
 msgid "contains the dynamic UI yaml definitions."
-msgstr ""
+msgstr "包含了动态的UI yaml定义。"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:33
 msgid "**logo.png** file (optional)"
-msgstr ""
+msgstr "**logo.png**文件(可选)"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:28
 msgid "is an image file associated to your application."
-msgstr ""
+msgstr "应用所分配到的图片文件。"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:31
 msgid ""
