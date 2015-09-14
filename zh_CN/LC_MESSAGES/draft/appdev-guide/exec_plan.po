@@ -1,15 +1,17 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Murano 1.0.0.0b1.54\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-21 22:16\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2015-09-14 17:52+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: 适兕 <lijiangsheng1@gmail.com>\n"
+"Language-Team: OCselected  <lijiangsheng1@gmail.com>\n"
+"Language: zh\n"
+"X-Generator: Poedit 1.8.4\n"
 
 #: ../../draft/appdev-guide/exec_plan.rst:8
 msgid "Execution plan template"
@@ -18,28 +20,36 @@ msgstr "执行计划模版"
 #: ../../draft/appdev-guide/exec_plan.rst:10
 msgid ""
 "An execution plan template is a set of metadata that describes the "
-"installation process of an application on a virtual machine. It is a minimal"
-" executable unit that can be triggered in Murano workflows and is "
+"installation process of an application on a virtual machine. It is a "
+"minimal executable unit that can be triggered in Murano workflows and is "
 "understandable to the Murano agent, which is responsible for receiving, "
 "correctness verification and execution of the statements included in the "
 "template."
 msgstr ""
+"执行计划模版是一组描述了在虚拟机中安装一个应用的流程的元数据集合。它是可以在"
+"Murano工作流中被触发的最小执行单元，且能够被Murano代理所识别，Murano代理则负"
+"责接收，正确性的验证，以及执行包含在模版中的声明。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:18
 msgid ""
 "The execution plan template is able to trigger any type of script that "
 "executes commands and installs application components as the result. Each "
 "script included in the execution plan template may consist of a single file "
-"or a set of interrelated files. A single script can be reused across several"
-" execution plans."
+"or a set of interrelated files. A single script can be reused across "
+"several execution plans."
 msgstr ""
+"执行计划模版可以触发任何类型的脚本，这些脚本的目的就是执行命令和安装应用组"
+"件。每个脚本都被包含在执行计划模版中，可以是单个文件，也可以是相关文件的一个"
+"集合。单个脚本可以跨多个执行计划重用。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:25
 msgid ""
 "This section is devoted to the structure and syntax of an execution plan "
-"template. For different configurations of templates, please refer to the "
-":ref:`Examples <examples>` section."
+"template. For different configurations of templates, please refer to the :"
+"ref:`Examples <examples>` section."
 msgstr ""
+"此节是解释执行计划模版的结构和语法的，对于模版的不同的配置，请参考:ref:"
+"`Examples <examples>` 一节。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:30
 msgid "Template sections"
@@ -52,51 +62,57 @@ msgid ""
 "default attributes which are used by the agent if any of the listed "
 "parameters is not specified."
 msgstr ""
+"下面的列表包含了各个章节的列表，这些章节包含了执行计划模版的意义描述以及如果"
+"在没有指定的列表参数的情况下代理所使用的默认属性。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:38
 msgid "Section name"
-msgstr ""
+msgstr "章节名称"
 
 #: ../../draft/appdev-guide/exec_plan.rst:38
 msgid "Meaning and default value"
-msgstr ""
+msgstr "释义和默认值"
 
 #: ../../draft/appdev-guide/exec_plan.rst:40
 msgid "FormatVersion"
-msgstr ""
+msgstr "格式版本"
 
 #: ../../draft/appdev-guide/exec_plan.rst:40
 msgid ""
 "a version of the execution plan template syntax format. Default is "
 "``1.0.0``. **Optional**"
-msgstr ""
+msgstr "执行计划模版语法格式的版本。默认是``1.0.0``。**可选项**"
 
 #: ../../draft/appdev-guide/exec_plan.rst:43
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #: ../../draft/appdev-guide/exec_plan.rst:43
 msgid ""
 "a human-readable name for the execution plan to be used for logging. "
 "**Optional**"
-msgstr ""
+msgstr "人类可读的执行计划的名字，用于日志记录。**可选项**"
 
 #: ../../draft/appdev-guide/exec_plan.rst:46
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../../draft/appdev-guide/exec_plan.rst:46
 msgid ""
 "a version of the execution plan itself, is used for logging and tracing. "
-"Each time the content of the template content changes (main script, attached"
-" scripts, properties, etc.), the version value should be incremented. This "
-"is in contrast with ``FormatVersion``, which is used to distinguish the "
-"execution plan format. The default value is ``0.0.0``. **Optional**"
+"Each time the content of the template content changes (main script, "
+"attached scripts, properties, etc.), the version value should be "
+"incremented. This is in contrast with ``FormatVersion``, which is used to "
+"distinguish the execution plan format. The default value is ``0.0.0``. "
+"**Optional**"
 msgstr ""
+"执行计划自身的版本，用于日志记录和跟踪。每次模版的内容有变化(主要脚本，附加"
+"脚本，属性，等等)，版本的值就应该增加。这里要提到的一点是，对比下``格式版本"
+"``，此是用来区分执行计划模版格式的。默认的值是 ``0.0.0``。**可选项**"
 
 #: ../../draft/appdev-guide/exec_plan.rst:56
 msgid "Body"
-msgstr ""
+msgstr "主体"
 
 #: ../../draft/appdev-guide/exec_plan.rst:56
 msgid ""
@@ -104,63 +120,73 @@ msgid ""
 "agent. Scripts defined in the Scripts section are invoked from here. "
 "**Required**"
 msgstr ""
+"Python声明的字符串表示，由murano-agent的执行。在脚本一节所定义的脚本都从这里"
+"调用。 **必须项**"
 
 #: ../../draft/appdev-guide/exec_plan.rst:61
 msgid "Parameters"
-msgstr ""
+msgstr "参数"
 
 #: ../../draft/appdev-guide/exec_plan.rst:61
 msgid ""
-"a dictionary of the ``String->JsonObject`` type that maps parameter names to"
-" their values. **Optional**."
-msgstr ""
+"a dictionary of the ``String->JsonObject`` type that maps parameter names "
+"to their values. **Optional**."
+msgstr "``String->JsonObject``类型的字典，其映射参数名到它的值。**可选项**。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:65
 msgid "Scripts"
-msgstr ""
+msgstr "脚本"
 
 #: ../../draft/appdev-guide/exec_plan.rst:65
 msgid ""
 "a dictionary that maps script names to their script definitions. "
 "**Required**"
-msgstr ""
+msgstr "映射脚本名称到它脚本定义的字典。**必须**"
 
 #: ../../draft/appdev-guide/exec_plan.rst:71
 msgid "FormatVersion property"
-msgstr ""
+msgstr "格式版本属性"
 
 #: ../../draft/appdev-guide/exec_plan.rst:73
 msgid ""
 "``FormatVersion`` is a property that all other depend on. That is why it is "
 "very important to specify it correctly."
 msgstr ""
+"``格式版本``是所有其它都依赖的属性，这就是正确的指定它是如此的重要的原因。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:76
 msgid ""
 "FormatVersion 1.0.0 (default) is still used by Windows murano-agent. New "
 "features that are introduced in Kilo, such as Chef or Puppet, and "
 "downloadable files require version 2.1.0, while nearly all the applications "
-"in murano-apps repository work with FormatVersion 2.0.0. And if you omit the"
-" ``FormatVersion`` property or put something like ``<2.0.0``, it will lead "
-"to the incorrect behaviour. The same happens if, for example, "
+"in murano-apps repository work with FormatVersion 2.0.0. And if you omit "
+"the ``FormatVersion`` property or put something like ``<2.0.0``, it will "
+"lead to the incorrect behaviour. The same happens if, for example, "
 "``FormatVersion=2.1.0``, and a VM has the pre-Kilo agent."
 msgstr ""
+"格式版本 1.0.0 (默认)仍然用于Windows的Murano-agent。在Kilo发行时引入了新的特"
+"性，如Chef,Puppet,以及可下载文件，即需要版本为2.1.0，目前绝大多数的murano-"
+"app仓库中的应用程序都工作在格式版本2.0.0下。如果你忽略掉了``格式版本``属性的"
+"话，或者是将类似``<2.0.0``填写给它，就会引起错误的结果。举个例子，定义"
+"``FormatVersion=2.1.0``，但是虚拟机中安装的是kilo之前的代理，必定出错。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:86
 msgid "Scripts section"
-msgstr ""
+msgstr "脚本一节"
 
 #: ../../draft/appdev-guide/exec_plan.rst:88
 msgid ""
 "Scripts are the building blocks of execution plan templates. As the name "
 "implies those are the scripts for different deployment platforms."
-msgstr ""
+msgstr "脚本是执行计划模版的基石。顾名思义，这些脚本是用于不同的部署平台的。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:92
 msgid ""
 "Each script may consists of one or more files. Those files are script's "
 "program modules, resource files, configs, certificates etc."
 msgstr ""
+"每个脚本可以由一个或多个文件组成。这些文件均是脚本的程序模块，资源文件，配"
+"置，凭证等等。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:95
 msgid ""
@@ -168,6 +194,9 @@ msgid ""
 "some functions that can be independently called in an execution plan script "
 "or both. This depends on deployment platform and executor capabilities."
 msgstr ""
+"脚本也许是作为一个整体来执行(犹如一单个的代码片段)，也可以是在一个执行计划脚"
+"本中跑出可以被独立调用的函数，或者是二者皆有。这取决于部署平台和执行器的能"
+"力。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:100
 msgid ""
@@ -175,10 +204,12 @@ msgid ""
 "attribute maps script name to a structure (document) that describes the "
 "script. It has the following properties:"
 msgstr ""
+"执行计划使用`Scripts``属性来指定脚本。此属性映射脚本的名称到一个描述脚本的结"
+"构体(文档)。它有以下属性："
 
 #: ../../draft/appdev-guide/exec_plan.rst:108
 msgid "**Type**"
-msgstr ""
+msgstr "**类型**"
 
 #: ../../draft/appdev-guide/exec_plan.rst:105
 msgid ""
@@ -186,30 +217,32 @@ msgid ""
 "alternative options for version>=2.1.0 are ``Application``, ``Chef``, "
 "``Puppet``, and for version<2.1.0 is ``Application`` only. String, required."
 msgstr ""
+"脚本的目标开发平台的名称。>=2.1.0的版本可用的可替换的属性有``Application``, "
+"``Chef``, ``Puppet``,<2.1.0的版本只能使用``Application``。字符串，必添项。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:112
 msgid "**Version**"
-msgstr ""
+msgstr "**版本**"
 
 #: ../../draft/appdev-guide/exec_plan.rst:111
 msgid ""
 "the minimum version of the deployment platform/executor required by the "
 "script. String, optional."
-msgstr ""
+msgstr "脚本需要的部署平台/执行器的最小版本。字符，可选项。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:116
 msgid "**EntryPoint**"
-msgstr ""
+msgstr "**入口点**"
 
 #: ../../draft/appdev-guide/exec_plan.rst:115
 msgid ""
 "the name of the script file that is an entry point for this execution plan "
 "template. String, required."
-msgstr ""
+msgstr "脚本文件的名称，是此执行计划模版的入口点。字符，必须。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:133
 msgid "**Files**"
-msgstr ""
+msgstr "**文件**"
 
 #: ../../draft/appdev-guide/exec_plan.rst:119
 msgid ""
@@ -217,14 +250,19 @@ msgid ""
 "script specified  in the ``EntryPoint`` section imports other scripts, they "
 "should be provided in this section."
 msgstr ""
+"脚本所需要的额外文件的文件名。如果在``EntryPoint``处指定了脚本需导入其它脚本"
+"的话，需要在这里填写。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:123
 msgid ""
 "The filenames may include slashes that the agent preserve on VM. If a "
-"filename is enclosed in the angle brackets (<...>) it will be "
-"base64-encoded. Otherwise, it will be treated as a plain-text that may "
-"affect line endings."
+"filename is enclosed in the angle brackets (<...>) it will be base64-"
+"encoded. Otherwise, it will be treated as a plain-text that may affect line "
+"endings."
 msgstr ""
+"文件名可包含斜杠，这在虚拟机中被代理解析。如果一个文件名是扩在尖括号内的(<…"
+">),则它会以64位加密的形式存在。否则，它将被以纯文本文件对待，可能会影响到行"
+"尾。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:128
 msgid ""
@@ -232,12 +270,14 @@ msgid ""
 "dictionaries (for example, ``filename: URL``) to specify downloadable files "
 "or git repositories."
 msgstr ""
+"在Kilo版本中，此属性的条目不仅可以支持字符，还支持目录(例如, ``filename: "
+"URL``)来指定可下载的文件或git仓库。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:132
 msgid ""
 "The default value is ``[]`` that means that no extra files are used. Array, "
 "optional."
-msgstr ""
+msgstr "默认值是``[]``的话，意味着没有额外要使用的文件。数组，可选项。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:147
 msgid "**Options**"
@@ -249,6 +289,8 @@ msgid ""
 "additional options for the script executor. If not provided, an empty "
 "dictionary is assumed."
 msgstr ""
+"类型为`String->JsonObject``的属性字典，包含了脚本执行的额外属性。如果没有提"
+"供，会假设有一个空的字典。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:140
 msgid ""
@@ -259,6 +301,10 @@ msgid ""
 "``captureStdout``, ``captureStderr`` and ``verifyExitcode`` require boolean "
 "values, and have True as their default values."
 msgstr ""
+"可用的属性有：``captureStdout``, ``captureStderr``, ``verifyExitcode``(如果"
+"结果不够活跃抛出异常)。作为执行器依赖的选项，这三个可用的替代属性均用于应用"
+"程序的执行，但是对于其它类型没有啥用。``captureStdout``, ``captureStderr`` "
+"和 ``verifyExitcode``均是布尔值，默认的值均为True。"
 
 #: ../../draft/appdev-guide/exec_plan.rst:147
 msgid "Dictionary, optional."
@@ -267,4 +313,4 @@ msgstr "目录，可选"
 #: ../../draft/appdev-guide/exec_plan.rst:149
 msgid ""
 "Please make sure the files specified in EntryPoint and Files sections exist."
-msgstr ""
+msgstr "请确定指定了入口文件和存在的文件部分。"

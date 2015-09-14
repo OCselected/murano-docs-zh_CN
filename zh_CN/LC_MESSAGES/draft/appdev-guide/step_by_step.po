@@ -1,15 +1,18 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Murano 1.0.0.0b1.54\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-21 22:16\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2015-09-14 19:54+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: 适兕 <lijiangsheng1@gmail.com>\n"
+"Language-Team: lijiangsheng1@gmail.com\n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 1.8.4\n"
 
 #: ../../draft/appdev-guide/step_by_step.rst:5
 msgid "Step-by-Step"
@@ -20,8 +23,7 @@ msgid ""
 "The goal of this manual is to walk you through the steps that should be "
 "taken while composing an application package to get it ready for uploading "
 "to Murano."
-msgstr ""
-"此文档的母的在于带领开发者们一步步的将自己的应用打包并上传到Murano。"
+msgstr "此文档的母的在于带领开发者们一步步的将自己的应用打包并上传到Murano。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:11
 msgid ""
@@ -38,29 +40,27 @@ msgid ""
 "machine and installs Apache HTTP Server on it. It may also install php if a "
 "user wants to."
 msgstr ""
-"ApacheHTTPServer是一个简单的Murano应用程序，其会生成一个虚拟机，然后在其中安装"
-"Apache HTTP 服务。如果用户愿意的话也会安装PHP。"
+"ApacheHTTPServer是一个简单的Murano应用程序，其会生成一个虚拟机，然后在其中安"
+"装Apache HTTP 服务。如果用户愿意的话也会安装PHP。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:20
 msgid ""
-"The source code of ApacheHTTPServer is available at `github "
-"<https://github.com/openstack/murano-"
-"apps/tree/master/ApacheHTTPServer/package>`_."
+"The source code of ApacheHTTPServer is available at `github <https://github."
+"com/openstack/murano-apps/tree/master/ApacheHTTPServer/package>`_."
 msgstr ""
-"ApacheHTTPServer的源码托管在`github"
-"<https://github.com/openstack/murano-"
+"ApacheHTTPServer的源码托管在`github<https://github.com/openstack/murano-"
 "apps/tree/master/ApacheHTTPServer/package>`_上。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:23
 msgid ""
 "ApacheHTTPServer's source code is written in MuranoPL. This programming "
 "language is object-oriented, and we will see classes, objects and object "
-"instances. The detailed explanation of its syntax can be found in the "
-":ref:`MuranoPL reference <murano-pl>`."
+"instances. The detailed explanation of its syntax can be found in the :ref:"
+"`MuranoPL reference <murano-pl>`."
 msgstr ""
-"ApacheHTTPServer的源代码是使用MuranoPL语言写就的，此是一种面向对象的编程"
-"语言，我们将会看到类、对象以及对象实例等。:ref:`MuranoPL reference <murano-pl>`"
-"解释了此语言的细节，请参阅。"
+"ApacheHTTPServer的源代码是使用MuranoPL语言写就的，此是一种面向对象的编程语"
+"言，我们将会看到类、对象以及对象实例等。:ref:`MuranoPL reference <murano-"
+"pl>`解释了此语言的细节，请参阅。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:30
 msgid ""
@@ -69,9 +69,9 @@ msgid ""
 "requirements <lab_requirements>` in order you do not risk starting with a "
 "wrong environment"
 msgstr ""
-"在你开始创建Murano应用程序的流程之前，请仔细阅读 :ref:`系统前提需求<system_prerequisites>` "
-"和 :ref:`需求<system_prerequisites>` ，以降低搭建了错误的环境的风险。"
-
+"在你开始创建Murano应用程序的流程之前，请仔细阅读 :ref:`系统前提需求"
+"<system_prerequisites>` 和 :ref:`需求<system_prerequisites>` ，以降低搭建了"
+"错误的环境的风险。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:41
 msgid "Step 1. Create the structure of the package"
@@ -81,8 +81,7 @@ msgstr "步骤1. 创建包的结构"
 msgid ""
 "You should structure an application package very neatly in order the "
 "application could be managed and deployed in the catalog successfully."
-msgstr ""
-"你须整齐的组织应用程序包的结构，为了能够在将应用成功的部署和可管理。"
+msgstr "你须整齐的组织应用程序包的结构，为了能够在将应用成功的部署和可管理。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:47
 msgid "The package structure of ApacheHTTPServer package is::"
@@ -90,11 +89,10 @@ msgstr "ApacheHTTPServer的包的结构是::"
 
 #: ../../draft/appdev-guide/step_by_step.rst:66
 msgid ""
-"The detailed information regarding the package structure can be found in the"
-" `Murano packages structure <package_structure>`_ section."
+"The detailed information regarding the package structure can be found in "
+"the `Murano packages structure <package_structure>`_ section."
 msgstr ""
 "关于包的结构的细节信息，请查阅`Murano包结构<package_structure>`_ section。"
-
 
 #: ../../draft/appdev-guide/step_by_step.rst:71
 msgid "Step 2. Create the manifest file"
@@ -108,7 +106,6 @@ msgid ""
 msgstr ""
 "应用程序的manifest文件包含了通用的应用元数据。它是每个Murano应用的入口点，且"
 "它非常类似于jar归档的manifest。它的固定格式基于YAML。"
-
 
 #: ../../draft/appdev-guide/step_by_step.rst:77
 msgid "The ApacheHTTPServer's manifest file:"
@@ -128,8 +125,8 @@ msgid ""
 "changes. Format key presents in each manifest file. Currently, ``1.0`` is "
 "the only available version:"
 msgstr ""
-"指定mainfest.xml格式的版本是跟踪语法的变更。在每个manifest文件中都有格式关键字，"
-"目前，``1.0``是唯一可用的版本："
+"指定mainfest.xml格式的版本是跟踪语法的变更。在每个manifest文件中都有格式关键"
+"字，目前，``1.0``是唯一可用的版本："
 
 #: ../../draft/appdev-guide/step_by_step.rst:110
 msgid "Type"
@@ -143,8 +140,7 @@ msgstr "指定包的类型:"
 msgid ""
 "``Application`` starts with the capital letter. This is the naming "
 "convention for all the pre-defined values in Murano code."
-msgstr ""
-"``应用``以大写字母开始。这是在Murano代码中预先定义的命名规范。"
+msgstr "``应用``以大写字母开始。这是在Murano代码中预先定义的命名规范。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:124
 msgid "FullName"
@@ -156,18 +152,19 @@ msgid ""
 "recognize to which scope an application belongs. All other applications can "
 "address to the Apache application methods by this name."
 msgstr ""
-"代表了唯一的服务应用名。此名允许简单的识别应用属于那个范畴。所有的其它应用"
-"都可通过此名称来找到Apache应用。"
+"代表了唯一的服务应用名。此名允许简单的识别应用属于那个范畴。所有的其它应用都"
+"可通过此名称来找到Apache应用。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:131
 msgid ""
 "To ensure the global uniqueness, the same naming convention as the naming "
-"convention of Java packages and classes is followed. The "
-"``io.murano.apps.apache.`` part is the \"package\" part of the name, while "
+"convention of Java packages and classes is followed. The ``io.murano.apps."
+"apache.`` part is the \"package\" part of the name, while "
 "``ApacheHttpServer`` stands for the \"class\" part of the name:"
 msgstr ""
-"要确保全局唯一，和Java包有着相同的命名规范和相应的类。``io.murano.apps.apache.``"
-"部分是\"package\"名的一部分，``ApacheHttpServer``代表了名称的\"class\"部分："
+"要确保全局唯一，和Java包有着相同的命名规范和相应的类。``io.murano.apps."
+"apache.``部分是\"package\"名的一部分，``ApacheHttpServer``代表了名称的"
+"\"class\"部分："
 
 #: ../../draft/appdev-guide/step_by_step.rst:142
 msgid ""
@@ -177,8 +174,8 @@ msgid ""
 "example, ``org.openstack.apps.Rally``"
 msgstr ""
 "有必要将所有的应用归到同一个域下。此命名方式允许通过它的名称来决定应用的组。"
-"OpenStack相关的应用有全名，以``org.openstack.apps``开头，例如，``org.openstack.apps.Rally``"
-
+"OpenStack相关的应用有全名，以``org.openstack.apps``开头，例如，``org."
+"openstack.apps.Rally``"
 
 #: ../../draft/appdev-guide/step_by_step.rst:149
 #: ../../draft/appdev-guide/step_by_step.rst:497
@@ -200,8 +197,7 @@ msgstr "Description"
 #: ../../draft/appdev-guide/step_by_step.rst:161
 msgid ""
 "Contains the application decription rendered under the application title:"
-msgstr ""
-"包含了应用程序的描述，进一步的诠释了应用的标题:"
+msgstr "包含了应用程序的描述，进一步的诠释了应用的标题:"
 
 #: ../../draft/appdev-guide/step_by_step.rst:175
 msgid "Lets's take a closer look at the syntax:"
@@ -210,27 +206,26 @@ msgstr "让我们近距离看一下语法:"
 #: ../../draft/appdev-guide/step_by_step.rst:177
 msgid ""
 "The vertical line ``|`` symbol comes from YAML syntax. The ``>`` symbol can "
-"be used interchangeably. These are the `YAML block style indicators "
-"<http://yaml.org/spec/current.html#id2537921>`_, which mean that all the "
-"leading indents and new line symbols should be preserved. This is very "
-"useful for long, multi-line descriptions, because this affects how they are "
-"desplayed on the UI."
+"be used interchangeably. These are the `YAML block style indicators <http://"
+"yaml.org/spec/current.html#id2537921>`_, which mean that all the leading "
+"indents and new line symbols should be preserved. This is very useful for "
+"long, multi-line descriptions, because this affects how they are desplayed "
+"on the UI."
 msgstr ""
 "竖杠``|``符号来自YAML的语法。``>``符号用于互换。这些是`YAML模块式的指标"
 "<http://yaml.org/spec/current.html#id2537921>`_,意思是所有的缩进和新行的符号"
 "须保留。这对于长的，多行的描述非常有用，因为这会影响到在界面中如何显示。"
-""
 
 #: ../../draft/appdev-guide/step_by_step.rst:185
 msgid ""
 "Avoid tab symbols inside YAML files. If YAML contains the tab symbol, it "
 "will not be parsed correctly. The error message may be cryptic or "
-"misleading. We recommend that you check the YAML syntax before composing the"
-" application package using any of the available online tools."
+"misleading. We recommend that you check the YAML syntax before composing "
+"the application package using any of the available online tools."
 msgstr ""
-"在YAML文件中要避免tab键，如果YAML包含了tab键，将无法正常的解析。错误的信息可能"
-"是隐含的或误导性的。我们建议在打包应用之前要检查YAML的语法，可使用任何的在线工具"
-"来完成。"
+"在YAML文件中要避免tab键，如果YAML包含了tab键，将无法正常的解析。错误的信息可"
+"能是隐含的或误导性的。我们建议在打包应用之前要检查YAML的语法，可使用任何的在"
+"线工具来完成。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:192
 msgid "Author"
@@ -245,8 +240,8 @@ msgstr ""
 
 #: ../../draft/appdev-guide/step_by_step.rst:202
 msgid ""
-"Single quotes usage is optional here: ``Author: 'Mirantis, Inc'``, thus they"
-" are omitted in the code extract below."
+"Single quotes usage is optional here: ``Author: 'Mirantis, Inc'``, thus "
+"they are omitted in the code extract below."
 msgstr ""
 "单引号的使用在这里是可选的：``Author: 'Mirantis, Inc'``,因此在下面的代码中会"
 "被忽略。"
@@ -266,8 +261,7 @@ msgstr ""
 msgid ""
 "Besides, YAML allows tag specification using another syntax, which is an "
 "equivalent to the one given above:"
-msgstr ""
-"另外，YAML允许标签的指定使用其它的语法，等同于上面给出的:"
+msgstr "另外，YAML允许标签的指定使用其它的语法，等同于上面给出的:"
 
 #: ../../draft/appdev-guide/step_by_step.rst:229
 msgid "Classes"
@@ -275,25 +269,23 @@ msgstr "Classes"
 
 #: ../../draft/appdev-guide/step_by_step.rst:231
 msgid ""
-"Is a mapping between all classes present in ApacheHttpServer application and"
-" the file names where these classes are defined in. This is one-to-one "
-"relatioonship, which means that there is one and the only class per a single"
-" file."
+"Is a mapping between all classes present in ApacheHttpServer application "
+"and the file names where these classes are defined in. This is one-to-one "
+"relatioonship, which means that there is one and the only class per a "
+"single file."
 msgstr ""
-"在ApacheHttpServer应用中所有的类和包含这些类的定义的文件名之间的映射。这是一对一"
-"的关系，也就意味着在单个文件中有且仅有一个类。"
-""
+"在ApacheHttpServer应用中所有的类和包含这些类的定义的文件名之间的映射。这是一"
+"对一的关系，也就意味着在单个文件中有且仅有一个类。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:235
 msgid ""
 "The line ``io.murano.apps.apache.ApacheHttpServer: ApacheHttpServer.yaml`` "
-"says that the class ``io.murano.apps.apache.ApacheHttpServer`` is defined in"
-" the file ``ApacheHttpServer.yaml``:"
+"says that the class ``io.murano.apps.apache.ApacheHttpServer`` is defined "
+"in the file ``ApacheHttpServer.yaml``:"
 msgstr ""
 "行 ``io.murano.apps.apache.ApacheHttpServer: ApacheHttpServer.yaml`` 表示类"
 "``io.murano.apps.apache.ApacheHttpServer``在文件``ApacheHttpServer.yaml``中"
 "所定义:"
-
 
 #: ../../draft/appdev-guide/step_by_step.rst:244
 msgid "Step 3. Create the execution plan template"
@@ -303,11 +295,11 @@ msgstr "步骤 3. 创建执行计划模版"
 msgid ""
 "The execution plan template contains the instructions understandable to the "
 "murano agent on what should be executed to deploy an application. It is the "
-"file with the ``.template`` extension located in the ``/APP_NAME/resources``"
-" directory."
+"file with the ``.template`` extension located in the ``/APP_NAME/"
+"resources`` directory."
 msgstr ""
-"执行计划模版包含了murano代理可以理解的须执行什么来部署应用的说明。它是后缀``"
-".template``的文件，放在``/APP_NAME/resrouce``目录下。"
+"执行计划模版包含了murano代理可以理解的须执行什么来部署应用的说明。它是后缀"
+"``.template``的文件，放在``/APP_NAME/resrouce``目录下。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:250
 msgid "The ApacheHTTPServer's DeployApache.template:"
@@ -322,6 +314,10 @@ msgid ""
 "also located at the ``Resources`` directory and installs apache app and php "
 "if selected."
 msgstr ""
+"正如它可以从源代码来查看，除了指定的不同条目的版本，ApacheHTTPServer执行计划"
+"接受参数``enablePHP``。此参数是个用户输入参数，传递给脚本``apacheDeploy."
+"sh``。此脚本会调用执行``runApacheDeploy.sh``，此脚本也是在目录``Resources``"
+"下，它就是用来安装apache应用，如果选择了PHP的话，还会安装PHP。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:281
 msgid ""
@@ -329,8 +325,8 @@ msgid ""
 "sections and syntax, please refer to the :ref:`Execution plan template "
 "<exec_plan>`."
 msgstr ""
-"想获得执行计划模版的章节和语法的细节信息，请参阅:ref:`Execution plan template "
-"<exec_plan>`。"
+"想获得执行计划模版的章节和语法的细节信息，请参阅:ref:`Execution plan "
+"template <exec_plan>`。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:286
 msgid "Step 4. Create the dynamic UI form definition"
@@ -353,8 +349,7 @@ msgstr "应用"
 msgid ""
 "Defines the object model by which engine deploys the ApacheHTTPServer "
 "application, and includes YAQL expressions."
-msgstr ""
-
+msgstr "定义的对象模型引擎部署ApacheHTTPServer应用程序,并且包括YAQL表达式。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:358
 msgid ""
@@ -362,13 +357,17 @@ msgid ""
 "provided in the manifest, named with the `?` symbol. This indicates system "
 "information:"
 msgstr ""
+"此节包含了Apache类的参考，其中在manifest中提供，名称是`?`号。此表明了系统信"
+"息："
 
 #: ../../draft/appdev-guide/step_by_step.rst:369
 msgid ""
 "For ApacheHTTPServer application it is defined that the user should input "
-"the application name, some instance parameters and decide whether PHP should"
-" be enabled or not:"
+"the application name, some instance parameters and decide whether PHP "
+"should be enabled or not:"
 msgstr ""
+"对于ApacheHTTPServer应用程序来说，它定义用户须输入应用的名称，还有实例的一些"
+"参数，以及是否决定启用PHP："
 
 #: ../../draft/appdev-guide/step_by_step.rst:376
 msgid ""
@@ -378,14 +377,21 @@ msgid ""
 "mark with the defined type ``io.murano.resources.LinuxMuranoInstance`` "
 "indicates an instance of MuranoPl object."
 msgstr ""
+"`instance`一节假设了一些值，用户输入的第一个表单中名称为"
+"``appConfiguration`` 是保存在一个应用对象模块中的。对于实例参数是相同的。提"
+"供定义的类型的问号``io.murano.resources.LinuxMuranoInstance``表明了MuranoPI"
+"对象的实例。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:389
 msgid ""
 "This parameter is named ``instance`` here because its class definition "
-"property has the ``instance`` name. You can specify any name in the "
-":ref:`class definition file <step_5_class_definition>`, and then use it in "
-"the UI form definition."
+"property has the ``instance`` name. You can specify any name in the :ref:"
+"`class definition file <step_5_class_definition>`, and then use it in the "
+"UI form definition."
 msgstr ""
+"此参数在这里被命名为``instance``，因为它的类定义属性拥有``instance``名称。你"
+"可以:ref:`class definition file <step_5_class_definition>`中指定任何的名字，"
+"且这会在UI表单定义中用到。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:395
 msgid "Forms"
@@ -395,33 +401,37 @@ msgstr "Forms"
 msgid ""
 "Contains UI forms prototypes that are merged to the application creation "
 "wizard."
-msgstr ""
+msgstr "包含UI表单的原型，会合并到应用创建向导中。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:400
 msgid ""
 "Each form field will be translated to the Django field and most of the "
-"parameters correspond to parameters in the Django form field. All fields are"
-" required by default. Hidden fields are used to print extra information in "
-"the form description."
+"parameters correspond to parameters in the Django form field. All fields "
+"are required by default. Hidden fields are used to print extra information "
+"in the form description."
 msgstr ""
+"每个表单字段都会翻译为Django字段，而且多数参数也要对应到Django表单字段中的参"
+"数。所有的字段都需要默认值。隐藏字段均在表单描述中使用打印额外的信息。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:405
 msgid ""
 "After the upload, the section content will be browsed on the left side of "
 "the form and its description on the right."
-msgstr ""
+msgstr "上传之后，此节内容将出现在浏览器的左边的表单，后边是描述。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:408
 msgid ""
 "Please take a look at the :guilabel:`Configure Application: Apache HTTP "
 "Server` dialog:"
-msgstr ""
+msgstr "请看下:guilabel:`Configure Application: Apache HTTP Server` 对话框："
 
 #: ../../draft/appdev-guide/step_by_step.rst:413
 msgid ""
 "The :guilabel:`assignFloatingIP` and :guilabel:`enablePHP` boolean fields "
 "are shown as checkboxes."
 msgstr ""
+":guilabel:`assignFloatingIP` 和 :guilabel:`enablePHP` 布尔值字段使用复选框来"
+"显示。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:416
 msgid "Here is how the second dialog looks like:"
@@ -453,17 +463,21 @@ msgid ""
 "Can be named *shortcuts* since this is an additional section which enables "
 "short names instead of the long ones:"
 msgstr ""
+"可以命名为*shortcuts*，因为这是一个额外的章节，其可以使用短名称来替代长名"
+"称："
 
 #: ../../draft/appdev-guide/step_by_step.rst:494
 msgid "``=:`` refers to the *current* namespace"
-msgstr ""
+msgstr "``=:`` 指的是 *当前的* 命名空间"
 
 #: ../../draft/appdev-guide/step_by_step.rst:499
 msgid ""
 "Contains the class name that is defined in this file. So full class name "
-"will be current namespace and name, provided by corresponding key:  "
-"``io.murano.apps.apache.ApacheHttpServer``:"
+"will be current namespace and name, provided by corresponding key:  ``io."
+"murano.apps.apache.ApacheHttpServer``:"
 msgstr ""
+"包含在此文件中所定义的类名。所以类对全名就是当前的命名空间和名称，通过对应的"
+"键:  ``io.murano.apps.apache.ApacheHttpServer``来提供："
 
 #: ../../draft/appdev-guide/step_by_step.rst:507
 msgid "One .yaml file should contain only one class definition."
@@ -475,17 +489,19 @@ msgstr "Extends"
 
 #: ../../draft/appdev-guide/step_by_step.rst:512
 msgid ""
-"Determines inheritance, and ``io.murano.Application`` should be a parent for"
-" all the murano applications."
-msgstr ""
+"Determines inheritance, and ``io.murano.Application`` should be a parent "
+"for all the murano applications."
+msgstr "决定继承，且``io.murano.Application``须是所有murano应用的父类。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:515
 msgid ""
-"This class has defined deploy method and only instances of that class can be"
-" used in Environment class. Environment class, in its turn, is responsible "
-"for the deployment configurations. Definition of both classes are located at"
-" meta/io.murano folder of murano repository."
+"This class has defined deploy method and only instances of that class can "
+"be used in Environment class. Environment class, in its turn, is "
+"responsible for the deployment configurations. Definition of both classes "
+"are located at meta/io.murano folder of murano repository."
 msgstr ""
+"此类被定义为部署方法，而且只有类的实例可以用于环境类。环境类，是负责部署的配"
+"置。这两个类的定义都可在murano仓库的meta/io.murano目录下找到。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:519
 msgid ""
@@ -493,6 +509,8 @@ msgid ""
 "set io.murano.apps.apache.ApacheHttpServer in the Extends section of a new "
 "Application class:"
 msgstr ""
+"因此，如果你打算对ApacheHttpServer做一些修改的话，你可以在扩展一节中设置io."
+"murano.apps.apache.ApacheHttpServer为一个新的应用类："
 
 #: ../../draft/appdev-guide/step_by_step.rst:527
 msgid "Properties"
@@ -500,21 +518,25 @@ msgstr "Properties"
 
 #: ../../draft/appdev-guide/step_by_step.rst:529
 msgid ""
-"Defines the dictionary. Apache HTTP Server application has three properties:"
-" ``name``, ``enablePHP`` and ``instance``. For each of them certain "
-"``Contract`` is defined."
+"Defines the dictionary. Apache HTTP Server application has three "
+"properties: ``name``, ``enablePHP`` and ``instance``. For each of them "
+"certain ``Contract`` is defined."
 msgstr ""
+"定义的字典。Apache HTTP Server 应用拥有三个属性：``name``, ``enablePHP`` 以"
+"及 ``instance``。它们当中的每一个都包含定义的``Contract`` 。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:533
 msgid ""
 "Only ``enablePHP`` is optional, and its default value equals to ``false``."
-msgstr ""
+msgstr "只有``enablePHP``是可选项，其默认值为``false``。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:535
 msgid ""
 "``Instance`` is the required parameter and should be an instance of the "
 "predefined in core library ``io.murano.resources.Instance`` class."
 msgstr ""
+"``Instance`` 是必须的参数，且须是在核心库中 ``io.murano.resources."
+"Instance`` 类预先定义的实例。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:538
 msgid "Methods"
@@ -525,23 +547,26 @@ msgid ""
 "The ``initialize`` method is like ``__init__`` in Python, and executes "
 "together with properties initialization."
 msgstr ""
+" ``initialize`` 方法类似于Python中的`__init__``，且和属性初始化一起执行。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:543
 msgid ""
 "It accesses the environment, which the application belongs to, and is used "
 "only for sending reports about the deployment state."
-msgstr ""
+msgstr "其访问应用所属的环境，然后仅仅是用来发送关于部署状态的报告的。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:546
 msgid "Private variable ``_environment`` is defined as follows:"
-msgstr ""
+msgstr "私有变量``_environment``定义如下："
 
 #: ../../draft/appdev-guide/step_by_step.rst:555
 msgid ""
 "The ``deploy`` method sets up instance spawning and configuration. This "
-"method should be executed only once. So in the first order deployed variable"
-" is checked to be false in the current scope."
+"method should be executed only once. So in the first order deployed "
+"variable is checked to be false in the current scope."
 msgstr ""
+"``deploy`` 方法设置实例的生成和配置。此方法仅执行一次。所以在当前环境下，首"
+"先第一个检查部署变量是否为false。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:559
 msgid "It performs the following actions:"
@@ -557,27 +582,26 @@ msgstr "发起新的虚拟机的生成:``$.instance.deploy()``"
 
 #: ../../draft/appdev-guide/step_by_step.rst:563
 msgid ""
-"loads the execution plan template, located in the ``Resources`` directory to"
-" the instance of resources class: "
-"``$resources.yaml('DeployApache.template')``"
+"loads the execution plan template, located in the ``Resources`` directory "
+"to the instance of resources class: ``$resources.yaml('DeployApache."
+"template')``"
 msgstr ""
-"加载可执行的计划模版，在``Resources``目录下，实例的资源类:"
-"``$resources.yaml('DeployApache.template')``"
+"加载可执行的计划模版，在``Resources``目录下，实例的资源类:``$resources."
+"yaml('DeployApache.template')``"
 
 #: ../../draft/appdev-guide/step_by_step.rst:565
 msgid ""
 "updates the plan with parameters taken from the user: ``bind(dict(enablePHP "
 "=> $.enablePHP))``"
-msgstr ""
-"使用由用户提供的参数``bind(dict(enablePHP => $.enablePHP))``更新计划"
+msgstr "使用由用户提供的参数``bind(dict(enablePHP => $.enablePHP))``更新计划"
 
 #: ../../draft/appdev-guide/step_by_step.rst:566
 msgid ""
-"sends ready-to-execute-plan to murano agent: "
-"``$.instance.agent.call($template, $resources)``"
+"sends ready-to-execute-plan to murano agent: ``$.instance.agent."
+"call($template, $resources)``"
 msgstr ""
-"发送ready-to-execute-plan给murano 代理:"
-"``$.instance.agent.call($template, $resources)``"
+"发送ready-to-execute-plan给murano 代理:``$.instance.agent.call($template, "
+"$resources)``"
 
 #: ../../draft/appdev-guide/step_by_step.rst:570
 msgid "Step 6. Add the application logo (optional)"
@@ -586,17 +610,16 @@ msgstr "步骤 6. 添加应用程序logo (可选)"
 #: ../../draft/appdev-guide/step_by_step.rst:572
 msgid ""
 "Download or create your own ``.png`` image associated with your application."
-msgstr ""
-"下载或创建你自己的``.png``图片，将之分配给你的应用。"
+msgstr "下载或创建你自己的``.png``图片，将之分配给你的应用。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:574
 msgid ""
 "The recommended size is 70x70 px, and the square shape is preferable. There "
-"are no limits regarding the image filename. In Apache HTTP Server we use the"
-" default name ``logo.png``:"
+"are no limits regarding the image filename. In Apache HTTP Server we use "
+"the default name ``logo.png``:"
 msgstr ""
-"建议的大小是 70x70 px，优先正方形。对图片的文件名没有任何的限制。在Apache HTTP"
-"服务中，我们使用默认的名称``logo.png``："
+"建议的大小是 70x70 px，优先正方形。对图片的文件名没有任何的限制。在Apache "
+"HTTP服务中，我们使用默认的名称``logo.png``："
 
 #: ../../draft/appdev-guide/step_by_step.rst:582
 msgid "Step 7.  Compose a zip archive"
@@ -608,8 +631,8 @@ msgid ""
 "format. If the command is executed from the console, do not forget to add "
 "the ``-r`` option to include all the attachments."
 msgstr ""
-"选择所有为软件包所准备的文件，然后创建一个zip格式的归档。如果是从终端执行命令，"
-"不要忘记参数``-r``来将所有的文件都纳入。"
+"选择所有为软件包所准备的文件，然后创建一个zip格式的归档。如果是从终端执行命"
+"令，不要忘记参数``-r``来将所有的文件都纳入。"
 
 #: ../../draft/appdev-guide/step_by_step.rst:589
 msgid ""
@@ -617,11 +640,9 @@ msgid ""
 "manifest should be located in the archive root directory."
 msgstr ""
 "mainfest文件不应包含根文件夹。换句话说，manifest须在归档的root目录下。"
-""
 
 #: ../../draft/appdev-guide/step_by_step.rst:594
 msgid ""
 "**Congratulations! Your application is ready to be uploaded to the "
 "application catalog.**"
-msgstr ""
-"**恭喜！你的应用已经准备好上传到应用目录中了。**"
+msgstr "**恭喜！你的应用已经准备好上传到应用目录中了。**"
