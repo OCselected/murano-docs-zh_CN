@@ -1,15 +1,18 @@
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Murano 1.0.0.0b1.54\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-07-21 22:16\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2015-09-15 18:09+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Last-Translator: 适兕 <lijiangsheng1@gmail.com>\n"
+"Language-Team: lijiangsheng1@gmail.com\n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 1.8.4\n"
 
 #: ../../draft/appdev-guide/murano_packages.rst:8
 msgid "Murano packages"
@@ -24,8 +27,8 @@ msgid ""
 "The structure of the Murano application package is predefined. An "
 "application could be successfully uploaded to an application catalog."
 msgstr ""
-"Murano应用程序软件包的结构是预先定义的，一个应用需能够成功的将之上传"
-"到应用程序目录。"
+"Murano应用程序软件包的结构是预先定义的，一个应用需能够成功的将之上传到应用程"
+"序目录。"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:9
 msgid "The application package root folder should contain the following:"
@@ -81,28 +84,30 @@ msgstr "应用所分配到的图片文件。"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:31
 msgid ""
-"There are no any special limitations regarding an image filename. Though, if"
-" it differs from the default ``logo.png``, specify it in an application "
+"There are no any special limitations regarding an image filename. Though, "
+"if it differs from the default ``logo.png``, specify it in an application "
 "manifest file."
 msgstr ""
+"没有对图片的文件名有任何特别的限制。尽管如此，如果不是使用默认的``logo."
+"png``，要在应用的manifest文件中指出。"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:36
 msgid "**images.lst** file (optional)"
-msgstr ""
+msgstr "**images.lst**文件(可选)"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:36
 msgid "contains a list of images required by an application."
-msgstr ""
+msgstr "包含由应用所需的镜像列表。"
 
 #: ../../draft/appdev-guide/muranopackages/package_structure.rst:38
 msgid ""
 "Here is the visual representation of the Murano application package "
 "structure:"
-msgstr ""
+msgstr "如下是Murano应用包结构的图形化的表示："
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:4
 msgid "Dynamic UI definition specification"
-msgstr ""
+msgstr "动态 UI 定义规范"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:6
 msgid ""
@@ -111,52 +116,59 @@ msgid ""
 "applications that will be presented in the catalog and which web forms are "
 "required to create an application instance.  So all application definitions "
 "should contain an instruction, which tells the dashboard how to create an "
-"application and what validations need to be applied. This document will help"
-" you compose a valid UI definition for your application."
+"application and what validations need to be applied. This document will "
+"help you compose a valid UI definition for your application."
 msgstr ""
+"动态 UI 的主要目的是为了生成应用时动态的创建表单。Murano 控制面板对于应用没"
+"有任何的了解，应用要在目录中显现，那么创建应用的实例就需要web表单。所以所有"
+"的应用定义须包含一个说明，此说明告诉控制面板如何去创建一个应用，而且需要应用"
+"的验证。本文档会帮助你为你的应用定义好一个合法的 UI。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:15
 msgid "File Structure"
-msgstr ""
+msgstr "文件结构"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:17
 msgid ""
 "The UI definition should be a valid yaml file and should contain the "
 "following sections (for version 2):"
-msgstr ""
+msgstr "UI 的定义须是合法的yaml文件，且须包含下面的小节(针对于版本2)："
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:19
 msgid "**Version** - points out to which syntax version is used, optional"
-msgstr ""
+msgstr "**Version** - 指出使用那个语法的版本，可选"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:20
 msgid ""
 "**Templates** - optional, auxiliary section, used together with an "
 "Application section, optional"
-msgstr ""
+msgstr "**Templates** - 可选的，辅助部分，和应用的部分一起使用，"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:21
 msgid ""
 "**Application** - object model description which will be used for "
 "application deployment, required"
-msgstr ""
+msgstr "**Application** - 对象模型描述，用于应用的部署，必须的。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:22
 msgid "**Forms** - web form definitions, required"
-msgstr ""
+msgstr "**Forms** -  web表单定义，必须的"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:25
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:27
 msgid ""
-"The syntax and format of dynamic UI definitions may change over time, so the"
-" concept of `format versions` is introduced. Each UI definition file may "
-"contain a top-level section called `Version` to indicate the minimum version"
-" of Murano Dynamic UI platform which is capable to process it. If the "
-"section is missing, the format version is assumed to be 1."
+"The syntax and format of dynamic UI definitions may change over time, so "
+"the concept of `format versions` is introduced. Each UI definition file may "
+"contain a top-level section called `Version` to indicate the minimum "
+"version of Murano Dynamic UI platform which is capable to process it. If "
+"the section is missing, the format version is assumed to be 1."
 msgstr ""
+"动态 UI 定义的语法和格式随着时间的推移可以会有所更改，所以引入了`格式版本`的"
+"概念。每个 UI 的定义文件会包含一个顶级的小节，名称叫 `Version` 来表明Murano "
+"动态 UI 平台那个最小版本可以处理它。如果忽略了此部分，则格式版本会假设为1。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:33
 msgid ""
@@ -168,6 +180,10 @@ msgid ""
 "2.2 is able to process UI definitions of versions 2.0, 2.1 and 2.2, but is "
 "unable to process 2.3, 3.0 or 1.9."
 msgstr ""
+"版本包含两个非负整数，以点来分隔，例如，这样的形式`主要.次要`。动态 UI 平台"
+"有着相同的主要组件是兼容的：例如，如果它们的主要部分是一样的，那么平台高的版"
+"本就可以处理 UI 定义稍低的版本。举例来说，Murano 动态 UI 平台的版本是2.2可以"
+"处理 UI 定义的版本为2.0，2.1,2.2,但是无法处理版本为2.3，3.0，1.9。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:42
 msgid ""
@@ -175,6 +191,8 @@ msgid ""
 "incompatible with UI definitions of Version 1, which were used in Murano "
 "releases before Juno."
 msgstr ""
+"目前动态 UI 平台最新的版本是2.0 。它和UI定义版本1是不兼容的，版本1的是Juno之"
+"前Murano所使用的版本。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:48
 msgid ""
@@ -183,24 +201,33 @@ msgid ""
 "Murano. So, be sure to specify the compatible format version when designing "
 "your UI definitions."
 msgstr ""
+"尽管字段`Version`被认为是可选的，且默认值为1.0，但是如此的定义对Murano最新的"
+"版本是无法处理的。所以，当设计的UI定义时要确保指定了兼容的格式版本。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:55
 msgid "Application and Templates"
-msgstr ""
+msgstr "应用和模版"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:57
 msgid ""
 "The Application section describes an *application object model*. This model "
 "will be translated into json, and an application will be deployed according "
-"to that json. The application section should contain all necessary keys that"
-" are required by the murano-engine to deploy an application. Note that under"
-" *?* section system part of the model goes. So murano understands that "
-"instead of simple value MuranoPL object is used. You can pick parameters you"
-" got from a user (they should be described in the Forms section) and pick "
-"the right place where they should be set. To do this `YAQL "
-"<https://github.com/ativelkov/yaql/blob/master/README.md>`_ is used. Two "
-"yaql functions are used for object model generation:"
+"to that json. The application section should contain all necessary keys "
+"that are required by the murano-engine to deploy an application. Note that "
+"under *?* section system part of the model goes. So murano understands that "
+"instead of simple value MuranoPL object is used. You can pick parameters "
+"you got from a user (they should be described in the Forms section) and "
+"pick the right place where they should be set. To do this `YAQL <https://"
+"github.com/ativelkov/yaql/blob/master/README.md>`_ is used. Two yaql "
+"functions are used for object model generation:"
 msgstr ""
+"应用程序部分描述了*应用对象模型*。此模型将会翻译为json，且应用会根据此json来"
+"部署。应用程序部分须包含所有需要的键，这些键均是murano-engine用来部署应用所"
+"必需的。注意在*?* 下的部分也是系统的一个部分。所以murano能够理解替代使用"
+"MuranoPL对象的简单值。你可以从用户哪里获取到的来挑选参数(它们须在表单部分有"
+"所描述)，且要挑选出哪里是他们应该去设置的正确的地方。要完成这些得用到YAQL "
+"<https://github.com/ativelkov/yaql/blob/master/README.md>`_。对于对象模型生"
+"成有两个yaql功能可用："
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:69
 msgid ""
@@ -209,22 +236,27 @@ msgid ""
 "present in name pattern, it will be replaced with the index provided. If "
 "pattern is not given, a random name will be generated."
 msgstr ""
+"**generateHostname** 用于机器主机名的生成；它接受2个参数：名称模式(字符)和索"
+"引(整数)。如果在名称模式中使用了'#' 符号，它会由索引所提供的替代。如果没有提"
+"供模式，会生成一个随机的名称。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:70
 msgid ""
 "**repeat** is used to produce a list of data snippets, given the template "
-"snippet (first argument) and number of times it should be reproduced (second"
-" argument). Inside that template snippet current step can be referenced as "
-"*$index*."
+"snippet (first argument) and number of times it should be reproduced "
+"(second argument). Inside that template snippet current step can be "
+"referenced as *$index*."
 msgstr ""
+"**repeat** 是用于生产的数据片段列表，给定模版片段(第一个参数),以及重复的次数"
+"(第二个参数)。在模版片段内部当前步可以参考为 *$index*。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:81
 msgid "*Example:*"
-msgstr ""
+msgstr "*例子:*"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:117
 msgid "Forms"
-msgstr ""
+msgstr "表单"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:119
 msgid ""
@@ -232,59 +264,63 @@ msgid ""
 "currently rendered and validated with Django. Each form has a name, field "
 "definitions (mandatory) and validator definitions (optionally)."
 msgstr ""
+"此节描述了定义表单的标记元素，当前均有Django来呈现和验证。每个表单都有一个名"
+"称，字段定义(强制性的)和验证定义(可选)。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:122
 msgid "Note, that each form is splitted into 2 parts:"
-msgstr ""
+msgstr "注意，每个表单都被分为2个部分："
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:124
 msgid "**input area** - left side, where all the controls are located"
-msgstr ""
+msgstr "**输入区域** - 左边，包含了所有的控制项"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:125
 msgid ""
 "**description area** - right side, where descriptions of the controls are "
 "located"
-msgstr ""
+msgstr "**描述区域** - 右边，包含了所有描述控制的部分"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:127
 msgid "Each field should contain:"
-msgstr ""
+msgstr "每个字段须包含："
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:129
 msgid "**name** -  system field name, could be any"
-msgstr ""
+msgstr "**name** -  系统字段名称，可以使随意的"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:130
 msgid "**type** - system field type"
-msgstr ""
+msgstr "**type** - 系统字段类型"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:132
 msgid "Currently supported options for **type** attribute are:"
-msgstr ""
+msgstr "目前支持的可选的 **类型** 属性有："
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:134
 msgid "string - text field (no inherent validations) with one-line text input"
-msgstr ""
+msgstr "字符 -  文本字段(没有固定的验证)一行文本输入"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:135
 msgid "boolean - boolean field, rendered as a checkbox"
-msgstr ""
+msgstr "boolean - 布尔字段，以复选框呈现"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:136
 msgid "text - same as string, but with a multi-line input"
-msgstr ""
+msgstr "text - 和字符一样，但是是多行的输入"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:137
 msgid ""
 "integer - integer field with an appropriate validation, one-line text input"
-msgstr ""
+msgstr "integer - 整型字段，有相应的验证，只能输入一行"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:138
 msgid ""
 "password - text field with validation for strong password, rendered as two "
 "masked text inputs (second one is for password confirmation)"
 msgstr ""
+"password - 文本字段，基于强密码的验证，以两行打码的文本输入来呈现(第二个是作"
+"为密码确认的)"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:139
 msgid ""
@@ -292,6 +328,8 @@ msgid ""
 "(validations for valid IP address syntax and for that IP to belong to a "
 "fixed subnet)"
 msgstr ""
+"clusterip - 指定文本字段，用于输入集群IP地址(验证为有效的IP地址语法和IP属于"
+"一个固定的子网)"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:140
 msgid ""
@@ -299,6 +337,8 @@ msgid ""
 "instance should have floating IP; *DEPRECATED FIELD* - use boolean field "
 "instead"
 msgstr ""
+"floatingip - 指定布尔字段，用于指定实例是否有浮动IP； *遗弃字段* - 使用布尔"
+"字段替代"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:141
 msgid ""
@@ -306,6 +346,8 @@ msgid ""
 "list (or creating a new Active Directory application); *DEPRECATED FIELD* - "
 "use io.murano.windows.ActiveDirectory instead"
 msgstr ""
+"domain - 指定字段，用于从一个列表中选择活动目录(或者创建一个新的活动目录应"
+"用)；*遗弃字段* - 使用了io.murano.windows.ActiveDirectory 替代"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:142
 msgid ""
@@ -315,48 +357,55 @@ msgid ""
 "letter, numeric, underscore, at the sign, number sign or dollar sign), "
 "rendered as one-line text input"
 msgstr ""
+"databaselist - 指定字段，数据库列表(逗号分隔的数据库名称列表，其中每个名称都"
+"有以下语法，第一个符号须是拉丁字母或者是下划线；随后的符号可以是拉丁字母,数"
+"字,下划线,符号,数字符号或美元符号)，以一行输入文本呈现"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:143
 msgid ""
 "image - specific field, used for filtering suitable images by image type "
 "provided in murano metadata in glance properties."
 msgstr ""
+"image - 指定字段，用户通过镜像类型过滤合适的镜像，在glance属性中的murano元数"
+"据中所提供。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:144
 msgid ""
 "flavor - specific field, used for selection instance flavor from a list"
-msgstr ""
+msgstr "flavor - 指定字段，用于从列表中选择实例类型"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:145
 msgid "keypair - specific field, used for selecting a keypair from a list"
-msgstr ""
+msgstr "keypair - 指定字段，用于从列表中选择密钥对"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:146
 msgid ""
-"azone - specific field, used for selecting instance availability zone from a"
-" list"
-msgstr ""
+"azone - specific field, used for selecting instance availability zone from "
+"a list"
+msgstr "azone - 指定字段，用于从列表中选择实例可用的区域"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:147
 msgid ""
 "any other value is considered to be a fully qualified name for some "
-"Application package and is rendered as a pair of controls: one for selecting"
-" already existing Applications of that type in an Environment, second - for "
-"creating a new Application of that type and selecting it"
+"Application package and is rendered as a pair of controls: one for "
+"selecting already existing Applications of that type in an Environment, "
+"second - for creating a new Application of that type and selecting it"
 msgstr ""
+"任何其他值被认为是一个全限定名应用程序包和呈现一对控制:选择一个已经存在的应"
+"用程序类型的环境,第二,为创建一个新的应用程序的类型和选择它"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:149
 msgid ""
 "Other arguments (and whether they are required or not) depends on a field's "
 "type and other attributes values. The most common attributes are the "
 "following:"
-msgstr ""
+msgstr "其他参数(是否需要)取决于一个字段的类型和其他属性值。最常见的属性如下:"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:153
 msgid ""
 "**label** - name, that will be displayed in the form; defaults to **name** "
 "being capitalized."
-msgstr ""
+msgstr "**label** - 名称，它会被显示到表单中；默认的**name** 是大写。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:154
 msgid ""
@@ -364,12 +413,14 @@ msgid ""
 "area. Use yaml line folding character >- to keep the correct formatting "
 "during data transferring."
 msgstr ""
+"**description** - 描述，将会显示在描述区域。使用yaml行折叠字符>-来在数据传输"
+"过程中保持正确的格式。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:156
 msgid ""
 "**descriptionTitle** - title of the description, defaults to **label**; "
 "displayed in the description area"
-msgstr ""
+msgstr "**descriptionTitle** - 描述的标题，默认是**label**;显示在描述区域"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:157
 msgid ""
@@ -378,6 +429,8 @@ msgid ""
 "area (if given). Hidden fields are used storing some data to be used by "
 "other, visible fields."
 msgstr ""
+"**hidden** 是否字段应该是可见的在输入区域。注意隐藏字段的描述仍然是可见的描"
+"述区域(如果有)。使用隐藏字段存储一些数据供其他可见的字段。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:160
 msgid ""
@@ -385,31 +438,44 @@ msgid ""
 "**maxValue** (for integer fields) are transparently translated into django "
 "validation properties."
 msgstr ""
+"**minLength**, **maxLength** (字符字段) 和 **minValue**, **maxValue** (整型"
+"字段) 会透明的翻译为Django的验证属性。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:161
 msgid ""
 "**validators** is a list of dictionaries, each dictionary should at least "
-"have *expr* key, under that key either some `YAQL "
-"<https://github.com/stackforge/yaql/blob/master/README.rst>`_ expression is "
-"stored, either one-element dictionary with *regexpValidator* key (and some "
-"regexp string as value). Another possible key of a validator dictionary is "
-"*message*, and although it is not required, it is highly desirable to "
-"specify it - otherwise, when validator fails (i.e. regexp doesn't match or "
-"YAQL expression evaluates to false) no message will be shown. Note that "
-"field-level validators use YAQL context different from all other attributes "
-"and section: here *$* root object is set to the value of field being "
-"validated (to make expressions shorter)."
+"have *expr* key, under that key either some `YAQL <https://github.com/"
+"stackforge/yaql/blob/master/README.rst>`_ expression is stored, either one-"
+"element dictionary with *regexpValidator* key (and some regexp string as "
+"value). Another possible key of a validator dictionary is *message*, and "
+"although it is not required, it is highly desirable to specify it - "
+"otherwise, when validator fails (i.e. regexp doesn't match or YAQL "
+"expression evaluates to false) no message will be shown. Note that field-"
+"level validators use YAQL context different from all other attributes and "
+"section: here *$* root object is set to the value of field being validated "
+"(to make expressions shorter)."
 msgstr ""
+"**validators** 是一个字典列表，每个字典须至少包含*expr* 键，键可以是一些所保"
+"存动`YAQL <https://github.com/stackforge/yaql/blob/master/README.rst>`_表达"
+"式，也可以是单个元素的字典仅*regexpValidator* 键(以及一些正则表达式字符做为"
+"值)。另外可能的验证字典的键是*message*，尽管这不是必须的，强烈建议指定它 － "
+"否则，当验证失败时(如果正则表达式不匹配或是YAQL表达式计算为false)就没有消息"
+"显示。记住，字段级别的验证器使用YAQL的内容不同于所有其它的属性和小节：这里*"
+"$* 根对象是设置为被验证的字段值(以让表打算短点)。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:162
 msgid ""
-"**widgetMedia** sets some custom *CSS* and *JavaScript* used for the field's"
-" widget rendering. Note, that files should be placed to Django static folder"
-" in advance. Mostly they are used to do some client-side field "
+"**widgetMedia** sets some custom *CSS* and *JavaScript* used for the "
+"field's widget rendering. Note, that files should be placed to Django "
+"static folder in advance. Mostly they are used to do some client-side field "
 "enabling/disabling, hiding/unhiding etc. This is a temporary field which "
 "will be dropped once Version 3 of Dynamic UI is implemented (since it will "
 "transparently translate YAQL expressions into the appropriate *JavaScript*)."
 msgstr ""
+"**widgetMedia** 设置一些自定义的*CSS* 和 *JavaScript*，用例呈现字段的控件。"
+"记住，这些文件须放在Django的静态目录中。多数时候它们用户做一些客户端的事，如"
+"enabling/disabling, hiding/unhiding 等。此临时的字段将会在动态 UI 3.0实现后"
+"被抛弃(他将是通明的翻译YAQL表达式为相应的*JavaScript*)。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:165
 msgid ""
@@ -417,12 +483,14 @@ msgid ""
 "unstable for a deployment flavor. It allows to set minimum ram (in MBs), "
 "disk space (in GBs) or virtual CPU quantity."
 msgstr ""
+"**requirements** 仅用于类型字段，且防止用户来挑选不稳定到来部署类型。它允许"
+"设置最小内存(按MB算)，磁盘空间(按GB算)，或虚拟机CPU数量。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:168
 msgid ""
 "Example that shows how to hide items smaller than regular 'small' flavor in "
 "a flavor select field:"
-msgstr ""
+msgstr "展示了如何在选择类型字段隐藏小于常规的类型项的例子："
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:180
 msgid ""
@@ -430,14 +498,16 @@ msgid ""
 "**standard context** for YAQL evaluation and are required when there is a "
 "need to validate some form's constraint across several fields."
 msgstr ""
+"在字段级别的验证之外，表单级别的验证也存在。他们使用**standard context** 用"
+"于YAQL计算，且当有需要验证需要某种形式的约束在跨多个字段。"
 
 #: ../../draft/appdev-guide/muranopackages/dynamic_ui.rst:185
 msgid "*Example*"
-msgstr ""
+msgstr "*实例*"
 
 #: ../../draft/appdev-guide/muranopackages/repository.rst:4
 msgid "Murano package repository"
-msgstr ""
+msgstr "Murano软件包仓库"
 
 #: ../../draft/appdev-guide/muranopackages/repository.rst:6
 msgid ""
@@ -448,35 +518,43 @@ msgid ""
 "automatically import all the prerequisites required to install the "
 "application along with any images mentioned in the applications."
 msgstr ""
+"Murano客户端和控制面板均可从murano仓库安装软件包和bundle包。要完成此，你须在"
+"murano控制面板中设置MURANO_REPO_URL，或者在命令行客户端设置MURANO_REPO_URL环"
+"境变量。然后使用相应的命令来导入软件包。这些命令会自动的导入所有的前提需求来"
+"安装应用，以及应用中提到的镜像。"
 
 #: ../../draft/appdev-guide/muranopackages/repository.rst:9
 msgid "Setting up your own repository"
-msgstr ""
+msgstr "设置你自己的仓库"
 
 #: ../../draft/appdev-guide/muranopackages/repository.rst:14
 msgid ""
-"It is fairly easy to set up your own murano package repository. To do so you"
-" need a web server that would serve 3 directories:"
+"It is fairly easy to set up your own murano package repository. To do so "
+"you need a web server that would serve 3 directories:"
 msgstr ""
+"设置你自己的Murao软件包仓库真的很简单，只要在你的web服务器中包含下面3个目录"
+"即可："
 
 #: ../../draft/appdev-guide/muranopackages/repository.rst:12
 msgid "/apps/"
-msgstr ""
+msgstr "/apps/"
 
 #: ../../draft/appdev-guide/muranopackages/repository.rst:13
 msgid "/bundles/"
-msgstr ""
+msgstr "/bundles/"
 
 #: ../../draft/appdev-guide/muranopackages/repository.rst:14
 msgid "/images/"
-msgstr ""
+msgstr "/images/"
 
 #: ../../draft/appdev-guide/muranopackages/repository.rst:16
 msgid ""
 "When importing an application by name, the client appends any version info, "
-"if present to the application name, ``.zip`` file extension and searches for"
-" that file in the ``apps`` directory."
+"if present to the application name, ``.zip`` file extension and searches "
+"for that file in the ``apps`` directory."
 msgstr ""
+"当通过名字来导入一个应用时，客户端后可跟任何的版本信息，如果表现为应用对名"
+"称，后缀名``.zip``文件会被在``apps`` 目录中检索。"
 
 #: ../../draft/appdev-guide/muranopackages/repository.rst:18
 msgid ""
@@ -484,13 +562,19 @@ msgid ""
 "extension to the bundle name and searches it in the bundles directory. A "
 "bundle file is a json or a yaml file with the following structure:"
 msgstr ""
+"当通过名称导入一个bundle时，客户端后跟``.bundle``文件扩展名到builde的名称，"
+"然后到bundle目录中去检索。一个bundle文件时一个json或一个yaml文件，具有如下的"
+"结构："
 
 #: ../../draft/appdev-guide/muranopackages/repository.rst:30
 msgid ""
 "Glance images can be auto-imported by the client, when mentioned in "
 "``images.lst`` inside the package. Please see :ref:`step-by-step` for more "
 "information about package composition. When importing images from the "
-"``image.lst`` file, the client simply searches for a file with the same name"
-" as the name attribute of the image in the ``images`` directory of the "
+"``image.lst`` file, the client simply searches for a file with the same "
+"name as the name attribute of the image in the ``images`` directory of the "
 "repository."
 msgstr ""
+"当在软件包内部提到了``images.lst``，Glance镜像可由客户端自动导入。请参阅:"
+"ref:`step-by-step` 获得更多关于包组成的信息。当从``image.lst``导入镜像时，客"
+"户端就会到仓库的``images``目录中检索相同的文件名以及相同的名称属性。"
